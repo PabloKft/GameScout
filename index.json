@@ -19,7 +19,7 @@
         },
         "Rating": "4.4/5 Epic Games",
         "Image": [
-            "./pictures/kep.png"
+            "./pictures/RL_Logo.jpg"
         ]
     },
     {
@@ -47,7 +47,7 @@
         ],
         "Rating": "Overwhelmingly Positive (40,000+)",
         "Image": [
-            "./pictures/kep.png"
+            "./pictures/dredge_Logo.png"
         ]
     },
     {
@@ -75,7 +75,7 @@
         ],
         "Rating": "Mixed (50,000+)",
         "Image": [
-            "./pictures/kep.png"
+            "./pictures/SC_Logo.jfif"
         ]
     },
     {
@@ -102,7 +102,7 @@
     ],
         "Rating": "Overwhelmingly Positive (1,000,000+)",
         "Image": [
-            "./pictures/kep.png"
+            "./pictures/GTAV_Logo.jpeg"
         ]
     },
     {
@@ -124,7 +124,7 @@
     ],
         "Rating": "Very Positive (1,200,000+)",
         "Image": [
-            "./pictures/kep.png"
+            "./pictures/PUBG_Logo.jpg"
         ]
     },
     {
@@ -146,7 +146,7 @@
     ],
         "Rating": "Mostly Positive (350,000+)",
         "Image": [
-            "./pictures/kep.png"
+            "./pictures/TS4_Logo.jpg"
         ]
     },
     {
