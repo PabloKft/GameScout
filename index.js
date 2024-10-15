@@ -1,19 +1,20 @@
-const arrayData = []; // Initialize an empty array
-let selectedCardIDCompare = 0;
+let arrayData = [];
+let selectedCardIDGameSite = localStorage.getItem('selectedCardIDGameSite') || null;
 
+// Fetch JSON data and store it in arrayData
 function fetchJSON() {
-    return fetch('./index.json') // Fetch the JSON file
-        .then(response => response.json()) // Parse the JSON response
+    return fetch('./index.json')
+        .then(response => response.json())
         .then(data => {
-            arrayData.push(...data); // Use spread operator to push all items into arrayData
-            console.log(arrayData); // Log the array to the console
-
-            // Example: Display the data on the webpage
-            displayData(arrayData);
+            arrayData = data;
+            console.log('Data fetched successfully:', arrayData);
+            // Call displayData here if it's the page displaying the cards
+            if (document.getElementById('data-container')) {
+                displayData(arrayData);
+            }
         })
         .catch(error => console.error('Error loading the JSON file:', error));
 }
-
 
 // Function to display the data on the webpage
 function displayData(dataArray) {
@@ -36,35 +37,30 @@ function displayData(dataArray) {
         cardDiv.style.margin = "10px";
 
         cardDiv.onclick = () => {
-            selectedCardIDGameSite = item.ID; // Store the selected card ID
-            localStorage.setItem('selectedCardID', selectedCardIDGameSite); // Save to localStorage
+            selectedCardIDGameSite = item.ID;
+            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.open('index.html', '_blank'); // Open index.html
+            window.open('index.html', '_blank');
         };
 
-        // Create an image element
         const img = document.createElement('img');
         img.classList.add('card-img-top');
-        img.src = item.Image || 'default-image.jpg'; // Use image URL from JSON, or a default
+        img.src = item.Image || 'default-image.jpg';
         img.alt = item.Name;
         img.style.borderRadius = "10px";
 
-        // Create the card body
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
 
-        // Create the card title
         const cardTitle = document.createElement('h5');
         cardTitle.classList.add('card-title');
         cardTitle.textContent = item.Name;
         cardTitle.style.fontWeight = "bold";
 
-        // Create the card text for description or genres
         const cardGenres = document.createElement('p');
         cardGenres.classList.add('card-text');
         cardGenres.textContent = `${item.Genres[0]} | ${item.Genres[1]}`;
 
-        // Create a button or link (optional)
         const cardButton = document.createElement('a');
         cardButton.classList.add('btn');
         cardButton.style.backgroundColor = '#91ff88';
@@ -89,136 +85,84 @@ function displayData(dataArray) {
             cardButton.style.transform = "translateY(-0px)";
         };
 
-        cardButton.onclick = () => {
-            selectedCardID = item.ID; // Assuming the JSON has an 'ID' field for each card
-            console.log(`Selected card ID: ${selectedCardIDCompare}`);
+        cardButton.onclick = (e) => {
+            e.stopPropagation();
+            selectedCardIDGameSite = item.ID;
+            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+            console.log(`Selected card ID: ${selectedCardIDGameSite}`);
+            window.location.href = 'index.html';
         };
 
-        // Append all elements together
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardGenres);
         cardBody.appendChild(cardButton);
         cardDiv.appendChild(img);
         cardDiv.appendChild(cardBody);
 
-        // Append the card to the container
         container.appendChild(cardDiv);
     });
 }
 
-function unShowCards() {
-    let cardsPlace = document.getElementById("data-container");
-    cardsPlace.style.display = 'none';
-}
-
-// Filter and display data based on selected options
-function filterAndDisplayData() {
-    let dataToDisplay;
-
-    if (selectedOptions.length === 0) {
-        // If no genres are selected, display all data
-        dataToDisplay = arrayData;
-    } else {
-        // Otherwise, filter the arrayData based on selectedOptions
-        dataToDisplay = arrayData.filter(item => {
-            return selectedOptions.some(option => item.Genres.includes(option));
-        });
+function showGeneralInfo() {
+    if (!selectedCardIDGameSite) {
+        console.error('No card ID found in localStorage.');
+        return;
     }
 
-    // Display the data (filtered or all)
-    displayData(dataToDisplay);
+    const selectedItem = arrayData.find(item => item.ID == selectedCardIDGameSite);
+    if (selectedItem) {
+        document.getElementById("generalInfoListReleaseDate").innerText = selectedItem["Release date"];
+        document.getElementById("generalInfoListStoryTime").innerText = selectedItem.Story;
+        document.getElementById("generalInfoListRatings").innerText = selectedItem.Rating;
+        document.getElementById("gameName").innerText = selectedItem.Name;
+
+        console.log('Displayed data for:', selectedItem);
+    } else {
+        console.error('Item with selected ID not found.');
+    }
 }
 
-// Filter checkboxes
-const selectedOptions = [];
-
-document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
-    checkbox.addEventListener('change', function () {
-        if (this.checked) {
-            // Add value to array if checked
-            selectedOptions.push(this.value);
-        } else {
-            // Remove value from array if unchecked
-            const index = selectedOptions.indexOf(this.value);
-            if (index > -1) {
-                selectedOptions.splice(index, 1);
-            }
-        }
-
-        // Update the display based on selected options
-        filterAndDisplayData();
-        console.log(selectedOptions);
-    });
-});
-
-// Fetch JSON data and display it initially
-fetchJSON();
-
-function showGeneralInfo() {
-    const selectedCardIDGameSite = localStorage.getItem('selectedCardID'); // Get the selected card ID from localStorage
-    arrayData.forEach(item => {
-        console.log("Checking item:", item.ID);
-        console.log("Checking item:", selectedCardIDGameSite); // Log each item in arrayData
-        if (item.ID == selectedCardIDGameSite) {
-            console.log("Match found for ID:", selectedCardIDGameSite); // Log when a match is found
-            document.getElementById("generalInfoListReleaseDate").innerText = item["Release date"];
-            document.getElementById("generalInfoListStoryTime").innerText = item.Story;
-            document.getElementById("generalInfoListRatings").innerText = item.Rating;
-            document.getElementById("gameName").innerText = item.Name;
-
-        }
-    });
-}
-
+// Set up window onload to ensure data is ready before showing info
 window.onload = function() {
     fetchJSON().then(() => {
-        showGeneralInfo();
-    });
-}
-
-
-function showRequestedData(type) {
-    console.log("Requested type:", type); // Log the requested type
-    const selectedCardIDGameSite = localStorage.getItem('selectedCardID'); // Get the selected card ID from localStorage
-    arrayData.forEach(item => {
-        console.log("Checking item:", item.ID);
-        console.log("Checking item:", selectedCardIDGameSite); // Log each item in arrayData
-        if (item.ID == selectedCardIDGameSite) {
-            console.log("Match found for ID:", selectedCardIDGameSite); // Log when a match is found
-            let place = document.getElementById("requestedInfoPlace");
-            if (type === "Prices" && Array.isArray(item.Price) && item.Price.length > 0) {
-                let priceHTML = '<ul class="price-list">';
-                item.Price.forEach(priceInfo => {
-                    console.log('Price info:', priceInfo); // Log to see the structure of priceInfo
-                    priceHTML += `<li>${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a></li>`;
-                });
-                priceHTML += '</ul>';
-                place.innerHTML = priceHTML; // Set the innerHTML to the constructed string
-            }
-            else if (type === "Genres" && Array.isArray(item.Genres)) {
-                let genreHTML = '<div>';
-                item.Genres.forEach(Genre => {
-                    console.log('Genre:', Genre);
-                    genreHTML += `<span class="genreCard">${Genre}</span> `;
-                });
-                genreHTML += `</div>`;
-
-                place.innerHTML = genreHTML; // Set the innerHTML to the constructed string
-            }
-            else if (type === "Description") {
-                let descHTML = `<div class="Desc">${item.Description}</div>`;
-                place.innerHTML = descHTML; // Set the innerHTML to the constructed string
-            }
-            else if (type === "Console") {
-                let consoleHTML = '<div>';
-                item.Console.forEach(Cons => {
-                    console.log('Console:', Cons);
-                    consoleHTML += `<span class="ConsoleCard">${Cons}</span> `;
-                });
-                consoleHTML += `</div>`;
-
-                place.innerHTML = consoleHTML; // Set the innerHTML to the constructed string
-            }
+        if (document.getElementById("generalInfoListReleaseDate")) {
+            showGeneralInfo();
         }
     });
+};
+
+// Function to handle displaying requested data like Prices, Genres, etc.
+function showRequestedData(type) {
+    const selectedCardIDGameSite = localStorage.getItem('selectedCardIDGameSite');
+    const selectedItem = arrayData.find(item => item.ID == selectedCardIDGameSite);
+    const place = document.getElementById("requestedInfoPlace");
+
+    if (selectedItem && place) {
+        if (type === "Prices" && Array.isArray(selectedItem.Price) && selectedItem.Price.length > 0) {
+            let priceHTML = '<ul class="price-list">';
+            selectedItem.Price.forEach(priceInfo => {
+                priceHTML += `<li>${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a></li>`;
+            });
+            priceHTML += '</ul>';
+            place.innerHTML = priceHTML;
+        } else if (type === "Genres" && Array.isArray(selectedItem.Genres)) {
+            let genreHTML = '<div>';
+            selectedItem.Genres.forEach(genre => {
+                genreHTML += `<span class="genreCard">${genre}</span> `;
+            });
+            genreHTML += `</div>`;
+            place.innerHTML = genreHTML;
+        } else if (type === "Description") {
+            place.innerHTML = `<div class="Desc">${selectedItem.Description}</div>`;
+        } else if (type === "Console" && Array.isArray(selectedItem.Console)) {
+            let consoleHTML = '<div>';
+            selectedItem.Console.forEach(console => {
+                consoleHTML += `<span class="ConsoleCard">${console}</span> `;
+            });
+            consoleHTML += `</div>`;
+            place.innerHTML = consoleHTML;
+        } else {
+            place.innerHTML = 'No data available for this section.';
+        }
+    }
 }
