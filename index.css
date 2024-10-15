@@ -1,0 +1,217 @@
+.card {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 8px rgba(0, 47, 90, 0.1);
+  background-color: #D9d9D9;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 2px, solid, #00b7ff;
+}
+
+.btn:hover {
+  border: 2px, solid, white;
+  background-color: rgb(92, 165, 85);
+}
+
+.button:hover {
+  background-color: red;
+}
+
+#data-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background-color: #2e2e2e;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+}
+
+
+.navbar {
+  background: hsla(0, 0%, 8%, 1);
+
+  background: linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 66%, hsla(118, 100%, 11%, 1) 75%, hsla(113, 100%, 16%, 1) 100%);
+
+  background: -moz-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 66%, hsla(118, 100%, 11%, 1) 75%, hsla(113, 100%, 16%, 1) 100%);
+
+  background: -webkit-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 66%, hsla(118, 100%, 11%, 1) 75%, hsla(113, 100%, 16%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#141414", endColorstr="#141414", GradientType=1);
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.navbar-brand img {
+  border-radius: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 500%;
+  color: transparent;
+  font-family: AndaleMono, monospace;
+  ;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 300%;
+  color: transparent;
+  font-family: AndaleMono, monospace;
+  ;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: white;
+}
+
+.Search {
+  border: 2px solid black;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-custom {
+  background-color: #141414;
+  /* Dark button background */
+  color: #00b7ff;
+  /* Light blue text */
+  letter-spacing: 1px;
+  border: 2px solid #00b7ff;
+  /* Blue border */
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Dropdown Button Styles */
+.btn-dropdown {
+  background-color: #004085;
+  /* Dark blue */
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-dropdown:hover {
+  background-color: #003057;
+  /* Even darker blue on hover */
+  color: #fff;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  background-color: #2b2b2b;
+  /* Same dark grey as body */
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  color: #f0f0f0;
+  /* Light grey text */
+  transition: background-color 0.3s;
+  margin-left: 2%;
+}
+
+.dropdown-item:hover {
+  background-color: #696969;
+  /* Darker grey on hover */
+  border-radius: 5px;
+}
+
+/* Custom styles for the expanding dropdown */
+.dropdown-left {
+  margin-bottom: 15px;
+}
+
+/* Smooth transition effect for dropdown content */
+.collapse {
+  transition: max-height 1s ease-in-out;
+}
+
+/* Optional: make the button styles more obvious */
+.btn-secondary {
+  width: 100%;
+  /* Make dropdown button full width */
+}
+
+#generalInfoList {
+  list-style-type: none;
+  border: 1px white;
+  border-style: dashed;
+  border-radius: 15px;
+  text-align: center;
+  
+  padding: 10px;
+
+
+  cursor:default;
+}
+
+#generalInfoList li:hover{
+  color: lightblue;
+  font-size: 103%;
+}
+#generalInfoList li{
+  color: grey;
+}
+
+#requestedInfoPlace{
+  margin-top: 50px;
+  text-align: center;  
+}
+
+.generalInfoListHeadings{
+  margin-bottom: 5px;
+  color: white;
+  font-size: 105%;
+  font-weight: bolder;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+}
+.price-list li {
+  margin-bottom: 10px;
+}
+
+footer{
+  padding: 100px;
+}
+
+a{
+  text-decoration: none;
+}
+
+#infos{
+  margin-top: 50px;
+}
+
+.genreCard, .ConsoleCard{
+  display: inline-block;
+  border: 1px solid #7b97c2;
+  padding: 10px;
+  border-radius: 5px;
+  
+  cursor:default;
+  color: #7b97c2;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.Desc{
+  text-align: justify;
+}
