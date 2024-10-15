@@ -167,6 +167,7 @@ function showGeneralInfo() {
             document.getElementById("generalInfoListReleaseDate").innerText = item["Release date"];
             document.getElementById("generalInfoListStoryTime").innerText = item.Story;
             document.getElementById("generalInfoListRatings").innerText = item.Rating;
+            document.getElementById("gameName").innerText = item.Name;
         }
     });
 }
