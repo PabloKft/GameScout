@@ -40,7 +40,7 @@ function displayData(dataArray) {
             selectedCardIDGameSite = item.ID;
             localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.open('index.html', '_blank');
+            window.open('https://pablokft.github.io/GameScout/gamesite.html', '_blank');
         };
 
         const img = document.createElement('img');
