@@ -2,21 +2,18 @@ const arrayData = []; // Initialize an empty array
 let selectedCardIDCompare = 0;
 
 function fetchJSON() {
-    // Fetch the JSON file
-    fetch('./index.json')
+    return fetch('./index.json') // Fetch the JSON file
         .then(response => response.json()) // Parse the JSON response
         .then(data => {
-            // Push all data into arrayData
             arrayData.push(...data); // Use spread operator to push all items into arrayData
-
-            // Log the array to the console
-            console.log(arrayData); 
+            console.log(arrayData); // Log the array to the console
 
             // Example: Display the data on the webpage
             displayData(arrayData);
         })
         .catch(error => console.error('Error loading the JSON file:', error));
 }
+
 
 // Function to display the data on the webpage
 function displayData(dataArray) {
@@ -42,7 +39,7 @@ function displayData(dataArray) {
             selectedCardIDGameSite = item.ID; // Store the selected card ID
             localStorage.setItem('selectedCardID', selectedCardIDGameSite); // Save to localStorage
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.open('https://pablokft.github.io/GameScout/gamesite.html', '_blank'); // Open index.html
+            window.open('index.html', '_blank'); // Open index.html
         };
 
         // Create an image element
@@ -168,13 +165,17 @@ function showGeneralInfo() {
             document.getElementById("generalInfoListStoryTime").innerText = item.Story;
             document.getElementById("generalInfoListRatings").innerText = item.Rating;
             document.getElementById("gameName").innerText = item.Name;
+
         }
     });
 }
 
 window.onload = function() {
-    showGeneralInfo(); // Call to show general info when the page loads
+    fetchJSON().then(() => {
+        showGeneralInfo();
+    });
 }
+
 
 function showRequestedData(type) {
     console.log("Requested type:", type); // Log the requested type
