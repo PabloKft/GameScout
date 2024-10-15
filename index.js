@@ -42,7 +42,7 @@ function displayData(dataArray) {
             selectedCardIDGameSite = item.ID; // Store the selected card ID
             localStorage.setItem('selectedCardID', selectedCardIDGameSite); // Save to localStorage
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.open('index.html', '_blank'); // Open index.html
+            window.open('https://pablokft.github.io/GameScout/gamesite.html', '_blank'); // Open index.html
         };
 
         // Create an image element
