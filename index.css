@@ -202,10 +202,9 @@ a{
 
 .genreCard, .ConsoleCard{
   display: inline-block;
-  border: 1px solid #7b97c2;
+  border: 2px solid #28579e;
   padding: 10px;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
   cursor:default;
   color: #7b97c2;
   margin-bottom: 5px;
