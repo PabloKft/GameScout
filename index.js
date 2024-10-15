@@ -90,7 +90,7 @@ function displayData(dataArray) {
             selectedCardIDGameSite = item.ID;
             localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.location.href = 'index.html';
+            window.location.href = 'https://pablokft.github.io/GameScout/gamesite.html';
         };
 
         cardBody.appendChild(cardTitle);
