@@ -115,6 +115,7 @@ function showGeneralInfo() {
         document.getElementById("generalInfoListStoryTime").innerText = selectedItem.Story;
         document.getElementById("generalInfoListRatings").innerText = selectedItem.Rating;
         document.getElementById("gameName").innerText = selectedItem.Name;
+        document.getElementById("gameNameText").innerText = selectedItem.Name;
 
         console.log('Displayed data for:', selectedItem);
     } else {
