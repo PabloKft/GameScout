@@ -148,5 +148,914 @@
         "Image": [
             "./pictures/TS4_Logo.jpg"
         ]
+    },,
+    {
+        "ID": "7",
+        "Name": "American Truck Simulator",
+        "Release date": "02.02.2016",
+        "Description": "American Truck Simulator is a truck driving simulation game where players transport cargo across the USA, enjoying scenic views and realistic driving physics.",
+        "Story": "No story",
+        "Genres": [
+            "Simulator", " Driving"
+        ],
+        "Price": [
+            {"Steam": "$19.99",
+            "link": "https://store.steampowered.com/app/270880/American_Truck_Simulator/"}
+
+    ],
+        "Rating": "Overwhelmingly Positive (200,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "8",
+        "Name": "FC 25",
+        "Release date": "09.29.2023",
+        "Description": "FC 25 (formerly known as FIFA) is a football simulation game with realistic graphics, controls, and licensed teams from around the world.",
+        "Story": "No story",
+        "Genres": [
+            "Sports", " Simulator", " Multiplayer", " Singleplayer"
+        ],
+        "Price": [
+            {"EA": "$69.99",
+            "link": "https://www.ea.com/games/ea-sports-fc/fc-25"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mostly Positive (25,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "9",
+        "Name": "Cyberpunk 2077",
+        "Release date": "12.10.2020",
+        "Description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in Night City, a megalopolis obsessed with power, glamour, and body modification.",
+        "Story": "25-40 hours",
+        "Genres": [
+            "Action", " RPG", " Open World", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (600,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "10",
+        "Name": "Minecraft",
+        "Release date": "11.18.2011",
+        "Description": "Minecraft is a sandbox survival game where players explore, build, and survive in a blocky, procedurally generated 3D world.",
+        "Story": "No story",
+        "Genres": [
+            "Sandbox", " Survival", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (1,000,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "11",
+        "Name": "Star Wars Battlefront II",
+        "Release date": "11.17.2017",
+        "Description": "Star Wars Battlefront II is an action shooter game featuring large-scale multiplayer battles and a single-player campaign set in the Star Wars universe.",
+        "Story": "5-6 hours",
+        "Genres": [
+            "Action", " Shooter", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (200,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "12",
+        "Name": "Battlefield V",
+        "Release date": "11.20.2018",
+        "Description": "Battlefield V is a first-person shooter game set during World War II, focusing on large-scale battles and tactical team-based gameplay.",
+        "Story": "8-10 hours",
+        "Genres": [
+            "Action", " Shooter", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mostly Positive (100,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "13",
+        "Name": "Subnautica",
+        "Release date": "01.23.2018",
+        "Description": "Subnautica is an open-world survival game where players explore an alien underwater world, crafting tools and exploring the deep sea to survive.",
+        "Story": "30-40 hours",
+        "Genres": [
+            "Survival", " Adventure", " Open World", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (400,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "14",
+        "Name": "Red Dead Redemption 2",
+        "Release date": "11.05.2019",
+        "Description": "Red Dead Redemption 2 is an open-world action-adventure game set in the late 1800s, focusing on the story of outlaw Arthur Morgan and the Van der Linde gang.",
+        "Story": "60-80 hours",
+        "Genres": [
+            "Action", " Open World", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (500,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "15",
+        "Name": "Black Myth: Wukong",
+        "Release date": "TBA 2024",
+        "Description": "Black Myth: Wukong is an action RPG based on the Chinese mythology 'Journey to the West', featuring fast-paced combat and stunning visuals.",
+        "Story": "TBD",
+        "Genres": [
+            "Action", " Fantasy", " RPG", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "N/A",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "16",
+        "Name": "Marvel’s Spider-Man Remastered",
+        "Release date": "08.12.2022",
+        "Description": "Marvel’s Spider-Man Remastered is an action-packed open-world game where players swing through New York as Spider-Man, stopping crime and uncovering a larger conspiracy.",
+        "Story": "15-20 hours",
+        "Genres": [
+            "Action", " Open World", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (150,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "17",
+        "Name": "Overwatch 2",
+        "Release date": "10.04.2022",
+        "Description": "Overwatch 2 is a team-based shooter set in the near future, where players battle in 5v5 matches using unique heroes with special abilities.",
+        "Story": "No story",
+        "Genres": [
+            "Shooter", " Multiplayer", " Singleplayer", " Fantasy"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mixed (250,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "18",
+        "Name": "Fortnite",
+        "Release date": "07.21.2017",
+        "Description": "Fortnite is a free-to-play Battle Royale game with various game modes, allowing players to build structures and battle against others for survival.",
+        "Story": "No story",
+        "Genres": [
+            "Battle Royale", " Survival", " Multiplayer", " Singleplayer", " Competitve"
+        ],
+        "Price": {
+            "site1": "Free to Play",
+            "link": "https://www.epicgames.com/fortnite/en-US/home"
+        },
+        "Rating": "Very Positive (500,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "19",
+        "Name": "Hearts of Iron IV",
+        "Release date": "06.06.2016",
+        "Description": "Hearts of Iron IV is a grand strategy game where players control any nation during World War II and lead them to victory.",
+        "Story": "No story",
+        "Genres": [
+            "Strategy", " War", " Singleplayer", " Multiplayer", " Co-op"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (100,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "20",
+        "Name": "Hide and Shriek",
+        "Release date": "10.25.2016",
+        "Description": "Hide and Shriek is a multiplayer horror game where two players try to scare each other using traps and spells in a spooky school setting.",
+        "Story": "No story",
+        "Genres": [
+            "Horror", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mostly Positive (2,300+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "21",
+        "Name": "Layers of Fear",
+        "Release date": "02.16.2016",
+        "Description": "Layers of Fear is a psychological horror game focusing on exploration and a disturbing narrative set in a painter’s deteriorating mind.",
+        "Story": "5-6 hours",
+        "Genres": [
+            "Horror", " Adventure", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (20,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "22",
+        "Name": "Life is Strange",
+        "Release date": "01.30.2015",
+        "Description": "Life is Strange is an episodic adventure game that tells the story of Max Caulfield, a photography student who discovers the ability to rewind time.",
+        "Story": "15-20 hours",
+        "Genres": [
+            "Adventure", " Singleplayer", " Fantasy"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (150,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "23",
+        "Name": "Poppy Playtime",
+        "Release date": "10.12.2021",
+        "Description": "Poppy Playtime is a horror puzzle adventure where players explore an abandoned toy factory while avoiding the deadly Huggy Wuggy.",
+        "Story": "3-4 hours",
+        "Genres": [
+            "Horror", " Puzzle", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (30,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "24",
+        "Name": "Left 4 Dead 2",
+        "Release date": "11.17.2009",
+        "Description": "Left 4 Dead 2 is a co-op zombie survival game where players team up to fight hordes of zombies across various campaigns.",
+        "Story": "No story",
+        "Genres": [
+            "Co-op", " Survival", " Shooter"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (800,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "25",
+        "Name": "Unturned",
+        "Release date": "07.07.2017",
+        "Description": "Unturned is a free-to-play zombie survival game with a focus on exploration, crafting, and building in a blocky world.",
+        "Story": "No story",
+        "Genres": [
+            "Survival", " Sandbox", " Multiplayer", " Survival"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (600,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "26",
+        "Name": "Phasmophobia",
+        "Release date": "09.18.2020",
+        "Description": "Phasmophobia is a horror co-op game where players take on the role of paranormal investigators trying to gather evidence of ghostly activity.",
+        "Story": "No story",
+        "Genres": [
+            "Horror", " Co-op"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (500,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "27",
+        "Name": "Elden Ring",
+        "Release date": "02.25.2022",
+        "Description": "Elden Ring is an open-world action RPG set in a vast, dark fantasy world, developed by FromSoftware and George R.R. Martin.",
+        "Story": "50-70 hours",
+        "Genres": [
+            "Action","RPG", " Open World", " Fantasy"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (600,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "28",
+        "Name": "iRacing",
+        "Release date": "08.26.2008",
+        "Description": "iRacing is an online racing simulator that offers realistic driving physics, licensed cars, and global competitions.",
+        "Story": "No story",
+        "Genres": [
+            "Racing", " Simulator"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (50,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "29",
+        "Name": "Among Us",
+        "Release date": "06.15.2018",
+        "Description": "Among Us is a multiplayer social deduction game where players work together to complete tasks while impostors attempt to sabotage them.",
+        "Story": "No story",
+        "Genres": [
+            "Strategy", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (600,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "30",
+        "Name": "ARK: Survival Evolved",
+        "Release date": "08.29.2017",
+        "Description": "ARK: Survival Evolved is a multiplayer survival game where players must hunt, gather resources, and tame dinosaurs on a mysterious island.",
+        "Story": "No story",
+        "Genres": [
+            "Survival", " Open World", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mostly Positive (450,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "31",
+        "Name": "Destiny 2",
+        "Release date": "09.06.2017",
+        "Description": "Destiny 2 is a free-to-play online multiplayer first-person shooter that combines PvE and PvP elements in a shared world.",
+        "Story": "50-60 hours (base game)",
+        "Genres": [
+            "Shooter", " MMO", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mostly Positive (650,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "32",
+        "Name": "EVE Online",
+        "Release date": "05.06.2003",
+        "Description": "EVE Online is a massive multiplayer online space game with a focus on player-driven economy, space battles, and exploration.",
+        "Story": "No story",
+        "Genres": [
+            "MMO", " Simulator", " Multiplayer", " Space"
+        ],
+        "Price": {
+            "site1": "Free to Play",
+            "link": "https://www.eveonline.com/"
+        },
+        "Rating": "Mostly Positive (400,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "33",
+        "Name": "Counter Strike 2",
+        "Release date": "09.27.2023",
+        "Description": "Counter Strike 2 is the latest iteration of the popular team-based first-person shooter, focusing on bomb planting and defusal scenarios.",
+        "Story": "No story",
+        "Genres": [
+            "Shooter", " Multiplayer", " Singleplayer"
+        ],
+        "Price": {
+            "site1": "Free to Play",
+            "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+        },
+        "Rating": "Mixed (150,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "34",
+        "Name": "Euro Truck Simulator 2",
+        "Release date": "10.19.2012",
+        "Description": "Euro Truck Simulator 2 is a truck-driving simulation where players transport cargo across Europe, enjoying scenic landscapes and managing logistics.",
+        "Story": "No story",
+        "Genres": [
+            "Simulation", " Driving"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (500,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "35",
+        "Name": "F1 24",
+        "Release date": "TBA 2024",
+        "Description": "F1 24 is the latest installment in the official Formula 1 video game series, featuring all teams, drivers, and circuits from the 2024 FIA Formula One World Championship.",
+        "Story": "TBD",
+        "Genres": [
+            "Racing", " Simulator", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "N/A",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "36",
+        "Name": "F1 23",
+        "Release date": "06.16.2023",
+        "Description": "F1 23 is the official video game of the FIA Formula One World Championship, featuring a more realistic driving experience and updated content.",
+        "Story": "TBD",
+        "Genres": [
+            "Racing","Simulator", " Multiplayer", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (10,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "37",
+        "Name": "Mafia: Definitive Edition",
+        "Release date": "09.25.2020",
+        "Description": "Mafia: Definitive Edition is a remake of the classic 2002 game, set in the 1930s, focusing on the story of Tommy Angelo and his journey in the mafia.",
+        "Story": "10-15 hours",
+        "Genres": [
+            "Action", " Adventure", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (50,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "38",
+        "Name": "Shadow of the Tomb Raider",
+        "Release date": "09.14.2018",
+        "Description": "Shadow of the Tomb Raider is an action-adventure game that follows Lara Croft as she attempts to save the world from a Mayan apocalypse.",
+        "Story": "20-30 hours",
+        "Genres": [
+            "Action", " Adventure", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (100,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "39",
+        "Name": "Tomb Raider",
+        "Release date": "03.05.2013",
+        "Description": "Tomb Raider is an action-adventure game that reboots the series, focusing on the origin story of Lara Croft as she survives on a mysterious island.",
+        "Story": "10-12 hours",
+        "Genres": [
+            "Action", " Adventure", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (200,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "40",
+        "Name": "Rise of the Tomb Raider™",
+        "Release date": "10.11.2016",
+        "Description": "Rise of the Tomb Raider is an action-adventure game that continues Lara Croft's story as she searches for the legendary city of Kitezh.",
+        "Story": "12-15 hours",
+        "Genres": [
+            "Action", " Adventure", " Singleplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (100,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "41",
+        "Name": "Dirt Rally 2.0",
+        "Release date": "02.26.2019",
+        "Description": "Dirt Rally 2.0 is a racing simulation game that focuses on off-road rally racing with realistic physics and challenging tracks.",
+        "Story": "No story",
+        "Genres": [
+            "Racing", " Simulator", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (50,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "42",
+        "Name": "Dirt 5",
+        "Release date": "11.06.2020",
+        "Description": "Dirt 5 is an off-road racing game that offers a mix of fun, arcade-style racing and a variety of environments and vehicles.",
+        "Story": "No story",
+        "Genres": [
+            "Racing", " Arcade", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Mostly Positive (20,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "43",
+        "Name": "Assetto Corsa",
+        "Release date": "12.19.2014",
+        "Description": "Assetto Corsa is a racing simulator that provides a realistic driving experience with a focus on physics, car handling, and customization.",
+        "Story": "No story",
+        "Genres": [
+            "Racing", " Simulator", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (50,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "44",
+        "Name": "Assetto Corsa Competizione",
+        "Release date": "05.29.2019",
+        "Description": "Assetto Corsa Competizione is the official GT World Challenge game, featuring realistic racing and a dynamic weather system.",
+        "Story": "No story",
+        "Genres": [
+            "Racing", " Simulatior", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (15,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "45",
+        "Name": "Project Zomboid",
+        "Release date": "11.08.2013",
+        "Description": "Project Zomboid is an open-world zombie survival game where players must scavenge for food, build defenses, and survive against the undead.",
+        "Story": "No story",
+        "Genres": [
+            "Survival", " Singleplayer", " Multiplayer", " Open World"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (50,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "46",
+        "Name": "Lethal Company",
+        "Release date": "10.26.2022",
+        "Description": "Lethal Company is a multiplayer horror game where players work together to escape a haunted building filled with terrifying creatures.",
+        "Story": "No story",
+        "Genres": [
+            "Horror", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (10,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "47",
+        "Name": "Forza Horizon 5",
+        "Release date": "11.09.2021",
+        "Description": "Forza Horizon 5 is an open-world racing game set in Mexico, featuring diverse environments and a wide variety of vehicles.",
+        "Story": "No story",
+        "Genres": [
+            "Racing", " Open World", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Overwhelmingly Positive (200,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
+    },
+    {
+        "ID": "48",
+        "Name": "Call of Duty: Modern Warfare",
+        "Release date": "10.25.2019",
+        "Description": "Call of Duty: Modern Warfare is a first-person shooter that reboots the iconic series, featuring a gripping single-player campaign and robust multiplayer modes.",
+        "Story": "6-10 hours",
+        "Genres": [
+            "Shooter", " Action", " Singleplayer", " Multiplayer"
+        ],
+        "Price": [
+            {"Steam": "Free to Play",
+            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
+            {"Microsoft": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
+            {"Epic Games": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    ],
+        "Rating": "Very Positive (150,000+)",
+        "Image": [
+            "./pictures/kep.png"
+        ]
     }
 ]
