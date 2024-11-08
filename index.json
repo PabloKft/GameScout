@@ -23,7 +23,7 @@
         ],
         "Sale":[
             {
-                "IsOnSale": False, "Amount": 0
+                "IsOnSale": false, "Amount": 0
             }
         ]
     },
