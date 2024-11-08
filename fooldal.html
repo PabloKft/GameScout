@@ -11,21 +11,36 @@
     <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/40786368ae.js" crossorigin="anonymous"></script>
 
-    <style>
-        .col-12 {
-            border: red 3px solid;
-            text-align: center;
-        }
-
+    <style>        
         .moreGames {
             color: white;
         }
 
         .moreGames:hover {
-            background-color: blue;
+            color:rgb(0, 204, 255);
             cursor: pointer;
-            text-decoration: underline;
         }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid gray;
+        }
+
+        .separator:not(:empty)::before {
+            margin-right: .25em;
+        }
+
+        .separator:not(:empty)::after {
+            margin-left: .25em;
+        }        
     </style>
 </head>
 
@@ -52,40 +67,37 @@
             </nav>
         </div>
         <br>
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 style="text-align: left;">On Sale</h2>
                     <div id="data-container" class="data-container">
                     </div>
-                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html" class="moreGames"
-                        target="_blank">More Games</a>
-                    <hr>
-
+                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
+                        class="moreGames separator" target="_blank">More Games</a>
                 </div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 style="text-align: left;">Popular</h2>
                     <div id="data-container" class="data-container">
                     </div>
-                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html" class="moreGames"
-                        target="_blank">More Games</a>
-                    <hr>
+                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
+                        class="moreGames separator" target="_blank">More Games</a>
                 </div>
             </div>
         </div>
 
 
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 style="text-align: left;" >News</h2>
+                    <h2 style="text-align: left;">News</h2>
                     <div id="data-container" class="data-container">
                     </div>
                 </div>
