@@ -175,7 +175,7 @@
         ],
         "Sale":[
             {
-                "IsOnSale": True, "Amount": 25
+                "IsOnSale": true, "Amount": 25
             }
         ]
     },
