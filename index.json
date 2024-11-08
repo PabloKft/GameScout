@@ -23,7 +23,7 @@
         ],
         "Sale":[
             {
-                "IsOnSale": true, "Amount": 35
+                "IsOnSale": False, "Amount": 0
             }
         ]
     },
@@ -175,7 +175,7 @@
         ],
         "Sale":[
             {
-                "IsOnSale": false, "Amount": 0
+                "IsOnSale": True, "Amount": 25
             }
         ]
     },
