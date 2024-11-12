@@ -9,29 +9,37 @@
             "Cross Platform", " Multiplayer", " Singleplayer", " Competitve"
         ],
         "Console" : [
-            "PC",
-            "Xbox",
-            "PS"
+            "PS4", "Nintendo Switch", "Xbox One", "GeForce Now", "Linux", "Windows", "Mac OS"
         ],
-        "Price": {
-            "Epic Games": "Free to Play",
-            "link": "https://www.rocketleague.com/"
-        },
+        "Price": [
+            {"Platform":"PC",
+            "Price": "Free to Play",
+            "link": "https://store.epicgames.com/en-US/p/rocket-league"},
+            {"Platform":"XBOX",
+            "Price": "Free to Play",
+            "link":"https://www.xbox.com/hu-HU/games/store/rocket-league/C125W9BG2K0V"},
+            {"Platform":"PS",
+            "Price":"Free to Play",
+            "link":"https://www.playstation.com/en-hu/games/rocket-league/"}
+        ],
         "Rating": "4.4/5 Epic Games",
         "Image": [
-            "./pictures/RL_Logo.jpg"
+                "./pictures/RL_Logo.jpg",
+                "./pictures/RL_Pic1.jpg",
+                "./pictures/ER_Pic2.jpg",
+                "./pictures/ER_Pic3.jpg",
+                "./pictures/ER_Pic4.jpg",
+                "./pictures/ER_Pic5.jpg",
+                "./pictures/ER_Pic6.jpg"
         ],
-        "Sale":[
-            {
-                "IsOnSale": false, "Amount": 0
-            }
-        ]
+        "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "2",
         "Name": "Dredge",
         "Release date": "03.30.2023",
-        "Description": "DREDGE is a single-player fiDREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.shing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.",
+        "Description": "DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.",
         "Story": "18 hours",
         "Genres": [
             "Adventure", " Horror", " RPG", " Simulator", " Action"
@@ -52,19 +60,22 @@
         ],
         "Rating": "Overwhelmingly Positive (40,000+)",
         "Image": [
-            "./pictures/dredge_Logo.png"
-        ],
-        "Sale":[
-            {
-                "IsOnSale": true, "Amount": 70
-            }
-        ]
+            "./pictures/Dredge_Logo.png",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale":[{"IsOnSale": true, "Amount": 70}]
     },
     {
         "ID": "3",
         "Name": "SimCity",
         "Release date": "03.05.2013",
-        "Description": "SimCity is a city-building simulation game where players design and manage their own cities, balancing economics, zoning, and disaster responses.",
+        "Description": "Be the hero of your very own city as you design and create a beautiful, bustling metropolis in SimCity BuildIt, the most popular city builder on mobile, and other SimCity games. Every decision is yours as your city gets larger and more intricate. Make smart choices to keep your citizens happy and your skyline growing. Build your way to extraordinary.",
         "Story": "No story",
         "Genres": [
             "Simulation", " Strategy"
@@ -74,30 +85,33 @@
         ],
         "Price": [
             {"Platform":"PC",
-            "Price": "$24.99",
-            "link": "https://store.steampowered.com/app/1562430/DREDGE/"},
-            {"Platform": "XBOX",
-            "Price" : "$24.99",
-            "link" : "https://www.xbox.com/en-US/games/store/dredge/9MSVVM5NS9L6"},
-            {"Platform": "PS",
-            "Price" : "$24.99",
-            "link" : "https://store.playstation.com/en-us/product/UP4064-PPSA09077_00-0441220012296936"}
-        ],
+            "Price": "$29.99",
+            "link":"https://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/"},
+            {"Platform":"PC",
+            "Price": "$29.99",
+            "link":"https://store.epicgames.com/en-US/p/cities-skylines"},
+            {"Platform":"PC",
+            "Price": "$39.99",
+            "link":"https://www.ea.com/games/simcity"}
+    ],
         "Rating": "Mixed (50,000+)",
         "Image": [
-            "./pictures/SC_Logo.jfif"
-        ],
-        "Sale":[
-            {
-                "IsOnSale": true, "Amount": 35
-            }
-        ]
+            "./pictures/SC_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale":[{"IsOnSale": true, "Amount": 35}]
     },
     {
         "ID": "4",
         "Name": "GTA V",
         "Release date": "09.17.2013",
-        "Description": "Grand Theft Auto V is an open-world action-adventure game featuring a massive city and multiple storylines with rich characters and criminal activities.",
+        "Description": "When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other.",
         "Story": "50-60 hours",
         "Genres": [
             "Action", " Open World", " Multiplayer", " Singleplayer", " Shooter", " Racing", " Cross Platform"
@@ -108,271 +122,363 @@
             "PS"
         ],
         "Price": [
-            {"Steam": "$29.99",
+            {"Platform": "PC",
+            "Price": "$29.99",
             "link":"https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/"},
-            {"Epic Games": "$29.99",
+            {"Platform": "PC",
+            "Price": "$29.99",
             "link":"https://store.epicgames.com/en-US/p/grand-theft-auto-v"},
-            {"Microsoft": "$39.99",
+            {"Platform": "XBOX",
+            "Price": "$39.99",
             "link":"https://www.xbox.com/en-US/games/store/grand-theft-auto-v-xbox-series-xs/9NXMBTB02ZSF"}
     ],
         "Rating": "Overwhelmingly Positive (1,000,000+)",
         "Image": [
-            "./pictures/GTAV_Logo.jpeg"
-        ],
-        "Sale":[
-            {
-                "IsOnSale": true, "Amount": 10
-            }
-        ]
+            "./pictures/GTAV_Logo.jpeg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale":[{"IsOnSale": true, "Amount": 10}]
     },
     {
         "ID": "5",
         "Name": "PUBG",
         "Release date": "12.20.2017",
-        "Description": "PlayerUnknown's Battlegrounds is a battle royale shooter where 100 players compete to be the last person standing.",
+        "Description": "LAND, LOOT, SURVIVE! Play PUBG: BATTLEGROUNDS for free. Land on strategic locations, loot weapons and supplies, and survive to become the last team standing across various, diverse Battlegrounds. Squad up and join the Battlegrounds for the original Battle Royale experience that only PUBG: BATTLEGROUNDS can offer.",
         "Story": "No story",
         "Genres": [
             "Battle Royale", " Shooter", " Multiplayer"
         ],
+        "Console" : [
+            "Android", "PS4", "Windows", "Xbox One", "Xbox Series X/S"
+        ],
         "Price": [
-            {"Steam": "Free to Play",
+            {"Platform": "PC",
+            "Price": "Free to Play",
             "link": "https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/"},
-            {"Microsoft": "Free to Play",
+            {"Platform": "XBOX",
+            "Price": "Free to Play",
             "link":"https://www.xbox.com/hu-HU/games/store/pubg-battlegrounds/C0MN5DN8KR3F"},
-            {"Epic Games": "Free to Play",
+            {"Platform": "PC",
+            "Price": "Free to Play",
             "link": "https://store.epicgames.com/en-US/p/pubg-59c1d9"}
     ],
         "Rating": "Very Positive (1,200,000+)",
         "Image": [
             "./pictures/PUBG_Logo.jpg"
         ],
-        "Sale":[
-            {
-                "IsOnSale": true, "Amount": 95
-            }
-        ]
+        "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "6",
         "Name": "The Sims 4",
         "Release date": "09.02.2014",
-        "Description": "The Sims 4 is a life simulation game where players create and control people in a virtual world, customizing their lives, homes, and stories.",
+        "Description": "The Sims 4 is a social simulation game, like preceding titles in The Sims series. The game is open-ended, with no primary objectives to achieve, or storyline to complete, and instead encourages gameplay through experimentation or creativity.",
         "Story": "No story",
         "Genres": [
             "Simulator", " Singleplayer"
         ],
+        "Console" : [
+            "PS4", "Windows", "Xbox one", "Mac OS"
+        ],
         "Price": [
-            {"Steam": "Free to Play",
+            {"Platform": "PC",
+            "Price": "Free to Play",
             "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
+            {"Platform": "XBOX",
+            "Price": "Free to Play",
             "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+            {"Platform": "PS",
+            "Price": "Free to Play",
+            "link": "https://www.playstation.com/en-hu/games/the-sims-4/"}
     ],
         "Rating": "Mostly Positive (350,000+)",
         "Image": [
-            "./pictures/TS4_Logo.jpg"
-        ],
-        "Sale":[
-            {
-                "IsOnSale": true, "Amount": 25
-            }
-        ]
+            "./pictures/TS4_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "7",
         "Name": "American Truck Simulator",
         "Release date": "02.02.2016",
-        "Description": "American Truck Simulator is a truck driving simulation game where players transport cargo across the USA, enjoying scenic views and realistic driving physics.",
+        "Description": "Experience legendary American trucks and deliver various cargoes across sunny California, sandy Nevada, and the Grand Canyon State of Arizona. American Truck Simulator takes you on a journey through the breathtaking landscapes and widely recognized landmarks around the States. Game mechanics are based on the highly successful model from Euro Truck Simulator 2 and have been expanded with new features, creating the most captivating game experience from SCS Software. American Truck Simulator puts you in the seat of a driver for hire entering the local freight market, making you work your way up to become an owner-operator, and go on to create one of the largest transportation companies in the United States.",
         "Story": "No story",
         "Genres": [
             "Simulator", " Driving"
         ],
+        "Console" : [
+           "Windows", "Geforce now", "Linux", "Mac OS"
+        ],
         "Price": [
-            {"Steam": "$19.99",
+            {"Platform": "PC",
+            "Price": "$19.99",
             "link": "https://store.steampowered.com/app/270880/American_Truck_Simulator/"}
 
     ],
         "Rating": "Overwhelmingly Positive (200,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/ATS_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+        
     },
     {
         "ID": "8",
         "Name": "FC 25",
         "Release date": "09.29.2023",
-        "Description": "FC 25 (formerly known as FIFA) is a football simulation game with realistic graphics, controls, and licensed teams from around the world.",
+        "Description": "Introducing Club Membership – the next phase of loyalty in EA SPORTS FC™ 25. Available to fans that have played EA SPORTS FC™ 24 before 27 September 2024 and play EA SPORTS FC™ 25 before November 1st, 2024*. FC 25 Club Members will receive a host of exclusive benefits across the year, including a badge and kit to represent their status and rewards across all your favourite game modes. .Once again, all Founders will be able to unlock their Founders exclusive cosmetic items.",
         "Story": "No story",
-        "Genres": [
-            "Sports", " Simulator", " Multiplayer", " Singleplayer"
+        "Genres": ["Sports", "Simulator", "Multiplayer", "Singleplayer"],
+        "Console" : [
+            "Windows"
         ],
         "Price": [
-            {"EA": "$69.99",
+            {"Platform": "PC", 
+            "Price": "$69.99", 
             "link": "https://www.ea.com/games/ea-sports-fc/fc-25"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "XBOX", 
+            "Price": "$69.99", 
+            "link": "https://www.xbox.com/hu-HU/games/ea-sports-fc-25"},
+            {"Platform": "PS", 
+            "Price": "$69.99", 
+            "link": "https://www.playstation.com/hu-hu/games/ea-sports-fc/"}
+        ],
         "Rating": "Mostly Positive (25,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/FC25_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+        "ClickCount": 0,  
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "9",
         "Name": "Cyberpunk 2077",
         "Release date": "12.10.2020",
-        "Description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in Night City, a megalopolis obsessed with power, glamour, and body modification.",
+        "Description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?",
         "Story": "25-40 hours",
-        "Genres": [
-            "Action", " RPG", " Open World", " Singleplayer"
+        "Genres": ["Action", "RPG", "Open World", "Singleplayer"],
+        "Console" : [
+           "PS5", "PS4", "Xbox Series X/S", "Xbox One", "GeForce Now", "Windows", "Google Stadia"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform":"PC","Price": "$59.99", "link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/"},
+            {"Platform": "XBOX", "Price": "$59.99", "link": "https://www.xbox.com/hu-HU/games/store/cyberpunk-2077/BX3M8L83BBRW"},
+            {"Platform": "PS", "Price": "$59.99", "link": "https://www.playstation.com/en-hu/games/cyberpunk-2077/"}
+        ],
         "Rating": "Very Positive (600,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/CP2077_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": true, "Amount": 50}]
     },
     {
         "ID": "10",
         "Name": "Minecraft",
         "Release date": "11.18.2011",
-        "Description": "Minecraft is a sandbox survival game where players explore, build, and survive in a blocky, procedurally generated 3D world.",
+        "Description": "Build anything you can imagine, uncover eerie mysteries, and survive the night in the ultimate sandbox game. In Minecraft, every playthrough is different, and unforgettable adventures await behind every corner. Explore and craft your way through an infinite world that’s yours to shape, one block at a time.",
         "Story": "No story",
-        "Genres": [
-            "Sandbox", " Survival", " Singleplayer", " Multiplayer"
+        "Genres": ["Sandbox", "Survival", "Singleplayer", "Multiplayer"],
+        "Console" : [
+          "Nintendo Switch", "Xbox One", "PS5", "PS4", "PS3", "PS Vita", "iOS", "Windows", "Android", "Linux", "Xbox 360", "Xbox Series X/S", "Apple TV", "Mac OS"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", 
+            "Price": "$29.99", 
+            "link": "https://www.xbox.com/en-US/games/store/minecraft-for-windows/9nblggh2jhxj"},
+            {"Platform": "XBOX", 
+            "Price": "$29.99", 
+            "link": "https://www.xbox.com/hu-HU/games/store/minecraft/9mvxmvt8zkwc"},
+            {"Platform": "PS", 
+            "Price": "$29.99", 
+            "link": "https://www.playstation.com/en-hu/games/minecraft/"}
+
+        ],
         "Rating": "Overwhelmingly Positive (1,000,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/MC_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "11",
         "Name": "Star Wars Battlefront II",
         "Release date": "11.17.2017",
-        "Description": "Star Wars Battlefront II is an action shooter game featuring large-scale multiplayer battles and a single-player campaign set in the Star Wars universe.",
+        "Description": "Be the hero in the ultimate Star Wars™ battle fantasy with Star Wars™ Battlefront™ II: Celebration Edition! Get Star Wars Battlefront II and the complete collection of customization content acquirable through in-game purchase from launch up to — and including — items inspired by Star Wars™: THE RISE OF SKYWALKER™*.",
         "Story": "5-6 hours",
-        "Genres": [
-            "Action", " Shooter", " Multiplayer"
+        "Genres": ["Action", "Shooter", "Multiplayer"],
+        "Console" : [
+           "PS4", "Xbox One", "Windows", "GeForce Now", "Xbox Cloud Gaming"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$39.99", "link": "https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/"},
+            {"Platform": "XBOX", "Price": "$39.99", "link": "https://www.xbox.com/hu-HU/games/store/star-wars-battlefront-ii/C0GWTPD0S8S1"},
+            {"Platform": "PS", "Price": "$39.99", "link": "https://www.playstation.com/hu-hu/games/star-wars-battlefront-ii/"}
+         
+        ],
         "Rating": "Very Positive (200,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/SWB2_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "12",
         "Name": "Battlefield V",
         "Release date": "11.20.2018",
-        "Description": "Battlefield V is a first-person shooter game set during World War II, focusing on large-scale battles and tactical team-based gameplay.",
+        "Description": "This is the ultimate Battlefield V experience. Enter mankind’s greatest conflict across land, air, and sea with all gameplay content unlocked from the get-go. Choose from the complete arsenal of weapons, vehicles, and gadgets, and immerse yourself in the hard-fought battles of World War II. Stand out on the battlefield with the complete roster of Elites and the best customization content of Year 1 and Year 2.",
         "Story": "8-10 hours",
-        "Genres": [
-            "Action", " Shooter", " Singleplayer", " Multiplayer"
+        "Genres": ["Action", "Shooter", "Singleplayer", "Multiplayer"],
+        "Console" : [
+           "PS4", "Xbox One", "Windows", "Xbox Cloud Gaming", "GeForce Now"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$49.99", "link": "https://store.steampowered.com/app/1238810/Battlefield_V/"},
+            {"Platform": "XBOX", "Price": "$49.99", "link": "https://www.xbox.com/hu-HU/games/store/battlefield-v/bz2n7tq0xcf2"},
+            {"Platform": "PS", "Price": "$49.99", "link": "https://www.playstation.com/en-hu/games/battlefield-v/"}
+          
+        ],
         "Rating": "Mostly Positive (100,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/BF5_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": true, "Amount": 75}]
     },
     {
         "ID": "13",
         "Name": "Subnautica",
         "Release date": "01.23.2018",
-        "Description": "Subnautica is an open-world survival game where players explore an alien underwater world, crafting tools and exploring the deep sea to survive.",
+        "Description": "Subnautica is an underwater adventure game set on an alien ocean planet. A massive, open world full of wonder and peril awaits you! You have crash-landed on an alien ocean world, and the only way to go is down. Subnautica's oceans range from sun drenched shallow coral reefs to treacherous deep-sea trenches, lava fields, and bio-luminescent underwater rivers. Manage your oxygen supply as you explore kelp forests, plateaus, reefs, and winding cave systems. The water teems with life: Some of it helpful, much of it harmful.",
         "Story": "30-40 hours",
-        "Genres": [
-            "Survival", " Adventure", " Open World", " Singleplayer"
+        "Genres": ["Survival", "Adventure", "Open World", "Singleplayer"],
+        "Console" : [
+          "PS5", "PS4", "Nintendo Switch", "Xbox One", "GeForce Now", "Xbox Series X/S", "Windows", "Mac OS"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$29.99", "link": "https://store.steampowered.com/app/264710/Subnautica/"},
+            {"Platform": "XBOX", "Price": "$29.99", "link": "https://www.xbox.com/hu-HU/games/store/subnautica/BX3S1Q5DVHRD"},
+            {"Platform": "PS", "Price": "$29.99", "link": "https://www.playstation.com/hu-hu/games/subnautica/"}
+        ],
         "Rating": "Overwhelmingly Positive (400,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/SUB_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "14",
         "Name": "Red Dead Redemption 2",
         "Release date": "11.05.2019",
-        "Description": "Red Dead Redemption 2 is an open-world action-adventure game set in the late 1800s, focusing on the story of outlaw Arthur Morgan and the Van der Linde gang.",
+        "Description": "America, 1899. Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.",
         "Story": "60-80 hours",
-        "Genres": [
-            "Action", " Open World", " Singleplayer"
+        "Genres": ["Action", "Open World", "Singleplayer"],
+        "Console" : [
+           "PS4", "Xbox One", "Google Stadia", "Windows"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$59.99", "link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"},
+            {"Platform": "XBOX", "Price": "$59.99", "link": "https://www.xbox.com/hu-HU/games/store/red-dead-redemption-2/bpswgqbw7r3g"},
+            {"Platform": "PS", "Price": "$59.99", "link": "https://www.playstation.com/hu-hu/games/red-dead-redemption-2/"}
+        ],
         "Rating": "Overwhelmingly Positive (500,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/RDR2_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": true, "Amount": 67}]
     },
     {
         "ID": "15",
         "Name": "Black Myth: Wukong",
         "Release date": "TBA 2024",
-        "Description": "Black Myth: Wukong is an action RPG based on the Chinese mythology 'Journey to the West', featuring fast-paced combat and stunning visuals.",
+        "Description": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. The story is based on Journey to the West, one of the Four Great Classical Novels of Chinese literature. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.",
         "Story": "TBD",
-        "Genres": [
-            "Action", " Fantasy", " RPG", " Singleplayer"
+        "Genres": ["Action", "Fantasy", "RPG", "Singleplayer"],
+        "Console" : [
+            "PS5"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PS", "Price": "$59.99", "link": "https://www.playstation.com/en-hu/games/black-myth-wukong/"}
+        ],
         "Rating": "N/A",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/BMW_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "16",
@@ -380,21 +486,27 @@
         "Release date": "08.12.2022",
         "Description": "Marvel’s Spider-Man Remastered is an action-packed open-world game where players swing through New York as Spider-Man, stopping crime and uncovering a larger conspiracy.",
         "Story": "15-20 hours",
-        "Genres": [
-            "Action", " Open World", " Singleplayer"
+        "Genres": ["Action", "Open World", "Singleplayer"],
+        "Console" : [
+            "Windows", " Nintendo Switch", " PS4", " PS5", " Xbox One", " Xbox X/S"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$49.99", "link": "https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/"},
+            {"Platform": "PS", "Price": "$49.99", "link": "https://www.playstation.com/en-hu/games/marvels-spider-man-remastered/pc/"},
+            {"Platform": "PC", "Price": "$49.99", "link": "https://store.epicgames.com/en-US/p/marvels-spider-man-remastered"}
+        ],
         "Rating": "Overwhelmingly Positive (150,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/MSMR_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "17",
@@ -402,21 +514,27 @@
         "Release date": "10.04.2022",
         "Description": "Overwatch 2 is a team-based shooter set in the near future, where players battle in 5v5 matches using unique heroes with special abilities.",
         "Story": "No story",
-        "Genres": [
-            "Shooter", " Multiplayer", " Singleplayer", " Fantasy"
+        "Genres": ["Shooter", "Multiplayer", "Singleplayer", "Fantasy"],
+        "Console" : [
+           "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch", "Windows"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/2357570/Overwatch_2/"},
+            {"Platform": "XBOX", "Price": "Free to Play", "link": "https://www.xbox.com/hu-HU/games/store/overwatch-2/C1C4DZJPBC2V"},
+            {"Platform": "PS", "Price": "Free to Play", "link": "https://www.playstation.com/hu-hu/games/overwatch/"}
+        ],
         "Rating": "Mixed (250,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/OW2_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "18",
@@ -424,17 +542,25 @@
         "Release date": "07.21.2017",
         "Description": "Fortnite is a free-to-play Battle Royale game with various game modes, allowing players to build structures and battle against others for survival.",
         "Story": "No story",
-        "Genres": [
-            "Battle Royale", " Survival", " Multiplayer", " Singleplayer", " Competitve"
+        "Genres": ["Battle Royale", "Survival", "Multiplayer", "Singleplayer", "Competitive"],
+        "Console" : [
+            "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch", "Windows", "Mac OS", "Mobile (iOS, Android)"
         ],
-        "Price": {
-            "site1": "Free to Play",
-            "link": "https://www.epicgames.com/fortnite/en-US/home"
-        },
+        "Price": [
+            {"Platform": "PC", "Price": "Free to Play", "link": "https://www.epicgames.com/fortnite/en-US/home"}
+        ],
         "Rating": "Very Positive (500,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/FN_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "19",
@@ -442,21 +568,25 @@
         "Release date": "06.06.2016",
         "Description": "Hearts of Iron IV is a grand strategy game where players control any nation during World War II and lead them to victory.",
         "Story": "No story",
-        "Genres": [
-            "Strategy", " War", " Singleplayer", " Multiplayer", " Co-op"
+        "Genres": ["Strategy", "War", "Singleplayer", "Multiplayer", "Co-op"],
+        "Console" : [
+           "Windows", "Mac OS", "Linux"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$39.99", "link": "https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/"}
+        ],
         "Rating": "Very Positive (100,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/HOI4_Logo.jpg_large",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": true, "Amount": 60}]
     },
     {
         "ID": "20",
@@ -464,21 +594,25 @@
         "Release date": "10.25.2016",
         "Description": "Hide and Shriek is a multiplayer horror game where two players try to scare each other using traps and spells in a spooky school setting.",
         "Story": "No story",
-        "Genres": [
-            "Horror", " Multiplayer"
+        "Genres": ["Horror", "Multiplayer"],
+        "Console" : [
+            "Windows"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/480430/Hide_and_Shriek/"}
+        ],
         "Rating": "Mostly Positive (2,300+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/HnS_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "21",
@@ -486,21 +620,26 @@
         "Release date": "02.16.2016",
         "Description": "Layers of Fear is a psychological horror game focusing on exploration and a disturbing narrative set in a painter’s deteriorating mind.",
         "Story": "5-6 hours",
-        "Genres": [
-            "Horror", " Adventure", " Singleplayer"
+        "Genres": ["Horror", "Adventure", "Singleplayer"],
+        "Console" : [
+            "PS4", "Xbox One", "Nintendo Switch", "Windows"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/391720/Layers_of_Fear/"},
+            {"Platform": "PC", "Price": "$19.99", "link": "https://store.epicgames.com/en-US/p/layers-of-fear"}
+        ],
         "Rating": "Very Positive (20,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/LoF_Logo.png",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "22",
@@ -508,21 +647,25 @@
         "Release date": "01.30.2015",
         "Description": "Life is Strange is an episodic adventure game that tells the story of Max Caulfield, a photography student who discovers the ability to rewind time.",
         "Story": "15-20 hours",
-        "Genres": [
-            "Adventure", " Singleplayer", " Fantasy"
+        "Genres": ["Adventure", "Singleplayer", "Fantasy"],
+        "Console" : [
+            "PS4", "Xbox One", "Nintendo Switch", "Windows", "Mac OS"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/"}
+        ],
         "Rating": "Overwhelmingly Positive (150,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/LiS_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": true, "Amount": 80}]
     },
     {
         "ID": "23",
@@ -530,21 +673,25 @@
         "Release date": "10.12.2021",
         "Description": "Poppy Playtime is a horror puzzle adventure where players explore an abandoned toy factory while avoiding the deadly Huggy Wuggy.",
         "Story": "3-4 hours",
-        "Genres": [
-            "Horror", " Puzzle", " Singleplayer"
+        "Genres": ["Horror", "Puzzle", "Singleplayer"],
+        "Console" : [
+            "Windows"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$4.99", "link": "https://store.steampowered.com/app/1721470/Poppy_Playtime/"}
+        ],
         "Rating": "Very Positive (30,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/PP_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "24",
@@ -552,21 +699,25 @@
         "Release date": "11.17.2009",
         "Description": "Left 4 Dead 2 is a co-op zombie survival game where players team up to fight hordes of zombies across various campaigns.",
         "Story": "No story",
-        "Genres": [
-            "Co-op", " Survival", " Shooter"
+        "Genres": ["Co-op", "Survival", "Shooter"],
+        "Console" : [
+           "Xbox 360", "Windows", "Mac OS", "Linux"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$9.99", "link": "https://store.steampowered.com/app/550/Left_4_Dead_2/"}
+        ],
         "Rating": "Overwhelmingly Positive (800,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/L4D2_Logo.jfif",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "25",
@@ -574,21 +725,25 @@
         "Release date": "07.07.2017",
         "Description": "Unturned is a free-to-play zombie survival game with a focus on exploration, crafting, and building in a blocky world.",
         "Story": "No story",
-        "Genres": [
-            "Survival", " Sandbox", " Multiplayer", " Survival"
+        "Genres": ["Survival", "Sandbox", "Multiplayer"],
+        "Console" : [
+            "Windows", "Mac OS", "Linux"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/304930/Unturned/"}
+        ],
         "Rating": "Very Positive (600,000+)",
         "Image": [
-            "./pictures/kep.png"
-        ]
+            "./pictures/Unturned_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
         "ID": "26",
@@ -596,496 +751,699 @@
         "Release date": "09.18.2020",
         "Description": "Phasmophobia is a horror co-op game where players take on the role of paranormal investigators trying to gather evidence of ghostly activity.",
         "Story": "No story",
-        "Genres": [
-            "Horror", " Co-op"
+        "Genres": ["Horror", "Co-op"],
+        "Console" : [
+           "Windows"
         ],
         "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
+            {"Platform": "PC", "Price": "$13.99", "link": "https://store.steampowered.com/app/739630/Phasmophobia/"}
+        ],
         "Rating": "Overwhelmingly Positive (500,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
+        "Image": ["./pictures/Phasmo_Logo.jpg_large"],
+        "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
-    {
-        "ID": "27",
-        "Name": "Elden Ring",
-        "Release date": "02.25.2022",
-        "Description": "Elden Ring is an open-world action RPG set in a vast, dark fantasy world, developed by FromSoftware and George R.R. Martin.",
-        "Story": "50-70 hours",
-        "Genres": [
-            "Action","RPG", " Open World", " Fantasy"
+    
+        {
+            "ID": "27",
+            "Name": "Elden Ring",
+            "Release date": "02.25.2022",
+            "Description": "Elden Ring is an open-world action RPG set in a vast, dark fantasy world, developed by FromSoftware and George R.R. Martin.",
+            "Story": "50-70 hours",
+            "Genres": [
+                "Action", "RPG", "Open World", "Fantasy"
+            ],
+            "Console" : [
+             "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows"
+            ],
+            "Price": [
+                {"Platform": "PC", "Price": "$59.99", "link": "https://store.steampowered.com/app/1245620/Elden_Ring/"},
+                {"Platform": "XBOX", "Price": "$59.99", "link": "https://www.xbox.com/en-US/games/store/elden-ring/9p4lbzpncbvc"},
+                {"Platform": "PS", "Price": "$59.99", "link": "https://www.playstation.com/en-hu/games/elden-ring/"}
+
+            ],
+            "Rating": "Overwhelmingly Positive (600,000+)",
+            "Image": [
+                "./pictures/ER_Logo.jpg",
+                "./pictures/ER_Logo2.jpg",
+                "./pictures/ER_Logo3.jpg",
+                "./pictures/ER_Logo4.jpg",
+                "./pictures/ER_Logo5.jpg",
+                "./pictures/ER_Logo6.jpg",
+                "./pictures/ER_Logo6.jpg"
         ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
-        "Rating": "Overwhelmingly Positive (600,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "28",
-        "Name": "iRacing",
-        "Release date": "08.26.2008",
-        "Description": "iRacing is an online racing simulator that offers realistic driving physics, licensed cars, and global competitions.",
-        "Story": "No story",
-        "Genres": [
-            "Racing", " Simulator"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
-        "Rating": "Very Positive (50,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "29",
-        "Name": "Among Us",
-        "Release date": "06.15.2018",
-        "Description": "Among Us is a multiplayer social deduction game where players work together to complete tasks while impostors attempt to sabotage them.",
-        "Story": "No story",
-        "Genres": [
-            "Strategy", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
-        "Rating": "Very Positive (600,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "30",
-        "Name": "ARK: Survival Evolved",
-        "Release date": "08.29.2017",
-        "Description": "ARK: Survival Evolved is a multiplayer survival game where players must hunt, gather resources, and tame dinosaurs on a mysterious island.",
-        "Story": "No story",
-        "Genres": [
-            "Survival", " Open World", " Singleplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
-        "Rating": "Mostly Positive (450,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "31",
-        "Name": "Destiny 2",
-        "Release date": "09.06.2017",
-        "Description": "Destiny 2 is a free-to-play online multiplayer first-person shooter that combines PvE and PvP elements in a shared world.",
-        "Story": "50-60 hours (base game)",
-        "Genres": [
-            "Shooter", " MMO", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
-    ],
-        "Rating": "Mostly Positive (650,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "32",
-        "Name": "EVE Online",
-        "Release date": "05.06.2003",
-        "Description": "EVE Online is a massive multiplayer online space game with a focus on player-driven economy, space battles, and exploration.",
-        "Story": "No story",
-        "Genres": [
-            "MMO", " Simulator", " Multiplayer", " Space"
-        ],
-        "Price": {
-            "site1": "Free to Play",
-            "link": "https://www.eveonline.com/"
+        "ClickCount": 0,
+        "Sale": [{"IsOnSale": false, "Amount": 0}]
         },
-        "Rating": "Mostly Positive (400,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "33",
-        "Name": "Counter Strike 2",
-        "Release date": "09.27.2023",
-        "Description": "Counter Strike 2 is the latest iteration of the popular team-based first-person shooter, focusing on bomb planting and defusal scenarios.",
-        "Story": "No story",
-        "Genres": [
-            "Shooter", " Multiplayer", " Singleplayer"
-        ],
-        "Price": {
-            "site1": "Free to Play",
-            "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+{
+    "ID": "28",
+    "Name": "iRacing",
+    "Release date": "08.26.2008",
+    "Description": "iRacing is an online racing simulator that offers realistic driving physics, licensed cars, and global competitions.",
+    "Story": "No story",
+    "Genres": [
+        "Racing", "Simulator"
+    ],
+    "Console" : [
+       "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/1222670/iRacing/"},
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://www.microsoft.com/en-us/p/iracing/9nblggh42thb"},
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://www.epicgames.com/store/en-US/p/iracing"}
+    ],
+    "Rating": "Very Positive (50,000+)",
+    "Image": [
+        "./pictures/iRacing_Logo.png",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "29",
+    "Name": "Among Us",
+    "Release date": "06.15.2018",
+    "Description": "Among Us is a multiplayer social deduction game where players work together to complete tasks while impostors attempt to sabotage them.",
+    "Story": "No story",
+    "Genres": [
+        "Strategy", "Multiplayer"
+    ],
+    "Console" : [
+       "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch", "Windows", "Mobile (iOS, Android)"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$3.99", "link": "https://store.steampowered.com/app/945360/Among_Us/"},
+        {"Platform": "PC", "Price": "$3.99", "link": "https://www.microsoft.com/en-us/p/among-us/9nblggh4n2tb"},
+        {"Platform": "PC", "Price": "$3.99", "link": "https://www.epicgames.com/store/en-US/p/among-us"}
+    ],
+    "Rating": "Very Positive (600,000+)",
+    "Image": [
+        "./pictures/AmongUs_Logo.jfif",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "30",
+    "Name": "ARK: Survival Evolved",
+    "Release date": "08.29.2017",
+    "Description": "ARK: Survival Evolved is a multiplayer survival game where players must hunt, gather resources, and tame dinosaurs on a mysterious island.",
+    "Story": "No story",
+    "Genres": [
+        "Survival", "Open World", "Singleplayer"
+    ],
+    "Console" : [
+       "PS4", "Xbox One", "Xbox Series X/S", "Nintendo Switch", "Windows", "Mac OS"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$14.99", "link": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/"},
+        {"Platform": "PC", "Price": "$13.49", "link": "https://www.microsoft.com/en-us/p/ark-survival-evolved/9wzdncrfhw8f"},
+        {"Platform": "XBOX", "Price": "$13.49", "link": "https://www.xbox.com/hu-HU/games/store/ark-survival-evolved/BNBLC4ZGFNKB"},
+        {"Platform": "PC", "Price": "$13.99", "link": "https://www.epicgames.com/store/en-US/p/ark-survival-evolved"},
+        {"Platform": "PS", "Price": "$14.99", "link": "https://www.playstation.com/en-hu/games/ark-survival-evolved/"}
+    ],
+    "Rating": "Mostly Positive (450,000+)",
+    "Image": [
+        "./pictures/ARKse_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "31",
+    "Name": "Destiny 2",
+    "Release date": "09.06.2017",
+    "Description": "Destiny 2 is a free-to-play online multiplayer first-person shooter that combines PvE and PvP elements in a shared world.",
+    "Story": "50-60 hours (base game)",
+    "Genres": [
+        "Shooter", "MMO", "Multiplayer"
+    ],
+    "Console" : [
+     "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows", "Stadia"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/1085660/Destiny_2/"},
+        {"Platform": "XBOX", "Price": "Free to Play", "link": "https://www.xbox.com/hu-HU/games/store/destiny-2/BPQ955FQFPH6"},
+        {"Platform": "PS", "Price": "Free to Play", "link": "https://www.playstation.com/en-hu/games/destiny-2/"}
+    ],
+    "Rating": "Mostly Positive (650,000+)",
+    "Image": [
+            "./pictures/Destiny2_Logo.jpg",
+            "./pictures/ER_Logo2.jpg",
+            "./pictures/ER_Logo3.jpg",
+            "./pictures/ER_Logo4.jpg",
+            "./pictures/ER_Logo5.jpg",
+            "./pictures/ER_Logo6.jpg",
+            "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "32",
+    "Name": "EVE Online",
+    "Release date": "05.06.2003",
+    "Description": "EVE Online is a massive multiplayer online space game with a focus on player-driven economy, space battles, and exploration.",
+    "Story": "No story",
+    "Genres": [
+        "MMO", "Simulator", "Multiplayer", "Space"
+    ],
+    "Console" : [
+      "Windows", "Mac OS", "Linux"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://www.eveonline.com/"},
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/8500/EVE_Online/"},
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://www.epicgames.com/store/en-US/p/eve-online"}
+    ],
+    "Rating": "Mostly Positive (400,000+)",
+    "Image": [
+        "./pictures/EVEO_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "33",
+    "Name": "Counter Strike 2",
+    "Release date": "09.27.2023",
+    "Description": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2. A free upgrade to CS:GO, Counter-Strike 2 marks the largest technical leap in Counter-Strike’s history. Built on the Source 2 engine, Counter-Strike 2 is modernized with realistic physically-based rendering, state of the art networking, and upgraded Community Workshop tools. In addition to the classic objective-focused gameplay that Counter-Strike pioneered in 1999.",
+    "Story": "No story",
+    "Genres": [
+        "Shooter", "Multiplayer", "Singleplayer"
+    ],
+    "Console" : [
+       "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"}
+    ],
+    "Rating": "Mixed (150,000+)",
+    "Image": [
+        "./pictures/CS2_Logo.jpeg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "34",
+    "Name": "Euro Truck Simulator 2",
+    "Release date": "10.19.2012",
+    "Description": "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore from the UK, Belgium, Germany, Italy, the Netherlands, Poland, and many more, your endurance, skill and speed will all be pushed to their limits. If you’ve got what it takes to be part of an elite trucking force, get behind the wheel and prove it!",
+    "Story": "No story",
+    "Genres": [
+        "Simulation", "Driving"
+    ],
+    "Console": [
+        "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows"
+    ],
+    "Price": [
+        {
+            "Platform": "PC", 
+            "Price": "$19.99",
+            "link": "https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/"
+        }
+    ],
+    "Rating": "Overwhelmingly Positive (500,000+)",
+    "Image": [
+        "./pictures/ETR2_Logo.webp",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "35",
+    "Name": "F1 24",
+    "Release date": "31.05.2024",
+    "Description": "Be One of the 20 with EA SPORTS™ F1® 24, the official video game of the 2024 FIA Formula One World Championship™. Unleash your champion in pursuit of a legacy-defining F1® Career, the mode’s first major update since 2016. Drive like the greatest and feel at one with the car through the all-new EA SPORTS Dynamic Handling System. Ignite your passion by connecting to your favorite teams and drivers while proving that you have what it takes across new modes and experiences.",
+    "Story": "TBD",
+    "Genres": [
+        "Racing", "Simulator", "Singleplayer", "Multiplayer"
+    ],
+    "Console": [
+        "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows"
+    ],
+    "Price": [
+        {
+            "Platform": "PC", 
+            "Price": "$59.99",
+            "link": "https://store.steampowered.com/app/2488620/F1_24/"
         },
-        "Rating": "Mixed (150,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "34",
-        "Name": "Euro Truck Simulator 2",
-        "Release date": "10.19.2012",
-        "Description": "Euro Truck Simulator 2 is a truck-driving simulation where players transport cargo across Europe, enjoying scenic landscapes and managing logistics.",
-        "Story": "No story",
-        "Genres": [
-            "Simulation", " Driving"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+        {
+            "Platform": "XBOX", 
+            "Price": "$59.99",
+            "link": "https://www.xbox.com/hu-HU/games/store/f1-24/9PLVVTDHS1P0"
+        },
+        {
+            "Platform": "PS", 
+            "Price": "$59.99",
+            "link": "https://www.playstation.com/hu-hu/games/f1/"
+        }
     ],
-        "Rating": "Overwhelmingly Positive (500,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "35",
-        "Name": "F1 24",
-        "Release date": "TBA 2024",
-        "Description": "F1 24 is the latest installment in the official Formula 1 video game series, featuring all teams, drivers, and circuits from the 2024 FIA Formula One World Championship.",
-        "Story": "TBD",
-        "Genres": [
-            "Racing", " Simulator", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Rating": "N/A",
+    "Image": [
+        "./pictures/F124_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
     ],
-        "Rating": "N/A",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "36",
-        "Name": "F1 23",
-        "Release date": "06.16.2023",
-        "Description": "F1 23 is the official video game of the FIA Formula One World Championship, featuring a more realistic driving experience and updated content.",
-        "Story": "TBD",
-        "Genres": [
-            "Racing","Simulator", " Multiplayer", " Singleplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "36",
+    "Name": "F1 23",
+    "Release date": "06.16.2023",
+    "Description": "Be the last to brake in EA SPORTS™ F1® 23, the official video game of the 2023 FIA Formula One World Championship™.",
+    "Story": "TBD",
+    "Genres": [
+        "Racing", "Simulator", "Multiplayer", "Singleplayer"
     ],
-        "Rating": "Very Positive (10,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "37",
-        "Name": "Mafia: Definitive Edition",
-        "Release date": "09.25.2020",
-        "Description": "Mafia: Definitive Edition is a remake of the classic 2002 game, set in the 1930s, focusing on the story of Tommy Angelo and his journey in the mafia.",
-        "Story": "10-15 hours",
-        "Genres": [
-            "Action", " Adventure", " Singleplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Console": [
+        "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows"
     ],
-        "Rating": "Very Positive (50,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "38",
-        "Name": "Shadow of the Tomb Raider",
-        "Release date": "09.14.2018",
-        "Description": "Shadow of the Tomb Raider is an action-adventure game that follows Lara Croft as she attempts to save the world from a Mayan apocalypse.",
-        "Story": "20-30 hours",
-        "Genres": [
-            "Action", " Adventure", " Singleplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Price": [
+        {
+            "Platform": "PC", 
+            "Price": "$59.99",
+            "link": "https://store.steampowered.com/app/1946300/F1_23/"
+        },
+        {
+            "Platform": "XBOX", 
+            "Price": "$59.99",
+            "link": "https://www.xbox.com/hu-HU/games/store/f1-23/9MTK0S8CQ0QV"
+        },
+        {
+            "Platform": "PS", 
+            "Price": "$59.99",
+            "link": "https://www.playstation.com/hu-hu/games/f1-23/"
+        }
     ],
-        "Rating": "Very Positive (100,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "39",
-        "Name": "Tomb Raider",
-        "Release date": "03.05.2013",
-        "Description": "Tomb Raider is an action-adventure game that reboots the series, focusing on the origin story of Lara Croft as she survives on a mysterious island.",
-        "Story": "10-12 hours",
-        "Genres": [
-            "Action", " Adventure", " Singleplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Rating": "Very Positive (10,000+)",
+    "Image": [
+        "./pictures/F123_Logo.jfif",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
     ],
-        "Rating": "Very Positive (200,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "40",
-        "Name": "Rise of the Tomb Raider™",
-        "Release date": "10.11.2016",
-        "Description": "Rise of the Tomb Raider is an action-adventure game that continues Lara Croft's story as she searches for the legendary city of Kitezh.",
-        "Story": "12-15 hours",
-        "Genres": [
-            "Action", " Adventure", " Singleplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "37",
+    "Name": "Mafia: Definitive Edition",
+    "Release date": "09.25.2020",
+    "Description": "Part one of the Mafia crime saga - 1930s, Lost Heaven, IL. Re-made from the ground up, rise through the ranks of the Mafia during the Prohibition era of organized crime. After a run-in with the mob, cab driver Tommy Angelo is thrust into a deadly underworld. Initially uneasy about falling in with the Salieri crime family, Tommy soon finds that the rewards are too big to ignore.",
+    "Story": "10-15 hours",
+    "Genres": [
+        "Action", "Adventure", "Singleplayer"
     ],
-        "Rating": "Very Positive (100,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "41",
-        "Name": "Dirt Rally 2.0",
-        "Release date": "02.26.2019",
-        "Description": "Dirt Rally 2.0 is a racing simulation game that focuses on off-road rally racing with realistic physics and challenging tracks.",
-        "Story": "No story",
-        "Genres": [
-            "Racing", " Simulator", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Console": [
+        "PS4", "Xbox One", "Windows"
     ],
-        "Rating": "Very Positive (50,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "42",
-        "Name": "Dirt 5",
-        "Release date": "11.06.2020",
-        "Description": "Dirt 5 is an off-road racing game that offers a mix of fun, arcade-style racing and a variety of environments and vehicles.",
-        "Story": "No story",
-        "Genres": [
-            "Racing", " Arcade", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Price": [
+        {
+            "Platform": "PC", 
+            "Price": "$39.99",
+            "link": "https://store.steampowered.com/app/1030840/Mafia_Definitive_Edition/"
+        },
+        {
+            "Platform": "XBOX", 
+            "Price": "$39.99",
+            "link": "https://www.xbox.com/hu-HU/games/store/mafia-definitive-edition/9nzc09nnr93l"
+        },
+        {
+            "Platform": "PC", 
+            "Price": "$39.99",
+            "link": "https://store.epicgames.com/en-US/p/mafia-definitive-edition"
+        }
     ],
-        "Rating": "Mostly Positive (20,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "43",
-        "Name": "Assetto Corsa",
-        "Release date": "12.19.2014",
-        "Description": "Assetto Corsa is a racing simulator that provides a realistic driving experience with a focus on physics, car handling, and customization.",
-        "Story": "No story",
-        "Genres": [
-            "Racing", " Simulator", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Rating": "Very Positive (50,000+)",
+    "Image": [
+        "./pictures/MDE_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
     ],
-        "Rating": "Very Positive (50,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "44",
-        "Name": "Assetto Corsa Competizione",
-        "Release date": "05.29.2019",
-        "Description": "Assetto Corsa Competizione is the official GT World Challenge game, featuring realistic racing and a dynamic weather system.",
-        "Story": "No story",
-        "Genres": [
-            "Racing", " Simulatior", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "38",
+    "Name": "Shadow of the Tomb Raider",
+    "Release date": "09.14.2018",
+    "Description": "In Shadow of the Tomb Raider Definitive Edition experience the final chapter of Lara’s origin as she is forged into the Tomb Raider she is destined to be. Combining the base game, all seven DLC challenge tombs, as well as all downloadable weapons, outfits, and skills, Shadow of the Tomb Raider Definitive Edition is the ultimate way to experience Lara’s defining moment. Survive and Thrive In the Deadliest Place on Earth: Master an unforgiving jungle setting in order to survive. Explore underwater environments filled with crevasses and deep tunnel systems. Become One With the Jungle: Outgunned and outnumbered, Lara must use the jungle to her advantage. Strike suddenly and disappear like a jaguar, use mud as camouflage, and instill fear in enemies to sow chaos. Discover Dark and Brutal Tombs: Tombs are more terrifying than ever before, requiring advanced traversal techniques to reach them, and once inside they are filled with deadly puzzles. Uncover Living History: Discover a hidden city and explore the biggest hub space ever found in a Tomb Raider game.",
+    "Story": "20-30 hours",
+    "Genres": ["Action", "Adventure", "Singleplayer"],
+    "Console": ["PS4", "Xbox One", "Windows", "Mac OS"],
+    "Price": [
+        {"Platform": "PC", "Price": "$39.99", "link": "https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider/"},
+        {"Platform": "XBOX", "Price": "$39.99", "link": "https://www.xbox.com/en-us/games/store/shadow-of-the-tomb-raider/9n6pbdlgw7v8"},
+        {"Platform": "PS", "Price": "$39.99", "link": "https://www.playstation.com/hu-hu/games/shadow-of-the-tomb-raider/"}
     ],
-        "Rating": "Very Positive (15,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "45",
-        "Name": "Project Zomboid",
-        "Release date": "11.08.2013",
-        "Description": "Project Zomboid is an open-world zombie survival game where players must scavenge for food, build defenses, and survive against the undead.",
-        "Story": "No story",
-        "Genres": [
-            "Survival", " Singleplayer", " Multiplayer", " Open World"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Rating": "Very Positive (100,000+)",
+    "Image": [
+        "./pictures/SoTTR_Logo.jfif",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
     ],
-        "Rating": "Very Positive (50,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "46",
-        "Name": "Lethal Company",
-        "Release date": "10.26.2022",
-        "Description": "Lethal Company is a multiplayer horror game where players work together to escape a haunted building filled with terrifying creatures.",
-        "Story": "No story",
-        "Genres": [
-            "Horror", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": true, "Amount": 85}]
+},
+{
+    "ID": "39",
+    "Name": "Tomb Raider",
+    "Release date": "03.05.2013",
+    "Description": "Tomb Raider explores the intense and gritty origin story of Lara Croft and her ascent from a young woman to a hardened survivor. Armed only with raw instincts and the ability to push beyond the limits of human endurance, Lara must fight to unravel the dark history of a forgotten island to escape its relentless hold. Download the Turning Point trailer to see the beginning of Lara’s epic adventure.",
+    "Story": "10-12 hours",
+    "Genres": ["Action", "Adventure", "Singleplayer"],
+    "Console": ["PS3", "Xbox 360", "Windows", "Mac OS"],
+    "Price": [
+        {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/203160/Tomb_Raider/"},
+        {"Platform": "XBOX", "Price": "$19.99", "link": "https://www.xbox.com/en-us/games/store/tomb-raider/9n6pbdlgw7v8"},
+        {"Platform": "PS", "Price": "$19.99", "link": "https://www.playstation.com/en-hu/games/tomb-raider-I-III-remastered-starring-lara-croft/"}
     ],
-        "Rating": "Very Positive (10,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "47",
-        "Name": "Forza Horizon 5",
-        "Release date": "11.09.2021",
-        "Description": "Forza Horizon 5 is an open-world racing game set in Mexico, featuring diverse environments and a wide variety of vehicles.",
-        "Story": "No story",
-        "Genres": [
-            "Racing", " Open World", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "Rating": "Very Positive (200,000+)",
+    "Image": [
+        "./pictures/TR_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
     ],
-        "Rating": "Overwhelmingly Positive (200,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    },
-    {
-        "ID": "48",
-        "Name": "Call of Duty: Modern Warfare",
-        "Release date": "10.25.2019",
-        "Description": "Call of Duty: Modern Warfare is a first-person shooter that reboots the iconic series, featuring a gripping single-player campaign and robust multiplayer modes.",
-        "Story": "6-10 hours",
-        "Genres": [
-            "Shooter", " Action", " Singleplayer", " Multiplayer"
-        ],
-        "Price": [
-            {"Steam": "Free to Play",
-            "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"},
-            {"Microsoft": "Free to Play",
-            "link":"https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"},
-            {"Epic Games": "Free to Play",
-            "link": "https://store.epicgames.com/en-US/p/the-sims-4"}
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "40",
+    "Name": "Rise of the Tomb Raider™",
+    "Release date": "10.11.2016",
+    "Description": "Rise of the Tomb Raider: 20 Year Celebration includes the base game and Season Pass featuring all-new content. Explore Croft Manor in the new 'Blood Ties' story, then defend it against a zombie invasion in 'Lara’s Nightmare'. Survive extreme conditions with a friend in the new online Co-Op Endurance mode, and brave the new 'Extreme Survivor' difficulty. Also features an outfit and weapon inspired by Tomb Raider III, and 5 classic Lara skins. Existing DLC will challenge you to explore a new tomb that houses an ancient terror in Baba Yaga: The Temple of the Witch, and combat waves of infected predators in Cold Darkness Awakened.",
+    "Story": "12-15 hours",
+    "Genres": ["Action", "Adventure", "Singleplayer"],
+    "Console": ["PS4", "Xbox One", "Windows", "Mac OS"],
+    "Price": [
+        {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/378800/Rise_of_the_Tomb_Raider/"},
+        {"Platform": "XBOX", "Price": "$19.99", "link": "https://www.xbox.com/en-us/games/store/rise-of-the-tomb-raider/9n6pbdlgw7v8"},
+        {"Platform": "PS", "Price": "$19.99", "link": "https://www.playstation.com/hu-hu/games/rise-of-the-tomb-raider-20-year-celebration/"}
     ],
-        "Rating": "Very Positive (150,000+)",
-        "Image": [
-            "./pictures/kep.png"
-        ]
-    }
+    "Rating": "Very Positive (100,000+)",
+    "Image": [
+        "./pictures/RoTTR_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "41",
+    "Name": "Dirt Rally 2.0",
+    "Release date": "02.26.2019",
+    "Description": "DiRT Rally 2.0 dares you to carve your way through a selection of iconic rally locations from across the globe, in the most powerful off-road vehicles ever made, knowing that the smallest mistake could end your stage. You will need to rely on your instincts with the most immersive and truly focused off-road experience yet, including a new authentic handling model, tyre choice and surface degradation. Power your rally car through real-life off-road environments in New Zealand, Argentina, Spain, Poland, Australia and the USA, with only your co-driver and instincts to guide you. Race on eight official circuits from the FIA World Rallycross championship, complete with licensed Supercars and support series. Develop your team and cars around race strategies, and progress through a varied selection of Events and Championships in both a single player Career Campaign and a competitive online environment.",
+    "Story": "No story",
+    "Genres": [
+        "Racing", " Simulator", " Singleplayer", " Multiplayer"
+    ],
+    "Console" : [
+        "PS4", "Xbox One", "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/690790/DiRT_Rally_20/"},
+        {"Platform": "XBOX", "Price": "$19.99", "link":"https://www.xbox.com/en-us/games/store/dirt-rally-2-0/9NBLGGH42THS"},
+        {"Platform": "PS", "Price": "$19.99", "link":"https://www.playstation.com/hu-hu/games/dirt-rally-2-0/"}
+    ],
+    "Rating": "Very Positive (50,000+)",
+    "Image": [
+        "./pictures/DR2_Logo.jfif",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "42",
+    "Name": "Dirt 5",
+    "Release date": "11.06.2020",
+    "Description": "DIRT 5 is a fun, amplified, off-road arcade racing experience created by Codemasters. Blaze a trail on routes across the world, covering gravel, ice, snow and sand, with a roster of cars ranging from rally icons to trucks, to GT heroes. With a star-studded Career, four-player split-screen, innovative online modes, livery editor and more new features, DIRT 5 is the next generation of extreme racing.",
+    "Story": "No story",
+    "Genres": [
+        "Racing", "Arcade", "Singleplayer", "Multiplayer"
+    ],
+    "Console": [
+        "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$39.99", "link": "https://store.steampowered.com/app/1222670/DIRT_5/"},
+        {"Platform": "XBOX", "Price": "$39.99", "link": "https://www.xbox.com/en-us/games/store/dirt-5/9PMJ8B3N6V5H"},
+        {"Platform": "Ps", "Price": "$39.99", "link": "https://www.playstation.com/hu-hu/games/dirt-rally-2-0/"}
+    ],
+    "Rating": "Mostly Positive (20,000+)",
+    "Image": [
+        "./pictures/DIRT5_Logo.jfif",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "43",
+    "Name": "Assetto Corsa",
+    "Release date": "12.19.2014",
+    "Description": "Assetto Corsa features an advanced DirectX 11 graphics engine and a highly realistic physics engine. The game aims to provide a very realistic driving experience, with features such as tyre wear, flat spots, advanced aerodynamics, and hybrid systems. It includes both single-player and multiplayer modes, with highly accurate car models developed in cooperation with manufacturers.",
+    "Story": "No story",
+    "Genres": [
+        "Racing", "Simulator", "Singleplayer", "Multiplayer"
+    ],
+    "Console": [
+        "PS4", "Xbox One", "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/258280/Assetto_Corsa/"},
+        {"Platform": "XBOX", "Price": "$19.99", "link": "https://www.xbox.com/en-us/games/store/assetto-corsa/9NBLGGH42THS"}
+    ],
+    "Rating": "Very Positive (50,000+)",
+    "Image": [
+        "./pictures/AC_Logo.png",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "44",
+    "Name": "Assetto Corsa Competizione",
+    "Release date": "05.29.2019",
+    "Description": "Assetto Corsa Competizione is the official GT World Challenge videogame, allowing players to compete in high-level GT3 races with cars from manufacturers like Ferrari, Lamborghini, and McLaren. The game offers photorealistic graphics, dynamic weather, and realistic driving physics with a focus on endurance and sprint racing modes.",
+    "Story": "No story",
+    "Genres": [
+        "Racing", "Simulator", "Singleplayer", "Multiplayer"
+    ],
+    "Console": [
+        "PS4", "Xbox One", "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$39.99", "link": "https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/"},
+        {"Platform": "XBOX", "Price": "$39.99", "link": "https://www.xbox.com/en-us/games/store/assetto-corsa-competizione/9NBLGGH42THS"}
+    ],
+    "Rating": "Very Positive (15,000+)",
+    "Image": [
+        "./pictures/ACC_Logo.png",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "45",
+    "Name": "Project Zomboid",
+    "Release date": "11.08.2013",
+    "Description": "Project Zomboid is an open-ended sandbox game where players must survive a zombie apocalypse. Players loot houses, build defences, and fend off zombies using strategy, stealth, and survival skills. The game has no story mode, and instead focuses on managing survival against a relentless zombie horde.",
+    "Story": "No story",
+    "Genres": [
+        "Survival", "Singleplayer", "Multiplayer", "Open World"
+    ],
+    "Console": [
+        "Windows", "Mac OS", "Linux"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$19.99", "link": "https://store.steampowered.com/app/108600/Project_Zomboid/"},
+        {"Platform": "XBOX", "Price": "$19.99", "link": "https://www.xbox.com/en-us/games/store/project-zomboid/9NBLGGH42THS"}
+    ],
+    "Rating": "Very Positive (50,000+)",
+    "Image": [
+        "./pictures/PZ_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "46",
+    "Name": "Lethal Company",
+    "Release date": "10.26.2022",
+    "Description": "You are a contracted worker for the Company. Your job is to collect scrap from abandoned, industrialized moons to meet the Company's profit quota. You can use the cash you earn to travel to new moons with higher risks and rewards--or you can buy fancy suits and decorations for your ship. Experience nature, scanning any creature you find to add them to your bestiary. Explore the wondrous outdoors and rummage through their derelict, steel and concrete underbellies. Just never miss the quota. These dangers prey upon the vulnerable and lonesome, and the protection of your crew may be your only hope. You can guide your crewmates from your ship, using the radar to call out traps and using the ship's terminal to access remotely locked doors--or you can all go in together. The Company store has many useful tools for the job, including lights, shovels, walkie talkies, stun grenades, or boomboxes.",
+    "Story": "No story",
+    "Genres": [
+        "Horror", "Multiplayer"
+    ],
+    "Console": [
+        "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "Free to Play", "link": "https://store.steampowered.com/app/1866640/Lethal_Company/"},
+        {"Platform": "XBOX", "Price": "Free to Play", "link": "https://www.xbox.com/en-us/games/store/lethal-company/9NBLGGH42THS"}
+    ],
+    "Rating": "Very Positive (10,000+)",
+    "Image": [
+        "./pictures/LC_Logo.jpeg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "47",
+    "Name": "Forza Horizon 5",
+    "Release date": "11.09.2021",
+    "Description": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars. This is Your Horizon Adventure Lead breathtaking expeditions across the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars. This is a Diverse Open World Explore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano. This is an Adventurous Open World Immerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.",
+    "Story": "No story",
+    "Genres": [
+        "Racing", "Open World", "Singleplayer", "Multiplayer"
+    ],
+    "Console": [
+        "Xbox One", "Xbox Series X/S", "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$59.99", "link": "https://store.steampowered.com/app/1551360/Forza_Horizon_5/"},
+        {"Platform": "XBOX", "Price": "$59.99", "link": "https://www.xbox.com/en-us/games/store/forza-horizon-5/9PC5WZB9FTF1"}
+    ],
+    "Rating": "Overwhelmingly Positive (200,000+)",
+    "Image": [
+        "./pictures/FH5_Logo.jpg",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+},
+{
+    "ID": "48",
+    "Name": "Call of Duty: Modern Warfare",
+    "Release date": "10.25.2019",
+    "Description": "Experience a visceral Campaign or assemble your team in the ultimate online playground with multiple Special Ops challenges and a mix of Multiplayer maps and modes.",
+    "Story": "6-10 hours",
+    "Genres": [
+        "Shooter", "Action", "Singleplayer", "Multiplayer"
+    ],
+    "Console": [
+        "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Windows"
+    ],
+    "Price": [
+        {"Platform": "PC", "Price": "$59.99", "link": "https://store.steampowered.com/app/2000950/Call_of_Duty_Modern_Warfare/"},
+        {"Platform": "XBOX", "Price": "$59.99", "link": "https://www.xbox.com/en-us/games/store/call-of-duty-modern-warfare/9PKB0ZG9K5ZX"},
+        {"Platform": "PS", "Price": "$59.99", "link": "https://www.playstation.com/en-hu/games/call-of-duty-modern-warfare/"}
+    ],
+    "Rating": "Very Positive (150,000+)",
+    "Image": [
+        "./pictures/CodMW_Logo.png",
+        "./pictures/ER_Logo2.jpg",
+        "./pictures/ER_Logo3.jpg",
+        "./pictures/ER_Logo4.jpg",
+        "./pictures/ER_Logo5.jpg",
+        "./pictures/ER_Logo6.jpg",
+        "./pictures/ER_Logo6.jpg"
+    ],
+    "ClickCount": 0,
+    "Sale": [{"IsOnSale": false, "Amount": 0}]
+}
 ]
