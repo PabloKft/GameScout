@@ -45,7 +45,7 @@ function displayData(dataArray) {
 
         const img = document.createElement('img');
         img.classList.add('card-img-top');
-        img.src = item.Image || 'default-image.jpg';
+        img.src = item.Image[0] || 'default-image.jpg';
         img.alt = item.Name;
         img.style.borderRadius = "10px";
 
