@@ -13,48 +13,66 @@
   <style>
     .thumbnail-container {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 5px;
+      padding: 10px 0;
     }
 
     .thumbnail {
-      width: calc(50% - 10px);
-      margin: 5px;
+      width: 120px;
+      height: auto;
+      border-radius: 5px;
       cursor: pointer;
       border: 2px solid transparent;
-      border-radius: 5px;
+      transition: border 0.3s ease;
     }
 
     .thumbnail:hover {
-      border: 2px solid white;
+      border-color: white;
     }
 
-    .thumbnail-container .thumbnail:nth-child(n+9) {
-      width: calc(25% - 10px);
+    .thumbnail-container::-webkit-scrollbar {
+      height: 8px;
+      border-radius: 10px;
+    }
+
+    .thumbnail-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .thumbnail-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    .thumbnail-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .infobox {
+      font-size: large;
+      border: solid white 2px;
+      border-radius: 15px;
+      margin-top: 6px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.5); /* Sötét háttér a jobb olvashatóságért */
+      color: white;
+    }
+
+    /* Gombok stílusa */
+    .btn-group {
+      margin-bottom: 15px;
     }
 
     .gamePageButton {
       width: 50%;
       margin: 3px;
     }
-
-    .infobox{
-      font-size: large;
-      border: solid white 2px;
-    border-radius: 15px;
-    margin-top: 6px;
-    }
   </style>
-
-  <script>
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    if (thumbnails.length > 8) {
-      thumbnails.forEach((thumbnail, index) => {
-        if (index >= 8) {
-          thumbnail.style.width = 'calc(25% - 10px)';
-        }
-      });
-    }
-  </script>
 </head>
 
 <body>
@@ -67,23 +85,23 @@
             <img src="./pictures/text.png" alt="" class="gamescoutTitle">
           </a>
 
-
           <form class="d-flex search-container" role="search">
             <button class="btn btn-custom" type="button">Compare</button>
             <input class="form-control me-2 Search" type="search" placeholder="Search"
               style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
             <button class="btn" type="submit"
-              style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
+              style="border: 2px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
                 class="fa fa-search"></i></button>
           </form>
         </div>
       </nav>
     </div>
   </div>
+
   <div class="container">
     <h1 id="gameName"></h1>
-    <div class="row" style="margin-bottom: 15px; ">
-      <div class="col-9">
+    <div class="row" style="margin-bottom: 15px;">
+      <div class="col-7">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
           <div class="carousel-inner" style="border-radius: 10px;">
             <div class="carousel-item active">
@@ -108,49 +126,46 @@
           </button>
         </div>
       </div>
-      <div class="col-3" style="border: solid white 2px; border-radius: 15px;">
-        <h2>Pictures</h2>
-        <div class="thumbnail-container">
-          <img src="pictures/kep.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0" alt="...">
-          <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1" alt="...">
-          <img src="pictures/kep2.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2" alt="...">
-          <img src="pictures/kep.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0" alt="...">
-          <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1" alt="...">
-          <img src="pictures/kep2.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2" alt="...">
-          <img src="pictures/kep3.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0" alt="...">
-          <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1" alt="...">
-          <img src="pictures/kep2.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2" alt="...">
-          <img src="pictures/kep.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0" alt="...">
-          <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1" alt="...">
-          <img src="pictures/kep2.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2" alt="...">
-          <img src="pictures/kep.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0" alt="...">
-          <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1" alt="...">
-          <img src="pictures/kep4.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2" alt="...">
-        </div>
+      <div class="col-3">
+        <ul id="generalInfoList">
+          <li>
+            <p><span class="generalInfoListHeadings">Release date:</span> <br> <span
+                id="generalInfoListReleaseDate"></span></p>
+          </li>
+          <li>
+            <p><span class="generalInfoListHeadings">Story time:</span> <br> <span
+                id="generalInfoListStoryTime"></span></p>
+          </li>
+          <li>
+            <p><span class="generalInfoListHeadings">Ratings:</span> <br> <span
+                id="generalInfoListRatings"></span></p>
+          </li>
+        </ul>
       </div>
     </div>
-<hr>
+    <div class="col-7">
+      <div class="thumbnail-container">
+        <img src="pictures/kep.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+          alt="...">
+        <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+          alt="...">
+        <img src="pictures/kep2.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+          alt="...">
+        <img src="pictures/kep.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+          alt="...">
+        <img src="pictures/kep1.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+          alt="...">
+        <img src="pictures/kep2.png" class="thumbnail" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+          alt="...">
+      </div>
+    </div>
+
+    <hr>
+    <!-- Itt jön vissza az info rész! -->
     <div id="infos">
       <div class="container">
         <div class="row">
-          <div class="col-3">
-
-          </div>
+          
           <div class="col-2"></div>
           <div class="col-7">
             <div style="text-align: center;">
@@ -174,44 +189,26 @@
                   onclick="showRequestedData('Console')">
                 <label class="btn btn-outline-primary" for="btnradio4">Available platforms</label>
               </div>
-
             </div>
-
           </div>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-3">
-              <ul id="generalInfoList">
-                <li>
-                  <p><span class="generalInfoListHeadings">Release date:</span> <br> <span
-                      id="generalInfoListReleaseDate"></span></p>
-                </li>
-                <li>
-                  <p><span class="generalInfoListHeadings">Story time:</span> <br> <span
-                      id="generalInfoListStoryTime"></span></p>
-                </li>
-                <li>
-                  <p><span class="generalInfoListHeadings">Ratings:</span> <br> <span
-                      id="generalInfoListRatings"></span></p>
-                </li>
-              </ul>
-            </div>
+            
             <div class="col-2"></div>
-            <div class="col-7 infobox"  >
-              <div id="requestedInfoPlace" style="margin-bottom: 20px;">Please, choose what you else do you want to see about:<br><span id="gameNameText"></span></div>
+            <div class="col-7 infobox">
+              <div id="requestedInfoPlace" style="margin-bottom: 20px;">Please, choose what you else do you want to see
+                about:<br><span id="gameNameText"></span></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://pablokft.github.io/GameScout/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
 </body>
-<footer>
-
-</footer>
 
 </html>

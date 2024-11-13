@@ -26,13 +26,13 @@
         "Image": [
                 "./pictures/RL_Logo.jpg",
                 "./pictures/RL_Pic1.jpg",
-                "./pictures/ER_Pic2.jpg",
-                "./pictures/ER_Pic3.jpg",
-                "./pictures/ER_Pic4.jpg",
-                "./pictures/ER_Pic5.jpg",
-                "./pictures/ER_Pic6.jpg"
+                "./pictures/RL_Pic2.webp",
+                "./pictures/RL_Pic3.jpg",
+                "./pictures/RL_Pic4.jpg",
+                "./pictures/RL_Pic5.jpg_large",
+                "./pictures/RL_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 61,
         "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
@@ -61,14 +61,14 @@
         "Rating": "Overwhelmingly Positive (40,000+)",
         "Image": [
             "./pictures/Dredge_Logo.png",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/Dredge_Pic1.webp",
+            "./pictures/Dredge_Pic2.jpg",
+            "./pictures/Dredge_Pic3.webp",
+            "./pictures/Dredge_Pic4.png",
+            "./pictures/Dredge_Pic5.jpg",
+            "./pictures/Dredge_Pic6.jpg"
     ],
-    "ClickCount": 0,
+    "ClickCount": 62,
         "Sale":[{"IsOnSale": true, "Amount": 70}]
     },
     {
@@ -97,14 +97,14 @@
         "Rating": "Mixed (50,000+)",
         "Image": [
             "./pictures/SC_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/SC_Pic1.jpg",
+            "./pictures/SC_Pic2.jpg",
+            "./pictures/SC_Pic3.jpg",
+            "./pictures/SC_Pic4.jpg",
+            "./pictures/SC_Pic5.webp",
+            "./pictures/SC_Pic6.jfif"
     ],
-    "ClickCount": 0,
+    "ClickCount": 17,
     "Sale":[{"IsOnSale": true, "Amount": 35}]
     },
     {
@@ -135,14 +135,14 @@
         "Rating": "Overwhelmingly Positive (1,000,000+)",
         "Image": [
             "./pictures/GTAV_Logo.jpeg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/GTAV_Pic1.jpg",
+            "./pictures/GTAV_Pic2.jpg",
+            "./pictures/GTAV_Pic3.jpg",
+            "./pictures/GTAV_Pic4.jpg",
+            "./pictures/GTAV_Pic5.jpg",
+            "./pictures/GTAV_Pic6.jpg"
     ],
-    "ClickCount": 0,
+    "ClickCount": 46,
     "Sale":[{"IsOnSale": true, "Amount": 10}]
     },
     {
@@ -170,8 +170,14 @@
     ],
         "Rating": "Very Positive (1,200,000+)",
         "Image": [
-            "./pictures/PUBG_Logo.jpg"
-        ],
+            "./pictures/PUBG_Logo.jpg",
+            "./pictures/PUBG_Pic1.jpg",
+            "./pictures/PUBG_Pic2.jpg",
+            "./pictures/PUBG_Pic3.jpg",
+            "./pictures/PUBG_Pic4.jpg",
+            "./pictures/PUBG_Pic5.webp",
+            "./pictures/PUBG_Pic6.jpg"
+    ],
         "ClickCount": 0,
         "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
@@ -201,14 +207,14 @@
         "Rating": "Mostly Positive (350,000+)",
         "Image": [
             "./pictures/TS4_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/TS4_Pic1.jfif",
+            "./pictures/TS4_Pic2.png",
+            "./pictures/TS4_Pic3.jpg",
+            "./pictures/TS4_Pic4.jfif",
+            "./pictures/TS4_Pic5.jpg",
+            "./pictures/TS4_Pic6.jpeg"
     ],
-    "ClickCount": 0,
+    "ClickCount": 37,
     "Sale": [{"IsOnSale": false, "Amount": 0}]
     },
     {
@@ -232,12 +238,12 @@
         "Rating": "Overwhelmingly Positive (200,000+)",
         "Image": [
             "./pictures/ATS_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/ATS_Pic1.jpg",
+            "./pictures/ATS_Pic2.jfif",
+            "./pictures/ATS_Pic3.jfif",
+            "./pictures/ATS_Pic4.jfif",
+            "./pictures/ATS_Pic5.png",
+            "./pictures/ATS_Pic6.jpeg"
     ],
     "ClickCount": 0,
     "Sale": [{"IsOnSale": false, "Amount": 0}]
@@ -267,12 +273,12 @@
         "Rating": "Mostly Positive (25,000+)",
         "Image": [
             "./pictures/FC25_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/FC25_Pic1.jpeg",
+            "./pictures/FC25_Pic2.jpg",
+            "./pictures/FC25_Pic3.jpg",
+            "./pictures/FC25_Pic4.jpg",
+            "./pictures/FC25_Pic5.jpg",
+            "./pictures/FC25_Pic6.png"
     ],
         "ClickCount": 0,  
         "Sale": [{"IsOnSale": false, "Amount": 0}]
@@ -295,12 +301,12 @@
         "Rating": "Very Positive (600,000+)",
         "Image": [
             "./pictures/CP2077_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/CP2077_Pic1.jpg",
+            "./pictures/CP2077_Pic2.webp",
+            "./pictures/CP2077_Pic3.jpg",
+            "./pictures/CP2077_Pic4.jpg",
+            "./pictures/CP2077_Pic5.jpg",
+            "./pictures/CP2077_Pic6.jfif"
     ],
     "ClickCount": 0,
         "Sale": [{"IsOnSale": true, "Amount": 50}]
