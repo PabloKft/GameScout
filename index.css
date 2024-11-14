@@ -1,26 +1,114 @@
 .card {
+  width: 290px;
+  height: 340px;
+  background-color: rgb(24, 24, 24);
   display: inline-block;
-  margin: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 2px 2px 8px rgba(0, 47, 90, 0.1);
-  background-color: #D9d9D9;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgb(59, 59, 59);
+  overflow: hidden;
 }
 
-.card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  border: 2px, solid, #00b7ff;
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: -100%; /* Start from bottom */
+  left: -100%; /* Start from left */
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3) 50%, /* Middle of the gradient has a soft glow */
+    transparent
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  filter: blur(150px); /* Adds a soft blur for a smoother glow effect */
+  pointer-events: none;
 }
 
-.btn:hover {
-  border: 2px, solid, white;
-  background-color: rgb(92, 165, 85);
+.card:hover::before {
+  opacity: 1;
+  animation: glow-sweep 0.8s ease-in-out forwards;
 }
 
-.button:hover {
+@keyframes glow-sweep {
+  0% {  
+    transform: translateX(-100%) translateY(100%); /* Start from bottom left */
+  }
+  100% {
+    transform: translateX(100%) translateY(-100%); /* End at top right */
+  }
+}
+
+
+
+
+
+.card-img {
+  border-radius: 15px;
+}
+
+.card-saleSign {
+  color: white;
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: bold;
   background-color: red;
 }
+.card-popularSign {
+  color: white;
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: green;
+}
+
+.card-gameName {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.card-genres {
+  text-align: center;
+  margin-top: 8%;
+  font-style: italic;
+  font-size: 110%;
+}
+
+.card-button{
+  display: flex;           
+  justify-content: center; 
+  align-items: center;   
+  margin-top: 15%;
+  margin-left: 10%;
+  background-color: #003057;
+  width: 80%;
+  color: white;
+  border-radius: 15px;
+  height: 33px;
+}
+.card-button:hover{
+  background-color: #00294a;
+  color: rgb(199, 199, 199);
+  border: 5px solid #003057;
+}
+
+
+
 
 #data-container {
   display: flex;
