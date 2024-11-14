@@ -8,111 +8,22 @@ function fetchJSON() {
         .then(data => {
             arrayData = data;
             console.log('Data fetched successfully:', arrayData);
-            // Call displayData here if it's the page displaying the cards
-            if (document.getElementById('news-data-container')) {
-                displayData1(arrayData);
-            }
-            if(document.getElementById('sale-games-container')) {
-                displayData3(arrayData);
-            }
-            if(document.getElementById('popular-games-container')) {
+            if (document.getElementById('sale-games-container')) {
                 displayData2(arrayData);
             }
+            if (document.getElementById('popular-games-container')) {
+                displayData1(arrayData);
+            }
+
         })
         .catch(error => console.error('Error loading the JSON file:', error));
 }
 
 
 // Function to display the data on the webpage
-function displayData1(dataArray) { 
-    const container = document.getElementById('news-data-container');
-    if (!container) {
-        console.error('No container with id "data-container" found!');
-        return;
-    }
 
-    // Clear any existing content in the container
-    container.innerHTML = '';
-
-    // Loop through the data and create a card for each item
-    dataArray.forEach(item => {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card');
-        cardDiv.style.width = '18rem';
-        cardDiv.style.padding = '10px';
-        cardDiv.style.borderRadius = "10px";
-        cardDiv.style.margin = "10px";
-
-        cardDiv.onclick = () => {
-            selectedCardIDGameSite = item.ID;
-            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-            console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.open('https://pablokft.github.io/GameScout/gamesite.html', '_blank');
-            item.ClickCount++;
-        };
-
-        const img = document.createElement('img');
-        img.classList.add('card-img-top');
-        img.src = item.Image[0] || 'default-image.jpg';
-        img.alt = item.Name;
-        img.style.borderRadius = "10px";
-
-        const cardBody = document.createElement('div');
-        cardBody.classList.add('card-body');
-
-        const cardTitle = document.createElement('h5');
-        cardTitle.classList.add('card-title');
-        cardTitle.textContent = item.Name;
-        cardTitle.style.fontWeight = "bold";
-
-        const cardGenres = document.createElement('p');
-        cardGenres.classList.add('card-text');
-        cardGenres.textContent = `${item.Genres[0]} | ${item.Genres[1]}`;
-
-        const cardButton = document.createElement('a');
-        cardButton.classList.add('btn');
-        cardButton.style.backgroundColor = '#91ff88';
-        cardButton.style.color = 'rgb(0,0,0)';
-        cardButton.style.border = "1px solid #141414";
-        cardButton.textContent = 'Compare this game';
-
-        cardButton.onmouseover = () => {
-            cardButton.style.border = "1px solid white";
-        };
-        cardButton.onmouseleave = () => {
-            cardButton.style.border = "1px solid #141414";
-        };
-        cardButton.onmousedown = () => {
-            cardButton.style.color = "#3e8e41";
-            cardButton.style.shadow = "0 5px #666";
-            cardButton.style.transform = "translateY(4px)";
-        };
-        cardButton.onmouseup = () => {
-            cardButton.style.color = "black";
-            cardButton.style.shadow = "0 5px #666";
-            cardButton.style.transform = "translateY(-0px)";
-        };
-
-        cardButton.onclick = (e) => {
-            e.stopPropagation();
-            selectedCardIDGameSite = item.ID;
-            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-            console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-            window.location.href = 'https://pablokft.github.io/GameScout/gamesite.html';
-        };
-
-        cardBody.appendChild(cardTitle);
-        cardBody.appendChild(cardGenres);
-        cardBody.appendChild(cardButton);
-        cardDiv.appendChild(img);
-        cardDiv.appendChild(cardBody);
-
-        container.appendChild(cardDiv);
-    });
-}
-
-function displayData3(dataArray) { 
-    const container = document.getElementById('sale-games-container');
+function displayData1(dataArray) {
+    const container = document.getElementById('popular-games-container');
 
     if (!container) {
         console.error('No container with id "sale-games-container" found!');
@@ -123,11 +34,11 @@ function displayData3(dataArray) {
     container.innerHTML = '';
 
     // Sort the dataArray by ClickCount in descending order and take the top two items
-    const topTwoGames = dataArray.sort((a, b) => b.ClickCount - a.ClickCount).slice(0, 4);
+    const topFourGames = dataArray.sort((a, b) => b.ClickCount - a.ClickCount).slice(0, 4);
 
     // Loop through the top two games and create a card for each item
-    topTwoGames.forEach(item => {
-        const cardDiv = document.createElement('div');
+    topFourGames.forEach(item => {
+        /*const cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
         cardDiv.style.width = '18rem';
         cardDiv.style.padding = '10px';
@@ -140,7 +51,7 @@ function displayData3(dataArray) {
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
             window.open('https://pablokft.github.io/GameScout/gamesite.html', '_blank');
             item.ClickCount++;
-            console.log(item.ClickCount);
+            console.log(item.ID);
         };
 
         const img = document.createElement('img');
@@ -191,19 +102,50 @@ function displayData3(dataArray) {
             localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
             console.log(`Selected card ID: ${selectedCardIDGameSite}`);
             window.location.href = 'https://pablokft.github.io/GameScout/gamesite.html';
-        };
+        };*/
 
-        cardBody.appendChild(cardTitle);
-        cardBody.appendChild(cardGenres);
-        cardBody.appendChild(cardButton);
+        const cardDiv = document.createElement("div");
+        cardDiv.classList.add('card');
+
+        const img = document.createElement('img');
+        img.classList.add('card-img');
+        img.src = item.Image[0] || 'default-image.jpg';
+        img.alt = item.Name;
+
+        const saleSign = document.createElement("div");
+        saleSign.classList.add("card-saleSign");
+        saleSign.textContent = "%";
+
+        const popularSign = document.createElement("div");
+        popularSign.classList.add("card-popularSign");
+        popularSign.textContent = "%";
+
+        const gameName = document.createElement('h5');
+        gameName.classList.add('card-gameName');
+        gameName.textContent = item.Name;
+
+        const genres = document.createElement('p');
+        genres.classList.add('card-genres');
+        genres.textContent = `${ item.Genres[0] } | ${ item.Genres[1] }`;        
+
+        const button = document.createElement('a');
+        button.classList.add('card-button');
+        button.textContent = 'Compare this game';
+
+
+        cardDiv.appendChild(saleSign);
+        cardDiv.appendChild(popularSign);
         cardDiv.appendChild(img);
-        cardDiv.appendChild(cardBody);
+        cardDiv.appendChild(gameName);
+        cardDiv.appendChild(genres);
+        cardDiv.appendChild(button);
+
 
         container.appendChild(cardDiv);
     });
 }
 
-function displayData2(dataArray) { 
+function displayData2(dataArray) {
     const container = document.getElementById('sale-games-container');
 
     if (!container) {
@@ -218,12 +160,12 @@ function displayData2(dataArray) {
     const gamesOnSale = dataArray.filter(item => item.Sale[0].IsOnSale === true);
 
     // Sort by Sale amount in descending order, then by ClickCount if Sale amounts are equal
-    const topTwoGamesOnSale = gamesOnSale
+    const topFourGamesOnSale = gamesOnSale
         .sort((a, b) => b.Sale[0].Amount - a.Sale[0].Amount || b.ClickCount - a.ClickCount)
         .slice(0, 4);
 
     // Loop through the top two games on sale and create a card for each item
-    topTwoGamesOnSale.forEach(item => {
+    topFourGamesOnSale.forEach(item => {
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
         cardDiv.style.width = '18rem';
@@ -307,8 +249,9 @@ function showGeneralInfo() {
         console.error('No card ID found in localStorage.');
         return;
     }
-
+    console.log(selectedCardIDGameSite)
     const selectedItem = arrayData.find(item => item.ID == selectedCardIDGameSite);
+
     if (selectedItem) {
         document.getElementById("generalInfoListReleaseDate").innerText = selectedItem["Release date"];
         document.getElementById("generalInfoListStoryTime").innerText = selectedItem.Story;
@@ -323,7 +266,7 @@ function showGeneralInfo() {
 }
 
 // Set up window onload to ensure data is ready before showing info
-window.onload = function() {
+window.onload = function () {
     fetchJSON().then(() => {
         if (document.getElementById("generalInfoListReleaseDate")) {
             showGeneralInfo();
