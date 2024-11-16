@@ -11,24 +11,31 @@
   color: white;
   border: 1px solid rgb(59, 59, 59);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card:hover{
+  transform: scale(1.03);
+  background-color:  rgb(27, 27, 27);
+  border: 2px solid rgb(65, 65, 65);
 }
 
+/*
 .card::before {
   content: "";
   position: absolute;
-  bottom: -100%; /* Start from bottom */
-  left: -100%; /* Start from left */
+  bottom: -100%; 
+  left: -100%;
   width: 200%;
   height: 200%;
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(255, 255, 255, 0.3) 50%, /* Middle of the gradient has a soft glow */
+    rgba(255, 255, 255, 0.3) 50%, 
     transparent
   );
   transform: rotate(45deg);
   opacity: 0;
-  filter: blur(150px); /* Adds a soft blur for a smoother glow effect */
+  filter: blur(150px); 
   pointer-events: none;
 }
 
@@ -39,13 +46,13 @@
 
 @keyframes glow-sweep {
   0% {  
-    transform: translateX(-100%) translateY(100%); /* Start from bottom left */
+    transform: translateX(-100%) translateY(100%);
   }
   100% {
-    transform: translateX(100%) translateY(-100%); /* End at top right */
+    transform: translateX(100%) translateY(-100%);
   }
 }
-
+*/
 
 
 
