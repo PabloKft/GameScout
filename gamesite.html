@@ -59,7 +59,8 @@
       border-radius: 15px;
       margin-top: 6px;
       padding: 15px;
-      background-color: rgba(0, 0, 0, 0.5); /* Sötét háttér a jobb olvashatóságért */
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Sötét háttér a jobb olvashatóságért */
       color: white;
     }
 
@@ -71,6 +72,24 @@
     .gamePageButton {
       width: 50%;
       margin: 3px;
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+    }
+
+    .star {
+      font-size: 40px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.4s;
+      margin-top: -30px;
+    }
+
+    .star:hover,
+    .star.active {
+      color: #023aed;
     }
   </style>
 </head>
@@ -123,21 +142,30 @@
           </button>
         </div>
       </div>
-      <div class="col-3">
+
+      <div class="col-5" class="review">
         <ul id="generalInfoList">
           <li>
             <p><span class="generalInfoListHeadings">Release date:</span> <br> <span
                 id="generalInfoListReleaseDate"></span></p>
           </li>
           <li>
-            <p><span class="generalInfoListHeadings">Story time:</span> <br> <span
-                id="generalInfoListStoryTime"></span></p>
+            <p><span class="generalInfoListHeadings">Story time:</span> <br> <span id="generalInfoListStoryTime"></span>
+            </p>
           </li>
           <li>
-            <p><span class="generalInfoListHeadings">Ratings:</span> <br> <span
-                id="generalInfoListRatings"></span></p>
+            <p><span class="generalInfoListHeadings">Ratings:</span> <br> <span id="generalInfoListRatings"></span></p>
           </li>
+          <p>Rate <span id="gameNameText"></span> </p>
+          <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
         </ul>
+
+
       </div>
     </div>
     <div class="col-7">
@@ -145,13 +173,12 @@
         
       </div>
     </div>
-
     <hr>
     <!-- Itt jön vissza az info rész! -->
     <div id="infos">
       <div class="container">
         <div class="row">
-          
+
           <div class="col-2"></div>
           <div class="col-7">
             <div style="text-align: center;">
@@ -180,10 +207,10 @@
         </div>
         <div class="container">
           <div class="row">
-            
+
             <div class="col-2"></div>
             <div class="col-7 infobox" style="margin-bottom: 200px;">
-              <div id="requestedInfoPlace" style="margin-bottom: 20px;">Please, choose what you else do you want to see
+              <div id="requestedInfoPlace" style="margin-bottom: 20px;">Please, choose what else do you want to see
                 about:<br><span id="gameNameText"></span></div>
             </div>
           </div>
