@@ -15,7 +15,7 @@ function fetchJSON() {
             }
 
             if (document.getElementById('carouselPlace')) {
-               createCarousel(arrayData,selectedCardIDGameSite) ; // Display all games in data-container
+                createCarousel(arrayData, selectedCardIDGameSite); // Display all games in data-container
             }
 
             // Populate sale and popular games containers if they exist
@@ -39,7 +39,7 @@ function createCarousel(data, selected) {
         return;
     }
 
-    const images = selectedGame.Image; 
+    const images = selectedGame.Image;
     if (!images || images.length === 0) {
         console.error("No images found for the selected game.");
         return;
@@ -56,11 +56,11 @@ function createCarousel(data, selected) {
             carouselItem.classList.add("active");
         }
 
-        
+
         const img = document.createElement("img");
         img.classList.add("d-block", "w-100");
-        img.src = imageSrc; 
-        img.alt = selectedGame.Name; 
+        img.src = imageSrc;
+        img.alt = selectedGame.Name;
 
         carouselItem.appendChild(img);
 
@@ -68,8 +68,8 @@ function createCarousel(data, selected) {
 
         const thumbnail = document.createElement("img");
         thumbnail.classList.add("thumbnail");
-        thumbnail.src = imageSrc; 
-        thumbnail.alt = `${selectedGame.Name} thumbnail ${index + 1}`; 
+        thumbnail.src = imageSrc;
+        thumbnail.alt = `${selectedGame.Name} thumbnail ${index + 1}`;
         thumbnail.setAttribute("data-bs-target", "#carouselExampleAutoplaying");
         thumbnail.setAttribute("data-bs-slide-to", index);
 
@@ -146,14 +146,14 @@ function createCard(item, topEightPopularGames) {
         selectedCardIDGameSite = item.ID;
         localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
         console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-        window.open('./gamesite.html', '_blank');
+        window.open('./gamesite.html');
     };
 
     button.onclick = () => {
         selectedCardIDGameSite = item.ID;
         localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
         console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-        window.open('./compare.html', '_blank');
+        window.open('./compare.html');
     };
 
     return cardDiv;
@@ -183,7 +183,7 @@ function displayGames(containerId, gamesArray) {
 // Display general info on a dedicated page
 function showGeneralInfo() {
     if (!selectedCardIDGameSite) {
-        console.error('No card ID found in localStorage.');
+        console.error("No card ID found in localStorage.");
         return;
     }
     const selectedItem = arrayData.find(item => item.ID == selectedCardIDGameSite);
@@ -194,18 +194,53 @@ function showGeneralInfo() {
         document.getElementById("generalInfoListRatings").innerText = selectedItem.Rating;
         document.getElementById("gameName").innerText = selectedItem.Name;
         document.getElementById("gameNameText").innerText = selectedItem.Name;
-
-        console.log('Displayed data for:', selectedItem);
     } else {
-        console.error('Item with selected ID not found.');
+        console.error("Item with selected ID not found.");
     }
 }
 
-// Set up window onload to ensure data is ready before showing info
+// Show specific requested info
+function showRequestedData(infoType) {
+    if (!selectedCardIDGameSite) {
+        console.error("No card ID found in localStorage.");
+        return;
+    }
+
+    const selectedItem = arrayData.find(item => item.ID == selectedCardIDGameSite);
+    if (!selectedItem) {
+        console.error("Item with selected ID not found.");
+        return;
+    }
+
+    const infoPlace = document.getElementById("requestedInfoPlace");
+    
+    let content = "";
+
+    switch (infoType) {
+        case "Description":
+            content = selectedItem.Description;
+            break;
+        case "Genres":
+            content = selectedItem.Genres.join(", ");
+            break;
+        case "Price":
+            content = `${selectedItem.Price[0].Platform} : ${selectedItem.Price[0].Price} > <a href="${selectedItem.Price[0].link}"  target="_blank">Buy now</a> <br>
+            ${selectedItem.Price[1].Platform} : ${selectedItem.Price[1].Price} > <a href="${selectedItem.Price[1].link}"  target="_blank">Buy now</a> <br>
+            ${selectedItem.Price[2].Platform} : ${selectedItem.Price[2].Price} > <a href="${selectedItem.Price[2].link}"  target="_blank">Buy now</a>`;
+            break;
+        case "Console":
+            content = selectedItem.Console.join(", ");
+            break;
+        default:
+            content = "Invalid selection.";
+    }
+
+    infoPlace.innerHTML = content;
+}
+
+// Initialize on page load
 window.onload = function () {
     fetchJSON().then(() => {
-        if (document.getElementById("generalInfoListReleaseDate")) {
-            showGeneralInfo();
-        }
+        showGeneralInfo();
     });
 };

@@ -294,6 +294,9 @@ a{
 #infos{
   margin-top: 50px;
 }
+.infoButtons{
+  text-align: center;
+}
 
 .genreCard, .ConsoleCard{
   display: inline-block;
