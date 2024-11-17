@@ -14,6 +14,10 @@ function fetchJSON() {
                 displayGames('data-container', arrayData); // Display all games in data-container
             }
 
+            if (document.getElementById('carouselPlace')) {
+               createCarousel(arrayData,selectedCardIDGameSite) ; // Display all games in data-container
+            }
+
             // Populate sale and popular games containers if they exist
             if (document.getElementById('sale-games-container')) {
                 displayGames('sale-games-container', filterSaleGames(arrayData));
@@ -24,6 +28,57 @@ function fetchJSON() {
         })
         .catch(error => console.error('Error loading the JSON file:', error));
 }
+
+function createCarousel(data, selected) {
+    const carPlace = document.getElementById("carouselPlace");
+    const thumbnailContainer = document.querySelector(".thumbnail-container");
+
+    const selectedGame = data.find(game => game.ID == selected);
+    if (!selectedGame) {
+        console.error("Selected game not found.");
+        return;
+    }
+
+    const images = selectedGame.Image; 
+    if (!images || images.length === 0) {
+        console.error("No images found for the selected game.");
+        return;
+    }
+
+    carPlace.innerHTML = "";
+    thumbnailContainer.innerHTML = "";
+
+    images.forEach((imageSrc, index) => {
+        const carouselItem = document.createElement("div");
+        carouselItem.classList.add("carousel-item");
+
+        if (index === 0) {
+            carouselItem.classList.add("active");
+        }
+
+        
+        const img = document.createElement("img");
+        img.classList.add("d-block", "w-100");
+        img.src = imageSrc; 
+        img.alt = selectedGame.Name; 
+
+        carouselItem.appendChild(img);
+
+        carPlace.appendChild(carouselItem);
+
+        const thumbnail = document.createElement("img");
+        thumbnail.classList.add("thumbnail");
+        thumbnail.src = imageSrc; 
+        thumbnail.alt = `${selectedGame.Name} thumbnail ${index + 1}`; 
+        thumbnail.setAttribute("data-bs-target", "#carouselExampleAutoplaying");
+        thumbnail.setAttribute("data-bs-slide-to", index);
+
+        thumbnailContainer.appendChild(thumbnail);
+    });
+}
+
+
+
 
 // Function to filter popular games
 function filterPopularGames(dataArray, max) {
@@ -103,8 +158,6 @@ function createCard(item, topEightPopularGames) {
 
     return cardDiv;
 }
-
-
 
 // Function to display games in a container
 function displayGames(containerId, gamesArray) {
