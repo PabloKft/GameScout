@@ -108,8 +108,12 @@ function createCard(item, topEightPopularGames) {
     saleSign.textContent = "%";
 
     const popularSign = document.createElement('div');
-    popularSign.classList.add('card-popularSign');
-    popularSign.textContent = '!';
+popularSign.classList.add('card-popularSign');
+popularSign.innerHTML = '<i class="fa-solid fa-chart-line"></i>'; // Alternatíva
+
+
+ 
+
 
     const gameName = document.createElement('h5');
     gameName.classList.add('card-gameName');
@@ -213,7 +217,7 @@ function showRequestedData(infoType) {
     }
 
     const infoPlace = document.getElementById("requestedInfoPlace");
-    
+
     let content = "";
 
     switch (infoType) {
