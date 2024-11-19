@@ -244,3 +244,95 @@ window.onload = function () {
         showGeneralInfo();
     });
 };
+
+
+// Function to handle genre filtering
+function filterGamesByGenres() {
+    const selectedGenres = [];
+    // Get all checked checkboxes
+    document.querySelectorAll('.filter-checkbox:checked').forEach(checkbox => {
+        selectedGenres.push(checkbox.value);
+    });
+
+    // If no genres are selected, show all games
+    if (selectedGenres.length === 0) {
+        displayGames('data-container', arrayData);
+        return;
+    }
+
+    // Filter games based on selected genres
+    const filteredGames = arrayData.filter(game => {
+        // Check if the game contains at least one of the selected genres
+        return selectedGenres.some(genre => game.Genres.includes(genre));
+    });
+
+    // Display filtered games
+    displayGames('data-container', filteredGames);
+}
+
+// Add event listeners to checkboxes
+document.getElementById('dropdownMenu1').addEventListener('change', function (e) {
+    if (e.target.classList.contains('filter-checkbox')) {
+        filterGamesByGenres(); // Call the filter function when a checkbox is changed
+    }
+});
+
+// Function to populate the dropdown with genres (this part is already in your code)
+function populateDropdownWithGenres(dataArray, dropdownContainerId) {
+    const dropdownContainer = document.getElementById(dropdownContainerId);
+    if (!dropdownContainer) {
+        console.error(`Dropdown container with ID "${dropdownContainerId}" not found!`);
+        return;
+    }
+
+    // Extract unique genres
+    const uniqueGenres = new Set();
+    dataArray.forEach(item => {
+        item.Genres.forEach(genre => uniqueGenres.add(genre.trim()));
+    });
+
+    // Clear existing dropdown content
+    dropdownContainer.innerHTML = '';
+
+    // Create list items dynamically
+    uniqueGenres.forEach(genre => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('dropdown-item');
+
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.classList.add('filter-checkbox');
+        checkbox.value = genre;
+
+        label.appendChild(checkbox);
+        label.append(` ${genre}`);
+
+        listItem.appendChild(label);
+        dropdownContainer.appendChild(listItem);
+    });
+}
+
+// Call this function after fetching JSON data
+fetchJSON().then(() => {
+    populateDropdownWithGenres(arrayData, 'dropdownMenu1');
+    // Display all games initially
+    displayGames('data-container', arrayData);
+});
+
+
+// Get the range input and the span element where the value will be displayed
+const rangeInput = document.getElementById('priceRange');
+const curvalSpan = document.getElementById('curval');
+
+// Function to update the current value
+function updateCurrentValue() {
+  const currentValue = rangeInput.value;
+  curvalSpan.textContent = currentValue; // Update the text content of the curval span
+}
+
+// Add an event listener to the range input to update the value on change
+rangeInput.addEventListener('input', updateCurrentValue());
+
+// Initialize the span with the current value on page load
+updateCurrentValue();
