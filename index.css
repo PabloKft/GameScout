@@ -13,9 +13,10 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-.card:hover{
+
+.card:hover {
   transform: scale(1.03);
-  background-color:  rgb(27, 27, 27);
+  background-color: rgb(27, 27, 27);
   border: 2px solid rgb(65, 65, 65);
 }
 
@@ -71,6 +72,7 @@
   font-weight: bold;
   background-color: red;
 }
+
 .card-popularSign {
   color: white;
   position: absolute;
@@ -96,10 +98,10 @@
   font-size: 110%;
 }
 
-.card-button{
-  display: flex;           
-  justify-content: center; 
-  align-items: center;   
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 15%;
   margin-left: 10%;
   background-color: #003057;
@@ -108,7 +110,8 @@
   border-radius: 15px;
   height: 33px;
 }
-.card-button:hover{
+
+.card-button:hover {
   background-color: #00294a;
   color: rgb(199, 199, 199);
   border: 5px solid #003057;
@@ -248,27 +251,28 @@ h2 {
   border-style: dashed;
   border-radius: 15px;
   text-align: center;
-  
+
   padding: 10px;
 
 
-  cursor:default;
+  cursor: default;
 }
 
-#generalInfoList li:hover{
+#generalInfoList li:hover {
   color: lightblue;
   font-size: 103%;
 }
-#generalInfoList li{
+
+#generalInfoList li {
   color: grey;
 }
 
-#requestedInfoPlace{
+#requestedInfoPlace {
   margin-top: 15px;
-  text-align: center;  
+  text-align: center;
 }
 
-.generalInfoListHeadings{
+.generalInfoListHeadings {
   margin-bottom: 5px;
   color: white;
   font-size: 105%;
@@ -279,40 +283,83 @@ h2 {
   list-style-type: none;
   padding: 0;
 }
+
 .price-list li {
   margin-bottom: 10px;
 }
 
-footer{
+footer {
   padding: 100px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-#infos{
+#infos {
   margin-top: 50px;
 }
-.infoButtons{
+
+.infoButtons {
   text-align: center;
 }
 
-.genreCard, .ConsoleCard{
+.genreCard,
+.ConsoleCard {
   display: inline-block;
   border: 2px solid #28579e;
   padding: 10px;
-  border-radius: 5px;  
-  cursor:default;
+  border-radius: 5px;
+  cursor: default;
   color: #7b97c2;
   margin-bottom: 5px;
   letter-spacing: 2px;
 }
 
-.Desc{
+.Desc {
   text-align: justify;
 }
 
-#gameNameText{
+#gameNameText {
   font-weight: bold;
+}
+
+.collapse.show {
+  max-height: 200px;
+  gap: 10px; /* Limit height of expanded dropdown */
+  overflow-y: auto;  /* Scrollable content */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+
+/* Apply this style to all scrollable elements */
+#dropdownMenu1::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+#dropdownMenu1::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background for the scrollbar track */
+  border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+#dropdownMenu1::-webkit-scrollbar-thumb {
+  background: #888; /* Gray color for the scroll handle */
+  border-radius: 5px; /* Rounded corners for the scroll handle */
+}
+
+#dropdownMenu1::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovering over the scroll handle */
+}
+
+#dropdownMenu6{
+  text-align: center;
+}
+.minval{
+  float: left;
+  margin-left: 10%;
+}
+.maxval{
+  float: right;
+  margin-right: 10%;
 }
