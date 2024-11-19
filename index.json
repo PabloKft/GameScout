@@ -450,12 +450,12 @@
         "Rating": "Overwhelmingly Positive (500,000+)",
         "Image": [
             "./pictures/RDR2_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/RD2_Logo2.jpg",
+            "./pictures/RD2_Logo3.jpg",
+            "./pictures/RD2_Logo4.jpg",
+            "./pictures/RD2_Logo5.jpg",
+            "./pictures/RD2_Logo6.jpg",
+            "./pictures/RD2_Logo7.jpg"
     ],
     "ClickCount": 0,
         "Sale": [{"IsOnSale": true, "Amount": 67}]
@@ -504,9 +504,9 @@
         "Rating": "Overwhelmingly Positive (150,000+)",
         "Image": [
             "./pictures/MSMR_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
+            "./pictures/RD_Logo2.jpg",
+            "./pictures/RD_Logo3.jpg",
+            "./pictures/RD_Logo4.jpg",
             "./pictures/ER_Logo5.jpg",
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
