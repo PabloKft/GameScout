@@ -352,14 +352,55 @@ a {
   background: #555; /* Darker color when hovering over the scroll handle */
 }
 
+#dropdownMenu4::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+#dropdownMenu4::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background for the scrollbar track */
+  border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+#dropdownMenu4::-webkit-scrollbar-thumb {
+  background: #888; /* Gray color for the scroll handle */
+  border-radius: 5px; /* Rounded corners for the scroll handle */
+}
+
+#dropdownMenu4::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovering over the scroll handle */
+}
+
 #dropdownMenu6{
   text-align: center;
 }
-.minval{
+#minval{
   float: left;
   margin-left: 10%;
 }
-.maxval{
+#maxval{
   float: right;
   margin-right: 10%;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  font-size: 40px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.4s;
+  margin-top: -30px;
+}
+
+.star:hover,
+.star.active {
+  color: #023aed;
+}
+
+.dropdownSpecial{
+  margin-top: 30px;
+  font-size: 20px;
 }

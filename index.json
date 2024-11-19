@@ -457,8 +457,8 @@
             "./pictures/RD2_Logo6.jpg",
             "./pictures/RD2_Logo7.jpg"
     ],
-    "ClickCount": 0,
-        "Sale": [{"IsOnSale": true, "Amount": 67}]
+    "ClickCount": 150,
+        "Sale": [{"IsOnSale": true, "Amount": 90}]
     },
     {
         "ID": "15",

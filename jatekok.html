@@ -52,47 +52,41 @@
 
 
           <div class="dropdown-left">
-            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu2"
-              aria-expanded="false">Price</button>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu2" aria-expanded="false">
+                Price
+            </button>
             <div class="collapse" id="dropdownMenu2">
-              <ul class="list-unstyled">
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Puzzle">&ensp; Puzzle</label>
-                </li>
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Strategy">&ensp; Strategy</label>
-                </li>
-              </ul>
+                <div>
+                    <span id="minval">Free</span>
+                    <span id="curvalDate"></span>
+                    <span id="maxval">$70</span>
+                </div>
+                <input id="priceRange" type="range" min="0" max="70" step="1">
             </div>
-          </div>
+        </div>
+        
 
           <div class="dropdown-left">
             <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu3"
               aria-expanded="false">Rating</button>
             <div class="collapse" id="dropdownMenu3">
-              <ul class="list-unstyled">
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Puzzle">&ensp; Puzzle</label>
-                </li>
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Strategy">&ensp; Strategy</label>
-                </li>
-              </ul>
+              <div class="stars dropdownSpecial">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
             </div>
           </div>
 
 
           <div class="dropdown-left">
             <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu4"
-              aria-expanded="false">Genres</button>
+              aria-expanded="false">Consoles</button>
             <div class="collapse" id="dropdownMenu4">
               <ul class="list-unstyled">
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Puzzle">&ensp; Puzzle</label>
-                </li>
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Strategy">&ensp; Strategy</label>
-                </li>
+                <!-- Dynamically populated list items will go here -->
               </ul>
             </div>
           </div>
@@ -101,14 +95,8 @@
             <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu5"
               aria-expanded="false">Release Date</button>
             <div class="collapse" id="dropdownMenu5">
-              <ul class="list-unstyled">
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Puzzle">&ensp; Puzzle</label>
-                </li>
-                <li class="dropdown-item">
-                  <label><input type="checkbox" class="filter-checkbox" value="Strategy">&ensp; Strategy</label>
-                </li>
-              </ul>
+              <div><span id="minval">1990</span><span id="curvalDate"></span></span><span id="maxval">2024</span></div>
+              <input id="dateRange" onchange="showDate()" type="range" min="1990" max="2024">            
             </div>
           </div>
 
@@ -116,8 +104,8 @@
             <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu6"
               aria-expanded="false">Story Length</button>
             <div class="collapse" id="dropdownMenu6">
-              <div><span id="curval">0</span><span id="j"></span></span><span class="maxval">100</span></div>
-              <input type="range" min="0" max="100">
+              <div><span id="minval">0</span><span id="curvalStory"></span></span><span id="maxval">100</span></div>
+              <input id="priceRange" onchange="showValue()" type="range" min="0" max="100">
             </div>
           </div>
         </div>
