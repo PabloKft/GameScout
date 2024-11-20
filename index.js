@@ -107,7 +107,7 @@ function createCard(item, topEightPopularGames) {
 
     const saleSign = document.createElement('div');
     saleSign.classList.add('card-saleSign');
-    saleSign.textContent = "%";
+    saleSign.innerHTML = '<i class="fa-solid fa-tag fa-flip-vertical"></i>';
 
     const popularSign = document.createElement('div');
     popularSign.classList.add('card-popularSign');
@@ -224,22 +224,35 @@ function showRequestedData(infoType) {
 
     switch (infoType) {
         case "Description":
-            content = selectedItem.Description;
+            content = `<div class="description">${selectedItem.Description}</div>`;
             break;
         case "Genres":
-            content = selectedItem.Genres.join(", ");
+            content = `<div class="genres">` + 
+                      selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
+                      `</div>`;
             break;
         case "Price":
-            content = `${selectedItem.Price[0].Platform} : ${selectedItem.Price[0].Price} > <a href="${selectedItem.Price[0].link}"  target="_blank">Buy now</a> <br>
-            ${selectedItem.Price[1].Platform} : ${selectedItem.Price[1].Price} > <a href="${selectedItem.Price[1].link}"  target="_blank">Buy now</a> <br>
-            ${selectedItem.Price[2].Platform} : ${selectedItem.Price[2].Price} > <a href="${selectedItem.Price[2].link}"  target="_blank">Buy now</a>`;
+            content = `
+                <div class="prices">
+                    ${selectedItem.Price.map(price => `
+                        <div class="price-item">
+                            <span class="platform">${price.Platform}:</span>
+                            <span class="price">${price.Price}</span>
+                            <a href="${price.link}" target="_blank" class="buy-link">Buy now</a>
+                        </div>
+                    `).join("")}
+                </div>`;
             break;
         case "Console":
-            content = selectedItem.Console.join(", ");
+            content = `<div class="consoles">` + 
+                      selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
+                      `</div>`;
             break;
         default:
-            content = "Invalid selection.";
+            content = `<div class="error">Invalid selection.</div>`;
     }
+    
+    
 
     infoPlace.innerHTML = content;
 }
@@ -516,5 +529,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
         default:
             document.title = "GameScout";
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = document.body.getAttribute("data-page");
+
+    if (currentPage === "compare") {
+        document.title = "Compare Games - GameScout";
     }
 });
