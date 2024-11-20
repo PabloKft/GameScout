@@ -67,10 +67,10 @@
   position: absolute;
   top: 8%;
   right: 8%;
-  padding: 7px;
+  padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  background-color: red;
+  background-color: blue;
 }
 
 .card-popularSign {
@@ -78,7 +78,7 @@
   position: absolute;
   top: 8%;
   left: 8%;
-  padding: 7px;
+  padding: 10px;
   border-radius: 5px;
   font-weight: bold;
   background-color: green;
@@ -403,4 +403,69 @@ a {
 .dropdownSpecial{
   margin-top: 30px;
   font-size: 20px;
+}
+
+
+/* Genres */
+.genres {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.genre-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Prices */
+.prices {
+  margin-top: 1em;
+}
+
+.price-item {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.platform {
+  font-weight: bold;
+  color: #0073e6;
+}
+
+.price {
+  color: #e63946;
+  margin-left: 0.5em;
+}
+
+.buy-link {
+  color: #28a745;
+  text-decoration: none;
+  margin-left: 0.5em;
+}
+
+.buy-link:hover {
+  text-decoration: underline;
+}
+
+/* Consoles */
+.consoles {
+  display: flex;
+  gap: 0.5em;
+}
+
+.console-item {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+  font-size: 0.9em;
+  color: #0c5460;
 }
