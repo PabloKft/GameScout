@@ -494,3 +494,27 @@ document.getElementById('priceRange').addEventListener('change', function () {
     // Apply filters
     applyFilters();
 });
+
+// Example: Setting the title dynamically
+window.addEventListener("DOMContentLoaded", function () {
+    // Determine the context of the page
+    const pageType = document.body.dataset.page; // Use a data attribute in the <body> for page context
+
+    switch (pageType) {
+        case "game-details":
+            const gameName = document.getElementById("gameName").textContent || "Game Details";
+            document.title = `Details about ${gameName}`;
+            break;
+
+        case "home":
+            document.title = "GameScout - Home";
+            break;
+
+        case "gamesite":
+            document.title = "GameScout - Compare Games";
+            break;
+
+        default:
+            document.title = "GameScout";
+    }
+});
