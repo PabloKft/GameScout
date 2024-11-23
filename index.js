@@ -227,9 +227,9 @@ function showRequestedData(infoType) {
             content = `<div class="description">${selectedItem.Description}</div>`;
             break;
         case "Genres":
-            content = `<div class="genres">` + 
-                      selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
-                      `</div>`;
+            content = `<div class="genres">` +
+                selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
+                `</div>`;
             break;
         case "Price":
             content = `
@@ -244,15 +244,15 @@ function showRequestedData(infoType) {
                 </div>`;
             break;
         case "Console":
-            content = `<div class="consoles">` + 
-                      selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
-                      `</div>`;
+            content = `<div class="consoles">` +
+                selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
+                `</div>`;
             break;
         default:
             content = `<div class="error">Invalid selection.</div>`;
     }
-    
-    
+
+
 
     infoPlace.innerHTML = content;
 }
@@ -265,73 +265,10 @@ window.onload = function () {
 };
 
 
-// Function to handle genre filtering
-function filterGamesByGenres() {
-    const selectedGenres = [];
-    // Get all checked checkboxes
-    document.querySelectorAll('.filter-checkbox:checked').forEach(checkbox => {
-        selectedGenres.push(checkbox.value);
-    });
-
-    // If no genres are selected, show all games
-    if (selectedGenres.length === 0) {
-        displayGames('data-container', arrayData);
-        return;
-    }
-
-    // Filter games based on selected genres
-    const filteredGames = arrayData.filter(game => {
-        // Check if the game contains at least one of the selected genres
-        return selectedGenres.some(genre => game.Genres.includes(genre));
-    });
-
-    // Display filtered games
-    displayGames('data-container', filteredGames);
-}
-
-// Add event listeners to checkboxes
-document.getElementById('dropdownMenu1').addEventListener('change', function (e) {
-    if (e.target.classList.contains('filter-checkbox')) {
-        filterGamesByGenres(); // Call the filter function when a checkbox is changed
-    }
-});
 
 // Function to populate the dropdown with genres (this part is already in your code)
-function populateDropdownWithGenres(dataArray, dropdownContainerId) {
-    const dropdownContainer = document.getElementById(dropdownContainerId);
-    if (!dropdownContainer) {
-        console.error(`Dropdown container with ID "${dropdownContainerId}" not found!`);
-        return;
-    }
 
-    // Extract unique genres
-    const uniqueGenres = new Set();
-    dataArray.forEach(item => {
-        item.Genres.forEach(genre => uniqueGenres.add(genre.trim()));
-    });
-
-    // Clear existing dropdown content
-    dropdownContainer.innerHTML = '';
-
-    // Create list items dynamically
-    uniqueGenres.forEach(genre => {
-        const listItem = document.createElement('li');
-        listItem.classList.add('dropdown-item');
-
-        const label = document.createElement('label');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.classList.add('filter-checkbox');
-        checkbox.value = genre;
-
-        label.appendChild(checkbox);
-        label.append(` ${genre}`);
-
-        listItem.appendChild(label);
-        dropdownContainer.appendChild(listItem);
-    });
-}
-
+/*
 function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
     const dropdownContainer = document.getElementById(dropdownContainerId);
     if (!dropdownContainer) {
@@ -349,164 +286,53 @@ function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
     dropdownContainer.innerHTML = '';
 
     // Create list items dynamically
-    uniqueConsoles.forEach(genre => {
+    uniqueConsoles.forEach(console => {
         const listItem = document.createElement('li');
         listItem.classList.add('dropdown-item');
 
+        // Create the label element
         const label = document.createElement('label');
+        label.classList.add('checkbox-label');  // Add the correct class for styling
+
+        // Create the checkbox input element
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.classList.add('filter-checkbox');
-        checkbox.value = genre;
+        checkbox.classList.add('checkbox-input', 'filter-checkbox');  // Add the correct classes
+        checkbox.value = console;
 
+        // Create the custom checkbox container
+        const customCheckbox = document.createElement('span');
+        customCheckbox.classList.add('custom-checkbox');
+
+        // Attach the checkbox input and the custom checkbox to the label
         label.appendChild(checkbox);
-        label.append(` ${genre}`);
+        label.appendChild(customCheckbox);
+        label.append(` ${console}`);
 
+        // Append the label to the list item
         listItem.appendChild(label);
+
+        // Finally, append the list item to the dropdown container
         dropdownContainer.appendChild(listItem);
+
     });
 }
+*/
 
-// Call this function after fetching JSON data
+// Call this function after populating the dropdown with genres
 fetchJSON().then(() => {
     populateDropdownWithGenres(arrayData, 'dropdownMenu1');
     populateDropdownWithConsoles(arrayData, 'dropdownMenu4');
-    // Display all games initially
     displayGames('data-container', arrayData);
+    setupGenreCheckboxListeners(); // Setup event listeners for genre checkboxes
+    setupConsoleCheckboxListeners();
 });
 
-function showValue() {
-    const rangeInput = document.getElementById('priceRange');
-    const curvalSpan = document.getElementById('curvalStory');
-    const curval = rangeInput.value;
-    curvalSpan.textContent = curval;
-
-    // Filter games where Story time is less than curval
-    const filteredGames = arrayData.filter(game => game.Story < curval);
-
-    // Display or process the filtered games as needed
-
-    displayGames('data-container', filteredGames); // Return the filtered array if needed
-}
-
-function showDate() {
-    const rangeInput = document.getElementById('dateRange');
-    const curvalSpan = document.getElementById('curvalDate');
-    const curval = rangeInput.value; // Assuming the range input is a year (e.g., "2018")
-    curvalSpan.textContent = curval;
-
-    // Filter games where "Release date" is earlier than the selected year
-    const filteredGames = arrayData.filter(game => {
-        const releaseDate = new Date(game["Release date"]); // Parse the release date
-        const rangeDate = new Date(curval, 0, 1); // Create a date object for January 1st of the selected year
-        return releaseDate < rangeDate; // Check if the release date is earlier
-    });
-
-    displayGames('data-container', filteredGames); // Return the filtered array if needed
-
-}
 
 
-// Get the range input and the span element where the value will be displayed
-
-// Global filters object to track filter states
-let filters = {
-    genres: [],
-    consoles: [],
-    storyLength: null,
-    releaseDate: null,
-};
-
-// Unified filter function
-// Unified filter function
-// Modify the unified filter function to include the price filter
-function applyFilters() {
-    let filteredGames = [...arrayData]; // Start with all games
-
-    // Apply genre filter if any genres are selected
-    if (filters.genres.length > 0) {
-        filteredGames = filteredGames.filter(game =>
-            filters.genres.some(genre => game.Genres.includes(genre))
-        );
-    }
-
-    // Apply console filter if any consoles are selected
-    if (filters.consoles.length > 0) {
-        filteredGames = filteredGames.filter(game =>
-            filters.consoles.some(console => game.Console.includes(console))
-        );
-    }
-
-    // Apply story length filter if a value is set
-    if (filters.storyLength !== null) {
-        filteredGames = filteredGames.filter(game => parseInt(game.Story) <= filters.storyLength);
-    }
-
-    // Apply release date filter if a value is set
-    if (filters.releaseDate !== null) {
-        const rangeDate = new Date(filters.releaseDate, 0, 1); // Create date object for the selected year
-        filteredGames = filteredGames.filter(game => new Date(game["Release date"]) < rangeDate);
-    }
-
-    // Apply price filter if a value is set
-    if (filters.price !== null) {
-        filteredGames = filteredGames.filter(game =>
-            game.Price.some(priceEntry => parseFloat(priceEntry.Price.replace('$', '')) <= filters.price)
-        );
-    }
-
-    // Display the filtered games
-    displayGames('data-container', filteredGames);
-}
 
 
-// Event listener for genre checkboxes
-document.getElementById('dropdownMenu1').addEventListener('change', function (e) {
-    if (e.target.classList.contains('filter-checkbox')) {
-        // Update selected genres
-        filters.genres = Array.from(document.querySelectorAll('.filter-checkbox:checked'))
-            .map(checkbox => checkbox.value);
-        applyFilters();
-    }
-});
 
-document.getElementById('dropdownMenu4').addEventListener('change', function (e) {
-    if (e.target.classList.contains('filter-checkbox')) {
-        // Update selected genres
-        filters.consoles = Array.from(document.querySelectorAll('.filter-checkbox:checked'))
-            .map(checkbox => checkbox.value);
-        applyFilters();
-    }
-});
-
-// Event listener for story length range input
-document.getElementById('priceRange').addEventListener('change', function () {
-    const curvalSpan = document.getElementById('curvalStory');
-    filters.storyLength = parseInt(this.value, 10);
-    curvalSpan.textContent = this.value; // Update UI display
-    applyFilters();
-});
-
-// Event listener for release date range input
-document.getElementById('dateRange').addEventListener('change', function () {
-    const curvalSpan = document.getElementById('curvalDate');
-    filters.releaseDate = this.value; // Set selected year
-    curvalSpan.textContent = this.value; // Update UI display
-    applyFilters();
-});
-
-// Event listener for price range input
-document.getElementById('priceRange').addEventListener('change', function () {
-    const selectedPrice = parseFloat(this.value); // Get the selected price from the slider
-    const curvalSpan = document.getElementById('curvalDate');
-    curvalSpan.textContent = `$${selectedPrice}`; // Update UI to show selected price
-
-    // Update the global filters
-    filters.price = selectedPrice;
-
-    // Apply filters
-    applyFilters();
-});
 
 // Example: Setting the title dynamically
 window.addEventListener("DOMContentLoaded", function () {
@@ -540,3 +366,292 @@ document.addEventListener("DOMContentLoaded", function () {
         document.title = "Compare Games - GameScout";
     }
 });
+
+
+//Szűrők funkcionalitása
+
+
+let selectedGenres = new Set();
+let selectedConsoles = new Set();
+let selectedRating = 5; // Default to "Mostly Positive"
+
+let selectedPrice = 70;  // Default price
+let selectedReleaseDate = 2024;  // Default release year
+let selectedStoryTime = 100; // Default value for story time range (can be changed)
+
+// Update the price display dynamically when the slider is adjusted
+document.getElementById('priceRange').addEventListener('input', function () {
+    selectedPrice = this.value;
+    document.getElementById('curvalPrice').textContent = `$${selectedPrice}`;
+    filterGames();  // Apply the filter after the slider update
+});
+
+// Update the release year filter dynamically when the range input is adjusted
+// Update the release year filter dynamically when the range input is adjusted
+document.getElementById('dateRange').addEventListener('input', function () {
+    selectedReleaseDate = this.value;
+    document.getElementById('curvalDate').textContent = `${selectedReleaseDate}`;
+    filterGames();  // Apply the filter after the slider update
+});
+
+
+const ratings = [
+    "Overwhelmingly Negative",
+    "Very Negative",
+    "Negative",
+    "Mostly Negative",
+    "Mixed",
+    "Mostly Positive",
+    "Positive",
+    "Very Positive",
+    "Overwhelmingly Positive"
+];
+
+// Update rating display when the slider changes
+document.getElementById('ratingRange').addEventListener('input', function () {
+    selectedRating = this.value;
+    const ratingDisplay = document.getElementById('curvalRating');
+    ratingDisplay.textContent = ratings[selectedRating - 1];
+    filterGames();  // Apply filter when rating is changed
+});
+
+document.getElementById('storyRange').addEventListener('input', function () {
+    selectedStoryTime = this.value;
+    const storyDisplay = document.getElementById('curvalStory');
+    storyDisplay.textContent = `${selectedStoryTime} hours`;
+    filterGames();  // Apply filter when story time is changed
+});
+  
+// Filter games based on selected genres, consoles, price, release date, and story time
+function filterGames() {
+    let filteredGames = arrayData;
+
+    // Filter by genres if any are selected
+    if (selectedGenres.size > 0) {
+        filteredGames = filteredGames.filter(game =>
+            Array.from(selectedGenres).every(selectedGenre =>
+                game.Genres.includes(selectedGenre.trim())
+            )
+        );
+    }
+
+    // Filter by consoles if any are selected
+    if (selectedConsoles.size > 0) {
+        filteredGames = filteredGames.filter(game =>
+            Array.from(selectedConsoles).every(selectedConsole =>
+                game.Console.includes(selectedConsole.trim())
+            )
+        );
+    }
+
+    // Filter by price range
+    const freeGames = filteredGames.filter(game =>
+        game.Price.some(priceObj => priceObj.Price === "Free to Play")
+    );
+    const paidGames = filteredGames.filter(game =>
+        game.Price.some(priceObj => {
+            const price = parseFloat(priceObj.Price.replace('$', '').replace(',', ''));
+            return !isNaN(price) && price <= selectedPrice;
+        })
+    );
+
+    // Combine free games with the filtered paid games
+    filteredGames = [...freeGames, ...paidGames];
+
+    // Filter by release date and compare the release year with selectedReleaseDate
+    filteredGames = filteredGames.filter(game => {
+        // Parse the release date into a Date object (e.g., dd.mm.yyyy format)
+        const releaseDateParts = game['Release date'].split('.'); // Split by dot to get [dd, mm, yyyy]
+        const releaseYear = parseInt(releaseDateParts[2], 10); // Get the year part
+
+        return releaseYear >= selectedReleaseDate;  // Compare the release year with selectedReleaseDate
+    });
+
+    filteredGames = filteredGames.filter(game => {
+        // Parse the release date into a Date object (e.g., dd.mm.yyyy format)
+        const releaseDateParts = game['Release date'].split('.'); // Split by dot to get [dd, mm, yyyy]
+        const releaseYear = parseInt(releaseDateParts[2], 10); // Get the year part
+
+        // Only show games released after the selected year
+        return releaseYear >= selectedReleaseDate;  // Compare with the selected year
+    });
+
+    // Filter by rating: Use the selectedRating value to filter the games
+    filteredGames = filteredGames.filter(game => {
+        const ratingText = game.Rating.split('(')[0].trim();  // Extract "Mostly Positive" from "Mostly Positive (650,000+)"
+        const gameRatingIndex = ratings.indexOf(ratingText);
+        return gameRatingIndex >= (selectedRating - 1);
+    });
+
+    filteredGames = filteredGames.filter(game => {
+        const story = game.Story;
+
+        console.log(`Checking story for game "${game.Name}": ${story}`);
+
+        // If the story is "No story", include it
+        if (story === "No story") {
+            console.log(`Game "${game.Name}" has no story. Included.`);
+            return true;  // Always include games with "No story"
+        }
+
+        // If the story is a range (e.g., "50-70 hours")
+        if (story.includes('-')) {
+            const [minHours, maxHours] = story.split('-').map(s => {
+                return parseInt(s.replace(' hours', '').trim());  // Remove "hours" and convert to integer
+            });
+
+            console.log(`Story range for "${game.Name}": ${minHours}-${maxHours}`);
+
+            // Include the game if the maximum story hours are less than or equal to the selected value
+            return maxHours <= selectedStoryTime;
+        }
+
+        // If the story is a single number (e.g., "50 hours"), we strip "hours" and compare
+        const hours = parseInt(story.replace(' hours', '').trim());
+
+        console.log(`Story time for "${game.Name}": ${hours}`);
+
+        return hours <= selectedStoryTime;  // Include if the story hours are less than or equal to the selected value
+    });
+
+    // Log after filtering by story time
+    console.log("After story time filter:", filteredGames);
+
+    // Display filtered games
+    displayGames('data-container', filteredGames);
+}
+
+
+
+
+
+// Attach event listeners to genre checkboxes
+function setupGenreCheckboxListeners() {
+    const checkboxesGenres = document.querySelectorAll('.filter-checkbox-genres');
+    checkboxesGenres.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                selectedGenres.add(this.value); // Add selected genre to the set
+            } else {
+                selectedGenres.delete(this.value); // Remove unselected genre
+            }
+            filterGames(); // Apply combined filters
+        });
+    });
+}
+
+function setupConsoleCheckboxListeners() {
+    const checkboxesConsoles = document.querySelectorAll('.filter-checkbox-consoles');
+
+    checkboxesConsoles.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            console.log(`Checkbox changed: ${this.value}, Checked: ${this.checked}`);
+            if (this.checked) {
+                selectedConsoles.add(this.value); // Add selected console to the set
+            } else {
+                selectedConsoles.delete(this.value); // Remove unselected console
+            }
+            filterGames(); // Apply combined filters
+        });
+    });
+}
+
+
+
+function populateDropdownWithGenres(dataArray, dropdownContainerId) {
+    const dropdownContainer = document.getElementById(dropdownContainerId);
+    if (!dropdownContainer) {
+        console.error(`Dropdown container with ID "${dropdownContainerId}" not found!`);
+        return;
+    }
+
+    // Extract unique genres
+    const uniqueGenres = new Set();
+    dataArray.forEach(item => {
+        item.Genres.forEach(genre => uniqueGenres.add(genre.trim()));
+    });
+
+    // Clear existing dropdown content
+    dropdownContainer.innerHTML = '';
+
+    // Create list items dynamically
+    uniqueGenres.forEach(genre => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('dropdown-item');
+
+        // Create the label element
+        const label = document.createElement('label');
+        label.classList.add('checkbox-label');  // Add the correct class for styling
+
+        // Create the checkbox input element
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.classList.add('checkbox-input', 'filter-checkbox-genres');  // Add the correct classes
+        checkbox.value = genre;
+
+        // Create the custom checkbox container
+        const customCheckbox = document.createElement('span');
+        customCheckbox.classList.add('custom-checkbox');
+
+        // Attach the checkbox input and the custom checkbox to the label
+        label.appendChild(checkbox);
+        label.appendChild(customCheckbox);
+        label.append(` ${genre}`);
+
+        // Append the label to the list item
+        listItem.appendChild(label);
+
+        // Finally, append the list item to the dropdown container
+        dropdownContainer.appendChild(listItem);
+
+    });
+}
+
+function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
+    const dropdownContainer = document.getElementById(dropdownContainerId);
+    if (!dropdownContainer) {
+        console.error(`Dropdown container with ID "${dropdownContainerId}" not found!`);
+        return;
+    }
+
+    // Extract unique genres
+    const uniqueConsoles = new Set();
+    dataArray.forEach(item => {
+        item.Console.forEach(console => uniqueConsoles.add(console.trim()));
+    });
+
+    // Clear existing dropdown content
+    dropdownContainer.innerHTML = '';
+
+    // Create list items dynamically
+    uniqueConsoles.forEach(console => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('dropdown-item');
+
+        // Create the label element
+        const label = document.createElement('label');
+        label.classList.add('checkbox-label');  // Add the correct class for styling
+
+        // Create the checkbox input element
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.classList.add('checkbox-input', 'filter-checkbox-consoles');  // Add the correct classes
+        checkbox.value = console;
+
+        // Create the custom checkbox container
+        const customCheckbox = document.createElement('span');
+        customCheckbox.classList.add('custom-checkbox');
+
+        // Attach the checkbox input and the custom checkbox to the label
+        label.appendChild(checkbox);
+        label.appendChild(customCheckbox);
+        label.append(` ${console}`);
+
+        // Append the label to the list item
+        listItem.appendChild(label);
+
+        // Finally, append the list item to the dropdown container
+        dropdownContainer.appendChild(listItem);
+
+    });
+}

@@ -63,14 +63,17 @@
 }
 
 .card-saleSign {
-  color: white;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 8%;
   right: 8%;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   font-weight: bold;
-  background-color: blue;
+  background-color: rgb(45, 0, 93);
+  font-size: 25px;
+  border: 1px solid white;
+
 }
 
 .card-popularSign {
@@ -82,6 +85,8 @@
   border-radius: 5px;
   font-weight: bold;
   background-color: green;
+  border: 1px solid white;
+
 }
 
 .card-gameName {
@@ -208,8 +213,7 @@ h2 {
 
 /* Dropdown Menu Styles */
 .dropdown-menu {
-  background-color: #2b2b2b;
-  /* Same dark grey as body */
+  background-color: red;
   padding: 15px;
   border-radius: 5px;
   border: 1px solid white;
@@ -217,32 +221,136 @@ h2 {
 }
 
 .dropdown-item {
-  color: #f0f0f0;
-  /* Light grey text */
+  color: #ffffff;
   transition: background-color 0.3s;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .dropdown-item:hover {
   background-color: #696969;
-  /* Darker grey on hover */
   border-radius: 5px;
 }
 
-/* Custom styles for the expanding dropdown */
+
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(166, 166, 166);
+  line-height: 1.5;
+}
+
+.checkbox-input {
+  display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox {
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 12px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Custom color changes when checked */
+.checkbox-input:checked + .custom-checkbox {
+  border-color: white;
+  background-color: #3700ff;
+
+}
+
+.checkbox-input:checked + .custom-checkbox::after {
+  content: '✔';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+}
+
+.custom-checkbox:hover {
+  border-color: #3700ff;
+}
+
+.checkbox-label .label-text {
+  font-size: 18px;
+  color: #333;
+  transition: color 0.2s;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .checkbox-label {
+      font-size: 16px;
+  }
+
+  .custom-checkbox {
+      width: 20px;
+      height: 20px; /* Maintain the square shape */
+  }
+
+  .checkbox-input:checked + .custom-checkbox {
+      width: 20px;
+      height: 20px; /* Maintain the square shape */
+  }
+}
+
+/* Even smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+  .checkbox-container {
+      gap: 8px;
+  }
+
+  .checkbox-label {
+      font-size: 14px;
+  }
+
+  .custom-checkbox {
+      width: 18px;
+      height: 18px; /* Ensure the checkbox is square */
+  }
+
+  .checkbox-input:checked + .custom-checkbox {
+      width: 18px;
+      height: 18px; /* Ensure the checkbox is square */
+  }
+}
+
+
 .dropdown-left {
   margin-bottom: 15px;
+}
+
+.dropdownButton{
+  background-color: #00294a;
+  width: 100%;
+  color: white;
+}
+
+.dropdownButton:hover{
+  background-color: #003b6c;
+  border: 1px white solid;
+  color: lightgrey;
 }
 
 /* Smooth transition effect for dropdown content */
 .collapse {
   transition: max-height 1s ease-in-out;
-}
-
-/* Optional: make the button styles more obvious */
-.btn-secondary {
-  width: 100%;
-  /* Make dropdown button full width */
 }
 
 #generalInfoList {
@@ -468,4 +576,20 @@ a {
   padding: 0.2em 0.5em;
   font-size: 0.9em;
   color: #0c5460;
+}
+
+.valueBorders{
+  margin-top: 10px;
+}
+
+#priceRange{
+  margin-top: 10px;
+}
+
+.Ranges{
+  text-align: center;
+}
+
+.a{
+  color: #005193;
 }
