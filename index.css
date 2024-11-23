@@ -141,15 +141,15 @@ body {
 .navbar {
   background: hsla(0, 0%, 8%, 1);
 
-  background: linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 66%, hsla(118, 100%, 11%, 1) 75%, hsla(113, 100%, 16%, 1) 100%);
+  background: linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 42%, hsla(211, 74%, 21%, 1) 81%, hsla(211, 95%, 31%, 1) 91%, hsla(211, 85%, 36%, 1) 95%, hsla(211, 100%, 50%, 1) 100%);
 
-  background: -moz-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 66%, hsla(118, 100%, 11%, 1) 75%, hsla(113, 100%, 16%, 1) 100%);
+  background: -moz-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 42%, hsla(211, 74%, 21%, 1) 81%, hsla(211, 95%, 31%, 1) 91%, hsla(211, 85%, 36%, 1) 95%, hsla(211, 100%, 50%, 1) 100%);
 
-  background: -webkit-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 66%, hsla(118, 100%, 11%, 1) 75%, hsla(113, 100%, 16%, 1) 100%);
+  background: -webkit-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 42%, hsla(211, 74%, 21%, 1) 81%, hsla(211, 95%, 31%, 1) 91%, hsla(211, 85%, 36%, 1) 95%, hsla(211, 100%, 50%, 1) 100%);
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#141414", endColorstr="#141414", GradientType=1);
   border-radius: 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 70px hsla(204, 100%, 44%, 0.473);
   margin-top: 10px;
 }
 
@@ -185,15 +185,28 @@ h2 {
 }
 
 .btn-custom {
-  background-color: #141414;
-  /* Dark button background */
-  color: #00b7ff;
-  /* Light blue text */
+  background-color: #3354703c;
+  color: #ffffff;
   letter-spacing: 1px;
-  border: 2px solid #00b7ff;
-  /* Blue border */
+  border: 2px solid #337eff;
   margin-right: 10px;
   font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 150px;
+  min-width: 120px;
+  transition: 300ms;
+}
+
+.btn-custom:hover {
+  transform: scale(1.1);
+  border: 2px solid #00eaff;
+  color: white;
+  background-color: #3351707a;
+}
+
+.btn-custom:active {
+  background-color: white;
 }
 
 /* Dropdown Button Styles */
@@ -396,8 +409,58 @@ h2 {
   margin-bottom: 10px;
 }
 
+
 footer {
-  padding: 100px;
+  background-color: #151515;
+  color: #ccc;
+  text-align: center;
+}
+
+footer a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer .social-icons a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+footer hr {
+  border-color: #444;
+}
+
+footer h5 {
+  font-size: xx-large;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.frow {
+  border: 2px solid rgb(64, 64, 64);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.fcol-4 {
+  border-left: 1px solid rgb(64, 64, 64);
+  border-right: 1px solid rgb(64, 64, 64);
+  position: relative;
+}
+
+.fcol-4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  border-bottom: 1px solid rgb(64, 64, 64);
+  transform: translateX(-50%);
 }
 
 a {
@@ -434,8 +497,10 @@ a {
 
 .collapse.show {
   max-height: 200px;
-  gap: 10px; /* Limit height of expanded dropdown */
-  overflow-y: auto;  /* Scrollable content */
+  gap: 10px;
+  /* Limit height of expanded dropdown */
+  overflow-y: auto;
+  /* Scrollable content */
   scroll-behavior: smooth;
   overflow-x: hidden;
 
@@ -443,49 +508,63 @@ a {
 
 /* Apply this style to all scrollable elements */
 #dropdownMenu1::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 10px;
+  /* Width of the scrollbar */
 }
 
 #dropdownMenu1::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Light gray background for the scrollbar track */
-  border-radius: 5px; /* Rounded corners for a modern look */
+  background: #f1f1f1;
+  /* Light gray background for the scrollbar track */
+  border-radius: 5px;
+  /* Rounded corners for a modern look */
 }
 
 #dropdownMenu1::-webkit-scrollbar-thumb {
-  background: #888; /* Gray color for the scroll handle */
-  border-radius: 5px; /* Rounded corners for the scroll handle */
+  background: #888;
+  /* Gray color for the scroll handle */
+  border-radius: 5px;
+  /* Rounded corners for the scroll handle */
 }
 
 #dropdownMenu1::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker color when hovering over the scroll handle */
+  background: #555;
+  /* Darker color when hovering over the scroll handle */
 }
 
 #dropdownMenu4::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 10px;
+  /* Width of the scrollbar */
 }
 
 #dropdownMenu4::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Light gray background for the scrollbar track */
-  border-radius: 5px; /* Rounded corners for a modern look */
+  background: #f1f1f1;
+  /* Light gray background for the scrollbar track */
+  border-radius: 5px;
+  /* Rounded corners for a modern look */
 }
 
 #dropdownMenu4::-webkit-scrollbar-thumb {
-  background: #888; /* Gray color for the scroll handle */
-  border-radius: 5px; /* Rounded corners for the scroll handle */
+  background: #888;
+  /* Gray color for the scroll handle */
+  border-radius: 5px;
+  /* Rounded corners for the scroll handle */
 }
 
 #dropdownMenu4::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker color when hovering over the scroll handle */
+  background: #555;
+  /* Darker color when hovering over the scroll handle */
 }
 
-#dropdownMenu6{
+#dropdownMenu6 {
   text-align: center;
 }
-#minval{
+
+#minval {
   float: left;
   margin-left: 10%;
 }
-#maxval{
+
+#maxval {
   float: right;
   margin-right: 10%;
 }
@@ -508,7 +587,7 @@ a {
   color: #023aed;
 }
 
-.dropdownSpecial{
+.dropdownSpecial {
   margin-top: 30px;
   font-size: 20px;
 }
@@ -576,6 +655,11 @@ a {
   padding: 0.2em 0.5em;
   font-size: 0.9em;
   color: #0c5460;
+}
+
+
+.cheapest-price {
+  background-color: lightgreen;
 }
 
 .valueBorders{

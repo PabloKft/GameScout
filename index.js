@@ -374,9 +374,8 @@ document.addEventListener("DOMContentLoaded", function () {
 let selectedGenres = new Set();
 let selectedConsoles = new Set();
 let selectedRating = 5; // Default to "Mostly Positive"
-
 let selectedPrice = 70;  // Default price
-let selectedReleaseDate = 2024;  // Default release year
+let selectedReleaseDate = 1990;  // Default release year
 let selectedStoryTime = 100; // Default value for story time range (can be changed)
 
 // Update the price display dynamically when the slider is adjusted
