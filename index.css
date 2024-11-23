@@ -469,3 +469,44 @@ a {
   font-size: 0.9em;
   color: #0c5460;
 }
+
+.row > .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#game-column-1, #game-column-2, #game-column-3 {
+  min-height: 800px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+
+.game-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 800px; 
+}
+
+.game-details div {
+    margin-bottom: 10px; 
+}
+
+table {
+    width: 100%; 
+    table-layout: fixed;
+}
+
+.cheapest-price {
+  background-color: lightgreen;
+}
