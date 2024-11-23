@@ -25,13 +25,15 @@
 
 
           <form class="d-flex search-container" role="search">
-            <button class="btn btn-custom" type="button">Compare</button>
+            <a href="./compare.html"><button class="btn-custom" type="button">Compare</button></a>
+            
+
             <input class="form-control me-2 Search" type="search" placeholder="Search"
-              style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
+                style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
             <button class="btn" type="submit"
-              style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
-                class="fa fa-search"></i></button>
-          </form>
+                style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
+                    class="fa fa-search"></i></button>
+        </form>
         </div>
       </nav>
     </div>
@@ -53,19 +55,20 @@
 
 
           <div class="dropdown-left">
-            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu2" aria-expanded="false">
-                Price
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu2"
+              aria-expanded="false">
+              Price
             </button>
             <div class="collapse" id="dropdownMenu2">
-                <div>
-                    <span id="minval">Free</span>
-                    <span id="curvalDate"></span>
-                    <span id="maxval">$70</span>
-                </div>
-                <input id="priceRange" type="range" min="0" max="70" step="1">
+              <div>
+                <span id="minval">Free</span>
+                <span id="curvalDate"></span>
+                <span id="maxval">$70</span>
+              </div>
+              <input id="priceRange" type="range" min="0" max="70" step="1">
             </div>
-        </div>
-        
+          </div>
+
 
           <div class="dropdown-left">
             <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu3"
@@ -97,7 +100,7 @@
               aria-expanded="false">Release Date</button>
             <div class="collapse" id="dropdownMenu5">
               <div><span id="minval">1990</span><span id="curvalDate"></span></span><span id="maxval">2024</span></div>
-              <input id="dateRange" onchange="showDate()" type="range" min="1990" max="2024">            
+              <input id="dateRange" onchange="showDate()" type="range" min="1990" max="2024">
             </div>
           </div>
 
@@ -118,7 +121,42 @@
       </div>
     </div>
   </div>
-  <footer>&copy; copyright intended</footer>
+  <footer class="text-white mt-5">
+    <div class="container py-4">
+      <div class="row frow">
+        <div class="col-md-4 fcol-4">
+          <h5>About GameScout</h5>
+          <p>
+            GameScout is your ultimate destination for discovering games, comparing features, and
+            finding the best
+            deals on your favorite titles. Stay connected for the latest sales.
+          </p>
+        </div>
+        <div class="col-md-4 fcol-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./fooldal.html">Home</a></li>
+            <li><a href="./jatekok.html">All Games</a></li>
+            <li><a href="./compare.html">Compare Games</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 fcol-4">
+          <h5>Contact us:</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a><br>E-mail:<br>
+            <a href="#" class="text-white"><i class="">kovacsm2@kkszki.hu</i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <i class="fa-solid fa-location-dot"></i> Miskolc, Palóczy László utca 3, 3525
+      <br>
+      <p class="mb-0">&copy; 2024 GameScout. All rights reserved.</p>
+    </div>
+  </footer>
 
 
 
