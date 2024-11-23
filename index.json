@@ -336,12 +336,12 @@
         "Rating": "Overwhelmingly Positive (1,000,000+)",
         "Image": [
             "./pictures/MC_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/MC_Pic1.jpg",
+            "./pictures/MC_Pic2.jpg",
+            "./pictures/MC_Pic3.jpg",
+            "./pictures/MC_Pic4.jpg",
+            "./pictures/MC_Pic5.jpg",
+            "./pictures/MC_Pic6.jpg"
     ],
     "ClickCount": 0,
     "Sale": [{"IsOnSale": false, "Amount": 0}]
@@ -365,12 +365,12 @@
         "Rating": "Very Positive (200,000+)",
         "Image": [
             "./pictures/SWB2_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/SWB2_Pic1.jpg",
+            "./pictures/SWB2_Pic2.jpg",
+            "./pictures/SWB2_Pic3.jpg",
+            "./pictures/SWB2_Pic4.jpg",
+            "./pictures/SWB2_Pic5.jpg",
+            "./pictures/SWB2_Pic6.jpg"
     ],
     "ClickCount": 0,
     "Sale": [{"IsOnSale": false, "Amount": 0}]
@@ -394,12 +394,12 @@
         "Rating": "Mostly Positive (100,000+)",
         "Image": [
             "./pictures/BF5_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/BF5_Pic1.jpg",
+            "./pictures/BF5_Pic2.jpg",
+            "./pictures/BF5_Pic3.jpg",
+            "./pictures/BF5_Pic4.jpg",
+            "./pictures/BF5_Pic5.jpg",
+            "./pictures/BF5_Pic6.jpg"
     ],
     "ClickCount": 0,
         "Sale": [{"IsOnSale": true, "Amount": 75}]
@@ -422,12 +422,12 @@
         "Rating": "Overwhelmingly Positive (400,000+)",
         "Image": [
             "./pictures/SUB_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/SUB_Pic1.jpg",
+            "./pictures/SUB_Pic2.jpg",
+            "./pictures/SUB_Pic3.jpg",
+            "./pictures/SUB_Pic4.jpg",
+            "./pictures/SUB_Pic5.jpg",
+            "./pictures/SUB_Pic6.jpg"
     ],
     "ClickCount": 0,
     "Sale": [{"IsOnSale": false, "Amount": 0}]
@@ -450,12 +450,12 @@
         "Rating": "Overwhelmingly Positive (500,000+)",
         "Image": [
             "./pictures/RDR2_Logo.jpg",
-            "./pictures/RD2_Logo2.jpg",
-            "./pictures/RD2_Logo3.jpg",
-            "./pictures/RD2_Logo4.jpg",
-            "./pictures/RD2_Logo5.jpg",
-            "./pictures/RD2_Logo6.jpg",
-            "./pictures/RD2_Logo7.jpg"
+            "./pictures/RDR2_Pic1.jpg",
+            "./pictures/RDR2_Pic2.jpg",
+            "./pictures/RDR2_Pic3.jpg",
+            "./pictures/RDR2_Pic4.jpg",
+            "./pictures/RDR2_Pic5.jpg",
+            "./pictures/RDR2_Pic6.jpg"
     ],
     "ClickCount": 150,
         "Sale": [{"IsOnSale": true, "Amount": 90}]
@@ -476,12 +476,12 @@
         "Rating": "N/A",
         "Image": [
             "./pictures/BMW_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/BMW_Pic1.jpg",
+            "./pictures/BMW_Pic2.jpg",
+            "./pictures/BMW_Pic3.jpg",
+            "./pictures/BMW_Pic4.jpg",
+            "./pictures/BMW_Pic5.jpg",
+            "./pictures/BMW_Pic6.jpg"
     ],
     "ClickCount": 0,
         "Sale": [{"IsOnSale": false, "Amount": 0}]
@@ -504,12 +504,12 @@
         "Rating": "Overwhelmingly Positive (150,000+)",
         "Image": [
             "./pictures/MSMR_Logo.jpg",
-            "./pictures/RD_Logo2.jpg",
-            "./pictures/RD_Logo3.jpg",
-            "./pictures/RD_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/MSMR_Pic1.jpg",
+            "./pictures/MSMR_Pic2.jpg",
+            "./pictures/MSMR_Pic3.jpg",
+            "./pictures/MSMR_Pic4.jpg",
+            "./pictures/MSMR_Pic5.jpg",
+            "./pictures/MSMR_Pic6.jpg"
     ],
     "ClickCount": 0,
     "Sale": [{"IsOnSale": false, "Amount": 0}]
