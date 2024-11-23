@@ -135,26 +135,31 @@
     }
 
     function showGameSuggestions(column) {
-        const searchQuery = document.getElementById(`searchGame${column}`).value.toLowerCase();
-        const suggestionsContainer = document.getElementById(`suggestions${column}`);
-        suggestionsContainer.innerHTML = '';
+    const searchQuery = document.getElementById(`searchGame${column}`).value.toLowerCase();
+    const suggestionsContainer = document.getElementById(`suggestions${column}`);
+    suggestionsContainer.innerHTML = '';
 
-        const filteredGames = searchQuery
-            ? arrayData.filter(game => game.Name.toLowerCase().includes(searchQuery))
-            : arrayData;
+    // Filter and sort the games
+    const filteredGames = searchQuery
+        ? arrayData.filter(game => game.Name.toLowerCase().includes(searchQuery))
+        : arrayData;
 
-        filteredGames.forEach(game => {
-            const suggestionItem = document.createElement('a');
-            suggestionItem.href = "#";
-            suggestionItem.className = "list-group-item list-group-item-action";
-            suggestionItem.textContent = game.Name;
-            suggestionItem.onclick = (event) => {
-                event.preventDefault();
-                selectGame(column, game.ID);
-            };
-            suggestionsContainer.appendChild(suggestionItem);
-        });
-    }
+    // Sort games alphabetically by name
+    filteredGames.sort((a, b) => a.Name.localeCompare(b.Name));
+
+    // Create suggestion items
+    filteredGames.forEach(game => {
+        const suggestionItem = document.createElement('a');
+        suggestionItem.href = "#";
+        suggestionItem.className = "list-group-item list-group-item-action";
+        suggestionItem.textContent = game.Name;
+        suggestionItem.onclick = (event) => {
+            event.preventDefault();
+            selectGame(column, game.ID);
+        };
+        suggestionsContainer.appendChild(suggestionItem);
+    });
+}
 
     function selectGame(column, gameId) {
         const selectedGame = arrayData.find(game => game.ID == gameId);
