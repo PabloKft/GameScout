@@ -238,7 +238,7 @@ function showRequestedData(infoType) {
                         <div class="price-item">
                             <span class="platform">${price.Platform}:</span>
                             <span class="price">${price.Price}</span>
-                            <a href="${price.link}" target="_blank" class="buy-link">Buy now</a>
+                            <a href="${price.link}" target="_blank" class="buy-link"><i class="fa-solid fa-cart-shopping"></i> Buy now</a>
                         </div>
                     `).join("")}
                 </div>`;

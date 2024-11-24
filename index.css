@@ -264,7 +264,8 @@ h2 {
 }
 
 .checkbox-input {
-  display: none; /* Hide the default checkbox */
+  display: none;
+  /* Hide the default checkbox */
 }
 
 .custom-checkbox {
@@ -279,13 +280,13 @@ h2 {
 }
 
 /* Custom color changes when checked */
-.checkbox-input:checked + .custom-checkbox {
+.checkbox-input:checked+.custom-checkbox {
   border-color: white;
   background-color: #3700ff;
 
 }
 
-.checkbox-input:checked + .custom-checkbox::after {
+.checkbox-input:checked+.custom-checkbox::after {
   content: '✔';
   position: absolute;
   top: 50%;
@@ -309,38 +310,42 @@ h2 {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .checkbox-label {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .custom-checkbox {
-      width: 20px;
-      height: 20px; /* Maintain the square shape */
+    width: 20px;
+    height: 20px;
+    /* Maintain the square shape */
   }
 
-  .checkbox-input:checked + .custom-checkbox {
-      width: 20px;
-      height: 20px; /* Maintain the square shape */
+  .checkbox-input:checked+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    /* Maintain the square shape */
   }
 }
 
 /* Even smaller screens (e.g., phones) */
 @media (max-width: 480px) {
   .checkbox-container {
-      gap: 8px;
+    gap: 8px;
   }
 
   .checkbox-label {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .custom-checkbox {
-      width: 18px;
-      height: 18px; /* Ensure the checkbox is square */
+    width: 18px;
+    height: 18px;
+    /* Ensure the checkbox is square */
   }
 
-  .checkbox-input:checked + .custom-checkbox {
-      width: 18px;
-      height: 18px; /* Ensure the checkbox is square */
+  .checkbox-input:checked+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    /* Ensure the checkbox is square */
   }
 }
 
@@ -349,13 +354,13 @@ h2 {
   margin-bottom: 15px;
 }
 
-.dropdownButton{
+.dropdownButton {
   background-color: #00294a;
   width: 100%;
   color: white;
 }
 
-.dropdownButton:hover{
+.dropdownButton:hover {
   background-color: #003b6c;
   border: 1px white solid;
   color: lightgrey;
@@ -592,21 +597,46 @@ a {
   font-size: 20px;
 }
 
-
 /* Genres */
 .genres {
-  display: flex;
   gap: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 
 .genre-item {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.2em 0.5em;
-  font-size: 0.9em;
-  color: #333;
+  justify-content: center;
+  align-items: center;
+  background-color: #003057;
+  min-width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(73, 123, 231);
+  margin: 2px;
+}
+
+.consoles {  
+  gap: 0.5em;
+  margin-bottom: 0.8em; 
+}
+
+
+.console-item {
+  justify-content: center;
+  align-items: center; 
+  background-color: #1a0675;
+  min-width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(85, 95, 228);  
+  margin: 2px;
 }
 
 /* Prices */
@@ -615,20 +645,24 @@ a {
 }
 
 .price-item {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  justify-content: center;
+  align-items: center; 
+  background-color: #1a0675;
+  min-width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(85, 95, 228);  
+  margin: 2px;
 }
 
-.platform {
-  font-weight: bold;
-  color: #0073e6;
-}
+
 
 .price {
-  color: #e63946;
+  color: #72efff;
   margin-left: 0.5em;
 }
 
@@ -642,38 +676,26 @@ a {
   text-decoration: underline;
 }
 
-/* Consoles */
-.consoles {
-  display: flex;
-  gap: 0.5em;
-}
 
-.console-item {
-  background-color: #d1ecf1;
-  border: 1px solid #bee5eb;
-  border-radius: 5px;
-  padding: 0.2em 0.5em;
-  font-size: 0.9em;
-  color: #0c5460;
-}
+
 
 
 .cheapest-price {
   background-color: lightgreen;
 }
 
-.valueBorders{
+.valueBorders {
   margin-top: 10px;
 }
 
-#priceRange{
+#priceRange {
   margin-top: 10px;
 }
 
-.Ranges{
+.Ranges {
   text-align: center;
 }
 
-.a{
+.a {
   color: #005193;
 }
