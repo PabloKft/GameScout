@@ -183,9 +183,9 @@
             " Cross Platform"
         ],
         "Console": [
-            "PC",
+            "<i class=\"fa-solid fa-computer\"></i> PC",
             "Xbox",
-            "PS"
+            "<i class=\"fa-brands fa-playstation\"></i> PS"
         ],
         "Price": [
             {
@@ -1300,8 +1300,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "27",
@@ -1355,8 +1354,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "28",
@@ -1404,8 +1402,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "29",
@@ -1459,8 +1456,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "30",
@@ -1524,8 +1520,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "31",
@@ -1579,8 +1574,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "32",
@@ -1632,8 +1626,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "33",
@@ -1672,8 +1665,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "34",
@@ -1715,8 +1707,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "35",
@@ -1770,8 +1761,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "36",
@@ -1825,8 +1815,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "37",
@@ -1877,8 +1866,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "38",
@@ -1930,8 +1918,7 @@
                 "IsOnSale": true,
                 "Amount": 85
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "39",
@@ -1983,8 +1970,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "40",
@@ -2036,8 +2022,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "41",
@@ -2089,8 +2074,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "42",
@@ -2144,8 +2128,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "43",
@@ -2192,8 +2175,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "44",
@@ -2240,8 +2222,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "45",
@@ -2288,8 +2269,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "46",
@@ -2332,8 +2312,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "47",
@@ -2380,8 +2359,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     },
     {
         "ID": "48",
@@ -2435,7 +2413,6 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ],
-        "userRatings": "5"
+        ]
     }
 ]

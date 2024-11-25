@@ -632,20 +632,45 @@ a {
 
 
 
-
 .genres {
-  display: flex;
   gap: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 
 .genre-item {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.2em 0.5em;
-  font-size: 0.9em;
-  color: #333;
+  justify-content: center;
+  align-items: center;
+  background-color: #003057;
+  min-width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(73, 123, 231);
+  margin: 2px;
+}
+
+.consoles {  
+  gap: 0.5em;
+  margin-bottom: 0.8em; 
+}
+
+
+.console-item {
+  justify-content: center;
+  align-items: center; 
+  background-color: #1a0675;
+  min-width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(85, 95, 228);  
+  margin: 2px;
 }
 
 /* Prices */
@@ -654,20 +679,24 @@ a {
 }
 
 .price-item {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  justify-content: center;
+  align-items: center; 
+  background-color: #1a0675;
+  min-width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(85, 95, 228);  
+  margin: 2px;
 }
 
-.platform {
-  font-weight: bold;
-  color: #0073e6;
-}
+
 
 .price {
-  color: #e63946;
+  color: #72efff;
   margin-left: 0.5em;
 }
 
@@ -681,20 +710,8 @@ a {
   text-decoration: underline;
 }
 
-/* Consoles */
-.consoles {
-  display: flex;
-  gap: 0.5em;
-}
 
-.console-item {
-  background-color: #d1ecf1;
-  border: 1px solid #bee5eb;
-  border-radius: 5px;
-  padding: 0.2em 0.5em;
-  font-size: 0.9em;
-  color: #0c5460;
-}
+
 
 
 .cheapest-price {
