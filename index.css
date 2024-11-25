@@ -63,29 +63,36 @@
 }
 
 .card-saleSign {
-  color: rgb(255, 255, 255);
+  color: white;
   position: absolute;
+  font-size: 135%;
+  text-align: center;
   top: 8%;
   right: 8%;
+  width: 13%;
+  height: 13%;
   padding: 5px;
   border-radius: 5px;
   font-weight: bold;
-  background-color: rgb(45, 0, 93);
-  font-size: 25px;
-  border: 1px solid white;
+  background-color: rgb(102, 0, 71);
+  border: 2px solid rgb(137, 137, 137);
 
 }
 
 .card-popularSign {
   color: white;
   position: absolute;
+  font-size: 135%;
+  text-align: center;
   top: 8%;
   left: 8%;
-  padding: 10px;
+  width: 13%;
+  height: 13%;
+  padding: 5px;
   border-radius: 5px;
   font-weight: bold;
-  background-color: green;
-  border: 1px solid white;
+  background-color: rgb(0, 89, 0);
+  border: 2px solid rgb(137, 137, 137);
 
 }
 
@@ -140,16 +147,12 @@ body {
 
 .navbar {
   background: hsla(0, 0%, 8%, 1);
-
   background: linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 42%, hsla(211, 74%, 21%, 1) 81%, hsla(211, 95%, 31%, 1) 91%, hsla(211, 85%, 36%, 1) 95%, hsla(211, 100%, 50%, 1) 100%);
-
   background: -moz-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 42%, hsla(211, 74%, 21%, 1) 81%, hsla(211, 95%, 31%, 1) 91%, hsla(211, 85%, 36%, 1) 95%, hsla(211, 100%, 50%, 1) 100%);
-
   background: -webkit-linear-gradient(0deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 8%, 1) 42%, hsla(211, 74%, 21%, 1) 81%, hsla(211, 95%, 31%, 1) 91%, hsla(211, 85%, 36%, 1) 95%, hsla(211, 100%, 50%, 1) 100%);
-
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#141414", endColorstr="#141414", GradientType=1);
   border-radius: 15px;
-  box-shadow: 0 2px 70px hsla(204, 100%, 44%, 0.473);
+  box-shadow: 0 2px 100px hsla(204, 100%, 44%, 0.473);
   margin-top: 10px;
 }
 
@@ -264,7 +267,8 @@ h2 {
 }
 
 .checkbox-input {
-  display: none; /* Hide the default checkbox */
+  display: none;
+  /* Hide the default checkbox */
 }
 
 .custom-checkbox {
@@ -279,13 +283,13 @@ h2 {
 }
 
 /* Custom color changes when checked */
-.checkbox-input:checked + .custom-checkbox {
+.checkbox-input:checked+.custom-checkbox {
   border-color: white;
   background-color: #3700ff;
 
 }
 
-.checkbox-input:checked + .custom-checkbox::after {
+.checkbox-input:checked+.custom-checkbox::after {
   content: '✔';
   position: absolute;
   top: 50%;
@@ -309,38 +313,42 @@ h2 {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .checkbox-label {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .custom-checkbox {
-      width: 20px;
-      height: 20px; /* Maintain the square shape */
+    width: 20px;
+    height: 20px;
+    /* Maintain the square shape */
   }
 
-  .checkbox-input:checked + .custom-checkbox {
-      width: 20px;
-      height: 20px; /* Maintain the square shape */
+  .checkbox-input:checked+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    /* Maintain the square shape */
   }
 }
 
 /* Even smaller screens (e.g., phones) */
 @media (max-width: 480px) {
   .checkbox-container {
-      gap: 8px;
+    gap: 8px;
   }
 
   .checkbox-label {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .custom-checkbox {
-      width: 18px;
-      height: 18px; /* Ensure the checkbox is square */
+    width: 18px;
+    height: 18px;
+    /* Ensure the checkbox is square */
   }
 
-  .checkbox-input:checked + .custom-checkbox {
-      width: 18px;
-      height: 18px; /* Ensure the checkbox is square */
+  .checkbox-input:checked+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    /* Ensure the checkbox is square */
   }
 }
 
@@ -349,13 +357,13 @@ h2 {
   margin-bottom: 15px;
 }
 
-.dropdownButton{
+.dropdownButton {
   background-color: #00294a;
   width: 100%;
   color: white;
 }
 
-.dropdownButton:hover{
+.dropdownButton:hover {
   background-color: #003b6c;
   border: 1px white solid;
   color: lightgrey;
@@ -569,31 +577,62 @@ a {
   margin-right: 10%;
 }
 
-.stars {
-  display: flex;
-  justify-content: center;
+
+#stars{
+  max-height: 50px;
+}
+#userRatings{
+  align-content: center;
+}
+.star{
+  font-size: 250%; 
+}
+.star.hover{
+  color: #585200;
+}
+.star.selected{
+  color: #585200;
+}
+.button{
+  background-color: #00294a;
+  padding: 1%;
+  padding-left: 15%;
+  padding-right: 15%;
+  border-radius: 15px;
+}
+.button:hover{
+  background-color: #00294a;
+  color: rgb(199, 199, 199);
+  border: 1px solid #025396;
+}
+.message{
+  margin-top: 3%;
+  color: black;
+  background-color: rgb(0, 191, 255);
+  border: 1px solid white;
+  padding: 1%;
+  padding-left: 12%;
+  padding-right: 12%;
+  border-radius: 15px;
+  font-style: italic;
+}
+#currentRatings{
+  margin-top: 3%;
+  font-style: italic;
 }
 
-.star {
-  font-size: 40px;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.4s;
-  margin-top: -30px;
-}
-
-.star:hover,
-.star.active {
-  color: #023aed;
-}
-
-.dropdownSpecial {
-  margin-top: 30px;
-  font-size: 20px;
+#currentStars{
+  font-size: 200%; 
+  margin-top: -15%;
 }
 
 
-/* Genres */
+
+
+
+
+
+
 .genres {
   display: flex;
   gap: 0.5em;
@@ -662,18 +701,18 @@ a {
   background-color: lightgreen;
 }
 
-.valueBorders{
+.valueBorders {
   margin-top: 10px;
 }
 
-#priceRange{
+#priceRange {
   margin-top: 10px;
 }
 
-.Ranges{
+.Ranges {
   text-align: center;
 }
 
-.a{
+.a {
   color: #005193;
 }

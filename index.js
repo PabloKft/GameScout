@@ -25,6 +25,8 @@ function fetchJSON() {
             if (document.getElementById('popular-games-container')) {
                 displayGames('popular-games-container', filterPopularGames(arrayData, 4));
             }
+
+
         })
         .catch(error => console.error('Error loading the JSON file:', error));
 }
@@ -111,11 +113,7 @@ function createCard(item, topEightPopularGames) {
 
     const popularSign = document.createElement('div');
     popularSign.classList.add('card-popularSign');
-    popularSign.innerHTML = '<i class="fa-solid fa-chart-line"></i>'; // Alternatíva
-
-
-
-
+    popularSign.innerHTML = '<i class="fa-solid fa-chart-line"></i>'; 
 
     const gameName = document.createElement('h5');
     gameName.classList.add('card-gameName');
@@ -133,7 +131,6 @@ function createCard(item, topEightPopularGames) {
     button.classList.add('card-button');
     button.textContent = 'Compare this game';
 
-    // Add signs conditionally
     if (item.Sale[0].IsOnSale) {
         cardDiv.appendChild(saleSign);
     }
@@ -200,6 +197,7 @@ function showGeneralInfo() {
         document.getElementById("generalInfoListRatings").innerText = selectedItem.Rating;
         document.getElementById("gameName").innerText = selectedItem.Name;
         document.getElementById("gameNameText").innerText = selectedItem.Name;
+        createStar()
     } else {
         console.error("Item with selected ID not found.");
     }
@@ -320,13 +318,6 @@ function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
 */
 
 // Call this function after populating the dropdown with genres
-fetchJSON().then(() => {
-    populateDropdownWithGenres(arrayData, 'dropdownMenu1');
-    populateDropdownWithConsoles(arrayData, 'dropdownMenu4');
-    displayGames('data-container', arrayData);
-    setupGenreCheckboxListeners(); // Setup event listeners for genre checkboxes
-    setupConsoleCheckboxListeners();
-});
 
 
 
@@ -368,9 +359,109 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+let userRating = 0;
+
+
+
+//felhasználói értékelések
+function createStar() {
+
+
+    const starPlace = document.getElementById("stars");
+
+    for (let i = 0; i < 5; i++) {
+        const star = document.createElement("span");
+        star.textContent = "★";
+        star.classList.add("star");
+        star.dataset.index = i;
+
+        star.addEventListener("mouseover", function () {
+            const index = parseInt(star.dataset.index);
+            highlightStars(index);
+        });
+
+        star.addEventListener("click", function () {
+            const index = parseInt(star.dataset.index);
+            userRating = index + 1; // Fix the assignment
+            setSelectedStars(index);
+        });
+
+        star.addEventListener("mouseout", function () {
+            clearHighlights();
+        });
+
+        starPlace.appendChild(star);
+    }
+}
+
+function highlightStars(index) {
+    const stars = document.querySelectorAll(".star");
+    stars.forEach((star, i) => {
+        if (i <= index) {
+            star.classList.add("hover");
+        }
+    });
+}
+
+function clearHighlights() {
+    const stars = document.querySelectorAll(".star");
+    stars.forEach(star => star.classList.remove("hover"));
+}
+
+
+function setSelectedStars(index) {
+    const stars = document.querySelectorAll(".star");
+    stars.forEach((star, i) => {
+        if (i <= index) {
+            star.classList.add("selected"); // Add "selected" class
+        } else {
+            star.classList.remove("selected"); // Remove "selected" class for unselected stars
+        }
+    });
+}
+
+function submitRating() {
+    if (userRating == 0) {
+        alert("Please, do not submit an empty rating.")
+    }
+    else {
+        const currentRating = parseInt(arrayData[selectedCardIDGameSite - 1].userRatings);
+        const newavg = Math.round((currentRating + userRating) / 2);
+        arrayData[selectedCardIDGameSite - 1].userRatings = newavg;
+
+        const currentRatingPlace = document.getElementById("currentStars");
+        let button = document.getElementById("submitButton")
+        button.textContent = "Thank you!";
+        button.classList.remove("button");
+        button.classList.add("message");
+
+        const othersopinion = document.getElementById("currentRatings")
+        othersopinion.style.display = "block"
+        currentRatingPlace.textContent = '';
+        let currentUserRating = arrayData[selectedCardIDGameSite - 1].userRatings
+        console.log(currentUserRating)
+
+        for (let i = 0; i < currentUserRating; i++) {
+            const star = document.createElement("span");
+
+            star.textContent = "★";
+            star.classList.add("currentStar");
+            star.dataset.index = i;
+
+            currentRatingPlace.appendChild(star);
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
 //Szűrők funkcionalitása
-
-
 let selectedGenres = new Set();
 let selectedConsoles = new Set();
 let selectedRating = 5; // Default to "Mostly Positive"
@@ -420,7 +511,7 @@ document.getElementById('storyRange').addEventListener('input', function () {
     storyDisplay.textContent = `${selectedStoryTime} hours`;
     filterGames();  // Apply filter when story time is changed
 });
-  
+
 // Filter games based on selected genres, consoles, price, release date, and story time
 function filterGames() {
     let filteredGames = arrayData;
@@ -654,3 +745,11 @@ function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
 
     });
 }
+
+fetchJSON().then(() => {
+    populateDropdownWithGenres(arrayData, 'dropdownMenu1');
+    populateDropdownWithConsoles(arrayData, 'dropdownMenu4');
+    displayGames('data-container', arrayData);
+    setupGenreCheckboxListeners(); // Setup event listeners for genre checkboxes
+    setupConsoleCheckboxListeners();
+});

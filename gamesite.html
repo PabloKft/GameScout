@@ -111,17 +111,17 @@
           </a>
 
           <form class="d-flex search-container" role="search">
-            <a href="./compare.html" target="_blank"><button class="btn-custom" type="button" >Compare</button></a>
-            <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"target="_blank"><button
-                    class="btn-custom" type="button">All Games</button></a>
+            <a href="./compare.html" target="_blank"><button class="btn-custom" type="button">Compare</button></a>
+            <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html" target="_blank"><button
+                class="btn-custom" type="button">All Games</button></a>
 
 
             <input class="form-control me-2 Search" type="search" placeholder="Search"
-                style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
+              style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
             <button class="btn" type="submit"
-                style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
-                    class="fa fa-search"></i></button>
-        </form>
+              style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
+                class="fa fa-search"></i></button>
+          </form>
         </div>
       </nav>
     </div>
@@ -166,14 +166,19 @@
           <li>
             <p><span class="generalInfoListHeadings">Ratings:</span> <br> <span id="generalInfoListRatings"></span></p>
           </li>
-          <p>Rate <span id="gameNameText"></span> </p>
-          <div class="stars">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
+          <hr style="color:white">
+
+
+          <div id="userRatings">
+            <div>Rate: <br><span id="gameNameText"></span> </div>
+            <div id="stars">
+            </div>
+            <span class="button" onclick="submitRating()" id="submitButton">Submit</span>
+            <div id="currentRatings" style="display: none;">Other user's opinion:</div> 
+            <span id="currentStars"></span>         
           </div>
+
+
         </ul>
       </div>
     </div>
