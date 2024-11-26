@@ -143,7 +143,7 @@
         }
     }
 
-    function showGameSuggestions(column) {
+        function showGameSuggestions(column) {
     const searchQuery = document.getElementById(`searchGame${column}`).value.toLowerCase();
     const suggestionsContainer = document.getElementById(`suggestions${column}`);
     suggestionsContainer.innerHTML = '';
@@ -168,7 +168,21 @@
         };
         suggestionsContainer.appendChild(suggestionItem);
     });
+
+    // Show suggestions and add outside click listener
+    suggestionsContainer.style.display = 'block'; // Ensure it's visible
+    document.addEventListener('click', (event) => closeSuggestions(event, column));
 }
+
+    function closeSuggestions(event, column) {
+        const input = document.getElementById(`searchGame${column}`);
+        const suggestionsContainer = document.getElementById(`suggestions${column}`);
+
+        // Close suggestions if the click is outside the input or dropdown
+        if (!input.contains(event.target) && !suggestionsContainer.contains(event.target)) {
+            suggestionsContainer.style.display = 'none';
+        }
+    }
 
     function selectGame(column, gameId) {
         const selectedGame = arrayData.find(game => game.ID == gameId);
