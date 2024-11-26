@@ -150,7 +150,7 @@
         ],
         "Rating": "Mixed (50,000+)",
         "Image": [
-            "./pictures/SC_Logo.jfif",
+            "./pictures/SC_Logo.jpg ",
             "./pictures/SC_Pic1.jpg",
             "./pictures/SC_Pic2.jpg",
             "./pictures/SC_Pic3.jpg",
@@ -405,7 +405,7 @@
         ],
         "Rating": "Mostly Positive (25,000+)",
         "Image": [
-            "./pictures/FC25_Logo.jfif",
+            "./pictures/FC25_Logo.jpg",
             "./pictures/FC25_Pic1.jpeg",
             "./pictures/FC25_Pic2.jpg",
             "./pictures/FC25_Pic3.jpg",
@@ -462,7 +462,7 @@
         ],
         "Rating": "Very Positive (600,000+)",
         "Image": [
-            "./pictures/CP2077_Logo.jfif",
+            "./pictures/CP2077_Logo.jpg",
             "./pictures/CP2077_Pic1.jpg",
             "./pictures/CP2077_Pic2.webp",
             "./pictures/CP2077_Pic3.jpg",
@@ -526,7 +526,7 @@
         ],
         "Rating": "Overwhelmingly Positive (1,000,000+)",
         "Image": [
-            "./pictures/MC_Logo.jfif",
+            "./pictures/MC_Logo.jpg",
             "./pictures/MC_Pic1.jpg",
             "./pictures/MC_Pic2.jpg",
             "./pictures/MC_Pic3.jpg",
@@ -580,7 +580,7 @@
         ],
         "Rating": "Very Positive (200,000+)",
         "Image": [
-            "./pictures/SWB2_Logo.jfif",
+            "./pictures/SWB2_Logo2.jpg",
             "./pictures/SWB2_Pic1.jpg",
             "./pictures/SWB2_Pic2.jpg",
             "./pictures/SWB2_Pic3.jpg",
