@@ -675,7 +675,7 @@ a {
 
 /* Prices */
 .prices {
-  margin-top: 1em;
+  margin-top: -15px;
 }
 
 .price-item {
@@ -690,7 +690,7 @@ a {
   color: white;
   border-radius: 10px;
   border: 2px solid rgb(85, 95, 228);  
-  margin: 2px;
+  margin: 3px;
 }
 
 
@@ -732,4 +732,9 @@ a {
 
 .a {
   color: #005193;
+}
+
+.description{
+  margin-top: -15px;
+  text-align: center;
 }
