@@ -42,10 +42,165 @@
         .separator:not(:empty)::after {
             margin-left: .25em;
         }
+
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: 'Audiowide', sans-serif;
+            color: white;
+
+            scroll-behavior: smooth;
+        }
+
+        /* Intro section */
+        #introPage {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(to bottom, #001629, #000000);
+            animation: fadeIn 2s ease-out;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .logo {
+            font-size: 5rem;
+            /* Adjust size as needed */
+            color: #020039;
+            /* Dark blue text for better contrast */
+            text-shadow:
+                2px 2px 0 #a0e7ff,
+                /* Lighter blue shadow */
+                -2px -2px 0 #b7dbff,
+                2px -2px 0 #bddeff,
+                -2px 2px 0 #bddeff;
+            /* Light blue border */
+            letter-spacing: 15px;
+            animation: zoomIn 1.5s ease-out;
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .logo.hidden {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        .text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;            
+        }
+
+        .text.hidden {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        .scout {
+            font-style: italic;
+            color: #47004a;
+            text-shadow:
+                3px 3px 0 rgb(49, 49, 49),
+
+        }
+
+        .scout {
+            font-style: italic;
+            color: #57005a;
+            /* Bright red for highlight */
+            text-shadow:
+                3px 3px 0 rgb(137, 137, 137),
+                -2px -2px 0 rgb(0, 0, 0),
+                2px -2px 0 rgb(0, 0, 0),
+                -2px 2px 0 rgb(0, 0, 0);
+        }
+
+        .text, .motto{
+            font-size: 35px;
+            color: rgb(59, 59, 59);
+            font-style: italic;
+        }
+        .text{
+            font-weight: bold;
+        }
+        .motto{
+            float: right;
+            font-size: 25px;
+            font-weight: lighter;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll down button */
+        .scroll-down {
+            margin-top: 2rem;
+            font-size: 2rem;
+            color: #a0e7ff;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .scroll-down:hover {
+            transform: translateY(15px);
+            opacity: 0.8;
+        }
+
+        /* Home page content */
+        #homePage {
+            padding-top: 2rem;
+        }
+
+        
     </style>
 </head>
 
 <body>
+    <!-- Intro Section -->
+    <div id="introPage">
+        <div class="text" id="welcomeText">Welcome to</div>
+        <div class="logo" id="gameScoutLogo">GAME<span class="scout"><span class="highlight">S</span>COUT</span></div>
+        <div class="motto">Browse n Play</div>
+        <a href="#homePage" class="scroll-down" aria-label="Scroll Down">
+            <i class="fa fa-angle-down"></i>
+        </a>
+    </div>
+
     <div id="homePage">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -57,9 +212,10 @@
 
 
                     <form class="d-flex search-container" role="search">
-                        <a href="./compare.html" target="_blank"><button class="btn-custom" type="button" >Compare</button></a>
-                        <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"target="_blank"><button
-                                class="btn-custom" type="button" >All Games</button></a>
+                        <a href="./compare.html" target="_blank"><button class="btn-custom"
+                                type="button">Compare</button></a>
+                        <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
+                            target="_blank"><button class="btn-custom" type="button">All Games</button></a>
 
 
                         <input class="form-control me-2 Search" type="search" placeholder="Search"
@@ -76,7 +232,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 style="text-align: left;"> <i style="color: rgb(102, 0, 71);" class="fa-solid fa-tag fa-flip-vertical"></i>&ensp;On Sale </h2>
+                    <h2 style="text-align: left;"> <i style="color: rgb(102, 0, 71);"
+                            class="fa-solid fa-tag fa-flip-vertical"></i>&ensp;On Sale </h2>
                     <div id="sale-games-container" class="sale-games-container">
                     </div>
                     <a class="moreGames separator"></a>
@@ -88,7 +245,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 style="text-align: left;"><i style="color: rgb(0, 89, 0);" class="fa-solid fa-chart-line"></i>&ensp;Popular</i></h2>
+                    <h2 style="text-align: left;"><i style="color: rgb(0, 89, 0);"
+                            class="fa-solid fa-chart-line"></i>&ensp;Popular</i></h2>
                     <div id="popular-games-container" class="popular-games-container">
                     </div>
                     <a class="moreGames separator"></a>

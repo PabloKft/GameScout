@@ -406,12 +406,6 @@ function submitRating() {
 
 }
 
-
-
-
-
-
-
 //Szűrők funkcionalitása
 let selectedGenres = new Set();
 let selectedConsoles = new Set();
@@ -614,6 +608,7 @@ function populateDropdownWithGenres(dataArray, dropdownContainerId) {
 
     // Clear existing dropdown content
     dropdownContainer.innerHTML = '';
+    
 
     // Create list items dynamically
     uniqueGenres.forEach(genre => {
@@ -704,3 +699,73 @@ fetchJSON().then(() => {
     setupGenreCheckboxListeners(); // Setup event listeners for genre checkboxes
     setupConsoleCheckboxListeners();
 });
+
+
+//Reset functions
+let counterGen = 0;
+function resetButtonGen() {
+    const button = document.getElementById("resetButtonGenres")    
+    if (counterGen%2==0){           
+        button.style.display = "block";
+    }
+    else{
+        button.style.display = "none";
+    }
+    counterGen++;
+
+}
+function resetGenres() {
+    // Uncheck all genre checkboxes
+    const genreCheckboxes = document.querySelectorAll('.filter-checkbox-genres');
+    genreCheckboxes.forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    selectedGenres.clear(); // Clear the selectedGenres set
+
+    // Trigger a filter update
+    filterGames();
+}
+
+
+let counterPri = 0;
+function resetButtonPri() {
+    const button = document.getElementById("resetButtonPrice")    
+    if (counterPri%2==0){           
+        button.style.display = "block";
+    }
+    else{
+        button.style.display = "none";
+    }
+    counterPri++;
+
+}
+function resetPrice() {
+    const rangePri = document.getElementById("priceRange")
+    rangePri.value = 70
+
+    selectedPrice = 70
+    document.getElementById('curvalPrice').textContent = `$${selectedPrice}`;
+    filterGames(); 
+}
+
+
+let counterRat = 0;
+function resetButtonRat() {
+    const button = document.getElementById("resetButtonRating")    
+    if (counterRat%2==0){           
+        button.style.display = "block";
+    }
+    else{
+        button.style.display = "none";
+    }
+    counterRat++;
+
+}
+function resetRating() {
+    const rangePri = document.getElementById("ratingRange")
+    rangePri.value = 5
+
+    selectedPrice = "Mixed"
+    document.getElementById('curvalRating').textContent = `${selectedPrice}`;
+    filterGames(); 
+}
