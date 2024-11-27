@@ -266,56 +266,7 @@ window.onload = function () {
 
 // Function to populate the dropdown with genres (this part is already in your code)
 
-/*
-function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
-    const dropdownContainer = document.getElementById(dropdownContainerId);
-    if (!dropdownContainer) {
-        console.error(`Dropdown container with ID "${dropdownContainerId}" not found!`);
-        return;
-    }
 
-    // Extract unique genres
-    const uniqueConsoles = new Set();
-    dataArray.forEach(item => {
-        item.Console.forEach(genre => uniqueConsoles.add(genre.trim()));
-    });
-
-    // Clear existing dropdown content
-    dropdownContainer.innerHTML = '';
-
-    // Create list items dynamically
-    uniqueConsoles.forEach(console => {
-        const listItem = document.createElement('li');
-        listItem.classList.add('dropdown-item');
-
-        // Create the label element
-        const label = document.createElement('label');
-        label.classList.add('checkbox-label');  // Add the correct class for styling
-
-        // Create the checkbox input element
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.classList.add('checkbox-input', 'filter-checkbox');  // Add the correct classes
-        checkbox.value = console;
-
-        // Create the custom checkbox container
-        const customCheckbox = document.createElement('span');
-        customCheckbox.classList.add('custom-checkbox');
-
-        // Attach the checkbox input and the custom checkbox to the label
-        label.appendChild(checkbox);
-        label.appendChild(customCheckbox);
-        label.append(` ${console}`);
-
-        // Append the label to the list item
-        listItem.appendChild(label);
-
-        // Finally, append the list item to the dropdown container
-        dropdownContainer.appendChild(listItem);
-
-    });
-}
-*/
 
 // Call this function after populating the dropdown with genres
 
