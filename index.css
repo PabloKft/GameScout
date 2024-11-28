@@ -739,7 +739,31 @@ a {
   text-align: center;
 }
 
-.resetButtonGenres{
-  background-color: #00294a;
-  color: white;
+.centerResetButton {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100%;   
+  margin-top: 5%;
+  margin-bottom: 3%;  
 }
+
+.resetButton {
+  background-color: #005091;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: white;
+  padding: 4%;
+  font-size: 90%;
+  transition: background-color 0.3s, color 0.3s;
+}
+.resetButton:hover{
+  background-color: #003f72;
+  color: lightgray;
+  border: 1px solid white;
+}
+.resetButton:active{
+  background-color: white;
+}
+
+

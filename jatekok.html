@@ -10,172 +10,10 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./index.css">
   <script src="https://kit.fontawesome.com/40786368ae.js" crossorigin="anonymous"></script>
-  <style>
-    /* Base styles */
-    body {
-      margin: 0;
-      font-family: 'Audiowide', sans-serif;
-      color: white;
-      background-color: black;
-      scroll-behavior: smooth;
-      /* Enable smooth scrolling */
-    }
 
-    /* Intro section */
-    #introPage {
-      height: 100vh;
-      /* Full viewport height */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: linear-gradient(to bottom, #004e92, #000428);
-      /* Reversed gradient */
-      animation: fadeIn 2s ease-out;
-      /* Smooth intro fade-in */
-      position: relative;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    .logo {
-      font-size: 6rem;
-      color: darkblue;
-      text-shadow:
-        2px 2px 0 lightblue,
-        -2px -2px 0 cyan,
-        2px -2px 0 lightcyan,
-        -2px 2px 0 lightcyan;
-      letter-spacing: 15px;
-      animation: zoomIn 1.5s ease-out;
-      /* Add a zoom-in effect */
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      /* Smooth transition */
-    }
-
-    .logo.hidden {
-      opacity: 0;
-      /* Fully transparent when hidden */
-      transform: translateY(-20px);
-      /* Move slightly up when disappearing */
-    }
-
-    .text {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      animation: fadeIn 1.5s ease-out 0.5s;
-      /* Delayed fade-in */
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      /* Smooth transition */
-    }
-
-    .text.hidden {
-      opacity: 0;
-      /* Fully transparent when hidden */
-      transform: translateY(-20px);
-      /* Move slightly up when disappearing */
-    }
-
-    .scout {
-      font-style: italic;
-      color: #47004a;
-      /* Bright red for highlight */
-      text-shadow:
-        3px 3px 0 rgb(137, 137, 137),
-        -2px -2px 0 rgb(0, 0, 0),
-        2px -2px 0 rgb(0, 0, 0),
-        -2px 2px 0 rgb(0, 0, 0);
-    }
-
-    .text,
-    .motto {
-      font-size: 35px;
-      color: rgb(59, 59, 59);
-      font-style: italic;
-    }
-
-    .text {
-      font-weight: bold;
-    }
-
-    .motto {
-      float: inline-end;
-      font-size: 25px;
-      font-weight: lighter;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Scroll down button */
-    .scroll-down {
-      margin-top: 2rem;
-      font-size: 2rem;
-      color: #a0e7ff;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      animation: bounce 2s infinite;
-      /* Bouncing effect */
-    }
-
-    @keyframes bounce {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(10px);
-      }
-    }
-
-    .scroll-down:hover {
-      transform: translateY(15px);
-      /* Slightly stronger hover effect */
-      opacity: 0.8;
-    }
-
-    /* Home page content */
-    #homePage {
-      padding-top: 2rem;
-
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Intro Section -->
-  <div id="introPage">
-    <div class="text" id="welcomeText">Welcome to</div>
-    <div class="logo" id="gameScoutLogo">GAME<span class="scout"><span class="highlight">S</span>COUT</span></div>
-    <div class="motto">Browse n Play</div>
-    <a href="#homePage" class="scroll-down" aria-label="Scroll Down">
-      <i class="fa fa-angle-down"></i>
-    </a>
-  </div>
-
-  <!-- Main Content Section -->
   <div id="homePage">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -185,61 +23,154 @@
             <img src="./pictures/text.png" alt="" class="gamescoutTitle">
           </a>
 
-          <form class="d-flex search-container" role="search">
-            <a href="./compare.html" target="_blank">
-              <button class="btn-custom" type="button">Compare</button>
-            </a>
+
+          <form class="d-flex search-container" role="search"><a href="./compare.html" target="_blank"><button
+                class="btn-custom" type="button">Compare</button></a>
             <input class="form-control me-2 Search" type="search" placeholder="Search"
               style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
             <button class="btn" type="submit"
-              style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;">
-              <i class="fa fa-search"></i>
-            </button>
+              style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
+                class="fa fa-search"></i></button>
           </form>
         </div>
       </nav>
     </div>
-
-    <!-- Main page content continues here -->
+    <br>
     <div class="container">
       <div class="row">
         <div class="col-2">
-          <!-- Filters and dropdowns -->
-          <!-- (Your existing dropdowns go here) -->
+
+          <div class="dropdown-left">
+            <button class="btn dropdownButton" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu1"
+              aria-expanded="false" onclick="resetButtonGen()">Genres</button>
+            <div class="centerResetButton">
+              <button class="resetButton" onclick="resetGenres()" style="display: none;" id="resetButtonGenres">Reset
+                Genres</button>
+            </div>
+
+            <div class="collapse" id="dropdownMenu1">
+              <ul class="list-unstyled">
+                <!-- Dynamically populated list items will go here -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown-left">
+            <button class="btn dropdownButton" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu2"
+              aria-expanded="false" onclick="resetButtonPri()">
+              Price
+            </button>
+            <div class="centerResetButton">
+              <button class="resetButton" onclick="resetPrice()" style="display: none;" id="resetButtonPrice">Reset
+                Prices</button>
+            </div>
+
+            <div class="collapse" id="dropdownMenu2">
+              <div class="valueBorders">
+                <span id="minval">Free</span>
+                <span id="maxval">$70</span>
+              </div>
+              <div class="Ranges">
+                <input id="priceRange" value="70" type="range" min="0" max="70" step="1"> <br>
+                <span id="curvalPrice"></span>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="dropdown-left">
+            <button class="btn dropdownButton" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu3"
+              aria-expanded="false" onclick="resetButtonRat()">Rating</button><br>
+            <div class="centerResetButton">
+              <button class="resetButton" onclick="resetRating()" style="display: none;" id="resetButtonRating">Reset
+                Rating</button>
+            </div>
+
+            <div class="collapse" id="dropdownMenu3">
+              <div class="valueBorders">
+                <span id="minval">negative</span>
+                <span id="maxval">positive</span><br>
+              </div>
+              <div class="Ranges">
+                <input id="ratingRange" value="5" type="range" min="1" max="9" step="1"> <br>
+                <span id="curvalRating"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown-left">
+            <button class="btn dropdownButton" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu4"
+              aria-expanded="false" onclick="resetButtonCon()">Consoles</button>
+              <div class="centerResetButton">
+            <button class="resetButton" onclick="resetConsoles()" style="display: none;" id="resetButtonConsoles">Reset
+              Consoles</button></div>
+
+            <div class="collapse" id="dropdownMenu4">
+              <ul class="list-unstyled">
+                <!-- Dynamically populated list items will go here -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown-left">
+            <button class="btn dropdownButton" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu5"
+              aria-expanded="false" onclick="resetButtonReDa()">Release Date</button>
+            <div class="centerResetButton">
+              <button class="resetButton" onclick="resetReleaseDate()" style="display: none;"
+                id="resetButtonReleaseDate">Reset Release
+                Date</button>
+            </div>
+
+            <div class="collapse" id="dropdownMenu5">
+              <div class="valueBorders">
+                <span id="minval">1990</span>
+                <span id="maxval">2024</span><br>
+              </div>
+              <div class="Ranges">
+                <input id="dateRange" value="1990" type="range" min="1990" max="2024" step="1"> <br>
+                <span id="curvalDate"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown-left">
+            <button class="btn dropdownButton" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownMenu6"
+              aria-expanded="false" onclick="resetButtonStory()">Story Length</button>
+            <div class="centerResetButton">
+              <button class="resetButton" onclick="resetStory()" style="display: none;" id="resetButtonStory">Reset
+                Story Length</button>
+            </div>
+            <div class="collapse" id="dropdownMenu6">
+              <div class="valueBorders">
+                <span id="minval">0</span>
+                <span id="maxval">100</span><br>
+              </div>
+              <div class="Ranges">
+                <input id="storyRange" value="100" type="range" min="0" max="100" step="1"> <br>
+                <span id="curvalStory"></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-10">
           <div id="data-container" class="data-container">
-            <!-- Content dynamically populated here -->
+            <!-- Content will be dynamically populated here -->
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <footer>&copy; copyright intended</footer>
+
+
+
 
   <script src="./index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-  <script>
-    const logo = document.getElementById('gameScoutLogo');
-    const welcomeText = document.getElementById('welcomeText');
-
-    // Hide the title on scroll
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-
-      if (scrollY > 50) { // Adjust threshold as needed
-        logo.classList.add('hidden');
-        welcomeText.classList.add('hidden');
-      } else {
-        logo.classList.remove('hidden');
-        welcomeText.classList.remove('hidden');
-      }
-    });
-  </script>
 </body>
 
 </html>

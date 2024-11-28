@@ -453,7 +453,7 @@ document.getElementById('ratingRange').addEventListener('input', function () {
 document.getElementById('storyRange').addEventListener('input', function () {
     selectedStoryTime = this.value;
     const storyDisplay = document.getElementById('curvalStory');
-    storyDisplay.textContent = `${selectedStoryTime} hours`;
+    storyDisplay.textContent = `It takes: ${selectedStoryTime} hours or less to max out the game`;
     filterGames();  // Apply filter when story time is changed
 });
 
@@ -704,6 +704,7 @@ fetchJSON().then(() => {
 //Reset functions
 let counterGen = 0;
 function resetButtonGen() {
+    console.log("resetButtonGen")
     const button = document.getElementById("resetButtonGenres")    
     if (counterGen%2==0){           
         button.style.display = "block";
@@ -712,9 +713,10 @@ function resetButtonGen() {
         button.style.display = "none";
     }
     counterGen++;
-
 }
 function resetGenres() {
+    console.log("resetGenres")
+
     // Uncheck all genre checkboxes
     const genreCheckboxes = document.querySelectorAll('.filter-checkbox-genres');
     genreCheckboxes.forEach(checkbox => {
@@ -762,10 +764,79 @@ function resetButtonRat() {
 
 }
 function resetRating() {
-    const rangePri = document.getElementById("ratingRange")
-    rangePri.value = 5
+    const rangeRat = document.getElementById("ratingRange")
+    rangeRat.value = 5
 
-    selectedPrice = "Mixed"
-    document.getElementById('curvalRating').textContent = `${selectedPrice}`;
+    selectedRating = 5-1
+    document.getElementById('curvalRating').textContent = `${ratings[selectedRating]}`;
+    filterGames(); 
+}
+
+let counterCon = 0;
+function resetButtonCon() {
+    
+    const button = document.getElementById("resetButtonConsoles")    
+    if (counterCon%2==0){           
+        button.style.display = "block";
+    }
+    else{
+        button.style.display = "none";
+    }
+    counterCon++;
+}
+function resetConsoles() {
+
+    // Uncheck all genre checkboxes
+    const consoleCheckboxes = document.querySelectorAll('.filter-checkbox-consoles');
+    consoleCheckboxes.forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    selectedConsoles.clear(); // Clear the selectedGenres set
+
+    // Trigger a filter update
+    filterGames();
+}
+
+let counterReDa = 0;
+function resetButtonReDa() {
+    
+    const button = document.getElementById("resetButtonReleaseDate")    
+    if (counterReDa%2==0){           
+        button.style.display = "block";
+    }
+    else{
+        button.style.display = "none";
+    }
+    counterReDa++;
+}
+function resetReleaseDate() {
+
+    const rangeReDa = document.getElementById("dateRange")
+    rangeReDa.value = 1990
+
+    selectedReleaseDate = 1990
+    document.getElementById('curvalDate').textContent = `${selectedReleaseDate}`;
+    filterGames(); 
+}
+
+let counterStory = 0;
+function resetButtonStory() {
+    
+    const button = document.getElementById("resetButtonStory")    
+    if (counterStory%2==0){           
+        button.style.display = "block";
+    }
+    else{
+        button.style.display = "none";
+    }
+    counterStory++;
+}
+function resetStory() {
+
+    const rangeStory = document.getElementById("storyRange")
+    rangeStory.value = 100
+
+    selectedStoryTime = 100
+    document.getElementById('curvalStory').textContent = `It takes: ${selectedStoryTime} hours or less to max out the game`;
     filterGames(); 
 }

@@ -59,10 +59,42 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            position: relative;
+            /* Allows absolute positioning within this section */
             background: linear-gradient(to bottom, #001629, #000000);
             animation: fadeIn 2s ease-out;
-            position: relative;
+            cursor: crosshair;
+            user-select: none;
+        }
+
+        /* Position "Welcome to" on the right */
+        #welcomeText {
+            position: absolute;
+            /* Allows manual positioning */
+            top: 29%;
+            /* Adjust as needed for alignment */
+            left: 25%;
+            /* Adjust as needed for alignment */
+            text-align: right;
+            /* Ensures text stays aligned to the right */
+            color: rgb(92, 92, 92);
+            /* Adjust color if needed */
+            font-weight: bold;
+            font-size: 2.5rem;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        #mottoText {
+            position: absolute;
+            /* Allows manual positioning */
+            bottom: 44%;
+            /* Adjust as needed for alignment */
+            right: 25%;
+            /* Adjust as needed for alignment */
+            text-align: right;
+            /* Ensures text stays aligned to the right */
+            color: rgb(93, 93, 93);
+            /* Adjust color if needed */
+            animation: fadeInUp 1.5s ease-out;
         }
 
         @keyframes fadeIn {
@@ -100,7 +132,7 @@
         .text {
             font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 1rem;            
+            margin-bottom: 1rem;
         }
 
         .text.hidden {
@@ -108,35 +140,32 @@
             transform: translateY(-20px);
         }
 
-        .scout {
-            font-style: italic;
-            color: #47004a;
-            text-shadow:
-                3px 3px 0 rgb(49, 49, 49),
 
-        }
 
         .scout {
             font-style: italic;
             color: #57005a;
             /* Bright red for highlight */
             text-shadow:
-                3px 3px 0 rgb(137, 137, 137),
-                -2px -2px 0 rgb(0, 0, 0),
-                2px -2px 0 rgb(0, 0, 0),
-                -2px 2px 0 rgb(0, 0, 0);
+                3px 3px 0 rgb(26, 26, 26),
+                -2px -2px 0 rgb(26, 26, 26),
+                2px -2px 0 rgb(26, 26, 26),
+                -2px 2px 0 rgb(26, 26, 26);
         }
 
-        .text, .motto{
+        .text,
+        .motto {
             font-size: 35px;
             color: rgb(59, 59, 59);
             font-style: italic;
         }
-        .text{
+
+        .text {
             font-weight: bold;
         }
-        .motto{
-            float: right;
+
+        .motto {
+            text-align: right;
             font-size: 25px;
             font-weight: lighter;
         }
@@ -185,8 +214,6 @@
         #homePage {
             padding-top: 2rem;
         }
-
-        
     </style>
 </head>
 
@@ -195,7 +222,7 @@
     <div id="introPage">
         <div class="text" id="welcomeText">Welcome to</div>
         <div class="logo" id="gameScoutLogo">GAME<span class="scout"><span class="highlight">S</span>COUT</span></div>
-        <div class="motto">Browse n Play</div>
+        <div class="motto" id="mottoText">Browse n Play</div>
         <a href="#homePage" class="scroll-down" aria-label="Scroll Down">
             <i class="fa fa-angle-down"></i>
         </a>
