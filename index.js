@@ -417,7 +417,7 @@ let selectedStoryTime = 100; // Default value for story time range (can be chang
 // Update the price display dynamically when the slider is adjusted
 document.getElementById('priceRange').addEventListener('input', function () {
     selectedPrice = this.value;
-    document.getElementById('curvalPrice').textContent = `$${selectedPrice}`;
+    document.getElementById('curvalPrice').textContent = `Max. price: $${selectedPrice}`;
     filterGames();  // Apply the filter after the slider update
 });
 
@@ -425,7 +425,7 @@ document.getElementById('priceRange').addEventListener('input', function () {
 // Update the release year filter dynamically when the range input is adjusted
 document.getElementById('dateRange').addEventListener('input', function () {
     selectedReleaseDate = this.value;
-    document.getElementById('curvalDate').textContent = `${selectedReleaseDate}`;
+    document.getElementById('curvalDate').textContent = `Min. release date: ${selectedReleaseDate}`;
     filterGames();  // Apply the filter after the slider update
 });
 
@@ -442,18 +442,31 @@ const ratings = [
     "Overwhelmingly Positive"
 ];
 
+const ratingColors=[
+    "rgb(255, 0, 0)",
+    "rgb(255, 128, 0)",
+    "rgb(255, 255, 0)",
+    "rgb(128, 255, 0)",
+    "rgb(0, 255, 0)",
+    "rgb(0, 255, 128)",
+    "rgb(0, 255, 255)",
+    "rgb(0, 128, 255)",
+    "rgb(0, 0, 255)",
+]
+
 // Update rating display when the slider changes
 document.getElementById('ratingRange').addEventListener('input', function () {
     selectedRating = this.value;
     const ratingDisplay = document.getElementById('curvalRating');
-    ratingDisplay.textContent = ratings[selectedRating - 1];
+    ratingDisplay.textContent = `${ratings[selectedRating - 1]} or better`;
+    ratingDisplay.style.color = ratingColors[selectedRating-1]
     filterGames();  // Apply filter when rating is changed
 });
 
 document.getElementById('storyRange').addEventListener('input', function () {
     selectedStoryTime = this.value;
     const storyDisplay = document.getElementById('curvalStory');
-    storyDisplay.textContent = `It takes: ${selectedStoryTime} hours or less to max out the game`;
+    storyDisplay.textContent = `Max story-time: ${selectedStoryTime} hours`;
     filterGames();  // Apply filter when story time is changed
 });
 
@@ -746,7 +759,7 @@ function resetPrice() {
     rangePri.value = 70
 
     selectedPrice = 70
-    document.getElementById('curvalPrice').textContent = `$${selectedPrice}`;
+    document.getElementById('curvalPrice').textContent = `Max. price: $${selectedPrice}`;
     filterGames(); 
 }
 
@@ -766,15 +779,14 @@ function resetButtonRat() {
 function resetRating() {
     const rangeRat = document.getElementById("ratingRange")
     rangeRat.value = 5
-
     selectedRating = 5-1
-    document.getElementById('curvalRating').textContent = `${ratings[selectedRating]}`;
+    document.getElementById('curvalRating').textContent = `${ratings[selectedRating]} or better`;
+    document.getElementById('curvalRating').style.color = ratingColors[selectedRating-1]
     filterGames(); 
 }
 
 let counterCon = 0;
-function resetButtonCon() {
-    
+function resetButtonCon() {    
     const button = document.getElementById("resetButtonConsoles")    
     if (counterCon%2==0){           
         button.style.display = "block";
@@ -785,15 +797,12 @@ function resetButtonCon() {
     counterCon++;
 }
 function resetConsoles() {
-
     // Uncheck all genre checkboxes
     const consoleCheckboxes = document.querySelectorAll('.filter-checkbox-consoles');
     consoleCheckboxes.forEach(checkbox => {
         checkbox.checked = false;
     });
-    selectedConsoles.clear(); // Clear the selectedGenres set
-
-    // Trigger a filter update
+    selectedConsoles.clear();
     filterGames();
 }
 
@@ -815,7 +824,7 @@ function resetReleaseDate() {
     rangeReDa.value = 1990
 
     selectedReleaseDate = 1990
-    document.getElementById('curvalDate').textContent = `${selectedReleaseDate}`;
+    document.getElementById('curvalDate').textContent = `Min. release date: ${selectedReleaseDate}`;
     filterGames(); 
 }
 
@@ -837,6 +846,7 @@ function resetStory() {
     rangeStory.value = 100
 
     selectedStoryTime = 100
-    document.getElementById('curvalStory').textContent = `It takes: ${selectedStoryTime} hours or less to max out the game`;
+    document.getElementById('curvalStory').textContent = `Max story-time: ${selectedStoryTime} hours`;
     filterGames(); 
 }
+

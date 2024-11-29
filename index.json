@@ -54,7 +54,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "2",
@@ -111,7 +112,8 @@
                 "Amount": 70
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "3",
@@ -165,7 +167,8 @@
                 "Amount": 35
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "4",
@@ -221,7 +224,8 @@
                 "Amount": 10
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "5",
@@ -275,7 +279,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "6",
@@ -327,7 +332,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "7",
@@ -369,7 +375,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "8",
@@ -420,7 +427,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "9",
@@ -477,7 +485,8 @@
                 "Amount": 50
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "10",
@@ -541,7 +550,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "11",
@@ -595,7 +605,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "12",
@@ -650,7 +661,8 @@
                 "Amount": 75
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "13",
@@ -708,7 +720,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "14",
@@ -761,7 +774,8 @@
                 "Amount": 90
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "15",
@@ -802,7 +816,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "16",
@@ -857,7 +872,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "17",
@@ -913,7 +929,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "18",
@@ -962,7 +979,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "19",
@@ -1006,7 +1024,8 @@
                 "Amount": 60
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "20",
@@ -1045,7 +1064,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "21",
@@ -1093,7 +1113,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "22",
@@ -1137,7 +1158,8 @@
                 "Amount": 80
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "23",
@@ -1177,7 +1199,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "24",
@@ -1220,7 +1243,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "25",
@@ -1262,7 +1286,8 @@
                 "Amount": 0
             }
         ],
-        "userRatings": "5"
+        "userRatings" : "5"
+        
     },
     {
         "ID": "26",
@@ -1300,7 +1325,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "27",
@@ -1354,7 +1380,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "28",
@@ -1402,7 +1429,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "29",
@@ -1456,7 +1484,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "30",
@@ -1520,7 +1549,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "31",
@@ -1574,7 +1604,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "32",
@@ -1626,7 +1657,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "33",
@@ -1665,7 +1697,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "34",
@@ -1707,7 +1740,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "35",
@@ -1761,7 +1795,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "36",
@@ -1815,7 +1850,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "37",
@@ -1866,7 +1902,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "38",
@@ -1918,7 +1955,8 @@
                 "IsOnSale": true,
                 "Amount": 85
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "39",
@@ -1970,7 +2008,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "40",
@@ -2022,7 +2061,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "41",
@@ -2074,7 +2114,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "42",
@@ -2128,7 +2169,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "43",
@@ -2175,7 +2217,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "44",
@@ -2222,7 +2265,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "45",
@@ -2269,7 +2313,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "46",
@@ -2312,7 +2357,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "47",
@@ -2359,7 +2405,8 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     },
     {
         "ID": "48",
@@ -2413,6 +2460,7 @@
                 "IsOnSale": false,
                 "Amount": 0
             }
-        ]
+        ],
+        "userRatings" : "5"
     }
 ]
