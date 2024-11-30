@@ -220,39 +220,46 @@ function showRequestedData(infoType) {
 
     let content = "";
 
-    switch (infoType) {
-        case "Description":
-            content = `<div class="description">${selectedItem.Description}</div>`;
-            break;
-        case "Genres":
-            content = `<div class="genres">` +
-                selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
-                `</div>`;
-            break;
-        case "Price":
-            content = `
-                <div class="prices">
-                    ${selectedItem.Price.map(price => `
+    // Módosított JavaScript kód
+switch (infoType) {
+    case "Description":
+        content = `<div class="description">${selectedItem.Description}</div>`;
+        break;
+    case "Genres":
+        content = `<div class="genres">` +
+            selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
+            `</div>`;
+        break;
+    case "Price":
+        content = `
+            <div class="prices">
+                ${selectedItem.Price.map(price => {
+                    // Ellenőrizzük, hogy a játék le van-e árazva
+                    const isOnSale = selectedItem.Sale && selectedItem.Sale[0].IsOnSale;
+                    const discountAmount = isOnSale ? selectedItem.Sale[0].Amount : 0;
+
+                    // Árak megjelenítése
+                    return `
                         <div class="price-item">
                             <span class="platform">${price.Platform}:</span>
                             <span class="price">${price.Price}</span>
+                            ${isOnSale ? `<span class="sale-info"> - On Sale (${discountAmount}% off)</span>` : ""}
                             <a href="${price.link}" target="_blank" class="buy-link"><i class="fa-solid fa-cart-shopping"></i> Buy now</a>
-                        </div>
-                    `).join("")}
-                </div>`;
-            break;
-        case "Console":
-            content = `<div class="consoles">` +
-                selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
-                `</div>`;
-            break;
-        default:
-            content = `<div class="error">Invalid selection.</div>`;
-    }
+                        </div>`;
+                }).join("")}
+            </div>`;
+        break;
+    case "Console":
+        content = `<div class="consoles">` +
+            selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
+            `</div>`;
+        break;
+    default:
+        content = `<div class="error">Invalid selection.</div>`;
+}
 
+infoPlace.innerHTML = content;
 
-
-    infoPlace.innerHTML = content;
 }
 
 // Initialize on page load

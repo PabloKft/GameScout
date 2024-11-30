@@ -216,6 +216,19 @@
         #homePage {
             padding-top: 2rem;
         }
+
+        #searchSuggestions::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #searchSuggestions::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        #searchSuggestions::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
 </head>
 
@@ -247,17 +260,20 @@
                             target="_blank"><button class="btn-custom" type="button">All Games</button></a>
 
 
-                        <input class="form-control me-2 Search" type="search" placeholder="Search"
+                        <input class="form-control me-2 Search" id="searchInput" type="search" placeholder="Search"
                             style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
-                        <button class="btn" type="submit"
-                            style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
-                                class="fa fa-search"></i></button>
+                            <button class="btn" type="button" onclick="handleSearch()"
+                            style="border: 2px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                        
+                        
                     </form>
                 </div>
             </nav>
         </div>
         <br>
-
         <div class="container">
             <div class="row">
                 <div class="col-12">

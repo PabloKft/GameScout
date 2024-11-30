@@ -47,15 +47,14 @@
             "./pictures/RL_Pic5.jpg_large",
             "./pictures/RL_Pic6.jpg"
         ],
-        "ClickCount": 61,
+        "ClickCount": 443,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "5"
     },
     {
         "ID": "2",
@@ -81,17 +80,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$24.99",
+                "Price": "$5.28",
                 "link": "https://store.steampowered.com/app/1562430/DREDGE/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$24.99",
+                "Price": "$13.27",
                 "link": "https://www.xbox.com/en-US/games/store/dredge/9MSVVM5NS9L6"
             },
             {
                 "Platform": "PS",
-                "Price": "$24.99",
+                "Price": "$15.99",
                 "link": "https://store.playstation.com/en-us/product/UP4064-PPSA09077_00-0441220012296936"
             }
         ],
@@ -105,15 +104,14 @@
             "./pictures/Dredge_Pic5.jpg",
             "./pictures/Dredge_Pic6.jpg"
         ],
-        "ClickCount": 62,
+        "ClickCount": 51,
         "Sale": [
             {
                 "IsOnSale": true,
-                "Amount": 70
+                "Amount": 36
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "3",
@@ -160,15 +158,14 @@
             "./pictures/SC_Pic5.webp",
             "./pictures/SC_Pic6.jfif"
         ],
-        "ClickCount": 17,
+        "ClickCount": 178,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 35
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "4",
@@ -193,17 +190,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$29.99",
+                "Price": "$15.89",
                 "link": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/"
             },
             {
                 "Platform": "PC",
-                "Price": "$29.99",
+                "Price": "$6.68",
                 "link": "https://store.epicgames.com/en-US/p/grand-theft-auto-v"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$39.99",
+                "Price": "$12.08",
                 "link": "https://www.xbox.com/en-US/games/store/grand-theft-auto-v-xbox-series-xs/9NXMBTB02ZSF"
             }
         ],
@@ -217,15 +214,14 @@
             "./pictures/GTAV_Pic5.jpg",
             "./pictures/GTAV_Pic6.jpg"
         ],
-        "ClickCount": 46,
+        "ClickCount": 492,
         "Sale": [
             {
                 "IsOnSale": true,
-                "Amount": 10
+                "Amount": 47
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "5",
@@ -272,15 +268,14 @@
             "./pictures/PUBG_Pic5.webp",
             "./pictures/PUBG_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 222,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "6",
@@ -325,15 +320,14 @@
             "./pictures/TS4_Pic5.jpg",
             "./pictures/TS4_Pic6.jpeg"
         ],
-        "ClickCount": 37,
+        "ClickCount": 270,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "7",
@@ -368,21 +362,20 @@
             "./pictures/ATS_Pic5.png",
             "./pictures/ATS_Pic6.jpeg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 176,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "2"
     },
     {
         "ID": "8",
         "Name": "FC 25",
         "Release date": "09.29.2023",
-        "Description": "Introducing Club Membership – the next phase of loyalty in EA SPORTS FC™ 25. Available to fans that have played EA SPORTS FC™ 24 before 27 September 2024 and play EA SPORTS FC™ 25 before November 1st, 2024*. FC 25 Club Members will receive a host of exclusive benefits across the year, including a badge and kit to represent their status and rewards across all your favourite game modes. .Once again, all Founders will be able to unlock their Founders exclusive cosmetic items.",
+        "Description": "Introducing Club Membership \u2013 the next phase of loyalty in EA SPORTS FC\u2122 25. Available to fans that have played EA SPORTS FC\u2122 24 before 27 September 2024 and play EA SPORTS FC\u2122 25 before November 1st, 2024*. FC 25 Club Members will receive a host of exclusive benefits across the year, including a badge and kit to represent their status and rewards across all your favourite game modes. .Once again, all Founders will be able to unlock their Founders exclusive cosmetic items.",
         "Story": "No story",
         "Genres": [
             "Sports",
@@ -396,12 +389,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$69.99",
+                "Price": "$46.19",
                 "link": "https://www.ea.com/games/ea-sports-fc/fc-25"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$69.99",
+                "Price": "$58.79",
                 "link": "https://www.xbox.com/hu-HU/games/ea-sports-fc-25"
             },
             {
@@ -420,15 +413,14 @@
             "./pictures/FC25_Pic5.jpg",
             "./pictures/FC25_Pic6.png"
         ],
-        "ClickCount": 0,
+        "ClickCount": 349,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "9",
@@ -478,21 +470,20 @@
             "./pictures/CP2077_Pic5.jpg",
             "./pictures/CP2077_Pic6.jfif"
         ],
-        "ClickCount": 0,
+        "ClickCount": 261,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 50
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "10",
         "Name": "Minecraft",
         "Release date": "11.18.2011",
-        "Description": "Build anything you can imagine, uncover eerie mysteries, and survive the night in the ultimate sandbox game. In Minecraft, every playthrough is different, and unforgettable adventures await behind every corner. Explore and craft your way through an infinite world that’s yours to shape, one block at a time.",
+        "Description": "Build anything you can imagine, uncover eerie mysteries, and survive the night in the ultimate sandbox game. In Minecraft, every playthrough is different, and unforgettable adventures await behind every corner. Explore and craft your way through an infinite world that\u2019s yours to shape, one block at a time.",
         "Story": "No story",
         "Genres": [
             "Sandbox",
@@ -519,17 +510,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$29.99",
+                "Price": "$19.49",
                 "link": "https://www.xbox.com/en-US/games/store/minecraft-for-windows/9nblggh2jhxj"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$29.99",
+                "Price": "$3.90",
                 "link": "https://www.xbox.com/hu-HU/games/store/minecraft/9mvxmvt8zkwc"
             },
             {
                 "Platform": "PS",
-                "Price": "$29.99",
+                "Price": "$18.29",
                 "link": "https://www.playstation.com/en-hu/games/minecraft/"
             }
         ],
@@ -543,21 +534,20 @@
             "./pictures/MC_Pic5.jpg",
             "./pictures/MC_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 117,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "11",
         "Name": "Star Wars Battlefront II",
         "Release date": "11.17.2017",
-        "Description": "Be the hero in the ultimate Star Wars™ battle fantasy with Star Wars™ Battlefront™ II: Celebration Edition! Get Star Wars Battlefront II and the complete collection of customization content acquirable through in-game purchase from launch up to — and including — items inspired by Star Wars™: THE RISE OF SKYWALKER™*.",
+        "Description": "Be the hero in the ultimate Star Wars\u2122 battle fantasy with Star Wars\u2122 Battlefront\u2122 II: Celebration Edition! Get Star Wars Battlefront II and the complete collection of customization content acquirable through in-game purchase from launch up to \u2014 and including \u2014 items inspired by Star Wars\u2122: THE RISE OF SKYWALKER\u2122*.",
         "Story": "5-6 hours",
         "Genres": [
             "Action",
@@ -574,17 +564,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$39.99",
+                "Price": "$19.04",
                 "link": "https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$39.99",
+                "Price": "$27.59",
                 "link": "https://www.xbox.com/hu-HU/games/store/star-wars-battlefront-ii/C0GWTPD0S8S1"
             },
             {
                 "Platform": "PS",
-                "Price": "$39.99",
+                "Price": "$27.59",
                 "link": "https://www.playstation.com/hu-hu/games/star-wars-battlefront-ii/"
             }
         ],
@@ -598,21 +588,20 @@
             "./pictures/SWB2_Pic5.jpg",
             "./pictures/SWB2_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 83,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 31
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "12",
         "Name": "Battlefield V",
         "Release date": "11.20.2018",
-        "Description": "This is the ultimate Battlefield V experience. Enter mankind’s greatest conflict across land, air, and sea with all gameplay content unlocked from the get-go. Choose from the complete arsenal of weapons, vehicles, and gadgets, and immerse yourself in the hard-fought battles of World War II. Stand out on the battlefield with the complete roster of Elites and the best customization content of Year 1 and Year 2.",
+        "Description": "This is the ultimate Battlefield V experience. Enter mankind\u2019s greatest conflict across land, air, and sea with all gameplay content unlocked from the get-go. Choose from the complete arsenal of weapons, vehicles, and gadgets, and immerse yourself in the hard-fought battles of World War II. Stand out on the battlefield with the complete roster of Elites and the best customization content of Year 1 and Year 2.",
         "Story": "8-10 hours",
         "Genres": [
             "Action",
@@ -630,12 +619,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$49.99",
+                "Price": "$17.00",
                 "link": "https://store.steampowered.com/app/1238810/Battlefield_V/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$49.99",
+                "Price": "$26.99",
                 "link": "https://www.xbox.com/hu-HU/games/store/battlefield-v/bz2n7tq0xcf2"
             },
             {
@@ -654,15 +643,14 @@
             "./pictures/BF5_Pic5.jpg",
             "./pictures/BF5_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 260,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 75
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "13",
@@ -689,12 +677,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$29.99",
+                "Price": "$10.20",
                 "link": "https://store.steampowered.com/app/264710/Subnautica/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$29.99",
+                "Price": "$19.19",
                 "link": "https://www.xbox.com/hu-HU/games/store/subnautica/BX3S1Q5DVHRD"
             },
             {
@@ -713,15 +701,14 @@
             "./pictures/SUB_Pic5.jpg",
             "./pictures/SUB_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 264,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "1"
     },
     {
         "ID": "14",
@@ -743,7 +730,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$59.99",
+                "Price": "$9.00",
                 "link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
             },
             {
@@ -767,15 +754,14 @@
             "./pictures/RDR2_Pic5.jpg",
             "./pictures/RDR2_Pic6.jpg"
         ],
-        "ClickCount": 150,
+        "ClickCount": 478,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 90
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "2"
     },
     {
         "ID": "15",
@@ -795,7 +781,7 @@
         "Price": [
             {
                 "Platform": "PS",
-                "Price": "$59.99",
+                "Price": "$28.85",
                 "link": "https://www.playstation.com/en-hu/games/black-myth-wukong/"
             }
         ],
@@ -809,21 +795,20 @@
             "./pictures/BMW_Pic5.jpg",
             "./pictures/BMW_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 159,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 35
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "16",
-        "Name": "Marvel’s Spider-Man Remastered",
+        "Name": "Marvel\u2019s Spider-Man Remastered",
         "Release date": "08.12.2022",
-        "Description": "Marvel’s Spider-Man Remastered is an action-packed open-world game where players swing through New York as Spider-Man, stopping crime and uncovering a larger conspiracy.",
+        "Description": "Marvel\u2019s Spider-Man Remastered is an action-packed open-world game where players swing through New York as Spider-Man, stopping crime and uncovering a larger conspiracy.",
         "Story": "15-20 hours",
         "Genres": [
             "Action",
@@ -841,7 +826,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$49.99",
+                "Price": "$7.00",
                 "link": "https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/"
             },
             {
@@ -851,7 +836,7 @@
             },
             {
                 "Platform": "PC",
-                "Price": "$49.99",
+                "Price": "$26.99",
                 "link": "https://store.epicgames.com/en-US/p/marvels-spider-man-remastered"
             }
         ],
@@ -865,15 +850,14 @@
             "./pictures/MSMR_Pic5.jpg",
             "./pictures/MSMR_Pic6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 356,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "17",
@@ -922,15 +906,14 @@
             "./pictures/OW2_Logo6.jpg",
             "./pictures/OW2_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 117,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "5"
     },
     {
         "ID": "18",
@@ -972,15 +955,14 @@
             "./pictures/FN_Logo6.jpg",
             "./pictures/FN_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 442,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "19",
@@ -1017,15 +999,14 @@
             "./pictures/HOI4_Logo6.jpg",
             "./pictures/HOI4_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 461,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 60
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "1"
     },
     {
         "ID": "20",
@@ -1057,21 +1038,20 @@
             "./pictures/HnS_Logo6.jpg",
             "./pictures/HnS_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 14,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "2"
     },
     {
         "ID": "21",
         "Name": "Layers of Fear",
         "Release date": "02.16.2016",
-        "Description": "Layers of Fear is a psychological horror game focusing on exploration and a disturbing narrative set in a painter’s deteriorating mind.",
+        "Description": "Layers of Fear is a psychological horror game focusing on exploration and a disturbing narrative set in a painter\u2019s deteriorating mind.",
         "Story": "5-6 hours",
         "Genres": [
             "Horror",
@@ -1106,15 +1086,14 @@
             "./pictures/LoF_Logo6.jpg",
             "./pictures/LoF_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 93,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "22",
@@ -1151,15 +1130,14 @@
             "./pictures/LiS_Logo6.jpg",
             "./pictures/LiS_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 486,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 80
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "3"
     },
     {
         "ID": "23",
@@ -1178,7 +1156,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$4.99",
+                "Price": "$2.00",
                 "link": "https://store.steampowered.com/app/1721470/Poppy_Playtime/"
             }
         ],
@@ -1192,15 +1170,14 @@
             "./pictures/PP_Logo6.jpg",
             "./pictures/PP_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 343,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 60
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "4"
     },
     {
         "ID": "24",
@@ -1222,7 +1199,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$9.99",
+                "Price": "$0.32",
                 "link": "https://store.steampowered.com/app/550/Left_4_Dead_2/"
             }
         ],
@@ -1236,15 +1213,14 @@
             "./pictures/L4D2_Logo6.jpg",
             "./pictures/L4D2_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 135,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 89
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "2"
     },
     {
         "ID": "25",
@@ -1279,15 +1255,14 @@
             "./pictures/UT_Logo6.jpg",
             "./pictures/UT_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 211,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
-        
+        "userRatings": "5"
     },
     {
         "ID": "26",
@@ -1305,7 +1280,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$13.99",
+                "Price": "$5.46",
                 "link": "https://store.steampowered.com/app/739630/Phasmophobia/"
             }
         ],
@@ -1319,14 +1294,14 @@
             "./pictures/Phasmo_Logo6.jpg",
             "./pictures/Phasmo_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 479,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 61
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "1"
     },
     {
         "ID": "27",
@@ -1350,17 +1325,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$59.99",
+                "Price": "$7.90",
                 "link": "https://store.steampowered.com/app/1245620/Elden_Ring/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$59.99",
+                "Price": "$13.44",
                 "link": "https://www.xbox.com/en-US/games/store/elden-ring/9p4lbzpncbvc"
             },
             {
                 "Platform": "PS",
-                "Price": "$59.99",
+                "Price": "$7.90",
                 "link": "https://www.playstation.com/en-hu/games/elden-ring/"
             }
         ],
@@ -1374,14 +1349,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 383,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 72
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "2"
     },
     {
         "ID": "28",
@@ -1399,17 +1374,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "Free to Play",
-                "link": "https://store.steampowered.com/app/1222670/iRacing/"
+                "Price": "14,99€",
+                "link": "https://store.steampowered.com/app/266410/iRacing/"
             },
             {
-                "Platform": "PC",
-                "Price": "Free to Play",
-                "link": "https://www.microsoft.com/en-us/p/iracing/9nblggh42thb"
-            },
-            {
-                "Platform": "PC",
-                "Price": "Free to Play",
+                "Platform": "PC",   
+                "Price": "14,99€",
                 "link": "https://www.epicgames.com/store/en-US/p/iracing"
             }
         ],
@@ -1423,14 +1393,14 @@
             "./pictures/iRacing_Logo6.jpg",
             "./pictures/iRacing_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 256,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "2"
     },
     {
         "ID": "29",
@@ -1464,7 +1434,7 @@
             },
             {
                 "Platform": "PC",
-                "Price": "$3.99",
+                "Price": "$2.67",
                 "link": "https://www.epicgames.com/store/en-US/p/among-us"
             }
         ],
@@ -1478,14 +1448,14 @@
             "./pictures/AmongUs_Logo6.jpg",
             "./pictures/AmongUs_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 279,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "3"
     },
     {
         "ID": "30",
@@ -1514,7 +1484,7 @@
             },
             {
                 "Platform": "PC",
-                "Price": "$13.49",
+                "Price": "$3.78",
                 "link": "https://www.microsoft.com/en-us/p/ark-survival-evolved/9wzdncrfhw8f"
             },
             {
@@ -1529,7 +1499,7 @@
             },
             {
                 "Platform": "PS",
-                "Price": "$14.99",
+                "Price": "$10.19",
                 "link": "https://www.playstation.com/en-hu/games/ark-survival-evolved/"
             }
         ],
@@ -1543,14 +1513,14 @@
             "./pictures/ARKse_Logo6.jpg",
             "./pictures/ARKse_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 323,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "3"
     },
     {
         "ID": "31",
@@ -1598,14 +1568,14 @@
             "./pictures/Destiny2_Logo6.jpg",
             "./pictures/Destiny2_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 403,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 38
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "1"
     },
     {
         "ID": "32",
@@ -1651,20 +1621,20 @@
             "./pictures/EVEO_Logo6.jpg",
             "./pictures/EVEO_Logo7.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 286,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "4"
     },
     {
         "ID": "33",
         "Name": "Counter Strike 2",
         "Release date": "09.27.2023",
-        "Description": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2. A free upgrade to CS:GO, Counter-Strike 2 marks the largest technical leap in Counter-Strike’s history. Built on the Source 2 engine, Counter-Strike 2 is modernized with realistic physically-based rendering, state of the art networking, and upgraded Community Workshop tools. In addition to the classic objective-focused gameplay that Counter-Strike pioneered in 1999.",
+        "Description": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2. A free upgrade to CS:GO, Counter-Strike 2 marks the largest technical leap in Counter-Strike\u2019s history. Built on the Source 2 engine, Counter-Strike 2 is modernized with realistic physically-based rendering, state of the art networking, and upgraded Community Workshop tools. In addition to the classic objective-focused gameplay that Counter-Strike pioneered in 1999.",
         "Story": "No story",
         "Genres": [
             "Shooter",
@@ -1691,20 +1661,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 208,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "3"
     },
     {
         "ID": "34",
         "Name": "Euro Truck Simulator 2",
         "Release date": "10.19.2012",
-        "Description": "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore from the UK, Belgium, Germany, Italy, the Netherlands, Poland, and many more, your endurance, skill and speed will all be pushed to their limits. If you’ve got what it takes to be part of an elite trucking force, get behind the wheel and prove it!",
+        "Description": "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore from the UK, Belgium, Germany, Italy, the Netherlands, Poland, and many more, your endurance, skill and speed will all be pushed to their limits. If you\u2019ve got what it takes to be part of an elite trucking force, get behind the wheel and prove it!",
         "Story": "No story",
         "Genres": [
             "Simulation",
@@ -1720,7 +1690,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$19.99",
+                "Price": "$10.19",
                 "link": "https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/"
             }
         ],
@@ -1734,20 +1704,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 79,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 49
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "5"
     },
     {
         "ID": "35",
         "Name": "F1 24",
         "Release date": "31.05.2024",
-        "Description": "Be One of the 20 with EA SPORTS™ F1® 24, the official video game of the 2024 FIA Formula One World Championship™. Unleash your champion in pursuit of a legacy-defining F1® Career, the mode’s first major update since 2016. Drive like the greatest and feel at one with the car through the all-new EA SPORTS Dynamic Handling System. Ignite your passion by connecting to your favorite teams and drivers while proving that you have what it takes across new modes and experiences.",
+        "Description": "Be One of the 20 with EA SPORTS\u2122 F1\u00ae 24, the official video game of the 2024 FIA Formula One World Championship\u2122. Unleash your champion in pursuit of a legacy-defining F1\u00ae Career, the mode\u2019s first major update since 2016. Drive like the greatest and feel at one with the car through the all-new EA SPORTS Dynamic Handling System. Ignite your passion by connecting to your favorite teams and drivers while proving that you have what it takes across new modes and experiences.",
         "Story": "TBD",
         "Genres": [
             "Racing",
@@ -1765,17 +1735,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$59.99",
+                "Price": "$15.00",
                 "link": "https://store.steampowered.com/app/2488620/F1_24/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$59.99",
+                "Price": "$15.00",
                 "link": "https://www.xbox.com/hu-HU/games/store/f1-24/9PLVVTDHS1P0"
             },
             {
                 "Platform": "PS",
-                "Price": "$59.99",
+                "Price": "$15.00",
                 "link": "https://www.playstation.com/hu-hu/games/f1/"
             }
         ],
@@ -1789,20 +1759,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 145,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 75
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "3"
     },
     {
         "ID": "36",
         "Name": "F1 23",
         "Release date": "06.16.2023",
-        "Description": "Be the last to brake in EA SPORTS™ F1® 23, the official video game of the 2023 FIA Formula One World Championship™.",
+        "Description": "Be the last to brake in EA SPORTS\u2122 F1\u00ae 23, the official video game of the 2023 FIA Formula One World Championship\u2122.",
         "Story": "TBD",
         "Genres": [
             "Racing",
@@ -1820,17 +1790,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$59.99",
+                "Price": "$47.39",
                 "link": "https://store.steampowered.com/app/1946300/F1_23/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$59.99",
+                "Price": "$23.23",
                 "link": "https://www.xbox.com/hu-HU/games/store/f1-23/9MTK0S8CQ0QV"
             },
             {
                 "Platform": "PS",
-                "Price": "$59.99",
+                "Price": "$47.39",
                 "link": "https://www.playstation.com/hu-hu/games/f1-23/"
             }
         ],
@@ -1844,14 +1814,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 456,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 21
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "2"
     },
     {
         "ID": "37",
@@ -1872,7 +1842,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$39.99",
+                "Price": "$9.60",
                 "link": "https://store.steampowered.com/app/1030840/Mafia_Definitive_Edition/"
             },
             {
@@ -1882,7 +1852,7 @@
             },
             {
                 "Platform": "PC",
-                "Price": "$39.99",
+                "Price": "$35.99",
                 "link": "https://store.epicgames.com/en-US/p/mafia-definitive-edition"
             }
         ],
@@ -1896,20 +1866,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 163,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "2"
     },
     {
         "ID": "38",
         "Name": "Shadow of the Tomb Raider",
         "Release date": "09.14.2018",
-        "Description": "In Shadow of the Tomb Raider Definitive Edition experience the final chapter of Lara’s origin as she is forged into the Tomb Raider she is destined to be. Combining the base game, all seven DLC challenge tombs, as well as all downloadable weapons, outfits, and skills, Shadow of the Tomb Raider Definitive Edition is the ultimate way to experience Lara’s defining moment. Survive and Thrive In the Deadliest Place on Earth: Master an unforgiving jungle setting in order to survive. Explore underwater environments filled with crevasses and deep tunnel systems. Become One With the Jungle: Outgunned and outnumbered, Lara must use the jungle to her advantage. Strike suddenly and disappear like a jaguar, use mud as camouflage, and instill fear in enemies to sow chaos. Discover Dark and Brutal Tombs: Tombs are more terrifying than ever before, requiring advanced traversal techniques to reach them, and once inside they are filled with deadly puzzles. Uncover Living History: Discover a hidden city and explore the biggest hub space ever found in a Tomb Raider game.",
+        "Description": "In Shadow of the Tomb Raider Definitive Edition experience the final chapter of Lara\u2019s origin as she is forged into the Tomb Raider she is destined to be. Combining the base game, all seven DLC challenge tombs, as well as all downloadable weapons, outfits, and skills, Shadow of the Tomb Raider Definitive Edition is the ultimate way to experience Lara\u2019s defining moment. Survive and Thrive In the Deadliest Place on Earth: Master an unforgiving jungle setting in order to survive. Explore underwater environments filled with crevasses and deep tunnel systems. Become One With the Jungle: Outgunned and outnumbered, Lara must use the jungle to her advantage. Strike suddenly and disappear like a jaguar, use mud as camouflage, and instill fear in enemies to sow chaos. Discover Dark and Brutal Tombs: Tombs are more terrifying than ever before, requiring advanced traversal techniques to reach them, and once inside they are filled with deadly puzzles. Uncover Living History: Discover a hidden city and explore the biggest hub space ever found in a Tomb Raider game.",
         "Story": "20-30 hours",
         "Genres": [
             "Action",
@@ -1925,17 +1895,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$39.99",
+                "Price": "$23.59",
                 "link": "https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$39.99",
+                "Price": "$20.39",
                 "link": "https://www.xbox.com/en-us/games/store/shadow-of-the-tomb-raider/9n6pbdlgw7v8"
             },
             {
                 "Platform": "PS",
-                "Price": "$39.99",
+                "Price": "$4.40",
                 "link": "https://www.playstation.com/hu-hu/games/shadow-of-the-tomb-raider/"
             }
         ],
@@ -1949,20 +1919,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 25,
         "Sale": [
             {
-                "IsOnSale": true,
-                "Amount": 85
+                "IsOnSale": false,
+                "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "5"
     },
     {
         "ID": "39",
         "Name": "Tomb Raider",
         "Release date": "03.05.2013",
-        "Description": "Tomb Raider explores the intense and gritty origin story of Lara Croft and her ascent from a young woman to a hardened survivor. Armed only with raw instincts and the ability to push beyond the limits of human endurance, Lara must fight to unravel the dark history of a forgotten island to escape its relentless hold. Download the Turning Point trailer to see the beginning of Lara’s epic adventure.",
+        "Description": "Tomb Raider explores the intense and gritty origin story of Lara Croft and her ascent from a young woman to a hardened survivor. Armed only with raw instincts and the ability to push beyond the limits of human endurance, Lara must fight to unravel the dark history of a forgotten island to escape its relentless hold. Download the Turning Point trailer to see the beginning of Lara\u2019s epic adventure.",
         "Story": "10-12 hours",
         "Genres": [
             "Action",
@@ -1978,17 +1948,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$19.99",
+                "Price": "$14.79",
                 "link": "https://store.steampowered.com/app/203160/Tomb_Raider/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$19.99",
+                "Price": "$14.79",
                 "link": "https://www.xbox.com/en-us/games/store/tomb-raider/9n6pbdlgw7v8"
             },
             {
                 "Platform": "PS",
-                "Price": "$19.99",
+                "Price": "$6.96",
                 "link": "https://www.playstation.com/en-hu/games/tomb-raider-I-III-remastered-starring-lara-croft/"
             }
         ],
@@ -2002,20 +1972,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 486,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 26
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "5"
     },
     {
         "ID": "40",
-        "Name": "Rise of the Tomb Raider™",
+        "Name": "Rise of the Tomb Raider\u2122",
         "Release date": "10.11.2016",
-        "Description": "Rise of the Tomb Raider: 20 Year Celebration includes the base game and Season Pass featuring all-new content. Explore Croft Manor in the new 'Blood Ties' story, then defend it against a zombie invasion in 'Lara’s Nightmare'. Survive extreme conditions with a friend in the new online Co-Op Endurance mode, and brave the new 'Extreme Survivor' difficulty. Also features an outfit and weapon inspired by Tomb Raider III, and 5 classic Lara skins. Existing DLC will challenge you to explore a new tomb that houses an ancient terror in Baba Yaga: The Temple of the Witch, and combat waves of infected predators in Cold Darkness Awakened.",
+        "Description": "Rise of the Tomb Raider: 20 Year Celebration includes the base game and Season Pass featuring all-new content. Explore Croft Manor in the new 'Blood Ties' story, then defend it against a zombie invasion in 'Lara\u2019s Nightmare'. Survive extreme conditions with a friend in the new online Co-Op Endurance mode, and brave the new 'Extreme Survivor' difficulty. Also features an outfit and weapon inspired by Tomb Raider III, and 5 classic Lara skins. Existing DLC will challenge you to explore a new tomb that houses an ancient terror in Baba Yaga: The Temple of the Witch, and combat waves of infected predators in Cold Darkness Awakened.",
         "Story": "12-15 hours",
         "Genres": [
             "Action",
@@ -2031,7 +2001,7 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$19.99",
+                "Price": "$9.60",
                 "link": "https://store.steampowered.com/app/378800/Rise_of_the_Tomb_Raider/"
             },
             {
@@ -2041,7 +2011,7 @@
             },
             {
                 "Platform": "PS",
-                "Price": "$19.99",
+                "Price": "$3.00",
                 "link": "https://www.playstation.com/hu-hu/games/rise-of-the-tomb-raider-20-year-celebration/"
             }
         ],
@@ -2055,14 +2025,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 184,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "2"
     },
     {
         "ID": "41",
@@ -2084,17 +2054,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$19.99",
+                "Price": "$2.33",
                 "link": "https://store.steampowered.com/app/690790/DiRT_Rally_20/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$19.99",
+                "Price": "$3.20",
                 "link": "https://www.xbox.com/en-us/games/store/dirt-rally-2-0/9NBLGGH42THS"
             },
             {
                 "Platform": "PS",
-                "Price": "$19.99",
+                "Price": "$3.20",
                 "link": "https://www.playstation.com/hu-hu/games/dirt-rally-2-0/"
             }
         ],
@@ -2108,14 +2078,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 288,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 84
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "3"
     },
     {
         "ID": "42",
@@ -2139,17 +2109,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$39.99",
+                "Price": "$2.88",
                 "link": "https://store.steampowered.com/app/1222670/DIRT_5/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$39.99",
+                "Price": "$10.56",
                 "link": "https://www.xbox.com/en-us/games/store/dirt-5/9PMJ8B3N6V5H"
             },
             {
                 "Platform": "Ps",
-                "Price": "$39.99",
+                "Price": "$23.99",
                 "link": "https://www.playstation.com/hu-hu/games/dirt-rally-2-0/"
             }
         ],
@@ -2163,14 +2133,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 47,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 40
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "1"
     },
     {
         "ID": "43",
@@ -2192,12 +2162,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$19.99",
+                "Price": "$8.14",
                 "link": "https://store.steampowered.com/app/258280/Assetto_Corsa/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$19.99",
+                "Price": "$13.79",
                 "link": "https://www.xbox.com/en-us/games/store/assetto-corsa/9NBLGGH42THS"
             }
         ],
@@ -2211,14 +2181,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 121,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 31
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "4"
     },
     {
         "ID": "44",
@@ -2240,12 +2210,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$39.99",
+                "Price": "$30.79",
                 "link": "https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$39.99",
+                "Price": "$30.79",
                 "link": "https://www.xbox.com/en-us/games/store/assetto-corsa-competizione/9NBLGGH42THS"
             }
         ],
@@ -2259,14 +2229,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 360,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 23
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "1"
     },
     {
         "ID": "45",
@@ -2288,12 +2258,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$19.99",
+                "Price": "$12.77",
                 "link": "https://store.steampowered.com/app/108600/Project_Zomboid/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$19.99",
+                "Price": "$15.39",
                 "link": "https://www.xbox.com/en-us/games/store/project-zomboid/9NBLGGH42THS"
             }
         ],
@@ -2307,14 +2277,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 38,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 23
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "5"
     },
     {
         "ID": "46",
@@ -2332,13 +2302,8 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "Free to Play",
+                "Price": "9,75€",
                 "link": "https://store.steampowered.com/app/1866640/Lethal_Company/"
-            },
-            {
-                "Platform": "XBOX",
-                "Price": "Free to Play",
-                "link": "https://www.xbox.com/en-us/games/store/lethal-company/9NBLGGH42THS"
             }
         ],
         "Rating": "Very Positive (10,000+)",
@@ -2351,20 +2316,20 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 185,
         "Sale": [
             {
                 "IsOnSale": false,
                 "Amount": 0
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "1"
     },
     {
         "ID": "47",
         "Name": "Forza Horizon 5",
         "Release date": "11.09.2021",
-        "Description": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars. This is Your Horizon Adventure Lead breathtaking expeditions across the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars. This is a Diverse Open World Explore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano. This is an Adventurous Open World Immerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.",
+        "Description": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world\u2019s greatest cars. This is Your Horizon Adventure Lead breathtaking expeditions across the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world\u2019s greatest cars. This is a Diverse Open World Explore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano. This is an Adventurous Open World Immerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.",
         "Story": "No story",
         "Genres": [
             "Racing",
@@ -2380,12 +2345,12 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$59.99",
+                "Price": "$31.19",
                 "link": "https://store.steampowered.com/app/1551360/Forza_Horizon_5/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$59.99",
+                "Price": "$3.12",
                 "link": "https://www.xbox.com/en-us/games/store/forza-horizon-5/9PC5WZB9FTF1"
             }
         ],
@@ -2399,14 +2364,14 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 441,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 48
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "4"
     },
     {
         "ID": "48",
@@ -2430,17 +2395,17 @@
         "Price": [
             {
                 "Platform": "PC",
-                "Price": "$59.99",
+                "Price": "$6.60",
                 "link": "https://store.steampowered.com/app/2000950/Call_of_Duty_Modern_Warfare/"
             },
             {
                 "Platform": "XBOX",
-                "Price": "$59.99",
+                "Price": "$1.85",
                 "link": "https://www.xbox.com/en-us/games/store/call-of-duty-modern-warfare/9PKB0ZG9K5ZX"
             },
             {
                 "Platform": "PS",
-                "Price": "$59.99",
+                "Price": "$6.60",
                 "link": "https://www.playstation.com/en-hu/games/call-of-duty-modern-warfare/"
             }
         ],
@@ -2454,13 +2419,13 @@
             "./pictures/ER_Logo6.jpg",
             "./pictures/ER_Logo6.jpg"
         ],
-        "ClickCount": 0,
+        "ClickCount": 276,
         "Sale": [
             {
-                "IsOnSale": false,
-                "Amount": 0
+                "IsOnSale": true,
+                "Amount": 89
             }
         ],
-        "userRatings" : "5"
+        "userRatings": "4"
     }
 ]
