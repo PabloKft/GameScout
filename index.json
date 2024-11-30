@@ -1654,12 +1654,12 @@
         "Rating": "Mixed (150,000+)",
         "Image": [
             "./pictures/CS2_Logo.jpeg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/CS2_7.jpg",
+            "./pictures/CS2_2.jpg",
+            "./pictures/CS2_3.jpg",
+            "./pictures/CS2_4.jpg",
+            "./pictures/CS2_5.jpg",
+            "./pictures/CS2_6.jpg"
         ],
         "ClickCount": 208,
         "Sale": [
@@ -1697,12 +1697,12 @@
         "Rating": "Overwhelmingly Positive (500,000+)",
         "Image": [
             "./pictures/ETS2_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/ETS2_1.jpg",
+            "./pictures/ETS2_2.jpg",
+            "./pictures/ETS2_3.jpg",
+            "./pictures/ETS2_4.jpg",
+            "./pictures/ETS2_5.jpg",
+            "./pictures/ETS2_6.jpg"
         ],
         "ClickCount": 79,
         "Sale": [
@@ -1752,12 +1752,12 @@
         "Rating": "N/A",
         "Image": [
             "./pictures/F124_Logo2.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/f124_1.jpg",
+            "./pictures/f124_2.jpg",
+            "./pictures/f124_3.jpg",
+            "./pictures/f124_4.jpg",
+            "./pictures/f124_5.jpg",
+            "./pictures/f124_6.jpg"
         ],
         "ClickCount": 145,
         "Sale": [
@@ -1805,14 +1805,14 @@
             }
         ],
         "Rating": "Very Positive (10,000+)",
-        "Image": [
-            "./pictures/F123_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+        "Image": [            
+            "./pictures/F123_1.jpg",
+            "./pictures/F123_2.jpg",
+            "./pictures/F123_3.jpg",
+            "./pictures/F123_4.jpg",
+            "./pictures/F123_5.jpg",
+            "./pictures/F123_6.jpg",
+            "./pictures/F123_7.jpg"
         ],
         "ClickCount": 456,
         "Sale": [
@@ -1859,12 +1859,12 @@
         "Rating": "Very Positive (50,000+)",
         "Image": [
             "./pictures/MDE_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/Mafia1.jpg",
+            "./pictures/Mafia2.jpg",
+            "./pictures/Mafia3.jpg",
+            "./pictures/Mafia4.jpg",
+            "./pictures/Mafia5.jpg",
+            "./pictures/Mafia6.jpg"
         ],
         "ClickCount": 163,
         "Sale": [
@@ -1911,13 +1911,14 @@
         ],
         "Rating": "Very Positive (100,000+)",
         "Image": [
-            "./pictures/SoTTR_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            
+            "./pictures/SOTTR1.jpg",
+            "./pictures/SOTTR2.jpg",
+            "./pictures/SOTTR3.jpg",
+            "./pictures/SOTTR4.jpg",
+            "./pictures/SOTTR5.jpg",
+            "./pictures/SOTTR6.jpg",
+            "./pictures/SOTTR7.jpg"
         ],
         "ClickCount": 25,
         "Sale": [
@@ -1964,13 +1965,14 @@
         ],
         "Rating": "Very Positive (200,000+)",
         "Image": [
-            "./pictures/TR_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            
+            "./pictures/TR1.jpg",
+            "./pictures/TR2.jpg",
+            "./pictures/TR3.jpg",
+            "./pictures/TR4.jpg",
+            "./pictures/TR5.jpg",
+            "./pictures/TR6.jpg",
+            "./pictures/TR7.jpg"
         ],
         "ClickCount": 486,
         "Sale": [
@@ -2018,12 +2020,12 @@
         "Rating": "Very Positive (100,000+)",
         "Image": [
             "./pictures/RoTTR_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/ROTTR1.jpg",
+            "./pictures/ROTTR2.jpg",
+            "./pictures/ROTTR3.jpg",
+            "./pictures/ROTTR4.jpg",
+            "./pictures/ROTTR5.jpg",
+            "./pictures/ROTTR6.jpg"
         ],
         "ClickCount": 184,
         "Sale": [
@@ -2070,13 +2072,14 @@
         ],
         "Rating": "Very Positive (50,000+)",
         "Image": [
-            "./pictures/DR2_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            
+            "./pictures/DirtRally2_0_1.jpg",
+            "./pictures/DirtRally2_0_2.jpg",
+            "./pictures/DirtRally2_0_3.jpg",
+            "./pictures/DirtRally2_0_4.jpg",
+            "./pictures/DirtRally2_0_5.jpg",
+            "./pictures/DirtRally2_0_6.jpg",
+            "./pictures/DirtRally2_0_7.jpg"
         ],
         "ClickCount": 288,
         "Sale": [
@@ -2125,13 +2128,14 @@
         ],
         "Rating": "Mostly Positive (20,000+)",
         "Image": [
-            "./pictures/DIRT5_Logo.jfif",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            
+            "./pictures/Dirt5_1.jpg",
+            "./pictures/Dirt5_2.jpg",
+            "./pictures/Dirt5_3.jpg",
+            "./pictures/Dirt5_4.jpg",
+            "./pictures/Dirt5_5.jpg",
+            "./pictures/Dirt5_6.jpg",
+            "./pictures/Dirt5_7.jpg"
         ],
         "ClickCount": 47,
         "Sale": [
@@ -2174,12 +2178,12 @@
         "Rating": "Very Positive (50,000+)",
         "Image": [
             "./pictures/AC_Logo.png",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/AC1.jpg",
+            "./pictures/AC2.jpg",
+            "./pictures/AC3.jpg",
+            "./pictures/AC4.jpg",
+            "./pictures/AC5.jpg",
+            "./pictures/AC6.jpg"
         ],
         "ClickCount": 121,
         "Sale": [
@@ -2222,12 +2226,12 @@
         "Rating": "Very Positive (15,000+)",
         "Image": [
             "./pictures/ACC_Logo.png",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/ACC7.jpg",
+            "./pictures/ACC2.jpg",
+            "./pictures/ACC3.jpg",
+            "./pictures/ACC4.jpg",
+            "./pictures/ACC5.jpg",
+            "./pictures/ACC6.jpg"
         ],
         "ClickCount": 360,
         "Sale": [
@@ -2270,12 +2274,12 @@
         "Rating": "Very Positive (50,000+)",
         "Image": [
             "./pictures/PZ_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/PZ1.jpg",
+            "./pictures/PZ2.jpg",
+            "./pictures/PZ7.jpg",
+            "./pictures/PZ4.jpg",
+            "./pictures/PZ5.jpg",
+            "./pictures/PZ6.jpg"
         ],
         "ClickCount": 38,
         "Sale": [
@@ -2309,12 +2313,12 @@
         "Rating": "Very Positive (10,000+)",
         "Image": [
             "./pictures/LC_Logo.jpeg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/LC1.jpg",
+            "./pictures/LC2.jpg",
+            "./pictures/LC3.jpg",
+            "./pictures/LC4.jpg",
+            "./pictures/LC5.jpg",
+            "./pictures/LC6.jpg"
         ],
         "ClickCount": 185,
         "Sale": [
@@ -2357,12 +2361,12 @@
         "Rating": "Overwhelmingly Positive (200,000+)",
         "Image": [
             "./pictures/FH5_Logo.jpg",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/FH5_7.jpg",
+            "./pictures/FH5_2.jpg",
+            "./pictures/FH5_3.jpg",
+            "./pictures/FH5_4.jpg",
+            "./pictures/FH5_5.jpg",
+            "./pictures/FH5_6.jpg"
         ],
         "ClickCount": 441,
         "Sale": [
@@ -2412,12 +2416,12 @@
         "Rating": "Very Positive (150,000+)",
         "Image": [
             "./pictures/CoDMW_Logo.png",
-            "./pictures/ER_Logo2.jpg",
-            "./pictures/ER_Logo3.jpg",
-            "./pictures/ER_Logo4.jpg",
-            "./pictures/ER_Logo5.jpg",
-            "./pictures/ER_Logo6.jpg",
-            "./pictures/ER_Logo6.jpg"
+            "./pictures/CoDMW7.jpg",
+            "./pictures/CoDMW2.jpg",
+            "./pictures/CoDMW3.jpg",
+            "./pictures/CoDMW4.jpg",
+            "./pictures/CoDMW5.jpg",
+            "./pictures/CoDMW6.jpg"
         ],
         "ClickCount": 276,
         "Sale": [

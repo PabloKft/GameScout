@@ -578,7 +578,6 @@ a {
   margin-right: 10%;
 }
 
-
 #stars{
   max-height: 50px;
 }
@@ -587,6 +586,8 @@ a {
 }
 .star{
   font-size: 250%; 
+  transition: color 0.2s;
+
 }
 .star.hover{
   color: #585200;
@@ -799,4 +800,7 @@ a {
   cursor: pointer;
 }
 
-
+.resultText{
+  font-size: 90%;
+  font-style: italic;
+}

@@ -424,7 +424,11 @@ let selectedStoryTime = 100; // Default value for story time range (can be chang
 // Update the price display dynamically when the slider is adjusted
 document.getElementById('priceRange').addEventListener('input', function () {
     selectedPrice = this.value;
-    document.getElementById('curvalPrice').textContent = `Max. price: $${selectedPrice}`;
+    if(selectedPrice==0){
+        document.getElementById('curvalPrice').textContent = `Free games`;
+    }else{
+        document.getElementById('curvalPrice').textContent = `Max. price: $${selectedPrice}`;
+    }
     filterGames();  // Apply the filter after the slider update
 });
 
@@ -465,15 +469,31 @@ const ratingColors=[
 document.getElementById('ratingRange').addEventListener('input', function () {
     selectedRating = this.value;
     const ratingDisplay = document.getElementById('curvalRating');
-    ratingDisplay.textContent = `${ratings[selectedRating - 1]} or better`;
-    ratingDisplay.style.color = ratingColors[selectedRating-1]
+    if (selectedRating == 9) {
+        ratingDisplay.style.fontSize = "90%";
+        ratingDisplay.textContent = `${ratings[selectedRating - 1]}`;
+        ratingDisplay.style.color = ratingColors[selectedRating-1]
+    }else if (selectedRating == 1) {
+        ratingDisplay.style.fontSize = "75%";
+        ratingDisplay.textContent = `${ratings[selectedRating - 1]} or better`;
+        ratingDisplay.style.color = ratingColors[selectedRating-1]
+    }else{
+        ratingDisplay.style.fontSize = "90%";
+        ratingDisplay.textContent = `${ratings[selectedRating - 1]} or better`;
+        ratingDisplay.style.color = ratingColors[selectedRating-1]
+    }
+
     filterGames();  // Apply filter when rating is changed
 });
 
 document.getElementById('storyRange').addEventListener('input', function () {
-    selectedStoryTime = this.value;
     const storyDisplay = document.getElementById('curvalStory');
-    storyDisplay.textContent = `Max story-time: ${selectedStoryTime} hours`;
+    selectedStoryTime = this.value;
+    if (selectedStoryTime == 0) {
+        storyDisplay.textContent = `Not story games`;
+    }else{
+        storyDisplay.textContent = `Max story-time: ${selectedStoryTime} hours`;
+    }
     filterGames();  // Apply filter when story time is changed
 });
 
