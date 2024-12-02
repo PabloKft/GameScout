@@ -173,15 +173,36 @@ function displayGames(containerId, gamesArray) {
     // Clear any existing content in the container
     container.innerHTML = '';
 
-    // Compute top 8 popular games (if necessary for highlighting)
-    const topEightPopularGames = filterPopularGames(arrayData, 8);
+    // Compute top 8 popular games
+    const topEightPopularGames = filterPopularGames(gamesArray, 8);
+
+    // Sort games based on the desired priority
+    const sortedGames = [...gamesArray].sort((a, b) => {
+        // Get the highest discount amount for each game
+        const aDiscount = a.Sale?.reduce((max, sale) => sale.IsOnSale ? Math.max(max, sale.Amount) : max, 0) || 0;
+        const bDiscount = b.Sale?.reduce((max, sale) => sale.IsOnSale ? Math.max(max, sale.Amount) : max, 0) || 0;
+
+        // Compare by discount amount
+        if (aDiscount !== bDiscount) return bDiscount - aDiscount;
+
+        // Check if the games are popular
+        const aIsPopular = topEightPopularGames.includes(a);
+        const bIsPopular = topEightPopularGames.includes(b);
+
+        // If one is popular and the other isn't
+        if (aIsPopular !== bIsPopular) return bIsPopular - aIsPopular;
+
+        // Otherwise, sort alphabetically by name
+        return a.Name.localeCompare(b.Name);
+    });
 
     // Create and append cards for each game
-    gamesArray.forEach(item => {
+    sortedGames.forEach(item => {
         const card = createCard(item, topEightPopularGames);
         container.appendChild(card);
     });
 }
+
 
 // Display general info on a dedicated page
 function showGeneralInfo() {
@@ -640,15 +661,13 @@ function populateDropdownWithGenres(dataArray, dropdownContainerId) {
         return;
     }
 
-    // Extract unique genres
-    const uniqueGenres = new Set();
-    dataArray.forEach(item => {
-        item.Genres.forEach(genre => uniqueGenres.add(genre.trim()));
-    });
+    // Extract unique genres and sort them alphabetically
+    const uniqueGenres = Array.from(new Set(
+        dataArray.flatMap(item => item.Genres.map(genre => genre.trim()))
+    )).sort((a, b) => a.localeCompare(b));
 
     // Clear existing dropdown content
     dropdownContainer.innerHTML = '';
-    
 
     // Create list items dynamically
     uniqueGenres.forEach(genre => {
@@ -679,9 +698,9 @@ function populateDropdownWithGenres(dataArray, dropdownContainerId) {
 
         // Finally, append the list item to the dropdown container
         dropdownContainer.appendChild(listItem);
-
     });
 }
+
 
 function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
     const dropdownContainer = document.getElementById(dropdownContainerId);
@@ -690,11 +709,10 @@ function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
         return;
     }
 
-    // Extract unique genres
-    const uniqueConsoles = new Set();
-    dataArray.forEach(item => {
-        item.Console.forEach(console => uniqueConsoles.add(console.trim()));
-    });
+    // Extract unique consoles and sort them alphabetically
+    const uniqueConsoles = Array.from(new Set(
+        dataArray.flatMap(item => item.Console.map(console => console.trim()))
+    )).sort((a, b) => a.localeCompare(b));
 
     // Clear existing dropdown content
     dropdownContainer.innerHTML = '';
@@ -728,7 +746,6 @@ function populateDropdownWithConsoles(dataArray, dropdownContainerId) {
 
         // Finally, append the list item to the dropdown container
         dropdownContainer.appendChild(listItem);
-
     });
 }
 
