@@ -877,8 +877,7 @@ function resetStory() {
     filterGames(); 
 }
 
-//kereső működése
-   
+//kereső működése 
 document.addEventListener('DOMContentLoaded', () => {
     const searchField = document.getElementById('searchField');
     const resultContainer = document.getElementById('resultContainer');
@@ -889,11 +888,17 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(data => {
         const games = data;
 
+        // Segédfüggvény a játékok rendezéséhez
+        const sortGamesAlphabetically = (gameList) => {
+          return gameList.sort((a, b) => a.Name.localeCompare(b.Name));
+        };
+
         // Kattintás esemény az input mezőn
         searchField.addEventListener('focus', () => {
           resultContainer.innerHTML = '';  // Töröljük a korábbi találatokat
           if (games.length > 0) {
-            games.forEach(game => {
+            const sortedGames = sortGamesAlphabetically([...games]); // Másolat készítése és rendezés
+            sortedGames.forEach(game => {
               const resultItem = document.createElement('div');
               resultItem.textContent = game.Name;
 
@@ -919,9 +924,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
           if (query) {
             const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
+            const sortedFilteredGames = sortGamesAlphabetically(filteredGames); // Rendezés
 
-            if (filteredGames.length > 0) {
-              filteredGames.forEach(game => {
+            if (sortedFilteredGames.length > 0) {
+              sortedFilteredGames.forEach(game => {
                 const resultItem = document.createElement('div');
                 resultItem.textContent = game.Name;
 
@@ -949,4 +955,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       })
       .catch(error => console.error('Error loading JSON:', error));
-  });   
+  });
