@@ -113,7 +113,7 @@ function createCard(item, topEightPopularGames) {
 
     const popularSign = document.createElement('div');
     popularSign.classList.add('card-popularSign');
-    popularSign.innerHTML = '<i class="fa-solid fa-chart-line"></i>'; 
+    popularSign.innerHTML = '<i class="fa-solid fa-chart-line"></i>';
 
     const gameName = document.createElement('h5');
     gameName.classList.add('card-gameName');
@@ -242,44 +242,44 @@ function showRequestedData(infoType) {
     let content = "";
 
     // Módosított JavaScript kód
-switch (infoType) {
-    case "Description":
-        content = `<div class="description">${selectedItem.Description}</div>`;
-        break;
-    case "Genres":
-        content = `<div class="genres">` +
-            selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
-            `</div>`;
-        break;
-    case "Price":
-        content = `
+    switch (infoType) {
+        case "Description":
+            content = `<div class="description">${selectedItem.Description}</div>`;
+            break;
+        case "Genres":
+            content = `<div class="genres">` +
+                selectedItem.Genres.map(genre => `<span class="genre-item">${genre}</span>`).join("") +
+                `</div>`;
+            break;
+        case "Price":
+            content = `
             <div class="prices">
                 ${selectedItem.Price.map(price => {
-                    // Ellenőrizzük, hogy a játék le van-e árazva
-                    const isOnSale = selectedItem.Sale && selectedItem.Sale[0].IsOnSale;
-                    const discountAmount = isOnSale ? selectedItem.Sale[0].Amount : 0;
+                // Ellenőrizzük, hogy a játék le van-e árazva
+                const isOnSale = selectedItem.Sale && selectedItem.Sale[0].IsOnSale;
+                const discountAmount = isOnSale ? selectedItem.Sale[0].Amount : 0;
 
-                    // Árak megjelenítése
-                    return `
+                // Árak megjelenítése
+                return `
                         <div class="price-item">
                             <span class="platform">${price.Platform}:</span>
                             <span class="price">${price.Price}</span>
                             ${isOnSale ? `<span class="sale-info"> - On Sale (${discountAmount}% off)</span>` : ""}
                             <a href="${price.link}" target="_blank" class="buy-link"><i class="fa-solid fa-cart-shopping"></i> Buy now</a>
                         </div>`;
-                }).join("")}
+            }).join("")}
             </div>`;
-        break;
-    case "Console":
-        content = `<div class="consoles">` +
-            selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
-            `</div>`;
-        break;
-    default:
-        content = `<div class="error">Invalid selection.</div>`;
-}
+            break;
+        case "Console":
+            content = `<div class="consoles">` +
+                selectedItem.Console.map(console => `<span class="console-item">${console}</span>`).join("") +
+                `</div>`;
+            break;
+        default:
+            content = `<div class="error">Invalid selection.</div>`;
+    }
 
-infoPlace.innerHTML = content;
+    infoPlace.innerHTML = content;
 
 }
 
@@ -445,9 +445,9 @@ let selectedStoryTime = 100; // Default value for story time range (can be chang
 // Update the price display dynamically when the slider is adjusted
 document.getElementById('priceRange').addEventListener('input', function () {
     selectedPrice = this.value;
-    if(selectedPrice==0){
+    if (selectedPrice == 0) {
         document.getElementById('curvalPrice').textContent = `Free games`;
-    }else{
+    } else {
         document.getElementById('curvalPrice').textContent = `Max. price: $${selectedPrice}`;
     }
     filterGames();  // Apply the filter after the slider update
@@ -474,7 +474,7 @@ const ratings = [
     "Overwhelmingly Positive"
 ];
 
-const ratingColors=[
+const ratingColors = [
     "rgb(255, 0, 0)",
     "rgb(255, 128, 0)",
     "rgb(255, 255, 0)",
@@ -493,15 +493,15 @@ document.getElementById('ratingRange').addEventListener('input', function () {
     if (selectedRating == 9) {
         ratingDisplay.style.fontSize = "90%";
         ratingDisplay.textContent = `${ratings[selectedRating - 1]}`;
-        ratingDisplay.style.color = ratingColors[selectedRating-1]
-    }else if (selectedRating == 1) {
+        ratingDisplay.style.color = ratingColors[selectedRating - 1]
+    } else if (selectedRating == 1) {
         ratingDisplay.style.fontSize = "75%";
         ratingDisplay.textContent = `${ratings[selectedRating - 1]} or better`;
-        ratingDisplay.style.color = ratingColors[selectedRating-1]
-    }else{
+        ratingDisplay.style.color = ratingColors[selectedRating - 1]
+    } else {
         ratingDisplay.style.fontSize = "90%";
         ratingDisplay.textContent = `${ratings[selectedRating - 1]} or better`;
-        ratingDisplay.style.color = ratingColors[selectedRating-1]
+        ratingDisplay.style.color = ratingColors[selectedRating - 1]
     }
 
     filterGames();  // Apply filter when rating is changed
@@ -512,7 +512,7 @@ document.getElementById('storyRange').addEventListener('input', function () {
     selectedStoryTime = this.value;
     if (selectedStoryTime == 0) {
         storyDisplay.textContent = `Not story games`;
-    }else{
+    } else {
         storyDisplay.textContent = `Max story-time: ${selectedStoryTime} hours`;
     }
     filterGames();  // Apply filter when story time is changed
@@ -762,11 +762,11 @@ fetchJSON().then(() => {
 let counterGen = 0;
 function resetButtonGen() {
     console.log("resetButtonGen")
-    const button = document.getElementById("resetButtonGenres")    
-    if (counterGen%2==0){           
+    const button = document.getElementById("resetButtonGenres")
+    if (counterGen % 2 == 0) {
         button.style.display = "block";
     }
-    else{
+    else {
         button.style.display = "none";
     }
     counterGen++;
@@ -788,11 +788,11 @@ function resetGenres() {
 
 let counterPri = 0;
 function resetButtonPri() {
-    const button = document.getElementById("resetButtonPrice")    
-    if (counterPri%2==0){           
+    const button = document.getElementById("resetButtonPrice")
+    if (counterPri % 2 == 0) {
         button.style.display = "block";
     }
-    else{
+    else {
         button.style.display = "none";
     }
     counterPri++;
@@ -804,17 +804,17 @@ function resetPrice() {
 
     selectedPrice = 70
     document.getElementById('curvalPrice').textContent = `Max. price: $${selectedPrice}`;
-    filterGames(); 
+    filterGames();
 }
 
 
 let counterRat = 0;
 function resetButtonRat() {
-    const button = document.getElementById("resetButtonRating")    
-    if (counterRat%2==0){           
+    const button = document.getElementById("resetButtonRating")
+    if (counterRat % 2 == 0) {
         button.style.display = "block";
     }
-    else{
+    else {
         button.style.display = "none";
     }
     counterRat++;
@@ -823,19 +823,19 @@ function resetButtonRat() {
 function resetRating() {
     const rangeRat = document.getElementById("ratingRange")
     rangeRat.value = 5
-    selectedRating = 5-1
+    selectedRating = 5 - 1
     document.getElementById('curvalRating').textContent = `${ratings[selectedRating]} or better`;
-    document.getElementById('curvalRating').style.color = ratingColors[selectedRating-1]
-    filterGames(); 
+    document.getElementById('curvalRating').style.color = ratingColors[selectedRating - 1]
+    filterGames();
 }
 
 let counterCon = 0;
-function resetButtonCon() {    
-    const button = document.getElementById("resetButtonConsoles")    
-    if (counterCon%2==0){           
+function resetButtonCon() {
+    const button = document.getElementById("resetButtonConsoles")
+    if (counterCon % 2 == 0) {
         button.style.display = "block";
     }
-    else{
+    else {
         button.style.display = "none";
     }
     counterCon++;
@@ -852,12 +852,12 @@ function resetConsoles() {
 
 let counterReDa = 0;
 function resetButtonReDa() {
-    
-    const button = document.getElementById("resetButtonReleaseDate")    
-    if (counterReDa%2==0){           
+
+    const button = document.getElementById("resetButtonReleaseDate")
+    if (counterReDa % 2 == 0) {
         button.style.display = "block";
     }
-    else{
+    else {
         button.style.display = "none";
     }
     counterReDa++;
@@ -869,17 +869,17 @@ function resetReleaseDate() {
 
     selectedReleaseDate = 1990
     document.getElementById('curvalDate').textContent = `Min. release date: ${selectedReleaseDate}`;
-    filterGames(); 
+    filterGames();
 }
 
 let counterStory = 0;
 function resetButtonStory() {
-    
-    const button = document.getElementById("resetButtonStory")    
-    if (counterStory%2==0){           
+
+    const button = document.getElementById("resetButtonStory")
+    if (counterStory % 2 == 0) {
         button.style.display = "block";
     }
-    else{
+    else {
         button.style.display = "none";
     }
     counterStory++;
@@ -891,79 +891,75 @@ function resetStory() {
 
     selectedStoryTime = 100
     document.getElementById('curvalStory').textContent = `Max story-time: ${selectedStoryTime} hours`;
-    filterGames(); 
+    filterGames();
 }
 
 //kereső működése
-   
-document.addEventListener('DOMContentLoaded', () => {
+
+function searchfield(){
     const searchField = document.getElementById('searchField');
     const resultContainer = document.getElementById('resultContainer');
 
     // Adatok betöltése
-    fetch('index.json')
-      .then(response => response.json())
-      .then(data => {
-        const games = data;
+    fetch('./index.json')
+        .then(response => response.json())
+        .then(data => {
+            const games = data;
 
-        // Kattintás esemény az input mezőn
-        searchField.addEventListener('focus', () => {
-          resultContainer.innerHTML = '';  // Töröljük a korábbi találatokat
-          if (games.length > 0) {
-            games.forEach(game => {
-              const resultItem = document.createElement('div');
-              resultItem.textContent = game.Name;
+            searchField.addEventListener('focus', () => {
+                console.log("hahdhdh")
+                resultContainer.innerHTML = '';
+                if (games.length > 0) {
+                    games.forEach(game => {
+                        const resultItem = document.createElement('div');
+                        resultItem.textContent = game.Name;
 
-              // Kattintás esemény a játék ID-jának eltárolásához
-              resultItem.addEventListener('click', () => {
-                selectedCardIDGameSite = game.ID;
-                localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-                console.log(`Selected game ID: ${selectedCardIDGameSite}`);
-                window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
-              });
+                        resultItem.addEventListener('click', () => {
+                            selectedCardIDGameSite = game.ID;
+                            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+                            console.log(`Selected game ID: ${selectedCardIDGameSite}`);
+                            window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
+                        });
 
-              resultContainer.appendChild(resultItem);
+                        resultContainer.appendChild(resultItem);
+                    });
+                } else {
+                    resultContainer.innerHTML = '<div>No results found</div>';
+                }
             });
-          } else {
-            resultContainer.innerHTML = '<div>No results found</div>';
-          }
-        });
 
-        // Keresési mező eseménykezelője
-        searchField.addEventListener('input', () => {
-          const query = searchField.value.toLowerCase();
-          resultContainer.innerHTML = ''; // Töröljük a korábbi találatokat
+            searchField.addEventListener('input', () => {
+                const query = searchField.value.toLowerCase();
+                resultContainer.innerHTML = '';
 
-          if (query) {
-            const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
+                if (query) {
+                    const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
 
-            if (filteredGames.length > 0) {
-              filteredGames.forEach(game => {
-                const resultItem = document.createElement('div');
-                resultItem.textContent = game.Name;
+                    if (filteredGames.length > 0) {
+                        filteredGames.forEach(game => {
+                            const resultItem = document.createElement('div');
+                            resultItem.textContent = game.Name;
 
-                // Kattintás esemény a játék ID-jának eltárolásához
-                resultItem.addEventListener('click', () => {
-                  selectedCardIDGameSite = game.ID;
-                  localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-                  console.log(`Selected game ID: ${selectedCardIDGameSite}`);
-                  window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
-                });
+                            resultItem.addEventListener('click', () => {
+                                selectedCardIDGameSite = game.ID;
+                                localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+                                console.log(`Selected game ID: ${selectedCardIDGameSite}`);
+                                window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
+                            });
 
-                resultContainer.appendChild(resultItem);
-              });
-            } else {
-              resultContainer.innerHTML = '<div>No results found</div>';
-            }
-          }
-        });
+                            resultContainer.appendChild(resultItem);
+                        });
+                    } else {
+                        resultContainer.innerHTML = '<div>No results found</div>';
+                    }
+                }
+            });
 
-        // Kattintás esemény a kereső mezőn kívülre
-        document.addEventListener('click', (event) => {
-          if (!searchField.contains(event.target)) {
-            resultContainer.innerHTML = ''; // Eltűnik a találatok lista, ha a keresőn kívül kattintunk
-          }
-        });
-      })
-      .catch(error => console.error('Error loading JSON:', error));
-  });   
+            document.addEventListener('click', (event) => {
+                if (!searchField.contains(event.target)) {
+                    resultContainer.innerHTML = '';
+                }
+            });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+};   
