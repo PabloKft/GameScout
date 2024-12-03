@@ -20,7 +20,7 @@
   border: 2px solid rgb(65, 65, 65);
 }
 
-/*
+
 .card::before {
   content: "";
   position: absolute;
@@ -53,7 +53,6 @@
     transform: translateX(100%) translateY(-100%);
   }
 }
-*/
 
 
 
@@ -839,3 +838,22 @@ a {
   background: rgb(73, 72, 72);
 }
 
+
+#resultContainer::-webkit-scrollbar{
+  width: 8px;
+  border-radius: 10px;
+}
+
+#resultContainer::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#resultContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#resultContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
