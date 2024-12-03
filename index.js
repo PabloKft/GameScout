@@ -895,59 +895,44 @@ function resetStory() {
 }
 
 //kereső működése
-   
-function search(){
+
+document.addEventListener('DOMContentLoaded', () => {
     const searchField = document.getElementById('searchField');
     const resultContainer = document.getElementById('resultContainer');
 
-    // Adatok betöltése
+    if (!searchField || !resultContainer) {
+        console.warn('Search elements not found on this page.');
+        return; // Exit if search elements don't exist on the page
+    }
+    // Load data
     fetch('index.json')
-      .then(response => response.json())
-      .then(data => {
-        const games = data;
+        .then(response => response.json())
+        .then(data => {
+            const games = data;
 
-        // Kattintás esemény az input mezőn
-        searchField.addEventListener('focus', () => {
-          resultContainer.innerHTML = '';  // Töröljük a korábbi találatokat
-          if (games.length > 0) {
-            games.forEach(game => {
-              const resultItem = document.createElement('div');
-              resultItem.textContent = game.Name;
-
-                        resultItem.addEventListener('click', () => {
-                            selectedCardIDGameSite = game.ID;
-                            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-                            console.log(`Selected game ID: ${selectedCardIDGameSite}`);
-                            window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
-                        });
-
-                        resultContainer.appendChild(resultItem);
+            // Focus event on search field
+            searchField.addEventListener('focus', () => {
+                resultContainer.innerHTML = ''; // Clear previous results
+                if (games.length > 0) {
+                    games.forEach(game => {
+                        createResultItem(game, resultContainer);
                     });
                 } else {
                     resultContainer.innerHTML = '<div>No results found</div>';
                 }
             });
 
+            // Input event for live search
             searchField.addEventListener('input', () => {
                 const query = searchField.value.toLowerCase();
-                resultContainer.innerHTML = '';
+                resultContainer.innerHTML = ''; // Clear previous results
 
-          if (query) {
-            const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
+                if (query) {
+                    const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
 
-            if (filteredGames.length > 0) {
-              filteredGames.forEach(game => {
-                const resultItem = document.createElement('div');
-                resultItem.textContent = game.Name;
-
-                            resultItem.addEventListener('click', () => {
-                                selectedCardIDGameSite = game.ID;
-                                localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-                                console.log(`Selected game ID: ${selectedCardIDGameSite}`);
-                                window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
-                            });
-
-                            resultContainer.appendChild(resultItem);
+                    if (filteredGames.length > 0) {
+                        filteredGames.forEach(game => {
+                            createResultItem(game, resultContainer);
                         });
                     } else {
                         resultContainer.innerHTML = '<div>No results found</div>';
@@ -955,12 +940,27 @@ function search(){
                 }
             });
 
-        // Kattintás esemény a kereső mezőn kívülre
-        document.addEventListener('click', (event) => {
-          if (!searchField.contains(event.target)) {
-            resultContainer.innerHTML = ''; // Eltűnik a találatok lista, ha a keresőn kívül kattintunk
-          }
-        });
-      })
-      .catch(error => console.error('Error loading JSON:', error));
-  };   
+            // Click outside to close results
+            document.addEventListener('click', (event) => {
+                if (!searchField.contains(event.target)) {
+                    resultContainer.innerHTML = ''; // Clear results
+                }
+            });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+});
+
+// Function to create and append result items
+function createResultItem(game, container) {
+    const resultItem = document.createElement('div');
+    resultItem.textContent = game.Name;
+
+    resultItem.addEventListener('click', () => {
+        const selectedCardIDGameSite = game.ID;
+        localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+        console.log(`Selected game ID: ${selectedCardIDGameSite}`);
+        window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
+    });
+
+    container.appendChild(resultItem);
+}

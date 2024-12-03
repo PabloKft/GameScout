@@ -20,7 +20,7 @@
   border: 2px solid rgb(65, 65, 65);
 }
 
-/*
+
 .card::before {
   content: "";
   position: absolute;
@@ -53,7 +53,6 @@
     transform: translateX(100%) translateY(-100%);
   }
 }
-*/
 
 
 
@@ -841,3 +840,4 @@ a {
 .search-results div:hover {
   background: rgb(73, 72, 72);
 }
+

@@ -89,11 +89,11 @@
                     <img src="./pictures/logo.png" alt="Logo" width="100" height="100">
                     <img src="./pictures/text.png" alt="" class="gamescoutTitle">
                 </a>
-                <form class="d-flex search-container" role="search" style="position: relative;">
-                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
-                        target="_blank"><button class="btn-custom" type="button">All Games</button></a>
-                    <input class="form-control me-2 Search" id="searchField" onfocus="search()" type="text"
-                        placeholder="Search a game" aria-label="Search">
+                <form class="d-flex search-container" role="search">
+                    <a href="jatekok.html" target="_blank"><button class="btn-custom" type="button">All
+                            Games</button></a>
+                    <input class="form-control me-2 Search" id="searchField" type="text" placeholder="Search a game"
+                        aria-label="Search">
                     <div id="resultContainer" class="search-results"></div>
                 </form>
             </div>
@@ -134,76 +134,74 @@
     </div>
 
     <script>
-
-        function search() {
+        document.addEventListener('DOMContentLoaded', () => {
             const searchField = document.getElementById('searchField');
             const resultContainer = document.getElementById('resultContainer');
 
-            // Load JSON data
+            // Adatok betöltése
             fetch('index.json')
                 .then(response => response.json())
                 .then(data => {
                     const games = data;
 
-                    // Add events only after data is loaded
-                    setupSearchEvents(games);
+                    // Kattintás esemény az input mezőn
+                    searchField.addEventListener('focus', () => {
+                        resultContainer.innerHTML = '';  // Töröljük a korábbi találatokat
+                        if (games.length > 0) {
+                            games.forEach(game => {
+                                const resultItem = document.createElement('div');
+                                resultItem.textContent = game.Name;
+
+                                resultItem.addEventListener('click', () => {
+                                    selectedCardIDGameSite = game.ID;
+                                    localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+                                    console.log(`Selected game ID: ${selectedCardIDGameSite}`);
+                                    window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
+                                });
+
+                                resultContainer.appendChild(resultItem);
+                            });
+                        } else {
+                            resultContainer.innerHTML = '<div>No results found</div>';
+                        }
+                    });
+
+                    searchField.addEventListener('input', () => {
+                        const query = searchField.value.toLowerCase();
+                        resultContainer.innerHTML = '';
+
+                        if (query) {
+                            const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
+
+                            if (filteredGames.length > 0) {
+                                filteredGames.forEach(game => {
+                                    const resultItem = document.createElement('div');
+                                    resultItem.textContent = game.Name;
+
+                                    resultItem.addEventListener('click', () => {
+                                        selectedCardIDGameSite = game.ID;
+                                        localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+                                        console.log(`Selected game ID: ${selectedCardIDGameSite}`);
+                                        window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
+                                    });
+
+                                    resultContainer.appendChild(resultItem);
+                                });
+                            } else {
+                                resultContainer.innerHTML = '<div>No results found</div>';
+                            }
+                        }
+                    });
+
+                    // Kattintás esemény a kereső mezőn kívülre
+                    document.addEventListener('click', (event) => {
+                        if (!searchField.contains(event.target)) {
+                            resultContainer.innerHTML = ''; // Eltűnik a találatok lista, ha a keresőn kívül kattintunk
+                        }
+                    });
                 })
                 .catch(error => console.error('Error loading JSON:', error));
-
-            function setupSearchEvents(games) {
-                // Show all games when the search field is focused
-                searchField.addEventListener('focus', () => {
-                    if (searchField.value.trim() === '') {
-                        showResults(games);
-                    }
-                });
-
-                // Filter results based on input
-                searchField.addEventListener('input', () => {
-                    const query = searchField.value.toLowerCase();
-                    if (query) {
-                        const filteredGames = games.filter(game =>
-                            game.Name.toLowerCase().includes(query)
-                        );
-                        showResults(filteredGames);
-                    } else {
-                        resultContainer.innerHTML = '';
-                    }
-                });
-
-                // Hide results when clicking outside
-                document.addEventListener('click', (event) => {
-                    if (!searchField.contains(event.target) && !resultContainer.contains(event.target)) {
-                        resultContainer.innerHTML = '';
-                    }
-                });
-
-                // Helper to display results
-                function showResults(gamesList) {
-                    resultContainer.innerHTML = ''; // Clear previous results
-                    if (gamesList.length > 0) {
-                        gamesList.forEach(game => {
-                            const resultItem = document.createElement('div');
-                            resultItem.textContent = game.Name;
-                            resultItem.className = 'result-item'; // Add a class for styling
-
-                            resultItem.addEventListener('click', () => {
-                                const selectedCardIDGameSite = game.ID;
-                                localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-                                console.log(`Selected game ID: ${selectedCardIDGameSite}`);
-                                window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
-                            });
-
-                            resultContainer.appendChild(resultItem);
-                        });
-                    } else {
-                        resultContainer.innerHTML = '<div class="no-results">No results found</div>';
-                    }
-                }
-            }
-        }
-
-
+        });
         let arrayData = [];
         async function fetchJSON() {
             try {
@@ -273,14 +271,14 @@
             }
 
             detailsContainer.innerHTML = `
-                <img src="${game.Image[0]}" alt="${game.Name}" class="img-fluid mb-3" style="border-radius:10px;">
-                <div><h4>Genres:<br></h4> ${game.Genres.join(", ")}<br></div>
-                <div><h4>Price:<br></h4> ${formatPrices(game.Price)}<br></div>
-                <div><h4>Rating:<br></h4> ${game.Rating}<br></div>
-                <div><h4>Release Date:<br></h4> ${game["Release date"]}<br></div>
-                <div><h4>Story Length:<br></h4> ${game.Story}<br></div>
-                <div><h4>Available on:<br></h4> ${game.Console.join(", ")}<br></div>
-            `;
+            <img src="${game.Image[0]}" alt="${game.Name}" class="img-fluid mb-3" style="border-radius:10px;">
+            <div><h4>Genres:<br></h4> ${game.Genres.join(", ")}<br></div>
+            <div><h4>Price:<br></h4> ${formatPrices(game.Price)}<br></div>
+            <div><h4>Rating:<br></h4> ${game.Rating}<br></div>
+            <div><h4>Release Date:<br></h4> ${game["Release date"]}<br></div>
+            <div><h4>Story Length:<br></h4> ${game.Story}<br></div>
+            <div><h4>Available on:<br></h4> ${game.Console.join(", ")}<br></div>
+        `;
 
         }
 
@@ -309,22 +307,23 @@
                     // If all prices are the same, do not apply the green background
                     if (allPricesSame) {
                         return `
-                        <div>
-                            ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
-                        </div>
-                    `;
+                    <div>
+                        ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
+                    </div>
+                `;
                     }
                     return `
-                    <div style="background-color: ${isCheapest ? '#90EE90' : ''}; color: ${isCheapest ? '#333333' : 'white'};">
-                        ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
-                    </div>q
-                `;
+                <div style="background-color: ${isCheapest ? '#90EE90' : ''}; color: ${isCheapest ? '#333333' : 'white'};">
+                    ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
+                </div>
+            `;
                 }).join("<br>");
             }
         }
 
         window.onload = fetchJSON;
     </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz4fnFO9gybP6uIOB96o7H0q5ME7sBfxYw5KfflmV3p7kpIFqN0w8UmB5q"
