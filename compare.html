@@ -12,20 +12,20 @@
     <script src="https://kit.fontawesome.com/40786368ae.js" crossorigin="anonymous"></script>
     <style>
         .col-md-4 {
-            flex: 1; 
-            max-width: 33%; 
+            flex: 1;
+            max-width: 33%;
             border: 3px solid grey;
             border-radius: 15px;
-            margin: 0; 
+            margin: 0;
             text-align: center;
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
 
         .row {
             display: flex;
-            justify-content: space-between; 
-            gap: 5px; 
-}
+            justify-content: space-between;
+            gap: 5px;
+        }
 
         #suggestions1,
         #suggestions2,
@@ -89,13 +89,13 @@
                     <img src="./pictures/logo.png" alt="Logo" width="100" height="100">
                     <img src="./pictures/text.png" alt="" class="gamescoutTitle">
                 </a>
-                <form class="d-flex search-container" role="search" style="position: relative;">                    
-                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html" target="_blank"><button
-                        class="btn-custom" type="button">All Games</button></a>
-                    <input class="form-control me-2 Search" id="searchField" type="text" placeholder="Search a game"
-                      aria-label="Search">
+                <form class="d-flex search-container" role="search" style="position: relative;">
+                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
+                        target="_blank"><button class="btn-custom" type="button">All Games</button></a>
+                    <input class="form-control me-2 Search" id="searchField" onfocus="search()" type="text"
+                        placeholder="Search a game" aria-label="Search">
                     <div id="resultContainer" class="search-results"></div>
-                  </form>
+                </form>
             </div>
         </nav>
     </div>
@@ -107,7 +107,7 @@
             <div class="col-md-4" id="game-column-1">
                 <h3>Game 1</h3>
                 <input type="text" id="searchGame1" class="form-control mb-2" placeholder="Search Game 1"
-                oninput="showGameSuggestions(1)" onfocus="showGameSuggestions(1)">
+                    oninput="showGameSuggestions(1)" onfocus="showGameSuggestions(1)">
                 <div id="suggestions1" class="list-group"></div>
                 <div id="game1Details" class="game-details">
                 </div>
@@ -116,7 +116,7 @@
             <div class="col-md-4" id="game-column-2">
                 <h3>Game 2</h3>
                 <input type="text" id="searchGame2" class="form-control mb-2" placeholder="Search Game 2"
-                oninput="showGameSuggestions(2)" onfocus="showGameSuggestions(2)">
+                    oninput="showGameSuggestions(2)" onfocus="showGameSuggestions(2)">
                 <div id="suggestions2" class="list-group"></div>
                 <div id="game2Details" class="game-details">
                 </div>
@@ -125,7 +125,7 @@
             <div class="col-md-4" id="game-column-3">
                 <h3>Game 3</h3>
                 <input type="text" id="searchGame3" class="form-control mb-2" placeholder="Search Game 3"
-                oninput="showGameSuggestions(3)" onfocus="showGameSuggestions(3)">
+                    oninput="showGameSuggestions(3)" onfocus="showGameSuggestions(3)">
                 <div id="suggestions3" class="list-group"></div>
                 <div id="game3Details" class="game-details">
                 </div>
@@ -134,8 +134,197 @@
     </div>
 
     <script>
-    </script>
 
+        function search() {
+            const searchField = document.getElementById('searchField');
+            const resultContainer = document.getElementById('resultContainer');
+
+            // Load JSON data
+            fetch('index.json')
+                .then(response => response.json())
+                .then(data => {
+                    const games = data;
+
+                    // Add events only after data is loaded
+                    setupSearchEvents(games);
+                })
+                .catch(error => console.error('Error loading JSON:', error));
+
+            function setupSearchEvents(games) {
+                // Show all games when the search field is focused
+                searchField.addEventListener('focus', () => {
+                    if (searchField.value.trim() === '') {
+                        showResults(games);
+                    }
+                });
+
+                // Filter results based on input
+                searchField.addEventListener('input', () => {
+                    const query = searchField.value.toLowerCase();
+                    if (query) {
+                        const filteredGames = games.filter(game =>
+                            game.Name.toLowerCase().includes(query)
+                        );
+                        showResults(filteredGames);
+                    } else {
+                        resultContainer.innerHTML = '';
+                    }
+                });
+
+                // Hide results when clicking outside
+                document.addEventListener('click', (event) => {
+                    if (!searchField.contains(event.target) && !resultContainer.contains(event.target)) {
+                        resultContainer.innerHTML = '';
+                    }
+                });
+
+                // Helper to display results
+                function showResults(gamesList) {
+                    resultContainer.innerHTML = ''; // Clear previous results
+                    if (gamesList.length > 0) {
+                        gamesList.forEach(game => {
+                            const resultItem = document.createElement('div');
+                            resultItem.textContent = game.Name;
+                            resultItem.className = 'result-item'; // Add a class for styling
+
+                            resultItem.addEventListener('click', () => {
+                                const selectedCardIDGameSite = game.ID;
+                                localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+                                console.log(`Selected game ID: ${selectedCardIDGameSite}`);
+                                window.location.href = `gamesite.html?id=${selectedCardIDGameSite}`;
+                            });
+
+                            resultContainer.appendChild(resultItem);
+                        });
+                    } else {
+                        resultContainer.innerHTML = '<div class="no-results">No results found</div>';
+                    }
+                }
+            }
+        }
+
+
+        let arrayData = [];
+        async function fetchJSON() {
+            try {
+                const response = await fetch('./index.json');
+                arrayData = await response.json();
+            } catch (error) {
+                console.error('Error loading the JSON file:', error);
+            }
+        }
+
+        function showGameSuggestions(column) {
+            const searchQuery = document.getElementById(`searchGame${column}`).value.toLowerCase();
+            const suggestionsContainer = document.getElementById(`suggestions${column}`);
+            suggestionsContainer.innerHTML = '';
+
+
+            // Filter and sort the games
+            const filteredGames = searchQuery
+                ? arrayData.filter(game => game.Name.toLowerCase().includes(searchQuery))
+                : arrayData;
+
+            // Sort games alphabetically by name
+            filteredGames.sort((a, b) => a.Name.localeCompare(b.Name));
+
+            // Create suggestion items
+            filteredGames.forEach(game => {
+                const suggestionItem = document.createElement('a');
+                suggestionItem.href = "#";
+                suggestionItem.className = "list-group-item list-group-item-action";
+                suggestionItem.textContent = game.Name;
+                suggestionItem.onclick = (event) => {
+                    event.preventDefault();
+                    selectGame(column, game.ID);
+                };
+                suggestionsContainer.appendChild(suggestionItem);
+            });
+
+            // Show suggestions and add outside click listener
+            suggestionsContainer.style.display = 'block'; // Ensure it's visible
+            document.addEventListener('click', (event) => closeSuggestions(event, column));
+        }
+
+        function closeSuggestions(event, column) {
+            const input = document.getElementById(`searchGame${column}`);
+            const suggestionsContainer = document.getElementById(`suggestions${column}`);
+
+            // Close suggestions if the click is outside the input or dropdown
+            if (!input.contains(event.target) && !suggestionsContainer.contains(event.target)) {
+                suggestionsContainer.style.display = 'none';
+            }
+        }
+
+        function selectGame(column, gameId) {
+            const selectedGame = arrayData.find(game => game.ID == gameId);
+            if (selectedGame) {
+                document.getElementById(`searchGame${column}`).value = selectedGame.Name;
+                loadGameData(column, selectedGame);
+                document.getElementById(`suggestions${column}`).innerHTML = '';
+            }
+        }
+
+        function loadGameData(column, game) {
+            const detailsContainer = document.getElementById(`game${column}Details`);
+            const columnHeader = document.getElementById(`game-column-${column}`).querySelector('h3');
+            if (game) {
+                columnHeader.textContent = game.Name;
+            }
+
+            detailsContainer.innerHTML = `
+                <img src="${game.Image[0]}" alt="${game.Name}" class="img-fluid mb-3" style="border-radius:10px;">
+                <div><h4>Genres:<br></h4> ${game.Genres.join(", ")}<br></div>
+                <div><h4>Price:<br></h4> ${formatPrices(game.Price)}<br></div>
+                <div><h4>Rating:<br></h4> ${game.Rating}<br></div>
+                <div><h4>Release Date:<br></h4> ${game["Release date"]}<br></div>
+                <div><h4>Story Length:<br></h4> ${game.Story}<br></div>
+                <div><h4>Available on:<br></h4> ${game.Console.join(", ")}<br></div>
+            `;
+
+        }
+
+        function formatPrices(priceData) {
+            if (Array.isArray(priceData)) {
+                // Find the cheapest price and check if all prices are the same
+                let lowestPrice = Infinity;
+                let allPricesSame = true;
+
+                // Check if all prices are the same
+                const firstPriceValue = parseFloat(priceData[0].Price.replace('$', ''));
+                priceData.forEach(priceInfo => {
+                    const priceValue = parseFloat(priceInfo.Price.replace('$', ''));
+                    if (priceValue < lowestPrice) {
+                        lowestPrice = priceValue;
+                    }
+                    if (priceValue !== firstPriceValue) {
+                        allPricesSame = false;
+                    }
+                });
+
+                // Now, create the price HTML and apply the background color to the lowest price
+                return priceData.map(priceInfo => {
+                    const priceValue = parseFloat(priceInfo.Price.replace('$', ''));
+                    const isCheapest = priceValue === lowestPrice;
+                    // If all prices are the same, do not apply the green background
+                    if (allPricesSame) {
+                        return `
+                        <div>
+                            ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
+                        </div>
+                    `;
+                    }
+                    return `
+                    <div style="background-color: ${isCheapest ? '#90EE90' : ''}; color: ${isCheapest ? '#333333' : 'white'};">
+                        ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
+                    </div>q
+                `;
+                }).join("<br>");
+            }
+        }
+
+        window.onload = fetchJSON;
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz4fnFO9gybP6uIOB96o7H0q5ME7sBfxYw5KfflmV3p7kpIFqN0w8UmB5q"

@@ -896,7 +896,7 @@ function resetStory() {
 
 //kereső működése
    
-document.addEventListener('DOMContentLoaded', () => {
+function search(){
     const searchField = document.getElementById('searchField');
     const resultContainer = document.getElementById('resultContainer');
 
@@ -963,4 +963,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       })
       .catch(error => console.error('Error loading JSON:', error));
-  });   
+  };   
