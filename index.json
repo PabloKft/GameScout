@@ -41,10 +41,10 @@
         "Image": [
             "./pictures/RL_Logo.jpg",
             "./pictures/RL_Pic1.jpg",
-            "./pictures/RL_Pic2.webp",
+            "./pictures/RL_Pic1.jpg",
             "./pictures/RL_Pic3.jpg",
             "./pictures/RL_Pic4.jpg",
-            "./pictures/RL_Pic5.jpg_large",
+            "./pictures/RL_Pic5.jpg",
             "./pictures/RL_Pic6.jpg"
         ],
         "ClickCount": 443,
@@ -97,10 +97,10 @@
         "Rating": "Overwhelmingly Positive (40,000+)",
         "Image": [
             "./pictures/dredge_Logo.png",
-            "./pictures/Dredge_Pic1.webp",
+            "./pictures/Dredge_Pic1.jpg",
             "./pictures/Dredge_Pic2.jpg",
-            "./pictures/Dredge_Pic3.webp",
-            "./pictures/Dredge_Pic4.png",
+            "./pictures/Dredge_Pic3.jpg",
+            "./pictures/Dredge_Pic4.jpg",
             "./pictures/Dredge_Pic5.jpg",
             "./pictures/Dredge_Pic6.jpg"
         ],
@@ -155,8 +155,8 @@
             "./pictures/SC_Pic2.jpg",
             "./pictures/SC_Pic3.jpg",
             "./pictures/SC_Pic4.jpg",
-            "./pictures/SC_Pic5.webp",
-            "./pictures/SC_Pic6.jfif"
+            "./pictures/SC_Pic5.jpg",
+            "./pictures/SC_Pic6.jpg"
         ],
         "ClickCount": 178,
         "Sale": [
@@ -265,7 +265,7 @@
             "./pictures/PUBG_Pic2.jpg",
             "./pictures/PUBG_Pic3.jpg",
             "./pictures/PUBG_Pic4.jpg",
-            "./pictures/PUBG_Pic5.webp",
+            "./pictures/PUBG_Pic5.jpg",
             "./pictures/PUBG_Pic6.jpg"
         ],
         "ClickCount": 222,
@@ -313,12 +313,12 @@
         "Rating": "Mostly Positive (350,000+)",
         "Image": [
             "./pictures/TS4_Logo.jpg",
-            "./pictures/TS4_Pic1.jfif",
-            "./pictures/TS4_Pic2.png",
+            "./pictures/TS4_Pic1.jpg",
+            "./pictures/TS4_Pic2.jpg",
             "./pictures/TS4_Pic3.jpg",
-            "./pictures/TS4_Pic4.jfif",
+            "./pictures/TS4_Pic4.jpg",
             "./pictures/TS4_Pic5.jpg",
-            "./pictures/TS4_Pic6.jpeg"
+            "./pictures/TS4_Pic6.jpg"
         ],
         "ClickCount": 270,
         "Sale": [
@@ -356,11 +356,11 @@
         "Image": [
             "./pictures/ATS_Logo.jpg",
             "./pictures/ATS_Pic1.jpg",
-            "./pictures/ATS_Pic2.jfif",
-            "./pictures/ATS_Pic3.jfif",
-            "./pictures/ATS_Pic4.jfif",
-            "./pictures/ATS_Pic5.png",
-            "./pictures/ATS_Pic6.jpeg"
+            "./pictures/ATS_Pic2.jpg",
+            "./pictures/ATS_Pic3.jpg",
+            "./pictures/ATS_Pic4.jpg",
+            "./pictures/ATS_Pic5.jpg",
+            "./pictures/ATS_Pic6.jpg"
         ],
         "ClickCount": 176,
         "Sale": [
@@ -406,12 +406,12 @@
         "Rating": "Mostly Positive (25,000+)",
         "Image": [
             "./pictures/FC25_Logo.jpg",
-            "./pictures/FC25_Pic1.jpeg",
+            "./pictures/FC25_Pic1.jpg",
             "./pictures/FC25_Pic2.jpg",
             "./pictures/FC25_Pic3.jpg",
             "./pictures/FC25_Pic4.jpg",
             "./pictures/FC25_Pic5.jpg",
-            "./pictures/FC25_Pic6.png"
+            "./pictures/FC25_Pic6.jpg"
         ],
         "ClickCount": 349,
         "Sale": [
@@ -464,11 +464,11 @@
         "Image": [
             "./pictures/CP2077_Logo.jpg",
             "./pictures/CP2077_Pic1.jpg",
-            "./pictures/CP2077_Pic2.webp",
+            "./pictures/CP2077_Pic2.jpg",
             "./pictures/CP2077_Pic3.jpg",
             "./pictures/CP2077_Pic4.jpg",
             "./pictures/CP2077_Pic5.jpg",
-            "./pictures/CP2077_Pic6.jfif"
+            "./pictures/CP2077_Pic6.jpg"
         ],
         "ClickCount": 261,
         "Sale": [
