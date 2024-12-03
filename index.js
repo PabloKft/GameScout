@@ -895,24 +895,24 @@ function resetStory() {
 }
 
 //kereső működése
-
-function searchfield(){
+   
+document.addEventListener('DOMContentLoaded', () => {
     const searchField = document.getElementById('searchField');
     const resultContainer = document.getElementById('resultContainer');
 
     // Adatok betöltése
-    fetch('./index.json')
-        .then(response => response.json())
-        .then(data => {
-            const games = data;
+    fetch('index.json')
+      .then(response => response.json())
+      .then(data => {
+        const games = data;
 
-            searchField.addEventListener('focus', () => {
-                console.log("hahdhdh")
-                resultContainer.innerHTML = '';
-                if (games.length > 0) {
-                    games.forEach(game => {
-                        const resultItem = document.createElement('div');
-                        resultItem.textContent = game.Name;
+        // Kattintás esemény az input mezőn
+        searchField.addEventListener('focus', () => {
+          resultContainer.innerHTML = '';  // Töröljük a korábbi találatokat
+          if (games.length > 0) {
+            games.forEach(game => {
+              const resultItem = document.createElement('div');
+              resultItem.textContent = game.Name;
 
                         resultItem.addEventListener('click', () => {
                             selectedCardIDGameSite = game.ID;
@@ -932,13 +932,13 @@ function searchfield(){
                 const query = searchField.value.toLowerCase();
                 resultContainer.innerHTML = '';
 
-                if (query) {
-                    const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
+          if (query) {
+            const filteredGames = games.filter(game => game.Name.toLowerCase().includes(query));
 
-                    if (filteredGames.length > 0) {
-                        filteredGames.forEach(game => {
-                            const resultItem = document.createElement('div');
-                            resultItem.textContent = game.Name;
+            if (filteredGames.length > 0) {
+              filteredGames.forEach(game => {
+                const resultItem = document.createElement('div');
+                resultItem.textContent = game.Name;
 
                             resultItem.addEventListener('click', () => {
                                 selectedCardIDGameSite = game.ID;
@@ -955,11 +955,12 @@ function searchfield(){
                 }
             });
 
-            document.addEventListener('click', (event) => {
-                if (!searchField.contains(event.target)) {
-                    resultContainer.innerHTML = '';
-                }
-            });
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-};   
+        // Kattintás esemény a kereső mezőn kívülre
+        document.addEventListener('click', (event) => {
+          if (!searchField.contains(event.target)) {
+            resultContainer.innerHTML = ''; // Eltűnik a találatok lista, ha a keresőn kívül kattintunk
+          }
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  });   

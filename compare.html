@@ -10,23 +10,22 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/40786368ae.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .col-md-4 {
-            flex: 1;
-            max-width: 33%;
+            flex: 1; 
+            max-width: 33%; 
             border: 3px solid grey;
             border-radius: 15px;
-            margin: 0;
+            margin: 0; 
             text-align: center;
-            box-sizing: border-box;
+            box-sizing: border-box; 
         }
 
         .row {
             display: flex;
-            justify-content: space-between;
-            gap: 5px;
-        }
+            justify-content: space-between; 
+            gap: 5px; 
+}
 
         #suggestions1,
         #suggestions2,
@@ -77,7 +76,12 @@
     </style>
 </head>
 
+
+
 <body>
+
+
+
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -85,13 +89,13 @@
                     <img src="./pictures/logo.png" alt="Logo" width="100" height="100">
                     <img src="./pictures/text.png" alt="" class="gamescoutTitle">
                 </a>
-                <form class="d-flex search-container" role="search" style="position: relative;">
-                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
-                        target="_blank"><button class="btn-custom" type="button">All Games</button></a>
-                    <input class="form-control me-2 Search" id="searchField" onclick="searchfield()" type="text"
-                        placeholder="Search a game" aria-label="Search">
+                <form class="d-flex search-container" role="search" style="position: relative;">                    
+                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html" target="_blank"><button
+                        class="btn-custom" type="button">All Games</button></a>
+                    <input class="form-control me-2 Search" id="searchField" type="text" placeholder="Search a game"
+                      aria-label="Search">
                     <div id="resultContainer" class="search-results"></div>
-                </form>
+                  </form>
             </div>
         </nav>
     </div>
@@ -103,7 +107,7 @@
             <div class="col-md-4" id="game-column-1">
                 <h3>Game 1</h3>
                 <input type="text" id="searchGame1" class="form-control mb-2" placeholder="Search Game 1"
-                    oninput="showGameSuggestions(1)">
+                oninput="showGameSuggestions(1)" onfocus="showGameSuggestions(1)">
                 <div id="suggestions1" class="list-group"></div>
                 <div id="game1Details" class="game-details">
                 </div>
@@ -112,7 +116,7 @@
             <div class="col-md-4" id="game-column-2">
                 <h3>Game 2</h3>
                 <input type="text" id="searchGame2" class="form-control mb-2" placeholder="Search Game 2"
-                    oninput="showGameSuggestions(2)">
+                oninput="showGameSuggestions(2)" onfocus="showGameSuggestions(2)">
                 <div id="suggestions2" class="list-group"></div>
                 <div id="game2Details" class="game-details">
                 </div>
@@ -121,7 +125,7 @@
             <div class="col-md-4" id="game-column-3">
                 <h3>Game 3</h3>
                 <input type="text" id="searchGame3" class="form-control mb-2" placeholder="Search Game 3"
-                    oninput="showGameSuggestions(3)">
+                oninput="showGameSuggestions(3)" onfocus="showGameSuggestions(3)">
                 <div id="suggestions3" class="list-group"></div>
                 <div id="game3Details" class="game-details">
                 </div>
@@ -129,8 +133,7 @@
         </div>
     </div>
 
-    <script src="./index.js">
-        
+    <script>
     </script>
 
 
