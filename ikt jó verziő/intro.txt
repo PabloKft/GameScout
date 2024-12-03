@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>GAMESCOUT Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            /* Dark background */
+            font-family: 'Audiowide', sans-serif;
+            color: white;
+            /* Optional: Set text color to white */
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        .logo {
+            font-size: 5rem;
+            /* Adjust size as needed */
+            color: #020039;
+            /* Dark blue text for better contrast */
+            text-shadow:
+                2px 2px 0 #a0e7ff,
+                /* Lighter blue shadow */
+                -2px -2px 0 #b7dbff,
+                2px -2px 0 #bddeff,
+                -2px 2px 0 #bddeff;
+            /* Light blue border */
+            letter-spacing: 15px;
+        }
+
+
+        .scout {
+            font-style: italic;
+            color: #47004a;
+            /* Bright red for highlight */
+            text-shadow:
+                3px 3px 0 rgb(137, 137, 137),
+                -2px -2px 0 rgb(0, 0, 0),
+                2px -2px 0 rgb(0, 0, 0),
+                -2px 2px 0 rgb(0, 0, 0);
+        }
+
+        .text, .motto{
+            font-size: 35px;
+            color: rgb(59, 59, 59);
+            font-style: italic;
+        }
+        .text{
+            font-weight: bold;
+        }
+        .motto{
+            float: inline-end;
+            font-size: 25px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <div class="text">Welcome to</div>
+        <div class="logo">GAME<span class="scout"><span class="highlight">S</span>COUT</span></div>
+        <div class="motto">Your Game, Your Journey</div>
+    </div>
+</body>
+
+</html>

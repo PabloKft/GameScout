@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GS-Gamesite</title>
+  <link rel="icon" type="image/x-icon" href="./pictures/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://kit.fontawesome.com/40786368ae.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <script>
+    // Example JSON object
+    var gameData = {
+      id: 1,
+      name: "Game Title",
+      release_date: "2024-01-01"
+    };
+
+    // Get the button element
+    var button = document.getElementById("changeTitleBtn");
+
+    // Add a click event listener
+    button.addEventListener("click", function () {
+      // Set the document title to the game's name
+      document.title = gameData.name;
+    });
+  </script>
+
+  <style>
+    .thumbnail-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 5px;
+      padding: 10px 0;
+    }
+
+
+    .thumbnail {
+      width: 160px;
+      height: 90px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.3s ease;
+
+    }
+
+    .thumbnail:hover {
+      border-color: white;
+    }
+
+    .thumbnail-container::-webkit-scrollbar {
+      height: 8px;
+      border-radius: 10px;
+    }
+
+    .thumbnail-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .thumbnail-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    .thumbnail-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .infobox {
+      font-size: large;
+      border: solid white 2px;
+      border-radius: 15px;
+      margin-top: 6px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    .btn-group {
+      margin-bottom: 15px;
+    }
+
+    .gamePageButton {
+      width: 50%;
+      margin: 3px;
+    }
+
+
+
+    #infos {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light" class="navbar">
+        <div class="container-fluid">
+          <a href="./fooldal.html">
+            <img src="./pictures/logo.png" alt="Logo" width="100" height="100">
+            <img src="./pictures/text.png" alt="" class="gamescoutTitle">
+          </a>
+
+          <form class="d-flex search-container" role="search" style="position: relative;">
+            <a href="./compare.html" target="_blank"><button class="btn-custom" type="button">Compare</button></a>
+            <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"><button
+                class="btn-custom" type="button">All Games</button></a>
+
+
+                <input class="form-control me-2 Search" id="searchField" type="text"
+                placeholder="Search a game" aria-label="Search">
+              <div id="resultContainer" class="search-results"></div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container">
+    <h1 id="gameName"></h1>
+    <div class="row" style="margin-bottom: 15px;">
+      <div class="col-7">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+          <div class="carousel-inner" style="border-radius: 10px;" id="carouselPlace">
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-5" class="review">
+        <ul id="generalInfoList">
+          <li>
+            <p><span class="generalInfoListHeadings">Release date:</span> <br> <span
+                id="generalInfoListReleaseDate"></span></p>
+          </li>
+          <li>
+            <p><span class="generalInfoListHeadings">Story time:</span> <br> <span id="generalInfoListStoryTime"></span>
+            </p>
+          </li>
+          <li>
+            <p><span class="generalInfoListHeadings">Ratings:</span> <br> <span id="generalInfoListRatings"></span></p>
+          </li>
+          <hr style="color:white">
+
+
+          <div id="userRatings">
+            <div>Rate: <br><span id="gameNameText"></span> </div>
+            <div id="stars">
+            </div>
+            <span class="button" onclick="submitRating()" id="submitButton">Submit</span>
+            <div id="currentRatings" style="display: none;">Other user's opinion:</div>
+            <span id="currentStars"></span>
+          </div>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="col-7">
+      <div class="thumbnail-container"></div>
+    </div>
+    <hr>
+    <div id="infos">
+      <div class="btn-group infoButtons" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+          onclick="showRequestedData('Description')">
+        <label class="btn btn-outline-primary" for="btnradio1">Description</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+          onclick="showRequestedData('Genres')">
+        <label class="btn btn-outline-primary" for="btnradio2">Genres</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+          onclick="showRequestedData('Price')">
+        <label class="btn btn-outline-primary" for="btnradio3">Prices</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+          onclick="showRequestedData('Console')">
+        <label class="btn btn-outline-primary" for="btnradio4">Available platforms</label>
+      </div>
+      <div class="infobox" style="margin-bottom: 50px;">
+        <div id="requestedInfoPlace">
+          Please, choose what else do you want to see about:<br><span id="gameNameText"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-white mt-5">
+    <div class="container py-4">
+      <div class="row frow">
+        <div class="col-md-4 fcol-4">
+          <h5>About GameScout</h5>
+          <p>
+            GameScout is your ultimate destination for discovering games, comparing features, and
+            finding the best
+            deals on your favorite titles. Stay connected for the latest sales.
+          </p>
+        </div>
+        <div class="col-md-4 fcol-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./fooldal.html">Home</a></li>
+            <li><a href="./jatekok.html">All Games</a></li>
+            <li><a href="./compare.html">Compare Games</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 fcol-4">
+          <h5>Contact us:</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a><br>E-mail:<br>
+            <a href="#" class="text-white"><i class="">kovacsm2@kkszki.hu</i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <i class="fa-solid fa-location-dot"></i> Miskolc, Palóczy László utca 3, 3525
+      <br>
+      <p class="mb-0">&copy; 2024 GameScout. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
