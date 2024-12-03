@@ -10,7 +10,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/40786368ae.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .col-md-4 {
             flex: 1;
@@ -85,13 +84,17 @@
                     <img src="./pictures/logo.png" alt="Logo" width="100" height="100">
                     <img src="./pictures/text.png" alt="" class="gamescoutTitle">
                 </a>
-                <form class="d-flex search-container" role="search" style="position: relative;">                    
-                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html" target="_blank"><button
-                        class="btn-custom" type="button">All Games</button></a>
-                    <input class="form-control me-2 Search" id="searchField" type="text" placeholder="Search a game"
-                      aria-label="Search">
-                    <div id="resultContainer" class="search-results"></div>
-                  </form>
+                <form class="d-flex search-container" role="search">
+                    <a href="jatekok.html" target="_blank"><button class="btn-custom" type="button">All
+                            Games</button></a>
+
+
+                    <input class="form-control me-2 Search" type="search" placeholder="Search"
+                        style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
+                    <button class="btn" type="submit"
+                        style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
+                            class="fa fa-search"></i></button>
+                </form>
             </div>
         </nav>
     </div>
@@ -130,6 +133,100 @@
     </div>
 
     <script src="./index.js">
+        let arrayData = [];
+        async function fetchJSON() {
+            try {
+                const response = await fetch('./index.json');
+                arrayData = await response.json();
+            } catch (error) {
+                console.error('Error loading the JSON file:', error);
+            }
+        }
+
+        function showGameSuggestions(column) {
+            const searchQuery = document.getElementById(`searchGame${column}`).value.toLowerCase();
+            const suggestionsContainer = document.getElementById(`suggestions${column}`);
+            suggestionsContainer.innerHTML = '';
+
+            // Filter and sort the games
+            const filteredGames = searchQuery
+                ? arrayData.filter(game => game.Name.toLowerCase().includes(searchQuery))
+                : arrayData;
+
+            // Sort games alphabetically by name
+            filteredGames.sort((a, b) => a.Name.localeCompare(b.Name));
+
+            // Create suggestion items
+            filteredGames.forEach(game => {
+                const suggestionItem = document.createElement('a');
+                suggestionItem.href = "#";
+                suggestionItem.className = "list-group-item list-group-item-action";
+                suggestionItem.textContent = game.Name;
+                suggestionItem.onclick = (event) => {
+                    event.preventDefault();
+                    selectGame(column, game.ID);
+                };
+                suggestionsContainer.appendChild(suggestionItem);
+            });
+
+            // Show suggestions and add outside click listener
+            suggestionsContainer.style.display = 'block'; // Ensure it's visible
+            document.addEventListener('click', (event) => closeSuggestions(event, column));
+        }
+
+        function closeSuggestions(event, column) {
+            const input = document.getElementById(`searchGame${column}`);
+            const suggestionsContainer = document.getElementById(`suggestions${column}`);
+
+            // Close suggestions if the click is outside the input or dropdown
+            if (!input.contains(event.target) && !suggestionsContainer.contains(event.target)) {
+                suggestionsContainer.style.display = 'none';
+            }
+        }
+
+        function selectGame(column, gameId) {
+            const selectedGame = arrayData.find(game => game.ID == gameId);
+            if (selectedGame) {
+                document.getElementById(`searchGame${column}`).value = selectedGame.Name;
+                loadGameData(column, selectedGame);
+                document.getElementById(`suggestions${column}`).innerHTML = '';
+            }
+        }
+
+        function loadGameData(column, game) {
+            const detailsContainer = document.getElementById(`game${column}Details`);
+            const columnHeader = document.getElementById(`game-column-${column}`).querySelector('h3');
+            if (game) {
+                columnHeader.textContent = game.Name;
+            }
+
+            detailsContainer.innerHTML = `
+           <img src="${game.Image[0]}" alt="${game.Name}" class="img-fluid mb-3" style="border-radius:10px;">
+           <div><h4>Genres:<br></h4> ${game.Genres.join(", ")}<br></div>
+           <div><h4>Price:<br></h4> ${formatPrices(game.Price)}<br></div>
+           <div><h4>Rating:<br></h4> ${game.Rating}<br></div>
+           <div><h4>Release Date:<br></h4> ${game["Release date"]}<br></div>
+           <div><h4>Story Length:<br></h4> ${game.Story}<br></div>
+           <div><h4>Available on:<br></h4> ${game.Console.join(", ")}<br></div>
+       `;
+        }
+
+        function formatPrices(priceData) {
+            if (Array.isArray(priceData)) {
+                return priceData.map(priceInfo =>
+                    `${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>`
+                ).join("<br>");
+            } else {
+                return `${priceData["Epic Games"]} - <a href="${priceData.link}" target="_blank">Buy Now</a>`;
+            }
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            const searchInput = document.getElementById(`searchGame${i}`);
+            searchInput.addEventListener('focus', () => showGameSuggestions(i));
+        }
+
+        window.onload = fetchJSON;
     </script>
 
 

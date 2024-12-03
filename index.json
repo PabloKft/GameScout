@@ -183,9 +183,9 @@
             " Cross Platform"
         ],
         "Console": [
-            "<i class=\"fa-solid fa-computer\"></i> PC",
+            "PC",
             "Xbox",
-            "<i class=\"fa-brands fa-playstation\"></i> PS"
+            "PS"
         ],
         "Price": [
             {
