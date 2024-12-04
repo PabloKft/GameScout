@@ -841,6 +841,62 @@ a {
   background: rgb(73, 72, 72);
 }
 
+#introPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* Allows absolute positioning within this section */
+  background: linear-gradient(to bottom, #001629, #000000);
+  animation: fadeIn 2s ease-out;
+  cursor: crosshair;
+  user-select: none;
+}
+
+/* Position "Welcome to" on the right */
+#welcomeText {
+  position: absolute;
+  /* Allows manual positioning */
+  top: 29%;
+  /* Adjust as needed for alignment */
+  left: 25%;
+  /* Adjust as needed for alignment */
+  text-align: right;
+  /* Ensures text stays aligned to the right */
+  color: rgb(92, 92, 92);
+  /* Adjust color if needed */
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+#mottoText {
+  position: absolute;
+  /* Allows manual positioning */
+  bottom: 44%;
+  /* Adjust as needed for alignment */
+  right: 25%;
+  /* Adjust as needed for alignment */
+  text-align: right;
+  /* Ensures text stays aligned to the right */
+  color: rgb(93, 93, 93);
+  /* Adjust color if needed */
+  animation: fadeInUp 1.5s ease-out;
+  font-size: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
 .logo {
   font-size: 5rem;
   /* Adjust size as needed */
@@ -885,4 +941,61 @@ a {
       -2px -2px 0 rgb(26, 26, 26),
       2px -2px 0 rgb(26, 26, 26),
       -2px 2px 0 rgb(26, 26, 26);
+}
+
+.text,
+.motto {
+  font-size: 35px;
+  color: rgb(59, 59, 59);
+  font-style: italic;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.motto {
+  text-align: right;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Scroll down button */
+.scroll-down {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #a0e7ff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(10px);
+  }
+}
+
+.scroll-down:hover {
+  transform: translateY(15px);
+  opacity: 0.8;
 }
