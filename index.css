@@ -841,3 +841,48 @@ a {
   background: rgb(73, 72, 72);
 }
 
+.logo {
+  font-size: 5rem;
+  /* Adjust size as needed */
+  color: #020039;
+  /* Dark blue text for better contrast */
+  text-shadow:
+      2px 2px 0 #a0e7ff,
+      /* Lighter blue shadow */
+      -2px -2px 0 #b7dbff,
+      2px -2px 0 #bddeff,
+      -2px 2px 0 #bddeff;
+  /* Light blue border */
+  letter-spacing: 15px;
+  animation: zoomIn 1.5s ease-out;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.logo.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+
+
+.scout {
+  font-style: italic;
+  color: #57005a;
+  /* Bright red for highlight */
+  text-shadow:
+      3px 3px 0 rgb(26, 26, 26),
+      -2px -2px 0 rgb(26, 26, 26),
+      2px -2px 0 rgb(26, 26, 26),
+      -2px 2px 0 rgb(26, 26, 26);
+}
