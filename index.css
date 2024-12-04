@@ -856,3 +856,10 @@ a {
   background: rgb(73, 72, 72);
 }
 
+#PriceHeight{
+  height: 200px;
+}
+
+.category{
+  padding-right: 20px;
+}
