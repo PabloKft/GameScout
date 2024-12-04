@@ -22,11 +22,13 @@
         ],
         "Price": [
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.epicgames.com/en-US/p/rocket-league"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "Free to Play",
                 "link": "https://www.xbox.com/hu-HU/games/store/rocket-league/C125W9BG2K0V"
@@ -79,16 +81,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$5.28",
                 "link": "https://store.steampowered.com/app/1562430/DREDGE/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$13.27",
                 "link": "https://www.xbox.com/en-US/games/store/dredge/9MSVVM5NS9L6"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$15.99",
                 "link": "https://store.playstation.com/en-us/product/UP4064-PPSA09077_00-0441220012296936"
@@ -133,16 +138,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$29.99",
                 "link": "https://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "$29.99",
                 "link": "https://store.epicgames.com/en-US/p/cities-skylines"
             },
             {
+                "Site": "EA",
                 "Platform": "PC",
                 "Price": "$39.99",
                 "link": "https://www.ea.com/games/simcity"
@@ -183,22 +191,25 @@
             " Cross Platform"
         ],
         "Console": [
-            "PC",
+            "<i class=\"fa-solid fa-computer\"></i> PC",
             "Xbox",
-            "PS"
+            "<i class=\"fa-brands fa-playstation\"></i> PS"
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$15.89",
                 "link": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "$6.68",
                 "link": "https://store.epicgames.com/en-US/p/grand-theft-auto-v"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$12.08",
                 "link": "https://www.xbox.com/en-US/games/store/grand-theft-auto-v-xbox-series-xs/9NXMBTB02ZSF"
@@ -243,16 +254,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "Free to Play",
                 "link": "https://www.xbox.com/hu-HU/games/store/pubg-battlegrounds/C0MN5DN8KR3F"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.epicgames.com/en-US/p/pubg-59c1d9"
@@ -295,16 +309,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "Free to Play",
                 "link": "https://www.xbox.com/hu-HU/games/store/the-sims-4/C08JXNK0VG5L"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "Free to Play",
                 "link": "https://www.playstation.com/en-hu/games/the-sims-4/"
@@ -347,6 +364,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$19.99",
                 "link": "https://store.steampowered.com/app/270880/American_Truck_Simulator/"
@@ -388,16 +406,19 @@
         ],
         "Price": [
             {
+                "Site": "EA",
                 "Platform": "PC",
                 "Price": "$46.19",
                 "link": "https://www.ea.com/games/ea-sports-fc/fc-25"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$58.79",
                 "link": "https://www.xbox.com/hu-HU/games/ea-sports-fc-25"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$69.99",
                 "link": "https://www.playstation.com/hu-hu/games/ea-sports-fc/"
@@ -445,16 +466,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$59.99",
                 "link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$59.99",
                 "link": "https://www.xbox.com/hu-HU/games/store/cyberpunk-2077/BX3M8L83BBRW"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$59.99",
                 "link": "https://www.playstation.com/en-hu/games/cyberpunk-2077/"
@@ -509,16 +533,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$19.49",
                 "link": "https://www.xbox.com/en-US/games/store/minecraft-for-windows/9nblggh2jhxj"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$3.90",
                 "link": "https://www.xbox.com/hu-HU/games/store/minecraft/9mvxmvt8zkwc"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$18.29",
                 "link": "https://www.playstation.com/en-hu/games/minecraft/"
@@ -563,16 +590,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$19.04",
                 "link": "https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$27.59",
                 "link": "https://www.xbox.com/hu-HU/games/store/star-wars-battlefront-ii/C0GWTPD0S8S1"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$27.59",
                 "link": "https://www.playstation.com/hu-hu/games/star-wars-battlefront-ii/"
@@ -618,16 +648,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$17.00",
                 "link": "https://store.steampowered.com/app/1238810/Battlefield_V/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$26.99",
                 "link": "https://www.xbox.com/hu-HU/games/store/battlefield-v/bz2n7tq0xcf2"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$49.99",
                 "link": "https://www.playstation.com/en-hu/games/battlefield-v/"
@@ -676,16 +709,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$10.20",
                 "link": "https://store.steampowered.com/app/264710/Subnautica/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$19.19",
                 "link": "https://www.xbox.com/hu-HU/games/store/subnautica/BX3S1Q5DVHRD"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$29.99",
                 "link": "https://www.playstation.com/hu-hu/games/subnautica/"
@@ -729,16 +765,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$9.00",
                 "link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$59.99",
                 "link": "https://www.xbox.com/hu-HU/games/store/red-dead-redemption-2/bpswgqbw7r3g"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$59.99",
                 "link": "https://www.playstation.com/hu-hu/games/red-dead-redemption-2/"
@@ -780,6 +819,7 @@
         ],
         "Price": [
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$28.85",
                 "link": "https://www.playstation.com/en-hu/games/black-myth-wukong/"
@@ -825,16 +865,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$7.00",
                 "link": "https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$49.99",
                 "link": "https://www.playstation.com/en-hu/games/marvels-spider-man-remastered/pc/"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "$26.99",
                 "link": "https://store.epicgames.com/en-US/p/marvels-spider-man-remastered"
@@ -881,16 +924,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/2357570/Overwatch_2/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "Free to Play",
                 "link": "https://www.xbox.com/hu-HU/games/store/overwatch-2/C1C4DZJPBC2V"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "Free to Play",
                 "link": "https://www.playstation.com/hu-hu/games/overwatch/"
@@ -940,6 +986,7 @@
         ],
         "Price": [
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://www.epicgames.com/fortnite/en-US/home"
@@ -984,6 +1031,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$39.99",
                 "link": "https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/"
@@ -1023,6 +1071,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/480430/Hide_and_Shriek/"
@@ -1066,11 +1115,13 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$19.99",
                 "link": "https://store.steampowered.com/app/391720/Layers_of_Fear/"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "$19.99",
                 "link": "https://store.epicgames.com/en-US/p/layers-of-fear"
@@ -1115,6 +1166,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$19.99",
                 "link": "https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/"
@@ -1155,6 +1207,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$2.00",
                 "link": "https://store.steampowered.com/app/1721470/Poppy_Playtime/"
@@ -1198,6 +1251,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$0.32",
                 "link": "https://store.steampowered.com/app/550/Left_4_Dead_2/"
@@ -1240,6 +1294,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/304930/Unturned/"
@@ -1279,6 +1334,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$5.46",
                 "link": "https://store.steampowered.com/app/739630/Phasmophobia/"
@@ -1324,16 +1380,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$7.90",
                 "link": "https://store.steampowered.com/app/1245620/Elden_Ring/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$13.44",
                 "link": "https://www.xbox.com/en-US/games/store/elden-ring/9p4lbzpncbvc"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$7.90",
                 "link": "https://www.playstation.com/en-hu/games/elden-ring/"
@@ -1373,11 +1432,13 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "14,99€",
                 "link": "https://store.steampowered.com/app/266410/iRacing/"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",   
                 "Price": "14,99€",
                 "link": "https://www.epicgames.com/store/en-US/p/iracing"
@@ -1423,16 +1484,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$3.99",
                 "link": "https://store.steampowered.com/app/945360/Among_Us/"
             },
             {
-                "Platform": "PC",
-                "Price": "$3.99",
-                "link": "https://www.microsoft.com/en-us/p/among-us/9nblggh4n2tb"
+                "Site": "Microsoft",
+                "Platform": "XBOX",
+                "Price": "$4.39",
+                "link": "https://www.xbox.com/hu-HU/games/store/among-us/9ng07qjnk38j"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "$2.67",
                 "link": "https://www.epicgames.com/store/en-US/p/among-us"
@@ -1478,30 +1542,24 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$14.99",
                 "link": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/"
             },
             {
-                "Platform": "PC",
-                "Price": "$3.78",
-                "link": "https://www.microsoft.com/en-us/p/ark-survival-evolved/9wzdncrfhw8f"
-            },
-            {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$13.49",
                 "link": "https://www.xbox.com/hu-HU/games/store/ark-survival-evolved/BNBLC4ZGFNKB"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "$13.99",
-                "link": "https://www.epicgames.com/store/en-US/p/ark-survival-evolved"
-            },
-            {
-                "Platform": "PS",
-                "Price": "$10.19",
-                "link": "https://www.playstation.com/en-hu/games/ark-survival-evolved/"
+                "link": "https://store.epicgames.com/en-US/p/ark"
             }
+
         ],
         "Rating": "Mostly Positive (450,000+)",
         "Image": [
@@ -1543,16 +1601,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/1085660/Destiny_2/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "Free to Play",
                 "link": "https://www.xbox.com/hu-HU/games/store/destiny-2/BPQ955FQFPH6"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "Free to Play",
                 "link": "https://www.playstation.com/en-hu/games/destiny-2/"
@@ -1596,16 +1657,19 @@
         ],
         "Price": [
             {
+                "Site": "Eve Online",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://www.eveonline.com/"
             },
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/8500/EVE_Online/"
             },
             {
+                "Site": "Epic Games",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://www.epicgames.com/store/en-US/p/eve-online"
@@ -1646,6 +1710,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "Free to Play",
                 "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
@@ -1689,6 +1754,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$10.19",
                 "link": "https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/"
@@ -1734,16 +1800,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$15.00",
                 "link": "https://store.steampowered.com/app/2488620/F1_24/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$15.00",
                 "link": "https://www.xbox.com/hu-HU/games/store/f1-24/9PLVVTDHS1P0"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$15.00",
                 "link": "https://www.playstation.com/hu-hu/games/f1/"
@@ -1789,16 +1858,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$47.39",
                 "link": "https://store.steampowered.com/app/1946300/F1_23/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$23.23",
                 "link": "https://www.xbox.com/hu-HU/games/store/f1-23/9MTK0S8CQ0QV"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$47.39",
                 "link": "https://www.playstation.com/hu-hu/games/f1-23/"
@@ -1841,16 +1913,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$9.60",
                 "link": "https://store.steampowered.com/app/1030840/Mafia_Definitive_Edition/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$39.99",
                 "link": "https://www.xbox.com/hu-HU/games/store/mafia-definitive-edition/9nzc09nnr93l"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PC",
                 "Price": "$35.99",
                 "link": "https://store.epicgames.com/en-US/p/mafia-definitive-edition"
@@ -1894,16 +1969,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$23.59",
                 "link": "https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$20.39",
                 "link": "https://www.xbox.com/en-us/games/store/shadow-of-the-tomb-raider/9n6pbdlgw7v8"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$4.40",
                 "link": "https://www.playstation.com/hu-hu/games/shadow-of-the-tomb-raider/"
@@ -1948,16 +2026,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$14.79",
                 "link": "https://store.steampowered.com/app/203160/Tomb_Raider/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$14.79",
                 "link": "https://www.xbox.com/en-us/games/store/tomb-raider/9n6pbdlgw7v8"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$6.96",
                 "link": "https://www.playstation.com/en-hu/games/tomb-raider-I-III-remastered-starring-lara-croft/"
@@ -2002,16 +2083,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$9.60",
                 "link": "https://store.steampowered.com/app/378800/Rise_of_the_Tomb_Raider/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$19.99",
                 "link": "https://www.xbox.com/en-us/games/store/rise-of-the-tomb-raider/9n6pbdlgw7v8"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$3.00",
                 "link": "https://www.playstation.com/hu-hu/games/rise-of-the-tomb-raider-20-year-celebration/"
@@ -2055,16 +2139,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$2.33",
                 "link": "https://store.steampowered.com/app/690790/DiRT_Rally_20/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$3.20",
                 "link": "https://www.xbox.com/en-us/games/store/dirt-rally-2-0/9NBLGGH42THS"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$3.20",
                 "link": "https://www.playstation.com/hu-hu/games/dirt-rally-2-0/"
@@ -2111,16 +2198,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$2.88",
                 "link": "https://store.steampowered.com/app/1222670/DIRT_5/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$10.56",
                 "link": "https://www.xbox.com/en-us/games/store/dirt-5/9PMJ8B3N6V5H"
             },
             {
+                "Site": "Playstation",
                 "Platform": "Ps",
                 "Price": "$23.99",
                 "link": "https://www.playstation.com/hu-hu/games/dirt-rally-2-0/"
@@ -2165,11 +2255,13 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$8.14",
                 "link": "https://store.steampowered.com/app/258280/Assetto_Corsa/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$13.79",
                 "link": "https://www.xbox.com/en-us/games/store/assetto-corsa/9NBLGGH42THS"
@@ -2213,11 +2305,13 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$30.79",
                 "link": "https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$30.79",
                 "link": "https://www.xbox.com/en-us/games/store/assetto-corsa-competizione/9NBLGGH42THS"
@@ -2261,11 +2355,13 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$12.77",
                 "link": "https://store.steampowered.com/app/108600/Project_Zomboid/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$15.39",
                 "link": "https://www.xbox.com/en-us/games/store/project-zomboid/9NBLGGH42THS"
@@ -2305,6 +2401,7 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "9,75€",
                 "link": "https://store.steampowered.com/app/1866640/Lethal_Company/"
@@ -2348,11 +2445,13 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$31.19",
                 "link": "https://store.steampowered.com/app/1551360/Forza_Horizon_5/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$3.12",
                 "link": "https://www.xbox.com/en-us/games/store/forza-horizon-5/9PC5WZB9FTF1"
@@ -2398,16 +2497,19 @@
         ],
         "Price": [
             {
+                "Site": "Steam",
                 "Platform": "PC",
                 "Price": "$6.60",
                 "link": "https://store.steampowered.com/app/2000950/Call_of_Duty_Modern_Warfare/"
             },
             {
+                "Site": "Microsoft",
                 "Platform": "XBOX",
                 "Price": "$1.85",
                 "link": "https://www.xbox.com/en-us/games/store/call-of-duty-modern-warfare/9PKB0ZG9K5ZX"
             },
             {
+                "Site": "Playstation",
                 "Platform": "PS",
                 "Price": "$6.60",
                 "link": "https://www.playstation.com/en-hu/games/call-of-duty-modern-warfare/"
