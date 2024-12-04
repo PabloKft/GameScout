@@ -287,6 +287,7 @@ function showRequestedData(infoType) {
                 // Árak megjelenítése
                 return `
                         <div class="price-item">
+                            <span class="site">${price.Site}:</span>
                             <span class="platform">${price.Platform}:</span>
                             <span class="price">${price.Price}</span>
                             ${isOnSale ? `<span class="sale-info"> - On Sale (${discountAmount}% off)</span>` : ""}
