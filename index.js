@@ -98,7 +98,7 @@ function filterSaleGames(dataArray) {
 }
 
 // Reusable function to create cards
-function createCard(item, topEightPopularGames) { 
+function createCard(item, topEightPopularGames) {
     const cardDiv = document.createElement('div');
     cardDiv.classList.add('card');
 
@@ -148,31 +148,31 @@ function createCard(item, topEightPopularGames) {
 
     // Kattintás esemény hozzáadása a kártyához
     cardDiv.onclick = () => {
-    // Először animáljuk a kártyát (osztályok hozzáadása)
-    cardDiv.classList.add("card2");
-    cardDiv.classList.add("active");  // Aktiváljuk a vizuális változásokat
+        // Először animáljuk a kártyát (osztályok hozzáadása)
+        cardDiv.classList.add("card2");
+        cardDiv.classList.add("active");  // Aktiváljuk a vizuális változásokat
 
-    // Késleltetett navigálás, hogy az animáció lejátszódjon
-    setTimeout(() => {
-        // Kiválasztott játék ID-ját tároljuk a localStorage-ban
-        selectedCardIDGameSite = item.ID;
-        localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-        console.log(`Selected card ID: ${selectedCardIDGameSite}`);
-
-        // Navigálás a játékoldalra
-        window.open('./gamesite.html');
-
-        // Csak a navigálás után távolítjuk el az animációs osztályokat
-        // Az animációk befejeződése után eltávolítjuk az osztályokat
+        // Késleltetett navigálás, hogy az animáció lejátszódjon
         setTimeout(() => {
-            cardDiv.classList.remove("card2");
-            cardDiv.classList.remove("active");
-        }, 300); // Az animáció időtartamának megfelelően (pl. 300 ms)
-    }, 600); // Késleltetett navigálás (600 ms), hogy az animáció befejeződjön
-};
+            // Kiválasztott játék ID-ját tároljuk a localStorage-ban
+            selectedCardIDGameSite = item.ID;
+            localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
+            console.log(`Selected card ID: ${selectedCardIDGameSite}`);
+
+            // Navigálás a játékoldalra
+            window.open('./gamesite.html');
+
+            // Csak a navigálás után távolítjuk el az animációs osztályokat
+            // Az animációk befejeződése után eltávolítjuk az osztályokat
+            setTimeout(() => {
+                cardDiv.classList.remove("card2");
+                cardDiv.classList.remove("active");
+            }, 300); // Az animáció időtartamának megfelelően (pl. 300 ms)
+        }, 600); // Késleltetett navigálás (600 ms), hogy az animáció befejeződjön
+    };
 
 
-    
+
 
     // További kattintás esemény a 'Compare this game' gombra
     button.onclick = (event) => {
@@ -992,3 +992,34 @@ function createResultItem(game, container) {
 
     container.appendChild(resultItem);
 }
+
+
+function toggleDropdown1() {
+    const dropdown = document.getElementById('dropdownMenu1');
+    const isOpen = dropdown.classList.contains('open');
+  
+    if (isOpen) {
+      // Close the dropdown
+      dropdown.classList.remove('open');
+      dropdown.style.marginBottom = '0'; // Reset margin when closed
+    } else {
+      // Open the dropdown
+      dropdown.classList.add('open');
+      dropdown.style.marginBottom = '10px'; // Apply margin when opened
+    }
+  }
+
+  function toggleDropdown4() {
+    const dropdown = document.getElementById('dropdownMenu4');
+    const isOpen = dropdown.classList.contains('open');
+  
+    if (isOpen) {
+      // Close the dropdown
+      dropdown.classList.remove('open');
+      dropdown.style.marginBottom = '0'; // Reset margin when closed
+    } else {
+      // Open the dropdown
+      dropdown.classList.add('open');
+      dropdown.style.marginBottom = '10px'; // Apply margin when opened
+    }
+  }
