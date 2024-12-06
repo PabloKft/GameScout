@@ -188,8 +188,8 @@ function createCard(item, topEightPopularGames) {
             setTimeout(() => {
                 button.classList.remove("cardbutton2");
                 button.classList.remove("active");
-            }, 600); // Az animáció időtartamának megfelelően (pl. 300 ms)
-        }, 600);        
+            }, 300); // Az animáció időtartamának megfelelően (pl. 300 ms)
+        }, 300);        
     };
 
     return cardDiv;
