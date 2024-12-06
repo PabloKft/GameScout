@@ -176,11 +176,20 @@ function createCard(item, topEightPopularGames) {
 
     // További kattintás esemény a 'Compare this game' gombra
     button.onclick = (event) => {
+        button.classList.add("cardbutton2");
+        button.classList.add("active");
         event.stopPropagation();  // Megakadályozza, hogy a kártya kattintás is elinduljon
+        setTimeout(() => {
+           
         selectedCardIDGameSite = item.ID;
         localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
         console.log(`Selected card ID: ${selectedCardIDGameSite}`);
         window.open('./compare.html');
+            setTimeout(() => {
+                button.classList.remove("cardbutton2");
+                button.classList.remove("active");
+            }, 600); // Az animáció időtartamának megfelelően (pl. 300 ms)
+        }, 600);        
     };
 
     return cardDiv;

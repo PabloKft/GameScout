@@ -9,7 +9,7 @@
             "Cross Platform",
             " Multiplayer",
             " Singleplayer",
-            " Competitve"
+            " Competitive"
         ],
         "Console": [
             "PS4",
@@ -189,9 +189,9 @@
             " Shooter"
         ],
         "Console": [
-            "<i class=\"fa-solid fa-computer\"></i> PC",
+            "PC",
             "Xbox",
-            "<i class=\"fa-brands fa-playstation\"></i> PS"
+            "PS"
         ],
         "Price": [
             {
