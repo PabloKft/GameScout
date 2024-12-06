@@ -36,6 +36,7 @@
             gap: 5px; 
 }
 
+
         #suggestions1,
         #suggestions2,
         #suggestions3 {
@@ -82,6 +83,57 @@
         #suggestions3::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
+        /* Hide the default checkbox */
+.styled-checkbox {
+    display: none;
+}
+
+/* Create a custom checkbox container */
+.checkbox-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Style the custom checkbox box */
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Add the checkmark when checked */
+.styled-checkbox:checked + .checkmark::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+}
+
+/* Change the box color when checked */
+.styled-checkbox:checked + .checkmark {
+    background-color: #3700ff;
+    border-color: #3700ff;
+}
+
+/* Add hover effect */
+.checkbox-label:hover .checkmark {
+    border-color: #0056b3;
+}
+        
     </style>
 </head>
 
@@ -121,79 +173,124 @@
         <div class="container my-5">
             <form>
                 <div class="d-flex justify-content-center">
-                    <div class="category">
+                    <div class="category category-button">
                         <h5>Price</h5>
                         <div>
-                            <input type="checkbox" id="cat1-opt1">
-                            <label for="cat1-opt1">Free to Play</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat1-opt1">
+                                <span class="checkmark"></span>
+                                Free to Play
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat1-opt2">
-                            <label for="cat1-opt2">Below $30</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat1-opt2">
+                                <span class="checkmark"></span>
+                                Below $30
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat1-opt3">
-                            <label for="cat1-opt3">Above $30</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat1-opt3">
+                                <span class="checkmark"></span>
+                                Above $30
+                            </label>
                         </div>
                     </div>
-                    <div class="category">
+                    <div class="category category-button">
                         <h5>Rating</h5>
                         <div>
-                            <input type="checkbox" id="cat2-opt1">
-                            <label for="cat2-opt1">Positive</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat2-opt1">
+                                <span class="checkmark"></span>
+                                Positive
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat2-opt2">
-                            <label for="cat2-opt2">Mixed</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat2-opt2">
+                                <span class="checkmark"></span>
+                                Mixed
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat2-opt3">
-                            <label for="cat2-opt3">Negative</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat2-opt3">
+                                <span class="checkmark"></span>
+                                Negative
+                            </label>
                         </div>
                     </div>
-                    <div class="category">
+                    <div class="category category-button">
                         <h5>Release Date</h5>
                         <div>
-                            <input type="checkbox" id="cat3-opt1">
-                            <label for="cat3-opt1">This year</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat3-opt1">
+                                <span class="checkmark"></span>
+                                This year
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat3-opt2">
-                            <label for="cat3-opt2">After 2015</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat3-opt2">
+                                <span class="checkmark"></span>
+                                After 2015
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat3-opt3">
-                            <label for="cat3-opt3">Before 2015</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat3-opt3">
+                                <span class="checkmark"></span>
+                                Before 2015
+                            </label>
                         </div>
                     </div>
-                    <div class="category">
+                    <div class="category category-button">
                         <h5>Story Length</h5>
                         <div>
-                            <input type="checkbox" id="cat4-opt1">
-                            <label for="cat4-opt1">Short ( under 1 hour )</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat4-opt1">
+                                <span class="checkmark"></span>
+                                Short (under 1 hour)
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat4-opt2">
-                            <label for="cat4-opt2">Normal ( 1-5 hours )</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat4-opt2">
+                                <span class="checkmark"></span>
+                                Normal (1-5 hours)
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat4-opt3">
-                            <label for="cat4-opt3">Long ( above 5 hours )</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat4-opt3">
+                                <span class="checkmark"></span>
+                                Long (5+ hours)
+                            </label>
                         </div>
                     </div>
-                    <div class="category">
+                    <div class="category category-button">
                         <h5>Available On</h5>
                         <div>
-                            <input type="checkbox" id="cat5-opt1">
-                            <label for="cat5-opt1">WINDOWS</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat5-opt1">
+                                <span class="checkmark"></span>
+                                WINDOWS
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat5-opt2">
-                            <label for="cat5-opt2">XBOX</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat5-opt2">
+                                <span class="checkmark"></span>
+                                XBOX
+                            </label>
                         </div>
                         <div>
-                            <input type="checkbox" id="cat5-opt3">
-                            <label for="cat5-opt3">PLAYSTATION</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="styled-checkbox" id="cat5-opt3">
+                                <span class="checkmark"></span>
+                                PLAYSTATION
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -371,15 +468,15 @@ function highlightPriceCategory() {
     };
 
     checkboxFree.addEventListener('change', () => {
-        checkAndHighlight(checkboxFree, price => price === "Free to Play", "lightblue");
+        checkAndHighlight(checkboxFree, price => price === "Free to Play", "#4DA8DA");
     });
 
     checkboxBelow30.addEventListener('change', () => {
-        checkAndHighlight(checkboxBelow30, price => parseFloat(price.replace('$', '')) < 30, "lightgreen");
+        checkAndHighlight(checkboxBelow30, price => parseFloat(price.replace('$', '')) < 30, "#48C774");
     });
 
     checkboxAbove30.addEventListener('change', () => {
-        checkAndHighlight(checkboxAbove30, price => parseFloat(price.replace('$', '')) > 30, "lightcoral");
+        checkAndHighlight(checkboxAbove30, price => parseFloat(price.replace('$', '')) > 30, "#F16D7A");
     });
 }
 
@@ -412,15 +509,15 @@ function highlightRatingCategory() {
 
     // Add event listeners for each checkbox
     checkboxPositive.addEventListener('change', () => {
-        checkAndHighlightRating(checkboxPositive, rating => rating.includes("Positive") || rating.includes("Very Positive") || rating.includes("Overwhelmingly Positive"), "lightgreen");
+        checkAndHighlightRating(checkboxPositive, rating => rating.includes("Positive") || rating.includes("Very Positive") || rating.includes("Overwhelmingly Positive"), "#48C774");
     });
 
     checkboxOk.addEventListener('change', () => {
-        checkAndHighlightRating(checkboxOk, rating => rating.includes("Mixed") || rating.includes("Mostly Positive") || rating.includes("Mostly Negative"), "lightyellow");
+        checkAndHighlightRating(checkboxOk, rating => rating.includes("Mixed") || rating.includes("Mostly Positive") || rating.includes("Mostly Negative"), "#FFCC00");
     });
 
     checkboxNegative.addEventListener('change', () => {
-        checkAndHighlightRating(checkboxNegative, rating => rating.includes("Overwhelmingly Negative") || rating.includes("Negative") || rating.includes("Very Negative"), "lightcoral");
+        checkAndHighlightRating(checkboxNegative, rating => rating.includes("Overwhelmingly Negative") || rating.includes("Negative") || rating.includes("Very Negative"), "#F16D7A");
     });
 }
 
@@ -458,21 +555,21 @@ function highlightReleaseDateCategory() {
         checkAndHighlightReleaseDate(checkboxThisYear, releaseDate => {
             const currentYear = new Date().getFullYear();
             return releaseDate.includes(currentYear); // Check if the release year is the current year
-        }, "lightgreen");
+        }, "#48C774");
     });
 
     checkboxAfter2015.addEventListener('change', () => {
         checkAndHighlightReleaseDate(checkboxAfter2015, releaseDate => {
             const year = parseInt(releaseDate.split('.')[2]); // Extract year from release date format (DD.MM.YYYY)
             return year > 2015;
-        }, "lightgreen");
+        }, "#48C774");
     });
 
     checkboxBefore2015.addEventListener('change', () => {
         checkAndHighlightReleaseDate(checkboxBefore2015, releaseDate => {
             const year = parseInt(releaseDate.split('.')[2]); // Extract year from release date format (DD.MM.YYYY)
             return year < 2015;
-        }, "lightgreen");
+        }, "#48C774");
     });
 }
 
@@ -507,21 +604,21 @@ function highlightStoryLengthCategory() {
 
     // Add event listeners for each checkbox
     checkboxShort.addEventListener('change', () => {
-        checkAndHighlightStoryLength(checkboxShort, storyLength => storyLength.includes("under 1 hour"), "lightgreen");
+        checkAndHighlightStoryLength(checkboxShort, storyLength => storyLength.includes("under 1 hour"), "#48C774");
     });
 
     checkboxNormal.addEventListener('change', () => {
         checkAndHighlightStoryLength(checkboxNormal, storyLength => {
             const hours = parseInt(storyLength.split(' ')[0]); // Extract hours from the format (e.g., "1 hour")
             return hours >= 1 && hours <= 5;
-        }, "lightgreen");
+        }, "#48C774");
     });
 
     checkboxLong.addEventListener('change', () => {
         checkAndHighlightStoryLength(checkboxLong, storyLength => {
             const hours = parseInt(storyLength.split(' ')[0]); // Extract hours from the format (e.g., "5 hours")
             return hours > 5;
-        }, "lightgreen");
+        }, "#48C774");
     });
 }
 
@@ -557,15 +654,15 @@ function highlightAvailableOnCategory() {
 
     // Add event listeners for each checkbox
     checkboxPC.addEventListener('change', () => {
-        checkAndHighlightAvailableOn(checkboxPC, consoles => consoles.includes("Windows"), "lightblue");
+        checkAndHighlightAvailableOn(checkboxPC, consoles => consoles.includes("Windows"), "#4DA8DA");
     });
 
     checkboxXbox.addEventListener('change', () => {
-        checkAndHighlightAvailableOn(checkboxXbox, consoles => consoles.includes("Xbox One") || consoles.includes("Xbox Series X/S") || console.includes("XBOX 360"), "lightgreen");
+        checkAndHighlightAvailableOn(checkboxXbox, consoles => consoles.includes("Xbox One") || consoles.includes("Xbox Series X/S") || console.includes("XBOX 360"), "#48C774");
     });
 
     checkboxPlayStation.addEventListener('change', () => {
-        checkAndHighlightAvailableOn(checkboxPlayStation, consoles => consoles.includes("PS4") || consoles.includes("PS5"), "blue");
+        checkAndHighlightAvailableOn(checkboxPlayStation, consoles => consoles.includes("PS4") || consoles.includes("PS5"), "#007BFF");
     });
 
 
