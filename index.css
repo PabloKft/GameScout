@@ -877,8 +877,8 @@ a {
   background: rgb(73, 72, 72);
 }
 
-#PriceHeight {
-  height: 200px;
+#PriceDiv {
+  height: 120px;
 }
 
 .category {
@@ -1042,4 +1042,65 @@ a {
 .scroll-down:hover {
   transform: translateY(15px);
   opacity: 0.8;
+}
+
+
+.category-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  width: 18%; /* Set fixed width for each category to keep them side by side */
+  margin-right: 1%; /* Add some space between each section */
+  display: inline-block; /* Ensure categories are side by side */
+}
+
+/* Category buttons */
+.category-button {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  font-weight: bold;
+  background-color: #003057;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #00294a;
+}
+
+/* Content inside each category */
+.category-content {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Style the checkboxes */
+.category-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* For checkboxes, the text and content below should be clear and nicely spaced */
+#genresList span, #priceList span, #ratingList span, #consolesList span, #releaseDateList span, #storyLengthList span {
+  display: block;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+
+/* Optional: Add padding and color changes to make it stand out */
+#priceList, #ratingList, #consolesList, #releaseDateList, #storyLengthList {
+  padding-left: 20px;
+}
+
+#priceList span, #ratingList span, #releaseDateList span, #storyLengthList span {
+  font-weight: bold;
+  color: #003057;
 }

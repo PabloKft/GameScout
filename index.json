@@ -186,9 +186,7 @@
             " Open World",
             " Multiplayer",
             " Singleplayer",
-            " Shooter",
-            " Racing",
-            " Cross Platform"
+            " Shooter"
         ],
         "Console": [
             "<i class=\"fa-solid fa-computer\"></i> PC",
@@ -971,7 +969,6 @@
             "Battle Royale",
             "Survival",
             "Multiplayer",
-            "Singleplayer",
             "Competitive"
         ],
         "Console": [
