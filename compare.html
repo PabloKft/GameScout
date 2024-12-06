@@ -144,7 +144,7 @@
                         </div>
                         <div>
                             <input type="checkbox" id="cat2-opt2">
-                            <label for="cat2-opt2">Ok</label>
+                            <label for="cat2-opt2">Mixed</label>
                         </div>
                         <div>
                             <input type="checkbox" id="cat2-opt3">
@@ -185,7 +185,7 @@
                         <h5>Available On</h5>
                         <div>
                             <input type="checkbox" id="cat5-opt1">
-                            <label for="cat5-opt1">PC</label>
+                            <label for="cat5-opt1">WINDOWS</label>
                         </div>
                         <div>
                             <input type="checkbox" id="cat5-opt2">
@@ -306,23 +306,23 @@
                 <h4>Genres:</h4>
                 <p>${game.Genres.join(", ")}</p>
             </div>
-            <div id="PriceHeight">
+            <div id="PriceDiv">
                 <h4>Price:</h4>
                 <p>${formatPrices(game.Price)}</p>
             </div>
-            <div>
+            <div id="RatingDiv">
                 <h4>Rating:</h4>
                 <p>${game.Rating}</p>
             </div>
-            <div>
+            <div id="ReleaseDateDiv">
                 <h4>Release Date:</h4>
                 <p>${game["Release date"]}</p>
             </div>
-            <div>
+            <div id="StoryDiv">
                 <h4>Story Length:</h4>
                 <p>${game.Story}</p>
             </div>
-            <div>
+            <div id="ConsoleDiv">
                 <h4>Available on:</h4>
                 <p>${game.Console.join(", ")}</p>
             </div>
@@ -331,43 +331,251 @@
     }
 
     function formatPrices(priceData) {
-    if (Array.isArray(priceData)) {
-        // Find the cheapest price and check if all prices are the same
-        let lowestPrice = Infinity;
-        let allPricesSame = true;
+        if (Array.isArray(priceData)) {
+            return priceData.map(priceInfo =>
+                `${priceInfo.Site} |  ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>`
+            ).join("<br>");
+        } else {
+            return `${priceData["Epic Games"]} - <a href="${priceData.link}" target="_blank">Buy Now</a>`;
+        }
+    }
 
-        // Check if all prices are the same
-        const firstPriceValue = parseFloat(priceData[0].Price.replace('$', ''));
-        priceData.forEach(priceInfo => {
-            const priceValue = parseFloat(priceInfo.Price.replace('$', ''));
-            if (priceValue < lowestPrice) {
-                lowestPrice = priceValue;
-            }
-            if (priceValue !== firstPriceValue) {
-                allPricesSame = false;
+    for (let i = 1; i <= 3; i++) {
+        const searchInput = document.getElementById(`searchGame${i}`);
+        searchInput.addEventListener('focus', () => showGameSuggestions(i));
+    }
+
+
+// Function to highlight the price category based on price conditions
+function highlightPriceCategory() {
+    const checkboxFree = document.getElementById('cat1-opt1');
+    const checkboxBelow30 = document.getElementById('cat1-opt2');
+    const checkboxAbove30 = document.getElementById('cat1-opt3');
+    const gameColumns = [1, 2, 3]; 
+
+    const checkAndHighlight = (checkbox, conditionFn, highlightColor) => {
+        gameColumns.forEach(column => {
+            const priceContainer = document.querySelector(`#game${column}Details #PriceDiv`);
+            const gameNameInput = document.getElementById(`searchGame${column}`);
+            const selectedGameName = gameNameInput.value;
+            const selectedGame = arrayData.find(game => game.Name === selectedGameName);
+
+            if (selectedGame && selectedGame.Price.some(price => conditionFn(price.Price))) {
+                if (checkbox.checked) {
+                    priceContainer.style.backgroundColor = highlightColor; // Highlight when checkbox is checked
+                } else {
+                    priceContainer.style.backgroundColor = ""; // Reset to default when unchecked
+                }
             }
         });
+    };
 
-        // Now, create the price HTML and apply the background color to the lowest price
-        return priceData.map(priceInfo => {
-            const priceValue = parseFloat(priceInfo.Price.replace('$', ''));
-            const isCheapest = priceValue === lowestPrice;
-            // If all prices are the same, do not apply the green background
-            if (allPricesSame) {
-                return `
-                    <div>
-                        ${priceInfo.Site} | ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
-                    </div>
-                `;
-            }
-            return `
-                <div style="background-color: ${isCheapest ? '#90EE90' : ''}; color: ${isCheapest ? '#333333' : 'white'};">
-                    ${priceInfo.Site} | ${priceInfo.Platform}: ${priceInfo.Price} - <a href="${priceInfo.link}" target="_blank">Buy Now</a>
-                </div>
-            `;
-        }).join("<br>");
-    }
+    checkboxFree.addEventListener('change', () => {
+        checkAndHighlight(checkboxFree, price => price === "Free to Play", "lightblue");
+    });
+
+    checkboxBelow30.addEventListener('change', () => {
+        checkAndHighlight(checkboxBelow30, price => parseFloat(price.replace('$', '')) < 30, "lightgreen");
+    });
+
+    checkboxAbove30.addEventListener('change', () => {
+        checkAndHighlight(checkboxAbove30, price => parseFloat(price.replace('$', '')) > 30, "lightcoral");
+    });
 }
+
+fetchJSON().then(() => {
+    highlightPriceCategory();
+});
+
+function highlightRatingCategory() {
+    const checkboxPositive = document.getElementById('cat2-opt1');
+    const checkboxOk = document.getElementById('cat2-opt2');
+    const checkboxNegative = document.getElementById('cat2-opt3');
+    const gameColumns = [1, 2, 3]; // IDs for the game columns
+
+    const checkAndHighlightRating = (checkbox, conditionFn, highlightColor) => {
+        gameColumns.forEach(column => {
+            const ratingContainer = document.querySelector(`#game${column}Details #RatingDiv`);
+            const gameNameInput = document.getElementById(`searchGame${column}`);
+            const selectedGameName = gameNameInput.value;
+            const selectedGame = arrayData.find(game => game.Name === selectedGameName);
+
+            if (selectedGame && conditionFn(selectedGame.Rating)) {
+                if (checkbox.checked) {
+                    ratingContainer.style.backgroundColor = highlightColor; // Highlight when checkbox is checked
+                } else {
+                    ratingContainer.style.backgroundColor = ""; // Reset to default when unchecked
+                }
+            }
+        });
+    };
+
+    // Add event listeners for each checkbox
+    checkboxPositive.addEventListener('change', () => {
+        checkAndHighlightRating(checkboxPositive, rating => rating.includes("Positive") || rating.includes("Very Positive") || rating.includes("Overwhelmingly Positive"), "lightgreen");
+    });
+
+    checkboxOk.addEventListener('change', () => {
+        checkAndHighlightRating(checkboxOk, rating => rating.includes("Mixed") || rating.includes("Mostly Positive") || rating.includes("Mostly Negative"), "lightyellow");
+    });
+
+    checkboxNegative.addEventListener('change', () => {
+        checkAndHighlightRating(checkboxNegative, rating => rating.includes("Overwhelmingly Negative") || rating.includes("Negative") || rating.includes("Very Negative"), "lightcoral");
+    });
+}
+
+// Call the function after fetching JSON data
+fetchJSON().then(() => {
+    highlightRatingCategory();
+});
+
+// Function to highlight the Release Date category based on selected filters
+function highlightReleaseDateCategory() {
+    const checkboxThisYear = document.getElementById('cat3-opt1');
+    const checkboxAfter2015 = document.getElementById('cat3-opt2');
+    const checkboxBefore2015 = document.getElementById('cat3-opt3');
+    const gameColumns = [1, 2, 3]; // IDs for the game columns
+
+    const checkAndHighlightReleaseDate = (checkbox, conditionFn, highlightColor) => {
+        gameColumns.forEach(column => {
+            const releaseDateContainer = document.querySelector(`#game${column}Details #ReleaseDateDiv`);
+            const gameNameInput = document.getElementById(`searchGame${column}`);
+            const selectedGameName = gameNameInput.value;
+            const selectedGame = arrayData.find(game => game.Name === selectedGameName);
+
+            if (selectedGame && conditionFn(selectedGame["Release date"])) {
+                if (checkbox.checked) {
+                    releaseDateContainer.style.backgroundColor = highlightColor; // Highlight when checkbox is checked
+                } else {
+                    releaseDateContainer.style.backgroundColor = ""; // Reset to default when unchecked
+                }
+            }
+        });
+    };
+
+    // Add event listeners for each checkbox
+    checkboxThisYear.addEventListener('change', () => {
+        checkAndHighlightReleaseDate(checkboxThisYear, releaseDate => {
+            const currentYear = new Date().getFullYear();
+            return releaseDate.includes(currentYear); // Check if the release year is the current year
+        }, "lightgreen");
+    });
+
+    checkboxAfter2015.addEventListener('change', () => {
+        checkAndHighlightReleaseDate(checkboxAfter2015, releaseDate => {
+            const year = parseInt(releaseDate.split('.')[2]); // Extract year from release date format (DD.MM.YYYY)
+            return year > 2015;
+        }, "lightgreen");
+    });
+
+    checkboxBefore2015.addEventListener('change', () => {
+        checkAndHighlightReleaseDate(checkboxBefore2015, releaseDate => {
+            const year = parseInt(releaseDate.split('.')[2]); // Extract year from release date format (DD.MM.YYYY)
+            return year < 2015;
+        }, "lightgreen");
+    });
+}
+
+// Call the function after fetching JSON data
+fetchJSON().then(() => {
+    highlightReleaseDateCategory();
+});
+
+// Function to highlight the Story Length category based on selected filters
+function highlightStoryLengthCategory() {
+    const checkboxShort = document.getElementById('cat4-opt1');
+    const checkboxNormal = document.getElementById('cat4-opt2');
+    const checkboxLong = document.getElementById('cat4-opt3');
+    const gameColumns = [1, 2, 3]; // IDs for the game columns
+
+    const checkAndHighlightStoryLength = (checkbox, conditionFn, highlightColor) => {
+        gameColumns.forEach(column => {
+            const storyLengthContainer = document.querySelector(`#game${column}Details #StoryDiv`);
+            const gameNameInput = document.getElementById(`searchGame${column}`);
+            const selectedGameName = gameNameInput.value;
+            const selectedGame = arrayData.find(game => game.Name === selectedGameName);
+
+            if (selectedGame && conditionFn(selectedGame.Story)) {
+                if (checkbox.checked) {
+                    storyLengthContainer.style.backgroundColor = highlightColor; // Highlight when checkbox is checked
+                } else {
+                    storyLengthContainer.style.backgroundColor = ""; // Reset to default when unchecked
+                }
+            }
+        });
+    };
+
+    // Add event listeners for each checkbox
+    checkboxShort.addEventListener('change', () => {
+        checkAndHighlightStoryLength(checkboxShort, storyLength => storyLength.includes("under 1 hour"), "lightgreen");
+    });
+
+    checkboxNormal.addEventListener('change', () => {
+        checkAndHighlightStoryLength(checkboxNormal, storyLength => {
+            const hours = parseInt(storyLength.split(' ')[0]); // Extract hours from the format (e.g., "1 hour")
+            return hours >= 1 && hours <= 5;
+        }, "lightgreen");
+    });
+
+    checkboxLong.addEventListener('change', () => {
+        checkAndHighlightStoryLength(checkboxLong, storyLength => {
+            const hours = parseInt(storyLength.split(' ')[0]); // Extract hours from the format (e.g., "5 hours")
+            return hours > 5;
+        }, "lightgreen");
+    });
+}
+
+// Call the function after fetching JSON data
+fetchJSON().then(() => {
+    highlightStoryLengthCategory();
+});
+
+// Function to highlight the Available On category based on selected filters
+function highlightAvailableOnCategory() {
+    const checkboxPC = document.getElementById('cat5-opt1');
+    const checkboxXbox = document.getElementById('cat5-opt2');
+    const checkboxPlayStation = document.getElementById('cat5-opt3');
+
+    const gameColumns = [1, 2, 3]; // IDs for the game columns
+
+    const checkAndHighlightAvailableOn = (checkbox, conditionFn, highlightColor) => {
+        gameColumns.forEach(column => {
+            const availableOnContainer = document.querySelector(`#game${column}Details #ConsoleDiv`);
+            const gameNameInput = document.getElementById(`searchGame${column}`);
+            const selectedGameName = gameNameInput.value;
+            const selectedGame = arrayData.find(game => game.Name === selectedGameName);
+
+            if (selectedGame && conditionFn(selectedGame.Console)) {
+                if (checkbox.checked) {
+                    availableOnContainer.style.backgroundColor = highlightColor; // Highlight when checkbox is checked
+                } else {
+                    availableOnContainer.style.backgroundColor = ""; // Reset to default when unchecked
+                }
+            }
+        });
+    };
+
+    // Add event listeners for each checkbox
+    checkboxPC.addEventListener('change', () => {
+        checkAndHighlightAvailableOn(checkboxPC, consoles => consoles.includes("Windows"), "lightblue");
+    });
+
+    checkboxXbox.addEventListener('change', () => {
+        checkAndHighlightAvailableOn(checkboxXbox, consoles => consoles.includes("Xbox One") || consoles.includes("Xbox Series X/S") || console.includes("XBOX 360"), "lightgreen");
+    });
+
+    checkboxPlayStation.addEventListener('change', () => {
+        checkAndHighlightAvailableOn(checkboxPlayStation, consoles => consoles.includes("PS4") || consoles.includes("PS5"), "blue");
+    });
+
+
+}
+
+// Call the function after fetching JSON data
+fetchJSON().then(() => {
+    highlightAvailableOnCategory();
+});
+
 
     window.onload = fetchJSON;
 </script>
