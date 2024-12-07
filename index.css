@@ -139,9 +139,10 @@
 }
 
 .card-button:hover {
-  background-color: #00294a;
+  background-color: #003f72;
   color: rgb(199, 199, 199);
   border: 5px solid #003057;
+  transition-duration: 0.3s;
 }
 
 .card-button {
@@ -152,10 +153,7 @@
   transition-duration: 0.2s;
 }
 
-.card-button:hover {
-  background-color: #3A3A3A;
-  transition-duration: 0.3s;
-}
+
 
 .card-button:after {
   content: "";

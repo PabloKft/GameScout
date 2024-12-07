@@ -181,9 +181,9 @@ function createCard(item, topEightPopularGames) {
         event.stopPropagation();  // Megakadályozza, hogy a kártya kattintás is elinduljon
         setTimeout(() => {
            
-        selectedCardIDGameSite = item.ID;
-        localStorage.setItem('selectedCardIDGameSite', selectedCardIDGameSite);
-        console.log(`Selected card ID: ${selectedCardIDGameSite}`);
+        selectedCardIDCompare = item.ID;
+        localStorage.setItem('selectedCardIDCompare', selectedCardIDCompare);
+        console.log(`Selected card ID: ${selectedCardIDCompare}`);
         window.open('./compare.html');
             setTimeout(() => {
                 button.classList.remove("cardbutton2");
