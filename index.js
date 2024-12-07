@@ -275,7 +275,13 @@ function showRequestedData(infoType) {
 
     let content = "";
 
-    // Módosított JavaScript kód
+    // Mapping of platforms to icons
+    const platformIcons = {
+        PC: '<i class="fa-solid fa-computer"></i>',
+        XBOX: '<i class="fa-brands fa-xbox"></i>',
+        PS: '<i class="fa-brands fa-playstation"></i>'
+    };
+
     switch (infoType) {
         case "Description":
             content = `<div class="description">${selectedItem.Description}</div>`;
@@ -289,17 +295,20 @@ function showRequestedData(infoType) {
             content = `
             <div class="prices">
                 ${selectedItem.Price.map(price => {
-                // Ellenőrizzük, hogy a játék le van-e árazva
+                // Check if the game is on sale
                 const isOnSale = selectedItem.Sale && selectedItem.Sale[0].IsOnSale;
                 const discountAmount = isOnSale ? selectedItem.Sale[0].Amount : 0;
 
-                // Árak megjelenítése
+                // Determine the platform icon
+                const platformIcon = platformIcons[price.Platform.toUpperCase()] || "";
+
+                // Display prices with icons
                 return `
                         <div class="price-item">
+                            <span class="platform">${platformIcon}:</span>
                             <span class="site">${price.Site}:</span>
-                            <span class="platform">${price.Platform}:</span>
                             <span class="price">${price.Price}</span>
-                            ${isOnSale ? `<span class="sale-info"> - On Sale (${discountAmount}% off)</span>` : ""}
+                            ${isOnSale ? `<span class="sale-info"> - On Sale (${discountAmount}% off)</span>` : " "}
                             <a href="${price.link}" target="_blank" class="buy-link"><i class="fa-solid fa-cart-shopping"></i> Buy now</a>
                         </div>`;
             }).join("")}
@@ -315,8 +324,8 @@ function showRequestedData(infoType) {
     }
 
     infoPlace.innerHTML = content;
-
 }
+
 
 // Initialize on page load
 window.onload = function () {
