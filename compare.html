@@ -355,14 +355,15 @@
 
             const place = document.getElementById("game1Details");
             const name = document.getElementById("searchGame1")
+            const columnHeader = document.getElementById(`game-column-1`).querySelector('h3');
             const game = arrayData[selectedCardIDCompare - 1]; // Adjusting index to be zero-based
 
             if (!game) {
                 console.error('Game not found for selected ID:', selectedCardIDCompare);
                 return;
             }
-            console.log(game.Name)
             name.value = game.Name;
+            columnHeader.textContent = game.Name;
             place.innerHTML = `
         <img src="${game.Image[0]}" alt="${game.Name}" class="img-fluid mb-3" style="border-radius:10px;">
         <div class="column-content">
