@@ -139,6 +139,23 @@
             text-align: center;
             font-weight: bold;
         }
+
+        .match-indicator {
+        font-size: 16px;
+        color: black; /* Default color (invisible on black background) */
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+
+        .show-match {
+        color: #28a745 !important; /* Green color */
+        opacity: 1;
+        }
+
+        h3{
+            padding-top: 10px;
+        }
     </style>
 </head>
 
@@ -304,7 +321,7 @@
 
         <div class="row">
             <div class="col-md-4" id="game-column-1">
-                <h3>Game 1</h3>
+                <div><h3>Game 1</h3><p class="match-indicator" id="match-indicator-1">Match Found!</p></div>
                 <input type="text" id="searchGame1" class="form-control mb-2" placeholder="Search Game 1"
                     oninput="showGameSuggestions(1)" onfocus="showGameSuggestions(1)">
                 <div id="suggestions1" class="list-group"></div>
@@ -313,7 +330,7 @@
             </div>
 
             <div class="col-md-4" id="game-column-2">
-                <h3>Game 2</h3>
+                <div><h3>Game 2</h3><p class="match-indicator" id="match-indicator-2">Match Found!</p></div>
                 <input type="text" id="searchGame2" class="form-control mb-2" placeholder="Search Game 2"
                     oninput="showGameSuggestions(2)" onfocus="showGameSuggestions(2)">
                 <div id="suggestions2" class="list-group"></div>
@@ -322,7 +339,7 @@
             </div>
 
             <div class="col-md-4" id="game-column-3">
-                <h3>Game 3</h3>
+                <div><h3>Game 3</h3><p class="match-indicator" id="match-indicator-3">Match Found!</p></div>
                 <input type="text" id="searchGame3" class="form-control mb-2" placeholder="Search Game 3"
                     oninput="showGameSuggestions(3)" onfocus="showGameSuggestions(3)">
                 <div id="suggestions3" class="list-group"></div>
@@ -573,15 +590,15 @@
 
             // Add event listeners for each checkbox
             checkboxPositive.addEventListener('change', () => {
-                checkAndHighlightRating(checkboxPositive, rating => rating.includes("Positive") || rating.includes("Very Positive") || rating.includes("Overwhelmingly Positive"), "#48C774");
+                checkAndHighlightRating(checkboxPositive, rating => rating.includes("Positive") || rating.includes("Very Positive") || rating.includes("Overwhelmingly Positive") || rating.includes("Mostly Positive"), "#48C774");
             });
 
             checkboxOk.addEventListener('change', () => {
-                checkAndHighlightRating(checkboxOk, rating => rating.includes("Mixed") || rating.includes("Mostly Positive") || rating.includes("Mostly Negative"), "#FFCC00");
+                checkAndHighlightRating(checkboxOk, rating => rating.includes("Mixed"), "#FFCC00");
             });
 
             checkboxNegative.addEventListener('change', () => {
-                checkAndHighlightRating(checkboxNegative, rating => rating.includes("Overwhelmingly Negative") || rating.includes("Negative") || rating.includes("Very Negative"), "#F16D7A");
+                checkAndHighlightRating(checkboxNegative, rating => rating.includes("Overwhelmingly Negative") || rating.includes("Negative") || rating.includes("Very Negative") || rating.includes("Mostly Negative"), "#F16D7A");
             });
         }
 
@@ -736,12 +753,97 @@
         fetchJSON().then(() => {
             highlightAvailableOnCategory();
         });
+        
+        const checkboxes = document.querySelectorAll('.styled-checkbox'); // All category checkboxes
 
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function () {
+    [1, 2, 3].forEach(columnNumber => {
+      const gameColumn = document.getElementById(`game-column-${columnNumber}`);
+      const gameInput = document.getElementById(`searchGame${columnNumber}`);
+      const matchIndicator = document.getElementById(`match-indicator-${columnNumber}`);
+      const selectedGameName = gameInput.value; // Get the selected game name
+      const selectedGame = arrayData.find(game => game.Name === selectedGameName);
+      
+      if (!selectedGameName) return; // Skip if no game is selected in this column
 
-        window.onload = fetchJSON;
-    </script>
+      let matchFound = false; // Track if any match is found for this game
 
+      // **Loop through all checkboxes from cat1-opt1 to cat5-opt3**
+      document.querySelectorAll('.styled-checkbox:checked').forEach(checkbox => {
+        const checkboxId = checkbox.id;
+        
+        // **Matching Logic for Each Category**
+        if (checkboxId.startsWith('cat1')) { // Price Category
+          const prices = selectedGame.Price.map(price => price.Price);
+          
+          // Check if "Free to Play" is selected
+          if (checkboxId === 'cat1-opt1') { // Free to Play
+            if (prices.some(price => price === "Free to Play")) matchFound = true;
+          } 
+          // Check if price is below $30
+          else if (checkboxId === 'cat1-opt2') { // Price below $30
+            if (prices.some(price => parseInt(price.replace('$', '').replace(',', '')) < 30)) matchFound = true;
+          } 
+          // Check if price is above $30
+          else if (checkboxId === 'cat1-opt3') { // Price above $30
+            if (prices.some(price => parseInt(price.replace('$', '').replace(',', '')) > 30)) matchFound = true;
+          }
+        } 
+        if (checkboxId === 'cat2-opt1' && selectedGame.Rating.includes('Positive' || 'Very Positive' || 'Overwhelmingly Positive' || 'Mostly Positive')) {
+          matchFound = true;
+        } 
+        if (checkboxId === 'cat2-opt2' && selectedGame.Rating.includes('Mixed')) {
+          matchFound = true;
+        } 
+        if (checkboxId === 'cat2-opt3' && selectedGame.Rating.includes('Negative' || 'Very Negative' || 'Overwhelmingly Negative' || 'Mostly Negative')) {
+          matchFound = true;
+        } 
+        else if (checkboxId.startsWith('cat3')) { // Release Date Category
+          const releaseYear = parseInt(selectedGame['Release date'].split('.').pop());
+          
+          if (checkboxId === 'cat3-opt1') { // Current Year
+            if (releaseYear === currentYear) matchFound = true;
+          } 
+          else if (checkboxId === 'cat3-opt2') { // After 2015
+            if (releaseYear > 2015) matchFound = true;
+          } 
+          else if (checkboxId === 'cat3-opt3') { // Before 2015
+            if (releaseYear < 2015) matchFound = true;
+          }
+        } 
+        else if (checkboxId.startsWith('cat4')) { // Story Length Category
+          const storyLength = selectedGame.Story ? parseInt(selectedGame.Story.split(' ')[0]) : 0;
 
+          if (checkboxId === 'cat4-opt1') { // Under 1 hour
+            if (storyLength < 1) matchFound = true;
+          } 
+          else if (checkboxId === 'cat4-opt2') { // 1-5 hours
+            if (storyLength >= 1 && storyLength <= 5) matchFound = true;
+          } 
+          else if (checkboxId === 'cat4-opt3') { // Above 5 hours
+            if (storyLength > 5) matchFound = true;
+          }
+        } 
+        else if (checkboxId.startsWith('cat5')) { // Console Category
+          // Check if the game supports the specific console
+          if (checkboxId === 'cat5-opt1' && selectedGame.Console.includes('Windows')) matchFound = true;
+          if (checkboxId === 'cat5-opt2' && selectedGame.Console.includes('Xbox One') || selectedGame.Console.includes('Xbox Series X/S')) matchFound = true;
+          if (checkboxId === 'cat5-opt3' && selectedGame.Console.includes('PS4') || selectedGame.Console.includes('PS5')) matchFound = true;
+        }
+      });
+
+      // Highlight cucc
+      if (matchFound) {
+        matchIndicator.classList.add('show-match')
+      } else {
+        matchIndicator.classList.remove('show-match');
+      }
+    });
+  });
+});
+    window.onload = fetchJSON;
+</script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz4fnFO9gybP6uIOB96o7H0q5ME7sBfxYw5KfflmV3p7kpIFqN0w8UmB5q"
         crossorigin="anonymous"></script>
@@ -749,5 +851,4 @@
         integrity="sha384-9P7gKbVAYbq94S9RC9hYH+P9y3F2dS5B6Vz4q67fWcm5cXw4J3ZZxG2hVV33u3MR"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
