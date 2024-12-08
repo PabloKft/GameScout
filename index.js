@@ -31,6 +31,12 @@ function fetchJSON() {
         .catch(error => console.error('Error loading the JSON file:', error));
 }
 
+function resetComparableGame(){
+    selectedCardIDCompare = 0;
+    localStorage.setItem('selectedCardIDCompare',selectedCardIDCompare);
+}
+
+
 function createCarousel(data, selected) {
     const carPlace = document.getElementById("carouselPlace");
     const thumbnailContainer = document.querySelector(".thumbnail-container");
