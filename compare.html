@@ -159,14 +159,12 @@
                         </div>
                     </a>
                 </div>
-                <form class="d-flex search-container" role="search">
-                    <a href="jatekok.html" target="_blank"><button class="btn-custom" type="button">All
-                            Games</button></a>
-                    <input class="form-control me-2 Search" type="search" placeholder="Search"
-                        style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" aria-label="Search">
-                    <button class="btn" type="submit"
-                        style="border: 2px solid rgb(0, 0, 0) ; border-top-left-radius: 0px; border-bottom-left-radius: 0px; color: white; margin-left: -10px;"><i
-                            class="fa fa-search"></i></button>
+                <form class="d-flex search-container" role="search" style="position: relative;">                    
+                    <a href="jatekok.html" href="https://pablokft.github.io/GameScout/jatekok.html"
+                        target="_blank"><button class="btn-custom" type="button">All Games</button></a>
+                    <input class="form-control me-2 Search" id="searchField" type="text" placeholder="Search a game"
+                        aria-label="Search" onfocus="searchBar()" oninput="searchBarInput()">
+                    <div id="resultContainer" class="search-results"></div>
                 </form>
             </div>
         </nav>

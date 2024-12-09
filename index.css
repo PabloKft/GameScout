@@ -752,6 +752,18 @@ a {
   margin-top: -1%;
 }
 
+#resultContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+#resultContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+#resultContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .price-item {
   background-color: #1a0675;

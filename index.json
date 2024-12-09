@@ -356,7 +356,7 @@
         ],
         "Console": [
             "Windows",
-            "Geforce now",
+            "Geforce Now",
             "Linux",
             "Mac OS"
         ],
@@ -1436,7 +1436,7 @@
             },
             {
                 "Site": "Epic Games",
-                "Platform": "PC",   
+                "Platform": "PC",
                 "Price": "14,99€",
                 "link": "https://www.epicgames.com/store/en-US/p/iracing"
             }
@@ -1556,7 +1556,6 @@
                 "Price": "$13.99",
                 "link": "https://store.epicgames.com/en-US/p/ark"
             }
-
         ],
         "Rating": "Mostly Positive (450,000+)",
         "Image": [
@@ -1874,7 +1873,7 @@
             }
         ],
         "Rating": "Very Positive (10,000+)",
-        "Image": [            
+        "Image": [
             "./pictures/F123_1.jpg",
             "./pictures/F123_2.jpg",
             "./pictures/F123_3.jpg",
@@ -1986,7 +1985,6 @@
         ],
         "Rating": "Very Positive (100,000+)",
         "Image": [
-            
             "./pictures/SOTTR1.jpg",
             "./pictures/SOTTR2.jpg",
             "./pictures/SOTTR3.jpg",
@@ -2043,7 +2041,6 @@
         ],
         "Rating": "Very Positive (200,000+)",
         "Image": [
-            
             "./pictures/TR1.jpg",
             "./pictures/TR2.jpg",
             "./pictures/TR3.jpg",
@@ -2156,7 +2153,6 @@
         ],
         "Rating": "Very Positive (50,000+)",
         "Image": [
-            
             "./pictures/DirtRally2_0_1.jpg",
             "./pictures/DirtRally2_0_2.jpg",
             "./pictures/DirtRally2_0_3.jpg",
@@ -2215,7 +2211,6 @@
         ],
         "Rating": "Mostly Positive (20,000+)",
         "Image": [
-            
             "./pictures/Dirt5_1.jpg",
             "./pictures/Dirt5_2.jpg",
             "./pictures/Dirt5_3.jpg",
